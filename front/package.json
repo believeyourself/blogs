@@ -4,9 +4,8 @@
   "description": "前端 资源",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve --config ./config/webpack.config.js",
-    "build": "webpack --config ./config/webpack.config.js"
+    "start": "webpack serve --config ./config/webpack.dev.js",
+    "build": "webpack --config ./config/webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +20,7 @@
   "devDependencies": {
     "@types/node": "^15.6.0",
     "css-loader": "^5.2.5",
+    "dotenv": "^10.0.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.1",
     "less": "^4.1.1",
