@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WebpackCleanPlugin = require("webpack-clean-plugin");
 
 module.exports = {
-  entry: "./src/app.ts",
+  entry: "./src/index.tsx",
   output: {
     filename: "[contenthash].bundle.js",
     path: path.resolve(__dirname, "../dist"),
@@ -22,8 +22,8 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.less?&/,
-        use: ["less-loader", "style-loader", "css-loader?modules"],
+        test: /\.less?$/,
+        use: ["style-loader", "css-loader?modules", "less-loader"],
         exclude: /node_modules/,
       },
       {

@@ -6,7 +6,6 @@ require("dotenv").config({
   path: path.resolve(__dirname, "../.env.development"),
 });
 
-console.log(process.env.SERVER_URL);
 
 module.exports = merge(common, {
   mode: "development",
