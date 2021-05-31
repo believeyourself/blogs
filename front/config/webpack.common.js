@@ -23,7 +23,11 @@ module.exports = {
       },
       {
         test: /\.less?$/,
-        use: ["style-loader", "css-loader?modules", "less-loader"],
+        use: [
+          "style-loader",
+          "css-loader?modules&importLoaders=1",
+          "less-loader",
+        ],
         exclude: /node_modules/,
       },
       {
@@ -40,5 +44,9 @@ module.exports = {
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
+    alias: {
+      "@": path.resolve(__dirname, "../src/"),
+      common: path.resolve(__dirname, "../../common/"),
+    },
   },
 };
