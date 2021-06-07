@@ -1,5 +1,7 @@
 const { merge } = require("webpack-merge");
 const common = require("./webpack.common");
+const path = require("path");
+const webpack = require("webpack");
 
 require("dotenv").config({
   path: path.resolve(__dirname, "../.env.production"),
