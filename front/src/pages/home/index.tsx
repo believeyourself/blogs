@@ -6,9 +6,10 @@
  * @LastEditors: lizejun
  * @LastEditTime: 2021-05-27 13:14:11
  */
-import React from "react";
+import React, { useState } from "react";
 import styles from "./index.less";
 import records from "../../../data/data";
+import Card from "../../components/card";
 
 const scrollToAnchor = (anchorName: string) => {
   if (anchorName) {
@@ -22,20 +23,36 @@ const scrollToAnchor = (anchorName: string) => {
 };
 
 export default function (props: any) {
+  const [active, setActive] = useState(0);
   let navs: any[] = [];
   let resources: any[] = [];
   records.forEach((item, index) => {
     navs.push(
       <li key={item.id} className={styles.nav_item}>
         <a
-          className={index == 0 && styles.active}
-          onClick={() => scrollToAnchor(item.id)}
+          className={index == active ? styles.active : ""}
+          onClick={() => {
+            setActive(index);
+            scrollToAnchor(item.id);
+          }}
         >
           {item.category}
         </a>
       </li>
     );
-    resources.push([]);
+    let categoryList = item.sites.map((site: any) => {
+      return (
+        <Card className={styles.category_list_item} key={site.url} {...site} />
+      );
+    });
+    resources.push(
+      <React.Fragment key={item.id}>
+        <p className={styles.category_title} id={item.id}>
+          {item.category}
+        </p>
+        <section className={styles.category_list}>{categoryList}</section>
+      </React.Fragment>
+    );
   });
   return (
     <React.Fragment>
