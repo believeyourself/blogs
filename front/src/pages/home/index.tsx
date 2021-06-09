@@ -10,9 +10,11 @@ import React, { useState } from "react";
 import styles from "./index.less";
 import records from "../../../data/data";
 import Card from "../../components/card";
+import { trackEvent } from "../../common/baidu";
 
 const scrollToAnchor = (anchorName: string) => {
   if (anchorName) {
+    trackEvent(["_trackEvent", "nav", "click", anchorName, ""]);
     // 找到锚点
     let anchorElement = document.getElementById(anchorName);
     // 如果对应id的锚点存在，就跳转到锚点

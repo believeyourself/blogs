@@ -266,7 +266,7 @@ export default [
       {
         title: "Animista",
         description: "css animation on demand",
-        url: "https://github.com/greensock/GSAP",
+        url: "https://animista.net/",
       },
       {
         title: "vivify",
