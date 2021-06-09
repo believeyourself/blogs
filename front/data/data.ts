@@ -4,7 +4,7 @@
  * @Author: lizejun
  * @Date: 2021-05-26 13:33:28
  * @LastEditors: lizejun
- * @LastEditTime: 2021-05-27 10:17:00
+ * @LastEditTime: 2021-06-09 10:39:23
  */
 export default [
   {
@@ -72,6 +72,28 @@ export default [
         title: "草料二维码生成器",
         description: "提供在线二维码生成，美化，印制，管理，统计等服务",
         url: "https://cli.im/",
+      },
+      {
+        title: "图片压缩",
+        description: "在线图片压缩工具",
+        url: "https://tinypng.com/",
+      },
+    ],
+  },
+  {
+    id: "interview",
+    category: "笔试面试",
+    sites: [
+      {
+        title: "前端面试每日三问",
+        description:
+          "前端面试每日 3+1，以面试题来驱动学习，提倡每日学习与思考，每天进步一点！",
+        url: "https://github.com/haizlin/fe-interview",
+      },
+      {
+        title: "前端面试真题",
+        description: "前端面试真题，会80%直接进大厂副本",
+        url: "https://vjyd1gg9jl.feishu.cn/base/app4Dlc49N1Z9e4LrAoZ36lPMNi?table=tblWLqkBQVBu7BvN&view=vew9iquA45",
       },
     ],
   },
@@ -241,6 +263,16 @@ export default [
         description: "超高性能、专业级的现代网络动画",
         url: "https://github.com/greensock/GSAP",
       },
+      {
+        title: "Animista",
+        description: "css animation on demand",
+        url: "https://github.com/greensock/GSAP",
+      },
+      {
+        title: "vivify",
+        description: "Vivify is free CSS animation library.",
+        url: "http://vivify.mkcreative.cz/",
+      },
     ],
   },
   {
@@ -303,18 +335,6 @@ export default [
         description:
           "腾讯新闻前端团队-TNFE每周为你提供高质量的关于小程序、h5等前端领域的文章和项目",
         url: "https://github.com/tnfe/TNT-Weekly",
-      },
-    ],
-  },
-  {
-    id: "interview",
-    category: "笔试面试",
-    sites: [
-      {
-        title: "前端面试每日三问",
-        description:
-          "前端面试每日 3+1，以面试题来驱动学习，提倡每日学习与思考，每天进步一点！",
-        url: "https://github.com/haizlin/fe-interview",
       },
     ],
   },

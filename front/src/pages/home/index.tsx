@@ -61,6 +61,9 @@ export default function (props: any) {
         <div className={styles.slogan}></div>
         <p className={styles.tip}>♡ 喜欢可以按 Ctrl+D 收藏哦!</p>
       </header>
+      <div className={styles.notice}>
+        如遇链接打不开，可能需要科学上网工具！
+      </div>
       <section className={styles.container}>
         <div className={styles.nav}>
           <ul>{navs}</ul>
