@@ -16,7 +16,7 @@ module.exports = merge(common, {
       template: path.resolve(__dirname, "../index.dev.html"),
     }),
     new webpack.DefinePlugin({
-      "process.env.Node_ENV": JSON.stringify("development"),
+      __MODE__: JSON.stringify("development"),
     }),
   ],
   devServer: {
