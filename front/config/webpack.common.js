@@ -1,5 +1,6 @@
 const path = require("path");
 const WebpackCleanPlugin = require("webpack-clean-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.tsx",
@@ -7,7 +8,16 @@ module.exports = {
     filename: "[contenthash].bundle.js",
     path: path.resolve(__dirname, "../dist"),
   },
-  plugins: [new WebpackCleanPlugin({ verbose: true })],
+  plugins: [
+    new WebpackCleanPlugin({ verbose: true }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: "src/assets",
+        }
+      ]
+    })
+  ],
   module: {
     rules: [
       {

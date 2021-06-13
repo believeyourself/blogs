@@ -2,7 +2,7 @@ import React from "react";
 import style from "./index.less";
 export default function Card(props: CardTypes) {
   return (
-    <div className={`${style.card} ${props.className}`}>
+    <div className={`${style.card} ${props.className}`} onClick={props.onClick}>
       <a className={style.title} target="_blank" href={props.url}>
         {props.title}
       </a>
@@ -12,7 +12,8 @@ export default function Card(props: CardTypes) {
 }
 export interface CardTypes {
   title: string;
-  description: string;
-  url: string;
+  description?: string;
+  url?: string;
   className?: string;
+  onClick?: any;
 }
