@@ -49,15 +49,25 @@ export default function (props: any) {
           <a className={styles.category_list_item} key={pdf.name} download href={`${window.origin}/${pdf.path}`} ><Card title={pdf.name} /></a>
         );
       });
+
+      resources.push(
+        <React.Fragment key={item.id}>
+          <p className={styles.category_title} id={item.id}>
+            {item.category}
+            <span className={styles.download_url}>下载缓慢？ 网盘下载：<a target="_blank" href="https://pan.baidu.com/s/1xvVf3FlyN0gPMxlZJvqnlw">https://pan.baidu.com/s/1xvVf3FlyN0gPMxlZJvqnlw</a> 提取码：belf</span>
+          </p>
+          <section className={styles.category_list}>{categoryList}</section>
+        </React.Fragment>
+      );
+    } else {
+      resources.push(
+        <React.Fragment key={item.id}>
+          <p className={styles.category_title} id={item.id}>
+            {item.category}
+          </p>
+          <section className={styles.category_list}>{categoryList}</section>
+        </React.Fragment>);
     }
-    resources.push(
-      <React.Fragment key={item.id}>
-        <p className={styles.category_title} id={item.id}>
-          {item.category}
-        </p>
-        <section className={styles.category_list}>{categoryList}</section>
-      </React.Fragment>
-    );
   });
   return (
     <section className={styles.container}>
