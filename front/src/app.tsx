@@ -4,6 +4,7 @@ import Resources from "./pages/resources";
 import { HashRouter as Router, Route, Switch, NavLink } from "react-router-dom";
 import styles from "./app.less";
 import "./common/baidu";
+import noticeIcon from "./assets/images/notice.svg";
 
 class App extends React.Component {
   render() {
@@ -18,12 +19,14 @@ class App extends React.Component {
           <Router>
             <NavLink isActive={(match, { pathname }) => { if (pathname === "/" || pathname === "/sites") return true; return false }} activeClassName={styles.active} to="/" className={styles.item}>网址导航</NavLink>
             {/* <NavLink activeClassName={styles.active} to="/solutions" className={styles.item}>解决方案</NavLink> */}
-            <NavLink activeClassName={styles.active} to="/resources" className={styles.item}>前端资源</NavLink>
+            <NavLink activeClassName={styles.active} to="/resources" className={styles.item}>学习资源</NavLink>
+            {/* <NavLink activeClassName={styles.active} to="/resources" className={styles.item}>实用库</NavLink> */}
             {/* <NavLink activeClassName={styles.active} to="/aboutUs" className={styles.item}>关于我们</NavLink> */}
           </Router>
         </nav>
         <div className={styles.notice}>
-          如遇链接打不开，可能需要科学上网工具！
+          <img width={20} src={noticeIcon} />
+          内容持续更新中！！！如遇链接打不开，可能需要科学上网工具！
         </div>
 
         <Router>

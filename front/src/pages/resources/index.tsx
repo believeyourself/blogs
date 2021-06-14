@@ -46,11 +46,14 @@ export default function (props: any) {
         </a>
       </li>
     );
-    let categoryList = item.list.map((ebook: any) => {
-      return (
-        <Card className={styles.category_list_item} key={ebook.name} title={ebook.name} onClick={() => download(ebook.path)} />
-      );
-    });
+    let categoryList: any[] = [];
+    if (item.category === "PDF") {
+      categoryList = item.list.map((pdf: any) => {
+        return (
+          <Card className={styles.category_list_item} key={pdf.name} title={pdf.name} onClick={() => download(pdf.path)} />
+        );
+      });
+    }
     resources.push(
       <React.Fragment key={item.id}>
         <p className={styles.category_title} id={item.id}>
