@@ -24,10 +24,6 @@ const scrollToAnchor = (anchorName: string) => {
   }
 };
 
-const download = (path: string) => {
-  window.open(`${window.origin}/${path}`, "_blank");
-}
-
 export default function (props: any) {
   const [active, setActive] = useState(0);
   let navs: any[] = [];
@@ -50,7 +46,7 @@ export default function (props: any) {
     if (item.category === "PDF") {
       categoryList = item.list.map((pdf: any) => {
         return (
-          <Card className={styles.category_list_item} key={pdf.name} title={pdf.name} onClick={() => download(pdf.path)} />
+          <a className={styles.category_list_item} key={pdf.name} download href={`${window.origin}/${pdf.path}`} ><Card title={pdf.name} /></a>
         );
       });
     }
