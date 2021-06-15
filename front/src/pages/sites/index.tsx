@@ -9,8 +9,8 @@
 import React, { useState } from "react";
 import styles from "./index.less";
 import records from "../../../data/sites";
-import Card from "../../components/card";
-import { trackEvent } from "../../common/baidu";
+import Card from "@/components/card";
+import { trackEvent } from "@/common/baidu";
 
 const scrollToAnchor = (anchorName: string) => {
   if (anchorName) {

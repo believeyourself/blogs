@@ -1,26 +1,50 @@
+/*
+ * @Description:
+ * @version:
+ * @Author: lizejun
+ * @Date: 2021-06-15 10:38:48
+ * @LastEditors: lizejun
+ * @LastEditTime: 2021-06-15 10:54:56
+ */
 import React from "react";
 import Sites from "./pages/sites";
 import Resources from "./pages/resources";
 import { HashRouter as Router, Route, Switch, NavLink } from "react-router-dom";
 import styles from "./app.less";
-import "./common/baidu";
-import noticeIcon from "./assets/images/notice.svg";
-import logo from "./assets/images/logo.png";
+import "@/common/baidu";
+import noticeIcon from "@/assets/images/notice.svg";
+import logo from "@/assets/images/logo.png";
 
 class App extends React.Component {
   render() {
     return (
       <div>
         <header className={styles.header}>
-          <img className={styles.title}  src={logo}/>
+          <img className={styles.title} src={logo} />
           <div className={styles.slogan}></div>
           <p className={styles.tip}>♡ 喜欢可以按 Ctrl+D 收藏哦!</p>
         </header>
         <nav className={styles.nav}>
           <Router>
-            <NavLink isActive={(match, { pathname }) => { if (pathname === "/" || pathname === "/sites") return true; return false }} activeClassName={styles.active} to="/" className={styles.item}>网址导航</NavLink>
+            <NavLink
+              isActive={(match, { pathname }) => {
+                if (pathname === "/" || pathname === "/sites") return true;
+                return false;
+              }}
+              activeClassName={styles.active}
+              to="/"
+              className={styles.item}
+            >
+              网址导航
+            </NavLink>
             {/* <NavLink activeClassName={styles.active} to="/solutions" className={styles.item}>优质好文</NavLink> */}
-            <NavLink activeClassName={styles.active} to="/resources" className={styles.item}>学习资源</NavLink>
+            <NavLink
+              activeClassName={styles.active}
+              to="/resources"
+              className={styles.item}
+            >
+              学习资源
+            </NavLink>
             {/* <NavLink activeClassName={styles.active} to="/resources" className={styles.item}>实用库</NavLink> */}
             {/* <NavLink activeClassName={styles.active} to="/aboutUs" className={styles.item}>关于我们</NavLink> */}
           </Router>
@@ -39,7 +63,6 @@ class App extends React.Component {
             <Route path="/solutions" component={Sites}></Route>
           </Switch>
         </Router>
-
       </div>
     );
   }
