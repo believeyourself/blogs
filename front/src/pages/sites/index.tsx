@@ -14,7 +14,9 @@ import { trackEvent } from "@/common/baidu";
 
 const scrollToAnchor = (anchorName: string) => {
   if (anchorName) {
-    trackEvent(["_trackEvent", "nav", "click", anchorName, ""]);
+    // trackEvent(["_trackEvent", "nav", "click", anchorName, ""]);
+    _hmt.push(["_trackEvent", "nav", "click", anchorName, ""])
+    debugger;
     // 找到锚点
     let anchorElement = document.getElementById(anchorName);
     // 如果对应id的锚点存在，就跳转到锚点
@@ -33,7 +35,7 @@ export default function (props: any) {
       <li key={item.id} className={styles.nav_item}>
         <a
           className={index == active ? styles.active : ""}
-          onClick={() => { 
+          onClick={() => {
             setActive(index);
             scrollToAnchor(item.id);
           }}
@@ -57,11 +59,11 @@ export default function (props: any) {
     );
   });
   return (
-      <section className={styles.container}>
-        <div className={styles.nav}>
-          <ul>{navs}</ul>
-        </div>
-        <div className={styles.content}>{resources}</div>
-      </section>
+    <section className={styles.container}>
+      <div className={styles.nav}>
+        <ul>{navs}</ul>
+      </div>
+      <div className={styles.content}>{resources}</div>
+    </section>
   );
 }

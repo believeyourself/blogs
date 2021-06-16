@@ -7,5 +7,6 @@ declare module "*.png";
 declare module "*.jpg";
 declare module "*.jpeg";
 declare module "*.gif";
+declare var _hmt: any;
 declare var __MODE__: string;
 declare var ENV: string;
