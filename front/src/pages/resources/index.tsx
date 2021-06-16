@@ -76,6 +76,11 @@ export default function (props: any) {
         </React.Fragment>
       );
     } else {
+      let categoryList = item.list.map((item: any) => {
+        return (
+          <Card className={styles.category_list_item} key={item.url} {...item} />
+        );
+      });
       resources.push(
         <React.Fragment key={item.id}>
           <p className={styles.category_title} id={item.id}>
