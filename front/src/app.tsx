@@ -7,8 +7,9 @@
  * @LastEditTime: 2021-06-15 10:54:56
  */
 import React from "react";
-import Sites from "./pages/sites";
-import Resources from "./pages/resources";
+import Sites from "@/pages/sites";
+import Resources from "@/pages/resources";
+import AboutUs from "@/pages/aboutUs";
 import { HashRouter as Router, Route, Switch, NavLink } from "react-router-dom";
 import styles from "./app.less";
 import "@/common/baidu";
@@ -46,7 +47,7 @@ class App extends React.Component {
               学习资源
             </NavLink>
             {/* <NavLink activeClassName={styles.active} to="/resources" className={styles.item}>实用库</NavLink> */}
-            {/* <NavLink activeClassName={styles.active} to="/aboutUs" className={styles.item}>关于我们</NavLink> */}
+            <NavLink activeClassName={styles.active} to="/aboutUs" className={styles.item}>关于我们</NavLink>
           </Router>
         </nav>
         <div className={styles.notice}>
@@ -59,7 +60,7 @@ class App extends React.Component {
             <Route exact path="/" component={Sites}></Route>
             <Route path="/sites" component={Sites}></Route>
             <Route path="/resources" component={Resources}></Route>
-            <Route path="/aboutUs" component={Sites}></Route>
+            <Route path="/aboutUs" component={AboutUs}></Route>
             <Route path="/solutions" component={Sites}></Route>
           </Switch>
         </Router>
