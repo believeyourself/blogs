@@ -10,6 +10,7 @@ import React from "react";
 import Sites from "@/pages/sites";
 import Resources from "@/pages/resources";
 import AboutUs from "@/pages/aboutUs";
+import Effects from "@/pages/Effects";
 import { HashRouter as Router, Route, Switch, NavLink } from "react-router-dom";
 import styles from "./app.less";
 import "@/common/baidu";
@@ -38,7 +39,6 @@ class App extends React.Component {
             >
               网址导航
             </NavLink>
-            {/* <NavLink activeClassName={styles.active} to="/solutions" className={styles.item}>优质好文</NavLink> */}
             <NavLink
               activeClassName={styles.active}
               to="/resources"
@@ -46,7 +46,8 @@ class App extends React.Component {
             >
               学习资源
             </NavLink>
-            {/* <NavLink activeClassName={styles.active} to="/resources" className={styles.item}>实用库</NavLink> */}
+            {/* <NavLink activeClassName={styles.active} to="/library" className={styles.item}>实用库</NavLink> */}
+            <NavLink activeClassName={styles.active} to="/effects" className={styles.item}>css效果</NavLink>
             <NavLink activeClassName={styles.active} to="/aboutUs" className={styles.item}>关于我们</NavLink>
           </Router>
         </nav>
@@ -60,8 +61,8 @@ class App extends React.Component {
             <Route exact path="/" component={Sites}></Route>
             <Route path="/sites" component={Sites}></Route>
             <Route path="/resources" component={Resources}></Route>
+            <Route path="/effects" component={Effects}></Route>
             <Route path="/aboutUs" component={AboutUs}></Route>
-            <Route path="/solutions" component={Sites}></Route>
           </Switch>
         </Router>
       </div>

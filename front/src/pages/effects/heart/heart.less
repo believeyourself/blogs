@@ -1,0 +1,30 @@
+.main {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transform: rotate(45deg);
+
+    &::before {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        background-color: red;
+        content: "";
+        position: absolute;
+        top: -50px;
+        left: 0;
+    }
+
+    &::after {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        background-color: red;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -50px;
+    }
+}
