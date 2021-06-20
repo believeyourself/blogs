@@ -23,7 +23,7 @@ export default class AboutUs extends React.Component {
                     <h3 className={styles.title}>关于每个栏目的内容说明：</h3>
                     <p>网址导航：分享实用的学习网站，工具。</p>
                     <p>学习资源：前端电子书，优质博客收集分享。</p>
-                    <p>css效果：css实用技巧分享，通过简单的小例子帮助大家理解css的妙用。</p>
+                    {/* <p>css效果：css实用技巧分享，通过简单的小例子帮助大家理解css的妙用。</p> */}
                 </div>
             </div>
         </div>

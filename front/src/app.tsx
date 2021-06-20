@@ -47,7 +47,7 @@ class App extends React.Component {
               学习资源
             </NavLink>
             {/* <NavLink activeClassName={styles.active} to="/library" className={styles.item}>实用库</NavLink> */}
-            <NavLink activeClassName={styles.active} to="/effects" className={styles.item}>css效果</NavLink>
+            {/* <NavLink activeClassName={styles.active} to="/effects" className={styles.item}>css效果</NavLink> */}
             <NavLink activeClassName={styles.active} to="/aboutUs" className={styles.item}>关于我们</NavLink>
           </Router>
         </nav>
@@ -61,7 +61,7 @@ class App extends React.Component {
             <Route exact path="/" component={Sites}></Route>
             <Route path="/sites" component={Sites}></Route>
             <Route path="/resources" component={Resources}></Route>
-            <Route path="/effects" component={Effects}></Route>
+            {/* <Route path="/effects" component={Effects}></Route> */}
             <Route path="/aboutUs" component={AboutUs}></Route>
           </Switch>
         </Router>
