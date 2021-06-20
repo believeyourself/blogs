@@ -6,14 +6,39 @@
         background-color: #fff;
         padding: 20px;
         display: flex;
+        flex-direction: column;
 
-        img{
-            width: 328px;
-            height:187.2px;
+        .secition {
+            padding: 20px;
+            color: #58666e;
+            display: flex;
+            border-bottom: 1px dotted #ddd;
+
+            p {
+                margin-bottom: 10px;
+            }
         }
 
-        .description{
-            margin-left: 20px;
+        .site_des {
+            .secition();
+
+            p {
+                margin-left: 10px;
+            }
+
+            img {
+                width: 328px;
+                height: 187.2px;
+            }
+        }
+
+        .menu_des {
+            .secition();
+            flex-direction: column;
+
+            .title {
+                margin-bottom: 10px;
+            }
         }
     }
 }
