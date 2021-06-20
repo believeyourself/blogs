@@ -15,10 +15,10 @@ import { trackEvent } from "@/common/baidu";
 export default function (props: any) {
   let records = blogs.map((item: any) => {
     return (
-      <div key={item.url} className={styles.category_list_item}>
+      <a href={item.url} target="_blank" key={item.url} className={styles.category_list_item}>
         <h4 className={styles.title}>{item.title}</h4>
         <p className={styles.description}>{item.description}</p>
-      </div>
+      </a>
     );
   });
   return (
