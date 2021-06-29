@@ -47,12 +47,12 @@ export default function (props: any) {
       categoryList = item.list.map((pdf: any) => {
         return (
           <a
-            className={styles.category_list_item}
-            key={pdf.name}
+            className={styles.pdf}
+            key={pdf.title}
             download
             href={`${window.origin}/${pdf.path}`}
           >
-            <Card title={pdf.name} />
+            {pdf.title}
           </a>
         );
       });
@@ -78,7 +78,7 @@ export default function (props: any) {
     } else {
       let categoryList = item.list.map((item: any) => {
         return (
-          <Card className={styles.category_list_item} key={item.url} {...item} />
+          <Card className={styles.category_list_item} key={item.title} {...item} />
         );
       });
       resources.push(

@@ -1,5 +1,10 @@
 export default [
     {
+        title: "js算法和数据结构",
+        description: "包含了多种基于 JavaScript 的算法与数据结构",
+        url: "https://github.com/believeyourself/javascript-algorithms/blob/master/README.zh-CN.md"
+    },
+    {
         title: "深入setState机制",
         description: "详细分析setState更新机制",
         url: "https://github.com/sisterAn/blog/issues/26"

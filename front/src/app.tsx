@@ -45,17 +45,18 @@ class App extends React.Component {
               to="/resources"
               className={styles.item}
             >
-              资源下载
+              教程资源
             </NavLink>
             <NavLink
               activeClassName={styles.active}
               to="/blogs"
               className={styles.item}
             >
-              博客
+              优质好文
             </NavLink>
             {/* <NavLink activeClassName={styles.active} to="/library" className={styles.item}>实用库</NavLink> */}
             {/* <NavLink activeClassName={styles.active} to="/effects" className={styles.item}>css效果</NavLink> */}
+            {/* <NavLink activeClassName={styles.active} to="/interview" className={styles.item}>面试指南</NavLink> */}
             <NavLink activeClassName={styles.active} to="/aboutUs" className={styles.item}>关于我们</NavLink>
           </Router>
         </nav>

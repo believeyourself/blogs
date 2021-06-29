@@ -18,8 +18,13 @@ export default class AboutUs extends React.Component {
                 <div className={styles.des}>
                     <h3 className={styles.title}>关于每个栏目的内容说明：</h3>
                     <p>网址导航：分享实用的学习网站，工具。</p>
-                    <p>学习资源：前端电子书，优质博客收集分享。</p>
+                    <p>教程资源：电子书，教学视频以及项目源码收集分享。</p>
+                    <p>优质好文：优秀博客收集分享。</p>
                     {/* <p>css效果：css实用技巧分享，通过简单的小例子帮助大家理解css的妙用。</p> */}
+                </div>
+                <div className={styles.des}>
+                    <h3 className={styles.title}>联系我们：</h3>
+                    <p>如果您有什么好的建议或好的资源分享，可以联系我们.</p>
                 </div>
             </div>
         </div>

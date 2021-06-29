@@ -14,6 +14,9 @@ module.exports = {
       patterns: [
         {
           from: "src/assets",
+        },
+        {
+          from: "favicon.ico",
         }
       ]
     })
