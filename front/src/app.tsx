@@ -19,7 +19,7 @@ import noticeIcon from "@/assets/images/notice.svg";
 import logo from "@/assets/images/logo.png";
 
 class App extends React.Component {
-  render() {
+  render () {
     return (
       <div>
         <header className={styles.header}>
