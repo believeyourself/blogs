@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./index.less"
+import styles from "./index.less";
 import tilteImg from "@/assets/images/aboutUs.jpg";
 
 export default class AboutUs extends React.Component {
-    render() {
-        return <div className={styles.container}>
+  render () {
+    return <div className={styles.container}>
             <div className={styles.content}>
                 <div className={styles.des}>
                     <div className={styles.site}>
@@ -27,6 +27,6 @@ export default class AboutUs extends React.Component {
                     <p>如果您有什么好的建议或好的资源分享，可以联系我们.</p>
                 </div>
             </div>
-        </div>
-    }
+        </div>;
+  }
 }

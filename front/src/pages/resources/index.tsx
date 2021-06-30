@@ -16,7 +16,7 @@ const scrollToAnchor = (anchorName: string) => {
   if (anchorName) {
     trackEvent(["_trackEvent", "nav", "click", anchorName, ""]);
     // 找到锚点
-    let anchorElement = document.getElementById(anchorName);
+    const anchorElement = document.getElementById(anchorName);
     // 如果对应id的锚点存在，就跳转到锚点
     if (anchorElement) {
       anchorElement.scrollIntoView({ block: "start", behavior: "smooth" });
@@ -24,15 +24,15 @@ const scrollToAnchor = (anchorName: string) => {
   }
 };
 
-export default function (props: any) {
+export default function Resources () {
   const [active, setActive] = useState(0);
-  let navs: any[] = [];
-  let resources: any[] = [];
+  const navs: any[] = [];
+  const resources: any[] = [];
   records.forEach((item, index) => {
     navs.push(
       <li key={item.id} className={styles.nav_item}>
         <a
-          className={index == active ? styles.active : ""}
+          className={index === active ? styles.active : ""}
           onClick={() => {
             setActive(index);
             scrollToAnchor(item.id);
@@ -43,8 +43,9 @@ export default function (props: any) {
       </li>
     );
     let categoryList: any[] = [];
+    const list:any[] = item.list || [];
     if (item.category === "PDF") {
-      categoryList = item.list.map((pdf: any) => {
+      categoryList = list.map((pdf: any) => {
         return (
           <a
             className={styles.pdf}
@@ -65,7 +66,7 @@ export default function (props: any) {
               下载缓慢？ 网盘下载：
               <a
                 target="_blank"
-                href="https://pan.baidu.com/s/1xvVf3FlyN0gPMxlZJvqnlw"
+                href="https://pan.baidu.com/s/1xvVf3FlyN0gPMxlZJvqnlw" rel="noreferrer"
               >
                 https://pan.baidu.com/s/1xvVf3FlyN0gPMxlZJvqnlw
               </a>{" "}
@@ -76,7 +77,7 @@ export default function (props: any) {
         </React.Fragment>
       );
     } else {
-      let categoryList = item.list.map((item: any) => {
+      const categoryList = list.map((item: any) => {
         return (
           <Card className={styles.category_list_item} key={item.title} {...item} />
         );

@@ -13,9 +13,9 @@ module.exports = {
   },
   plugins: ["react", "@typescript-eslint"],
   rules: {
-    semi: "off",
-    "@typescript-eslint/semi": "error",
+    semi: ["error", "always"],
     quotes: ["error", "double"],
-    "@typescript-eslint/no-use-before-define": "error"
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"]
   }
 };

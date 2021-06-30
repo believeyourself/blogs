@@ -1,8 +1,9 @@
+/* eslint-disable no-undef */
 if (__MODE__ === "production") {
   (function () {
-    var hm = document.createElement("script");
+    const hm = document.createElement("script");
     hm.src = "https://hm.baidu.com/hm.js?92956cfdc7c215ba71af5f2a82f81150";
-    var s = document.getElementsByTagName("script")[0];
+    const s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(hm, s);
   })();
 }
