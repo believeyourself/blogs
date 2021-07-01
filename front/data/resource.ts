@@ -17,12 +17,27 @@ export default [
   },
   {
     id: "originCode",
-    category: "源码",
+    category: "开源项目",
     list: [
       {
         title: "成都房协网数据分析",
         description: "前端React+后端Koa实现的成都房协网数据分析网站。",
         url: "https://github.com/believeyourself/cdfang-spider"
+      },
+      {
+        title: "全网影视采集解析播放的开源项目",
+        description: "技术栈是 koa + swig模板引擎 + jQuery",
+        url: "https://github.com/believeyourself/koa-video"
+      },
+      {
+        title: "婚礼大屏互动，微信请柬一站式解决方案",
+        description: "项目分为微信端和大屏端。微信端可以作为电子请柬提前分享给大家，部署的服务器域名最好有备案，不然容易被屏蔽。大屏端是放在婚礼现场的大屏幕上，现场的宾客可以刷弹幕上墙，并且有照片播放页，迎宾页，抽奖页面。另外微信端也作为现场互动的入口，扫码签到可参与抽奖，发弹幕送祝福上大屏幕。",
+        url: "https://github.com/believeyourself/wedding"
+      },
+      {
+        title: "铜钟聚合音乐",
+        description: "一个网站，三家平台的音乐",
+        url: "https://github.com/believeyourself/tongzhong-music"
       }
     ]
   },
