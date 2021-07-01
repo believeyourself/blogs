@@ -5,7 +5,7 @@ const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 require("dotenv").config({
-  path: path.resolve(__dirname, "../.env.production"),
+  path: path.resolve(__dirname, "../.env.production")
 });
 
 module.exports = merge(common, {
@@ -13,10 +13,10 @@ module.exports = merge(common, {
   devtool: "source-map",
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "../index.html"),
+      template: path.resolve(__dirname, "../index.html")
     }),
     new webpack.DefinePlugin({
-      __MODE__: JSON.stringify("production"),
-    }),
-  ],
+      __MODE__: JSON.stringify("production")
+    })
+  ]
 });

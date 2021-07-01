@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 declare module "*.css";
 declare module "*.less";
 declare module "*.scss";
@@ -7,6 +8,6 @@ declare module "*.png";
 declare module "*.jpg";
 declare module "*.jpeg";
 declare module "*.gif";
-declare var _hmt: any;
-declare var __MODE__: string;
-declare var ENV: string;
+declare let _hmt: any;
+declare let __MODE__: string;
+declare let ENV: string;
