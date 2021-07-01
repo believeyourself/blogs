@@ -11,6 +11,7 @@ import Sites from "@/pages/sites";
 import Resources from "@/pages/resources";
 import AboutUs from "@/pages/aboutUs";
 import Blogs from "@/pages/blogs";
+import HotRank from "@/components/hotRank";
 // import Effects from "@/pages/Effects";
 import { HashRouter as Router, Route, Switch, NavLink } from "react-router-dom";
 import styles from "./app.less";
@@ -64,17 +65,19 @@ class App extends React.Component {
           <img width={20} src={noticeIcon} />
           内容持续更新中！！！如遇链接打不开，可能需要科学上网工具！
         </div>
-
-        <Router>
-          <Switch>
-            <Route exact path="/" component={Sites}></Route>
-            <Route path="/sites" component={Sites}></Route>
-            <Route path="/resources" component={Resources}></Route>
-            <Route path="/blogs" component={Blogs}></Route>
-            {/* <Route path="/effects" component={Effects}></Route> */}
-            <Route path="/aboutUs" component={AboutUs}></Route>
-          </Switch>
-        </Router>
+        <div className={styles.content}>
+          <Router>
+            <Switch>
+              <Route exact path="/" component={Sites}></Route>
+              <Route path="/sites" component={Sites}></Route>
+              <Route path="/resources" component={Resources}></Route>
+              <Route path="/blogs" component={Blogs}></Route>
+              {/* <Route path="/effects" component={Effects}></Route> */}
+              <Route path="/aboutUs" component={AboutUs}></Route>
+            </Switch>
+          </Router>
+          <HotRank />
+        </div>
       </div>
     );
   }

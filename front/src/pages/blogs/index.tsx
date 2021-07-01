@@ -20,8 +20,6 @@ export default function Blogs () {
     );
   });
   return (
-    <section className={styles.container}>
-      <div className={styles.content}>{records}</div>
-    </section>
+    <div className={styles.content}>{records}</div>
   );
 }
