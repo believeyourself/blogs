@@ -1,5 +1,25 @@
 export default [
   {
+    title: "屏幕尺寸、像素、分辨率和 devicePixelRatio",
+    description: "屏幕尺寸、像素、分辨率和 devicePixelRatio概念介绍",
+    url: "https://segmentfault.com/a/1190000040282079"
+  },
+  {
+    title: "React 并发功能体验-前端的并发模式已经到来",
+    description: "简要说明， Concurrent Mode 和Suspense 可以使用户无缝处理数据加载，加载状态，用户界面操作更加平滑和无缝切换。 在Concurrent Mode 下，React可以暂停高消耗的，非紧急的组件的渲染，并聚焦在更加紧迫的任务处理，如UI 渲染，始终保持应用为可响应式，避免白屏，卡顿等现象。",
+    url: "https://segmentfault.com/a/1190000040272535"
+  },
+  {
+    title: "CSS 奇思妙想 | 全兼容的毛玻璃效果",
+    description: "最基本的使用 CSS backdrop-filter 实现磨砂玻璃(毛玻璃)的效果,在至今不兼容 backdrop-filter 的 firefox 浏览器，如何利用一些技巧性的操作，巧妙的同样实现毛玻璃效果，让这个效果真正能运用在业务当中",
+    url: "https://juejin.cn/post/6979391400844460068"
+  },
+  {
+    title: "文件上传，搞懂这8种场景就够了",
+    description: "总结一下 8 种文件上传场景场景",
+    url: "https://juejin.cn/post/6980142557066067982"
+  },
+  {
     title: "js算法和数据结构",
     description: "包含了多种基于 JavaScript 的算法与数据结构",
     url: "https://github.com/believeyourself/javascript-algorithms/blob/master/README.zh-CN.md"
