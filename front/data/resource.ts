@@ -20,6 +20,41 @@ export default [
     category: "开源项目",
     list: [
       {
+        title: "纯浏览器图片压缩工具",
+        description: "react实现的浏览器端图片压缩工具",
+        url: "https://github.com/zerosoul/image-compress-without-backend"
+      },
+      {
+        title: "中国古典颜色在线手册",
+        description: "使用 React 构建，支持 PWA",
+        url: "https://github.com/zerosoul/chinese-colors"
+      },
+      {
+        title: "React实现甜(Tu)言(Wei)蜜(Qing)语(Hua)生成器",
+        description: "土味情话，在线生成。",
+        url: "https://github.com/zerosoul/honeyed-words-generator"
+      },
+      {
+        title: "React弹幕",
+        description: "基于 CSS3 Animation，使用 React 构建，可扩展，高性能。",
+        url: "https://github.com/zerosoul/rc-bullets"
+      },
+      {
+        title: "局域网聊天室",
+        description: "koa + vue开发的局域网聊天室，支持群聊、文件传输、粘贴截图、文件列表、聊天记录（本地存储文本文件模拟数据库）等模块",
+        url: "https://github.com/shb190802/chat"
+      },
+      {
+        title: "node-jenkins",
+        description: "使用nodejs模拟的jenkins打包vue项目功能",
+        url: "https://github.com/shb190802/node-jenkins"
+      },
+      {
+        title: "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用",
+        description: "【已完成】这里是《从零到部署：用 Vue 和 Express 实现迷你全栈电商应用》系列教程的源代码仓库。",
+        url: "https://github.com/believeyourself/vue-online-shop-frontend"
+      },
+      {
         title: "成都房协网数据分析",
         description: "前端React+后端Koa实现的成都房协网数据分析网站。",
         url: "https://github.com/believeyourself/cdfang-spider"
