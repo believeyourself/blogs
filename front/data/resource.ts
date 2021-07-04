@@ -20,6 +20,11 @@ export default [
     category: "开源项目",
     list: [
       {
+        title: "后台数据管理系统",
+        description: "无他，又一套 CRUD（增删改查）后台数据管理系统，只不过用到的技术栈比较新（目前我所理解的最佳实践），具有一定的参考意义。",
+        url: "https://github.com/zerosoul/static-site-data-management"
+      },
+      {
         title: "纯浏览器图片压缩工具",
         description: "react实现的浏览器端图片压缩工具",
         url: "https://github.com/zerosoul/image-compress-without-backend"
