@@ -3,5 +3,6 @@
         "lizejun",
         "navs"
     ],
-    "compile-hero.disable-compile-files-on-did-save-code": true
+    "compile-hero.disable-compile-files-on-did-save-code": true,
+    "eslint.run": "onSave"
 }
