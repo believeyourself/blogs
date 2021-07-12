@@ -13,7 +13,7 @@ import AboutUs from "@/pages/aboutUs";
 import Blogs from "@/pages/blogs";
 import HotRank from "@/components/hotRank";
 // import Effects from "@/pages/Effects";
-import { BrowserRouter as Router, Route, Switch, NavLink } from "react-router-dom";
+import { HashRouter as Router, Route, Switch, NavLink } from "react-router-dom";
 import styles from "./app.less";
 import "@/common/baidu";
 import noticeIcon from "@/assets/images/notice.svg";
