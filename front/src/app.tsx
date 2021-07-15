@@ -80,6 +80,8 @@ class App extends React.Component {
           </Router>
           <HotRank />
         </div>
+        <footer className={styles.footer}>
+        © 2021 <span className={styles.author}>famerlzj</span> 提供技术支持</footer>
       </div>
     );
   }
