@@ -1,3 +1,5 @@
+const RemarkFrontMatter = require("remark-frontmatter");
+const RemarkHTML = require("remark-html");
 const path = require("path");
 const WebpackCleanPlugin = require("webpack-clean-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
@@ -54,11 +56,27 @@ module.exports = {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
         use: ["file-loader"],
         exclude: /node_modules/
+      },
+      {
+        test: /\.md$/,
+        use: [
+          {
+            loader: "html-loader"
+          },
+          {
+            loader: "remark-loader",
+            options: {
+              remarkOptions: {
+                plugins: [RemarkFrontMatter, RemarkHTML]
+              }
+            }
+          }
+        ]
       }
     ]
   },
   resolve: {
-    extensions: [".tsx", ".ts", ".js"],
+    extensions: [".tsx", ".ts", ".js", ".md"],
     alias: {
       "@": path.resolve(__dirname, "../src/"),
       common: path.resolve(__dirname, "../../common/")

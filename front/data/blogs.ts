@@ -1,8 +1,8 @@
 export default [
   {
+    id: 1,
     title: "登录状态之cookies、session、token",
-    description: "登录状态之cookies、session、token",
-    url: "./blogs/登录状态之cookies、session、token.md"
+    description: "登录状态之cookies、session、token"
   },
   {
     title: "屏幕尺寸、像素、分辨率和 devicePixelRatio",

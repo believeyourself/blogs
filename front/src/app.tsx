@@ -11,7 +11,7 @@ import Sites from "@/pages/sites";
 import Resources from "@/pages/resources";
 import AboutUs from "@/pages/aboutUs";
 import Blogs from "@/pages/blogs";
-import BlogDetail from "@/pages/blogs/detail";
+import BlogDetail from "@/pages/blogs/detail/detail";
 import HotRank from "@/components/hotRank";
 // import Effects from "@/pages/Effects";
 import { HashRouter as Router, Route, Switch, NavLink } from "react-router-dom";
@@ -73,7 +73,7 @@ class App extends React.Component {
               <Route path="/sites" component={Sites}></Route>
               <Route path="/resources" component={Resources}></Route>
               <Route exact path="/blogs" component={Blogs}></Route>
-              <Route path="/blogs/detail/:url" component={BlogDetail}></Route>
+              <Route path="/blogs/detail/:id" component={BlogDetail}></Route>
               {/* <Route path="/effects" component={Effects}></Route> */}
               <Route path="/aboutUs" component={AboutUs}></Route>
             </Switch>
