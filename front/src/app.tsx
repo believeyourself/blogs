@@ -23,7 +23,7 @@ import logo from "@/assets/images/logo.png";
 class App extends React.Component {
   render () {
     return (
-      <div>
+      <div className={styles.site}>
         <header className={styles.header}>
           <img className={styles.title} src={logo} />
           <div className={styles.slogan}></div>
