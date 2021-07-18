@@ -77,8 +77,8 @@ class App extends React.Component {
               {/* <Route path="/effects" component={Effects}></Route> */}
               <Route path="/aboutUs" component={AboutUs}></Route>
             </Switch>
+            <HotRank />
           </Router>
-          <HotRank />
         </div>
         <footer className={styles.footer}>
         © 2021 <span className={styles.author}>famerlzj</span> 提供技术支持</footer>
