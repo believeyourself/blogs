@@ -1,5 +1,10 @@
 export default [
   {
+    id: 2,
+    title: "git工作流",
+    description: "Git 提供了丰富的分支策略和工作流方式，我们在深入学习业界 Git 工作流时，每种工作流都设计的非常好，似乎都能运用到团队实践。本文介绍三种广泛使用的工作流程。"
+  },
+  {
     id: 1,
     title: "登录状态之cookies、session、token",
     description: "登录状态之cookies、session、token"

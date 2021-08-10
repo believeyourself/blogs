@@ -13,6 +13,7 @@ import AboutUs from "@/pages/aboutUs";
 import Blogs from "@/pages/blogs";
 import BlogDetail from "@/pages/blogs/detail/detail";
 import HotRank from "@/components/hotRank";
+import ScrollFixed from "@/components/scrollFixed";
 // import Effects from "@/pages/Effects";
 import { HashRouter as Router, Route, Switch, NavLink } from "react-router-dom";
 import styles from "./app.less";
@@ -29,6 +30,7 @@ class App extends React.Component {
           <div className={styles.slogan}></div>
           <p className={styles.tip}>♡ 喜欢可以按 Ctrl+D 收藏哦!</p>
         </header>
+        <ScrollFixed>
         <nav className={styles.nav}>
           <Router>
             <NavLink
@@ -66,6 +68,8 @@ class App extends React.Component {
           <img width={20} src={noticeIcon} />
           内容持续更新中！！！如遇链接打不开，可能需要科学上网工具！
         </div>
+        </ScrollFixed>
+
         <div className={styles.content}>
           <Router>
             <Switch>
