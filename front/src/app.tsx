@@ -20,11 +20,16 @@ import styles from "./app.less";
 import "@/common/baidu";
 import noticeIcon from "@/assets/images/notice.svg";
 import logo from "@/assets/images/logo.png";
+import blogs from "../data/blogs";
+import sites from "../data/sites";
+
+const rankBlogs = blogs.slice(0, 10);
+const rankSite = sites[0].sites;
 
 class App extends React.Component {
   render () {
     return (
-      <div>
+      <div className={styles.site}>
         <header className={styles.header}>
           <img className={styles.title} src={logo} />
           <div className={styles.slogan}></div>
@@ -81,8 +86,11 @@ class App extends React.Component {
               {/* <Route path="/effects" component={Effects}></Route> */}
               <Route path="/aboutUs" component={AboutUs}></Route>
             </Switch>
+            <div>
+              <HotRank title="文章推荐" data={rankBlogs}/>
+              <HotRank title="实用网址" data={rankSite}/>
+            </div>
           </Router>
-          <HotRank />
         </div>
         <footer className={styles.footer}>
         © 2021 <span className={styles.author}>famerlzj</span> 提供技术支持</footer>
