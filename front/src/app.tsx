@@ -39,12 +39,19 @@ class App extends React.Component {
         <nav className={styles.nav}>
           <Router>
             <NavLink
-              isActive={(match, { pathname }) => {
-                if (pathname === "/" || pathname === "/sites") return true;
-                return false;
-              }}
+            isActive={(match, { pathname }) => {
+              if (pathname === "/" || pathname === "/blogs") return true;
+              return false;
+            }}
               activeClassName={styles.active}
               to="/"
+              className={styles.item}
+            >
+              优质好文
+            </NavLink>
+            <NavLink
+              activeClassName={styles.active}
+              to="/sites"
               className={styles.item}
             >
               网址导航
@@ -56,16 +63,6 @@ class App extends React.Component {
             >
               教程资源
             </NavLink>
-            <NavLink
-              activeClassName={styles.active}
-              to="/blogs"
-              className={styles.item}
-            >
-              优质好文
-            </NavLink>
-            {/* <NavLink activeClassName={styles.active} to="/library" className={styles.item}>实用库</NavLink> */}
-            {/* <NavLink activeClassName={styles.active} to="/effects" className={styles.item}>css效果</NavLink> */}
-            {/* <NavLink activeClassName={styles.active} to="/interview" className={styles.item}>面试指南</NavLink> */}
             <NavLink activeClassName={styles.active} to="/aboutUs" className={styles.item}>关于我们</NavLink>
           </Router>
         </nav>
@@ -78,10 +75,10 @@ class App extends React.Component {
         <div className={styles.content}>
           <Router>
             <Switch>
-              <Route exact path="/" component={Sites}></Route>
+              <Route exact path="/" component={Blogs}></Route>
+              <Route exact path="/blogs" component={Blogs}></Route>
               <Route path="/sites" component={Sites}></Route>
               <Route path="/resources" component={Resources}></Route>
-              <Route exact path="/blogs" component={Blogs}></Route>
               <Route path="/blogs/detail/:id" component={BlogDetail}></Route>
               {/* <Route path="/effects" component={Effects}></Route> */}
               <Route path="/aboutUs" component={AboutUs}></Route>
