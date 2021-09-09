@@ -35,4 +35,4 @@ app.use(async (req, res) => {
     res.send(res);
   }
 })
-app.listen(5555)
+app.listen(80)
