@@ -11,3 +11,7 @@ declare module "*.gif";
 declare let _hmt: any;
 declare let __MODE__: string;
 declare let ENV: string;
+declare module "*.md" {
+  const content: string;
+  export default content;
+}

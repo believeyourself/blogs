@@ -12,6 +12,21 @@ export default [
         title: "带你入门Vue2.0及学习实战项目",
         description: "链接:https://pan.baidu.com/s/1-yMEQ-zKF8Wn8ckrNMLs_g 提取码:q5a7",
         url: "https://pan.baidu.com/s/1-yMEQ-zKF8Wn8ckrNMLs_g"
+      },
+      {
+        title: "Vue双向绑定数据解析与实现",
+        description: "链接: https://pan.baidu.com/s/1_8BSGkCwZuc7PNaLea7iCg 提取码: e8gm",
+        url: "https://pan.baidu.com/s/1_8BSGkCwZuc7PNaLea7iCg"
+      },
+      {
+        title: "阿里百秀项目实战资料",
+        description: "链接: https://pan.baidu.com/s/1edLmKrrB94Vv5g44F8W1Qg 提取码: cc2s",
+        url: "https://pan.baidu.com/s/1edLmKrrB94Vv5g44F8W1Qg"
+      },
+      {
+        title: "微信小程序教程和100多套源码",
+        description: "链接: https://pan.baidu.com/s/14qCdfsH2Bm92ZNZb96PYRg 提取码: nbiz",
+        url: "https://pan.baidu.com/s/14qCdfsH2Bm92ZNZb96PYRg"
       }
     ]
   },
@@ -21,7 +36,7 @@ export default [
     list: [
       {
         title: "后台数据管理系统",
-        description: "无他，又一套 CRUD（增删改查）后台数据管理系统，只不过用到的技术栈比较新（目前我所理解的最佳实践），具有一定的参考意义。",
+        description: "react+redux+express+MongoDB,又一套 CRUD（增删改查）后台数据管理系统，只不过用到的技术栈比较新（目前我所理解的最佳实践），具有一定的参考意义。",
         url: "https://github.com/zerosoul/static-site-data-management"
       },
       {

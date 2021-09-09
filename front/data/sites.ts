@@ -9,7 +9,7 @@
 export default [
   {
     id: "favorite",
-    category: "猜你喜欢",
+    category: "热门推荐",
     sites: [
       {
         title: "小猫图片占位符",
@@ -229,8 +229,13 @@ export default [
   },
   {
     id: "frame",
-    category: "框架类库",
+    category: "官方文档",
     sites: [
+      {
+        title: "Node中文",
+        description: "Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行时。",
+        url: "http://nodejs.cn/"
+      },
       {
         title: "React",
         description: "用于构建用户界面的 JavaScript 库",

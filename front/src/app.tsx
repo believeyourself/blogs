@@ -11,6 +11,7 @@ import Sites from "@/pages/sites";
 import Resources from "@/pages/resources";
 import AboutUs from "@/pages/aboutUs";
 import Blogs from "@/pages/blogs";
+import BlogDetail from "@/pages/blogs/detail/detail";
 import HotRank from "@/components/hotRank";
 // import Effects from "@/pages/Effects";
 import { HashRouter as Router, Route, Switch, NavLink } from "react-router-dom";
@@ -71,13 +72,16 @@ class App extends React.Component {
               <Route exact path="/" component={Sites}></Route>
               <Route path="/sites" component={Sites}></Route>
               <Route path="/resources" component={Resources}></Route>
-              <Route path="/blogs" component={Blogs}></Route>
+              <Route exact path="/blogs" component={Blogs}></Route>
+              <Route path="/blogs/detail/:id" component={BlogDetail}></Route>
               {/* <Route path="/effects" component={Effects}></Route> */}
               <Route path="/aboutUs" component={AboutUs}></Route>
             </Switch>
           </Router>
           <HotRank />
         </div>
+        <footer className={styles.footer}>
+        © 2021 <span className={styles.author}>famerlzj</span> 提供技术支持</footer>
       </div>
     );
   }
