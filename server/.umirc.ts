@@ -5,7 +5,33 @@ export default defineConfig({
     type: 'none',
   },
   routes: [
-    { path: '/', component: '@/pages/index' },
+    {
+      path:"/",
+      component:"@/layouts",
+      routes:[
+        { 
+          path: '/', 
+          redirect: '/blogs'
+        },
+        { 
+          path: '/sites', 
+          component: '@/pages/sites'
+        },
+        { 
+          path: '/resources', 
+          component: '@/pages/resources'
+        },
+        { 
+          path: '/blogs', 
+          component: '@/pages/blogs'
+        },
+        { 
+          path: '/aboutUs', 
+          component: '@/pages/aboutUs'
+        },
+      ]
+    }
   ],
   fastRefresh: {},
+  ssr: {},
 });

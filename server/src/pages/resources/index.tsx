@@ -51,7 +51,7 @@ export default function Resources () {
             className={styles.pdf}
             key={pdf.title}
             download
-            href={`${window.origin}/${pdf.path}`}
+            href={`${pdf.path}`}
           >
             {pdf.title}
           </a>
