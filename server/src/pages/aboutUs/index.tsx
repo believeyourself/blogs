@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "./index.less";
-import Image from "next/dist/client/image";
+import tilteImg from "@/assets/images/aboutUs.jpg";
 
 export default class AboutUs extends React.Component {
   render () {
     return <div className={styles.content}>
         <div className={styles.des}>
             <div className={styles.site}>
-                <Image alt="前端" src="../../public/images/aboutUs.jpg" />
+                <img src={tilteImg} />
                 <p>前端网 是分享自学前端开发教程，资料，文章的前端网站，每个前端学习者和WEB前端开发工程师的前端大学。</p>
                 <p>我们要做web前端开发技术学习交流分享的专业前端网站！</p>
                 <p>本站包括了HTML、CSS、Javascript、vue.js，react.js，angular.js等各种编程教程。同时本站中也提供了大量的在线实例，通过实例，您可以更好地学习如何编程开发。</p>
