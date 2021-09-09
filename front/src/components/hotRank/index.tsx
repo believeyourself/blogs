@@ -1,20 +1,26 @@
 import React from "react";
-import style from "./index.less";
-import blogs from "../../../data/blogs";
+import { Link } from "react-router-dom";
+import styles from "./index.less";
 
-const rank = blogs.slice(blogs.length - 5, blogs.length);
-
-function HotRank () {
-  const listItems = rank.map((item: any, index:number) => {
-    return (
-      <a href={item.url} target="_blank" key={item.url} className={style.rank_item} rel="noreferrer">
-        {index + 1}.{item.title}
-      </a>
-    );
+function HotRank (props:any) {
+  const listItems = props.data.map((item: any, index:number) => {
+    if (item.id) {
+      return (
+        <Link key={item.id} to={`/blogs/detail/${item.id}`} className={styles.rank_item} rel="noreferrer">
+           {index + 1}.{item.title}
+        </Link>
+      );
+    } else {
+      return (
+        <a href={item.url} target="_blank" key={item.url} className={styles.rank_item} rel="noreferrer">
+          {index + 1}.{item.title}
+        </a>
+      );
+    }
   });
-  return <div className={style.container}>
-      <p className={style.title}>热门排行</p>
-      <ul className={style.rank_list}>
+  return <div className={styles.container}>
+      <p className={styles.title}>{props.title}</p>
+      <ul className={styles.rank_list}>
         {listItems}
       </ul>
   </div>;
