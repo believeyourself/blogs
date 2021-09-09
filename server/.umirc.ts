@@ -11,7 +11,7 @@ export default defineConfig({
       routes:[
         { 
           path: '/', 
-          redirect: '/blogs'
+          redirect: '/sites'
         },
         { 
           path: '/sites', 
