@@ -8,11 +8,12 @@
  */
 import React from "react";
 import HotRank from "@/components/hotRank"
-import { StaticRouter as Router,NavLink,Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styles from "./index.less";
 import "@/common/baidu";
 import noticeIcon from "@/assets/images/notice.svg";
 import logo from "@/assets/images/logo.png";
+import { BackTop } from "antd";
 
 class App extends React.Component {
   render () {
@@ -23,7 +24,6 @@ class App extends React.Component {
           <div className={styles.slogan}></div>
           <p className={styles.tip}>♡ 喜欢可以按 Ctrl+D 收藏哦!</p>
         </header>
-        {/* <Router location="/resources"> */}
           <nav className={styles.nav}>
           <NavLink
             isActive={(match, { pathname }) => {
@@ -57,7 +57,6 @@ class App extends React.Component {
             activeClassName={styles.active} 
             to="/aboutUs" className={styles.item}>关于我们</NavLink>
           </nav>
-        {/* </Router> */}
         <div className={styles.notice}>
           <img width={20} src={noticeIcon} />
           内容持续更新中！！！如遇链接打不开，可能需要科学上网工具！
@@ -66,6 +65,7 @@ class App extends React.Component {
           {this.props.children}
           <HotRank />
         </div>
+        <BackTop />
       </div>
     );
   }

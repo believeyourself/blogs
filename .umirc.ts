@@ -15,17 +15,21 @@ export default defineConfig({
         },
         { 
           path: '/sites', 
+          title:"网址导航",
           component: '@/pages/sites'
         },
         { 
+          title:"教程资源",
           path: '/resources', 
           component: '@/pages/resources'
         },
         { 
+          title:"优质好文",
           path: '/blogs', 
           component: '@/pages/blogs'
         },
         { 
+          title:"关于我们",
           path: '/aboutUs', 
           component: '@/pages/aboutUs'
         },
