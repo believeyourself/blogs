@@ -1,11 +1,21 @@
+# IDE
 .history
 .vscode
 
-#前端
-front/node_modules/*
-front/packge-lock.json
-front/dist
+# dependencies
+/node_modules
+/npm-debug.log*
+/yarn-error.log
+/yarn.lock
+/package-lock.json
 
-#后端
-server/node_modules/
-front/packge-lock.json
+# production
+
+# misc
+.DS_Store
+
+# umi
+/src/.umi
+/src/.umi-production
+/src/.umi-test
+/.env.local
