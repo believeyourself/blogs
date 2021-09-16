@@ -1,3 +1,6 @@
+.history
+.vscode
+
 #前端
 front/node_modules/*
 front/packge-lock.json
