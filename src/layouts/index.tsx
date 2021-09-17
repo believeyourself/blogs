@@ -14,11 +14,13 @@ import "@/common/baidu";
 import noticeIcon from "@/assets/images/notice.svg";
 import logo from "@/assets/images/logo.png";
 import { BackTop } from "antd";
+import SiteHeader from "@/components/siteHeader";
 
 class App extends React.Component {
   render () {
     return (
       <div>
+        <SiteHeader />
         <header className={styles.header}>
           <img className={styles.title} src={logo} />
           <div className={styles.slogan}></div>
