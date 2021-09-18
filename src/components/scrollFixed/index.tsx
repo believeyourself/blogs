@@ -1,4 +1,4 @@
-import React, { CSSProperties, useEffect, useState } from 'react';
+import { CSSProperties, useEffect, useState } from 'react';
 
 export default function ScrollFixed(props: any) {
   const [needFixed, setNeedFixed] = useState(false);
@@ -11,14 +11,13 @@ export default function ScrollFixed(props: any) {
   useEffect(() => {
     window.onscroll = function () {
       const scrollTop = document.documentElement.scrollTop;
-      if (scrollTop > 100 && !needFixed) {
+      if (scrollTop > 110 && !needFixed) {
         setNeedFixed(true);
-      } else {
+      } else if(scrollTop <= 100) {
         setNeedFixed(false);
       }
     };
   }, []);
-
   return (
     <div className={props.className} style={styleObj}>
       {props.children}
