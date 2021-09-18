@@ -10,18 +10,17 @@ import React from "react";
 import HotRank from "@/components/hotRank"
 import { NavLink } from "react-router-dom";
 import styles from "./index.less";
-import "@/common/baidu";
 import noticeIcon from "@/assets/images/notice.svg";
 import logo from "@/assets/images/logo.png";
 import { BackTop } from "antd";
-import SiteHeader from "@/components/siteHeader";
+// import SiteHeader from "@/components/siteHeader";
 import ScrollFixed from "@/components/scrollFixed";
 
 class App extends React.Component {
   render () {
     return (
       <div>
-        <SiteHeader />
+        {/* <SiteHeader /> */}
         <header className={styles.header}>
           <img className={styles.title} src={logo} />
           <div className={styles.slogan}></div>
