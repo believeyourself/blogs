@@ -43,4 +43,15 @@ export default defineConfig({
   ],
   fastRefresh: {},
   ssr: {},
-});
+  // webpack5这样添加会报错，this.getOptions is not function
+  // chainWebpack(config){
+  //    config.module
+  //     .rule('compile-md')
+  //     .test(/\.md$/)
+  //       .use("html-loader")
+  //         .loader("html-loader")
+  //         .end()
+  //       .use("markdown-loader")
+  // },
+  // webpack5:false
+})
