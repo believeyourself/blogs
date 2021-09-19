@@ -16,7 +16,7 @@ export default function Blogs() {
       return (
         <Link
           to={`/blogs/detail/${item.id}`}
-          key={item.url}
+          key={item.url || item.id}
           className={styles.category_list_item}
           rel="noreferrer"
         >
@@ -29,7 +29,7 @@ export default function Blogs() {
         <a
           href={item.url}
           target="_blank"
-          key={item.url}
+          key={item.url || item.id}
           className={styles.category_list_item}
           rel="noreferrer"
         >

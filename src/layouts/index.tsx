@@ -6,18 +6,18 @@
  * @LastEditors: lizejun
  * @LastEditTime: 2021-06-15 10:54:56
  */
-import React from "react";
-import HotRank from "@/components/hotRank"
-import { NavLink } from "react-router-dom";
-import styles from "./index.less";
-import noticeIcon from "@/assets/images/notice.svg";
-import logo from "@/assets/images/logo.png";
-import { BackTop } from "antd";
+import React from 'react';
+import HotRank from '@/components/hotRank';
+import { NavLink } from 'react-router-dom';
+import styles from './index.less';
+import noticeIcon from '@/assets/images/notice.svg';
+import logo from '@/assets/images/logo.png';
+import { BackTop } from 'antd';
 // import SiteHeader from "@/components/siteHeader";
-import ScrollFixed from "@/components/scrollFixed";
+import ScrollFixed from '@/components/scrollFixed';
 
 class App extends React.Component {
-  render () {
+  render() {
     return (
       <div>
         {/* <SiteHeader /> */}
@@ -29,12 +29,8 @@ class App extends React.Component {
         <ScrollFixed>
           <nav className={styles.nav}>
             <NavLink
-              isActive={(match, { pathname }) => {
-                if (pathname === "/" || pathname === "/sites") return true;
-                return false;
-              }}
               activeClassName={styles.active}
-              to="/"
+              to="/sites"
               className={styles.item}
             >
               网址导航
@@ -47,6 +43,10 @@ class App extends React.Component {
               教程资源
             </NavLink>
             <NavLink
+              isActive={(match, { pathname }) => {
+                if (pathname === '/' || pathname === '/blogs') return true;
+                return false;
+              }}
               activeClassName={styles.active}
               to="/blogs"
               className={styles.item}
@@ -56,9 +56,13 @@ class App extends React.Component {
             {/* <NavLink activeClassName={styles.active} to="/library" className={styles.item}>实用库</NavLink> */}
             {/* <NavLink activeClassName={styles.active} to="/effects" className={styles.item}>css效果</NavLink> */}
             {/* <NavLink activeClassName={styles.active} to="/interview" className={styles.item}>面试指南</NavLink> */}
-            <NavLink 
-              activeClassName={styles.active} 
-              to="/aboutUs" className={styles.item}>关于我们</NavLink>
+            <NavLink
+              activeClassName={styles.active}
+              to="/aboutUs"
+              className={styles.item}
+            >
+              关于我们
+            </NavLink>
           </nav>
         </ScrollFixed>
         <div className={styles.notice}>

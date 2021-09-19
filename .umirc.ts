@@ -10,8 +10,9 @@ export default defineConfig({
       component: '@/layouts',
       routes: [
         {
+          title: '优质好文',
           path: '/',
-          redirect: '/sites',
+          component: '@/pages/blogs',
         },
         {
           path: '/sites',
@@ -42,7 +43,7 @@ export default defineConfig({
     },
   ],
   fastRefresh: {},
-  ssr: {},
+  // ssr: {},
   // webpack5这样添加会报错，this.getOptions is not function
   // chainWebpack(config){
   //    config.module
@@ -54,4 +55,4 @@ export default defineConfig({
   //       .use("markdown-loader")
   // },
   // webpack5:false
-})
+});

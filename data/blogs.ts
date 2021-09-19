@@ -1,5 +1,10 @@
 export default [
   {
+    id: 3,
+    title: 'umi实践问题汇总',
+    description: '在使用umi的过程中所遇到问题的记录汇总',
+  },
+  {
     id: 2,
     title: 'react中实现markdown文件读取展示',
     description: 'react中实现markdown文件读取展示',
