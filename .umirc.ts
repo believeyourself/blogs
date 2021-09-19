@@ -1,15 +1,20 @@
 import { defineConfig } from 'umi';
-
 export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
   routes: [
     {
+      name: '404',
+      path: '/404',
+      component: './Exception404',
+    },
+    {
       path: '/',
       component: '@/layouts',
       routes: [
         {
+          exact: true,
           title: '优质好文',
           path: '/',
           component: '@/pages/blogs',
@@ -39,12 +44,13 @@ export default defineConfig({
           path: '/aboutUs',
           component: '@/pages/aboutUs',
         },
+        {
+          redirect: '/404',
+        },
       ],
     },
   ],
-  fastRefresh: {},
-  ssr: {},
-  // webpack5这样添加会报错，this.getOptions is not function
+  fastRefresh: {}, // webpack5这样添加会报错，this.getOptions is not function
   // chainWebpack(config){
   //    config.module
   //     .rule('compile-md')

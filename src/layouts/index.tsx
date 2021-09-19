@@ -15,9 +15,24 @@ import logo from '@/assets/images/logo.png';
 import { BackTop } from 'antd';
 // import SiteHeader from "@/components/siteHeader";
 import ScrollFixed from '@/components/scrollFixed';
+import Exception500 from '@/pages/Exception500';
 
 class App extends React.Component {
+  state = {
+    hasError: false,
+  };
+  static getDerivedStateFromError(error: any) {
+    // 更新 state 使下一次渲染能够显示降级后的 UI
+    console.log('UI ERROR:', error);
+    return { hasError: true };
+  }
+
   render() {
+    if (this.state.hasError) {
+      // 你可以自定义降级后的 UI 并渲染
+      return <Exception500 />;
+    }
+
     return (
       <div>
         {/* <SiteHeader /> */}
