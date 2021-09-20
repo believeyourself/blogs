@@ -1,5 +1,6 @@
 import { defineConfig } from 'umi';
 export default defineConfig({
+  favicon: 'favicon.ico',
   nodeModulesTransform: {
     type: 'none',
   },
@@ -50,7 +51,8 @@ export default defineConfig({
       ],
     },
   ],
-  fastRefresh: {}, // webpack5这样添加会报错，this.getOptions is not function
+  fastRefresh: {},
+  // webpack5这样添加会报错，this.getOptions is not function
   // chainWebpack(config){
   //    config.module
   //     .rule('compile-md')
