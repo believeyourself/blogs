@@ -1,7 +1,6 @@
-const express =require("express");
-const Stream = require("stream")
+const express = require('express');
+const Stream = require('stream');
 const app = express();
-
 app.use(express.static('dist'));
 app.use(async (req, res) => {
   const render = require('./dist/umi.server');
@@ -28,11 +27,11 @@ app.use(async (req, res) => {
   // support stream content
   if (html instanceof Stream) {
     html.pipe(res);
-    html.on('end', function() {
+    html.on('end', function () {
       res.end();
     });
   } else {
     res.send(res);
   }
-})
-app.listen(8080)
+});
+app.listen(8080);
