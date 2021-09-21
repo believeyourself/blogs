@@ -13,9 +13,8 @@ import styles from './index.less';
 import noticeIcon from '@/assets/images/notice.svg';
 import logo from '@/assets/images/logo.png';
 import { BackTop } from 'antd';
-// import SiteHeader from "@/components/siteHeader";
 import ScrollFixed from '@/components/scrollFixed';
-import Exception500 from '@/pages/Exception500';
+import Exception500 from '@/pages/exception/500';
 
 class App extends React.Component {
   state = {
@@ -68,9 +67,14 @@ class App extends React.Component {
             >
               优质好文
             </NavLink>
-            {/* <NavLink activeClassName={styles.active} to="/library" className={styles.item}>实用库</NavLink> */}
+            <NavLink
+              activeClassName={styles.active}
+              to="/library"
+              className={styles.item}
+            >
+              实用库
+            </NavLink>
             {/* <NavLink activeClassName={styles.active} to="/effects" className={styles.item}>css效果</NavLink> */}
-            {/* <NavLink activeClassName={styles.active} to="/interview" className={styles.item}>面试指南</NavLink> */}
             <NavLink
               activeClassName={styles.active}
               to="/aboutUs"

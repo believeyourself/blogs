@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "start": "umi dev",
+    "start": "cross-envUMI_ENV=dev umi dev",
     "build": "cross-env UMI_ENV=prod HTML=none umi build",
-    "block":"cross-env UMI_UI=1 UMI_ENT=block umi dev",
+    "block": "cross-env UMI_UI=1 UMI_ENV=block umi dev",
     "postinstall": "umi generate tmp",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "test": "umi-test",
@@ -21,10 +21,15 @@
     ]
   },
   "dependencies": {
+    "@ant-design/icons": "^4.6.4",
     "@ant-design/pro-layout": "^6.5.0",
+    "ahooks": "^2.10.9",
     "classnames": "^2.3.1",
     "express": "^4.17.1",
     "marked": "^3.0.4",
+    "moment": "^2.29.1",
+    "numeral": "^2.0.6",
+    "nzh": "^1.0.5",
     "react": "17.x",
     "react-dom": "17.x",
     "remark": "^13.0.0",

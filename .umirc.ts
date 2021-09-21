@@ -4,16 +4,22 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
+  dva: {},
   routes: [
     {
       name: '404',
       path: '/404',
-      component: './Exception404',
+      component: './exception/404',
     },
     {
       path: '/',
       component: '@/layouts',
       routes: [
+        {
+          name: '实用库',
+          path: '/library',
+          component: './library',
+        },
         {
           exact: true,
           title: '优质好文',
@@ -51,8 +57,7 @@ export default defineConfig({
       ],
     },
   ],
-  fastRefresh: {},
-  // webpack5这样添加会报错，this.getOptions is not function
+  fastRefresh: {}, // webpack5这样添加会报错，this.getOptions is not function
   // chainWebpack(config){
   //    config.module
   //     .rule('compile-md')
