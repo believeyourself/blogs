@@ -8,21 +8,20 @@
  */
 import styles from './index.less';
 import blogs from '../../../data/blogs';
-import { Link } from 'react-router-dom';
+import NavLink from '@/components/navLink';
 
 export default function Blogs() {
   const records = blogs.map((item: any) => {
     if (item.id) {
       return (
-        <Link
+        <NavLink
           to={`/blogs/detail/${item.id}`}
           key={item.url || item.id}
           className={styles.category_list_item}
-          rel="noreferrer"
         >
           <h4 className={styles.title}>{item.title}</h4>
           <p className={styles.description}>{item.description}</p>
-        </Link>
+        </NavLink>
       );
     } else {
       return (

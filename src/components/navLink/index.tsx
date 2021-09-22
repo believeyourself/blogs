@@ -4,8 +4,9 @@ export interface NavLinkProps {
   activeClassName?:string;
   className?:string;
   to:string;
-  children:React.ReactDOM | string;
-  isActive: (match:any,{pathName}:any) => boolean
+  children: any;
+  isActive?: (match:any,{pathName}:any) => boolean
+  [key:string] : any;
 }
 const NavLink = (props:NavLinkProps) =>{
   const url = useLocation();
