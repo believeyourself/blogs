@@ -15,11 +15,11 @@ export default defineConfig({
       path: '/',
       component: '@/layouts',
       routes: [
-        {
-          name: '实用库',
-          path: '/library',
-          component: './library',
-        },
+        // {
+        //   name: '实用库',
+        //   path: '/library',
+        //   component: './library',
+        // },
         {
           exact: true,
           title: '优质好文',
