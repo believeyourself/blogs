@@ -8,7 +8,7 @@
  */
 import React from 'react';
 import HotRank from '@/components/hotRank';
-import { NavLink } from 'react-router-dom';
+import NavLink from '@/components/navLink';
 import styles from './index.less';
 import noticeIcon from '@/assets/images/notice.svg';
 import logo from '@/assets/images/logo.png';
@@ -34,7 +34,6 @@ class App extends React.Component {
 
     return (
       <div>
-        {/* <SiteHeader /> */}
         <header className={styles.header}>
           <img className={styles.title} src={logo} />
           <div className={styles.slogan}></div>

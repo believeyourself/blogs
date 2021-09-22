@@ -1,6 +1,7 @@
 const express = require('express');
 const Stream = require('stream');
 const app = express();
+
 app.use(express.static('dist'));
 app.use(async (req, res) => {
   const render = require('./dist/umi.server');
