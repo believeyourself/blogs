@@ -67,13 +67,13 @@ class App extends React.Component {
             >
               优质好文
             </NavLink>
-            <NavLink
+            {/* <NavLink
               activeClassName={styles.active}
               to="/library"
               className={styles.item}
             >
               实用库
-            </NavLink>
+            </NavLink> */}
             {/* <NavLink activeClassName={styles.active} to="/effects" className={styles.item}>css效果</NavLink> */}
             <NavLink
               activeClassName={styles.active}
