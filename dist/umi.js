@@ -530,7 +530,7 @@
                   className: V.a.notice,
                   children: [
                     Object(_['jsx'])('img', { width: 20, src: W.a }),
-                    '\u5185\u5bb9\u6301\u7eed\u66f4\u65b0\u4e2d\uff01\uff01\uff01\u5982\u9047\u94fe\u63a5\u6253\u4e0d\u5f00\uff0c\u53ef\u80fd\u9700\u8981\u79d1\u5b66\u4e0a\u7f51\u5de5\u5177\uff01',
+                    '\u5185\u5bb9\u6301\u7eed\u66f4\u65b0\u4e2d\uff01\uff01\uff01',
                   ],
                 }),
                 Object(_['jsxs'])('div', {
@@ -6433,7 +6433,7 @@
       i = (e) => {
         var t = Object(r['g'])(),
           n = Object(r['h'])(),
-          i = (e.isActive && e.isActive(n, t)) || t.pathname === e.to;
+          i = (e.isActive && e.isActive(n, t)) || t.pathname.startsWith(e.to);
         return Object(o['jsx'])('a', {
           href: e.to,
           className: ''.concat(e.className, ' ').concat(i && e.activeClassName),
@@ -9722,9 +9722,15 @@
                   className: a.a.title,
                   children: '\u8054\u7cfb\u6211\u4eec\uff1a',
                 }),
-                Object(l['jsx'])('p', {
-                  children:
-                    '\u5982\u679c\u60a8\u6709\u4ec0\u4e48\u597d\u7684\u5efa\u8bae\u6216\u597d\u7684\u8d44\u6e90\u5206\u4eab\uff0c\u53ef\u4ee5\u8054\u7cfb\u6211\u4eec.',
+                Object(l['jsxs'])('p', {
+                  children: [
+                    '\u5982\u679c\u60a8\u6709\u4ec0\u4e48\u597d\u7684\u5efa\u8bae\u6216\u597d\u7684\u8d44\u6e90\u5206\u4eab\uff0c\u53ef\u4ee5\u8054\u7cfb\u6211\u4eec',
+                    Object(l['jsx'])('a', {
+                      href: 'mailto:farmerlzj@163.com',
+                      children: 'farmerlzj@163.com',
+                    }),
+                    '.',
+                  ],
                 }),
               ],
             }),
