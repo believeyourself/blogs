@@ -85,7 +85,7 @@ class App extends React.Component {
         </ScrollFixed>
         <div className={styles.notice}>
           <img width={20} src={noticeIcon} />
-          内容持续更新中！！！如遇链接打不开，可能需要科学上网工具！
+          内容持续更新中！！！
         </div>
         <div className={styles.content}>
           {this.props.children}

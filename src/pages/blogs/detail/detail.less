@@ -1,42 +1,53 @@
-code{
+@import '../../constant.less';
+
+code {
   display: block;
+  padding: 10px;
   background-color: #ddd;
-  padding:10px;
   border-radius: 2px;
 }
-.content {
-  margin-left: 30px;
-  flex: 1;
-  background-color: #fff;
-  padding: 0 25px;
-  height: calc(100vh - 100px);
-  overflow-y: scroll;
-  margin-left: 250px;
 
-  header{
+.content {
+  flex: 1;
+  height: calc(100vh - 100px);
+  margin-left: 30px;
+  margin-left: 250px;
+  padding: 0 25px;
+  overflow-y: scroll;
+  background-color: #fff;
+
+  @media screen and (max-width: @mobile-width) {
+    margin-left: 0;
+  }
+
+  header {
     margin: 0 -25px;
     padding: 10px;
-    border-bottom:  1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 
-    .back{
+    .back {
+      color: #999797;
       text-decoration: none;
-      color:#999797;
     }
   }
 
-  article{
+  article {
     padding: 20px 0;
 
-    h1,h2,h3,h4,h5,h6{
-      margin:10px 0;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 10px 0;
     }
-    p{
-      margin:10px 0;
+    p {
+      margin: 10px 0;
       line-height: 24px;
     }
-    ul{
-
-      li{
+    ul {
+      li {
         line-height: 24px;
       }
     }

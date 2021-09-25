@@ -1,7 +1,8 @@
+@import '../pages/constant.less';
 :global {
   * {
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
 
   body {
@@ -22,55 +23,63 @@
   }
 
   .slogan {
-    background-image: url("../assets/images/slogan.png");
-    height: 100%;
     width: 198px;
+    height: 100%;
     margin-left: 20px;
+    background-image: url('../assets/images/slogan.png');
   }
 
   .tip {
-    text-align: right;
     flex-grow: 1;
     padding-right: 20px;
+    text-align: right;
+
+    @media screen and (max-width: @mobile-width) {
+      display: none;
+    }
   }
 }
 
 .nav {
   display: flex;
-  padding: 0 200px;
   align-items: center;
   height: 40px;
+  padding: 0 200px;
   background-color: #d05b3c;
 
+  @media screen and (max-width: @mobile-width) {
+    padding: 0;
+  }
+
   .item {
-    color: #fff;
-    min-width: 100px;
+    min-width: 80px;
     height: 100%;
+    color: #fff;
     line-height: 40px;
     text-align: center;
     text-decoration: none;
 
     &:hover {
       box-sizing: border-box;
-      border-bottom: 2px solid #ffdcb3;
       font-weight: bold;
       background-color: #e87d61;
+      border-bottom: 2px solid #ffdcb3;
     }
 
     &.active {
       box-sizing: border-box;
-      border-bottom: 2px solid #ffdcb3;
       font-weight: bold;
       background-color: #e87d61;
+      border-bottom: 2px solid #ffdcb3;
     }
   }
 }
 
 .notice {
-  background-color: #fff;
-  text-align: right;
   padding: 10px 0;
   font-size: 12px;
+  text-align: right;
+  background-color: #fff;
   border-bottom: 1px solid #ddd;
 
   img {
@@ -84,15 +93,15 @@
   padding-top: 20px;
 }
 
-.footer{
-  background-color: #202d40;
+.footer {
   height: 40px;
+  color: #486185;
+  font-size: 14px;
   line-height: 40px;
   text-align: center;
-  color:#486185;
-  font-size: 14px;
+  background-color: #202d40;
 
-  .author{
-    color:#7d818a;
+  .author {
+    color: #7d818a;
   }
 }
