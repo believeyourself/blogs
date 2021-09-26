@@ -10,6 +10,7 @@ import React, { useState } from "react";
 import styles from "./index.less";
 import records from "../../../data/resource";
 import Card from "@/components/card";
+import SiteHeader from "@/components/siteHeader";
 
 const scrollToAnchor = (anchorName: string) => {
   if (anchorName) {
@@ -92,6 +93,9 @@ export default function Resources () {
   });
   return (
     <section className={styles.container}>
+      <SiteHeader>
+        <meta name="baiduspider" content="nofollow" />
+      </SiteHeader>
       <div className={styles.nav}>
         <ul>{navs}</ul>
       </div>

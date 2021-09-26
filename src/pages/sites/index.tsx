@@ -10,6 +10,8 @@ import React, { useState } from "react";
 import styles from "./index.less";
 import records from "../../../data/sites";
 import Card from "@/components/card";
+import SiteHeader from "@/components/siteHeader";
+import {Row,Col} from "antd";
 
 const scrollToAnchor = (anchorName: string) => {
   if (anchorName) {
@@ -29,34 +31,39 @@ export default function Sites () {
   const resources: any[] = [];
   records.forEach((item, index) => {
     navs.push(
-      <li key={item.id} className={styles.nav_item}>
-        <a
-          className={index === active ? styles.active : ""}
-          onClick={() => {
-            setActive(index);
-            scrollToAnchor(item.id);
-          }}
-        >
-          {item.category}
-        </a>
-      </li>
+        <li key={item.id} className={styles.nav_item}>
+          <a
+            className={index === active ? styles.active : ""}
+            onClick={() => {
+              setActive(index);
+              scrollToAnchor(item.id);
+            }}
+          >
+            {item.category}
+          </a>
+        </li>
     );
     const categoryList = item.sites.map((site: any) => {
       return (
-        <Card className={styles.category_list_item} key={site.url} {...site} />
+        <Col className={styles.category_list_item} key={site.url} lg={8} md={8} sm={12} xs={24}>
+          <Card {...site} />
+        </Col>
       );
     });
     resources.push(
-      <React.Fragment key={item.id}>
+      <React.Fragment>
         <p className={styles.category_title} id={item.id}>
           {item.category}
         </p>
-        <section className={styles.category_list}>{categoryList}</section>
+        <Row gutter={[10,10]} className={styles.category_list}>{categoryList}</Row>
       </React.Fragment>
     );
   });
   return (
     <section className={styles.container}>
+      <SiteHeader>
+        <meta name="baiduspider" content="nofollow" />
+      </SiteHeader>
       <div className={styles.nav}>
         <ul>{navs}</ul>
       </div>

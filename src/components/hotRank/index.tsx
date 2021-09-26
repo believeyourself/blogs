@@ -1,14 +1,15 @@
 import style from "./index.less";
 import blogs from "../../../data/blogs";
+import NavLink from "../navLink";
 
-const rank = blogs.slice(blogs.length - 5, blogs.length);
+const rank = blogs.slice(0, 5);
 
 function HotRank () {
   const listItems = rank.map((item: any, index:number) => {
     return (
-      <a href={item.url} target="_blank" key={item.url} className={style.rank_item} rel="noreferrer">
+      <NavLink to={`/blogs/detail/${item.id}`} key={item.id} className={style.rank_item} rel="nofollow">
         {index + 1}.{item.title}
-      </a>
+      </NavLink>
     );
   });
   return <div className={style.container}>

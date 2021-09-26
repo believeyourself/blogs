@@ -3,13 +3,19 @@ import { Helmet } from 'react-helmet';
 export interface SiteHeaderProps {
   description?: string;
   keywords?: string;
+  children?:any
 }
 
-export default ({ description, keywords }: SiteHeaderProps) => {
+export default ({ description, keywords,children }: SiteHeaderProps) => {
   return (
     <Helmet>
-      <meta name="description" content={description} />
-      <meta name="keywords" content={keywords} />
+      {
+         description && <meta name="description" content={description} />
+      }
+      {
+        keywords && <meta name="keywords" content={keywords} />
+      }
+      {children}
     </Helmet>
   );
 };

@@ -15,6 +15,7 @@ import logo from '@/assets/images/logo.png';
 import { BackTop } from 'antd';
 import ScrollFixed from '@/components/scrollFixed';
 import Exception500 from '@/pages/exception/500';
+import Footer from "@/components/footer"
 
 class App extends React.Component {
   state = {
@@ -91,6 +92,7 @@ class App extends React.Component {
           {this.props.children}
           <HotRank />
         </div>
+        <Footer />
         <BackTop />
       </div>
     );

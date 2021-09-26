@@ -18,11 +18,6 @@ export default [
         url: 'https://placekitten.com/',
       },
       {
-        title: '微信官方文档',
-        description: '小程序、小游戏、公众号、开放平台官方文档。',
-        url: 'https://developers.weixin.qq.com/doc/',
-      },
-      {
         title: 'Online JavaScript Beautifier',
         description:
           '美化，解压缩或反混淆JavaScript和HTML，使JSON / JSONP可读等。',
@@ -229,32 +224,6 @@ export default [
     ],
   },
   {
-    id: 'frame',
-    category: '官方文档',
-    sites: [
-      {
-        title: 'Node中文',
-        description: 'Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行时。',
-        url: 'http://nodejs.cn/',
-      },
-      {
-        title: 'React',
-        description: '用于构建用户界面的 JavaScript 库',
-        url: 'https://zh-hans.reactjs.org/',
-      },
-      {
-        title: 'Vue',
-        description: '渐进式 JavaScript 框架',
-        url: 'https://cn.vuejs.org/',
-      },
-      {
-        title: 'AngularJS',
-        description: '一套框架，多种平台。移动端 & 桌面端',
-        url: 'https://angular.cn/',
-      },
-    ],
-  },
-  {
     id: 'animation',
     category: '图形动效',
     sites: [
@@ -428,6 +397,71 @@ export default [
         description:
           'JavaScript 世界的构建工具，印象里最早出现，现在用的少了。',
         url: 'https://gruntjs.com/',
+      },
+    ],
+  },
+  {
+    id: 'siteTool',
+    category: '站长工具',
+    sites: [
+      {
+        title: '站长之家',
+        description:
+          '站长之家是站长的必备工具',
+        url: 'https://tool.chinaz.com/',
+      },
+      {
+        title: '51.LA',
+        description: '51la网站流量统计',
+        url: 'https://www.51.la/',
+      },
+      {
+        title: 'CNZZ',
+        description:
+          'CNZZ网站流量统计',
+        url: 'http://fis.baidu.com/',
+      },
+      {
+        title: '网站排名',
+        description:
+          'Alexa网站流量全球综合排名查询',
+        url: 'http://www.alexa.cn/',
+      },
+      {
+        title: '5188',
+        description:
+          '长尾词挖掘，营销情报，站长工具',
+        url: 'https://www.5118.com/',
+      },
+      {
+        title: '爱站网',
+        description:
+          '各种网站工具，关键词排名',
+        url: 'https://www.aizhan.com/',
+      },
+      {
+        title: '小码短链',
+        description:
+          '短网址跳转工具',
+        url: 'https://xiaomark.com/',
+      },
+      {
+        title: '极客增长',
+        description:
+          '流量操盘手的必备工具',
+        url: 'https://yinliu.club/member/KeywordHot/index',
+      },
+      {
+        title: '二十次幂',
+        description:
+          '微信公众号数据分析',
+        url: 'https://www.cimidata.com/',
+      },
+      {
+        title: '大数据导航',
+        description:
+          '快速找到大数据相关的工具平台',
+        url: 'http://hao.199it.com/',
       },
     ],
   },
