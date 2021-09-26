@@ -267,7 +267,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("# NodeJs发起https请求报错:certificate has expired\r\n\r\n在Node开发项目过程中，我们很有可能需要请求外部地址，以此调用外部功能接口或拉取外部数据。通常我们会使用https来保证通信过程安全，这里当我们用NodeJs发起https请求时却提示：certificate has expired错误，但是通过postman工具测试请求地址没有问题，证书也没有过期。查询相关资料发现，原因是证书认证没通过。\r\n\r\n## 如何解决\r\n1.简单粗暴的方式,仅限开发环境使用,将下面的代码添加到你的文件顶部：\r\n\r\n`process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';`\r\n\r\n**注意：这种方式是有问题的,它会禁用node进行HTTPS / SSL / TLS检查。**\r\n\r\n2.设置请求options的**rejectUnauthorized**为**false**,证书不符合也不拒绝连接\r\n```\r\n  http.request(path,{\r\n    rejectUnauthorized:false\r\n  })\r\n```");
+/* harmony default export */ __webpack_exports__["default"] = ("# NodeJs发起https请求报错:certificate has expired\r\n\r\n在Node开发项目过程中，我们很有可能需要请求外部地址，以此调用外部功能接口或拉取外部数据。通常我们会使用https来保证通信过程安全，这里当我们用NodeJs发起https请求时却提示：certificate has expired错误。\r\n\r\n## 如何解决\r\n1.简单粗暴的方式,设置环境变量,将下面的代码添加到你的文件顶部：\r\n\r\n`process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';`\r\n\r\n**注意：这种方式是有问题的,会让NodeJs不拒绝未认证的证书**\r\n\r\n2.设置请求options的**rejectUnauthorized**为**false**,忽略证书安全\r\n```\r\n  http.request(path,{\r\n    rejectUnauthorized:false\r\n  })\r\n```\r\n3.导出你的证书文件（XXX.key和XXX.pem）发起请请求时指定使用请求目标地址的证书：\r\n```\r\nlet express = require(\"express\");\r\nlet https = require(\"https\");\r\nlet fs = require(\"fs\");\r\n// 配置\r\nconst httpsOption = {\r\n    key : fs.readFileSync(\"./path/XXX.key\"),\r\n    cert: fs.readFileSync(\"./path/XXX.pem\")\r\n}\r\nhttps.createServer(httpsOption, app).listen(443);\r\n```");
 
 /***/ }),
 
