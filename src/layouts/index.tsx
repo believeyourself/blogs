@@ -38,7 +38,6 @@ class App extends React.Component {
         <header className={styles.header}>
           <img className={styles.title} src={logo} />
           <div className={styles.slogan}></div>
-          <p className={styles.tip}>♡ 喜欢可以按 Ctrl+D 收藏哦!</p>
         </header>
         <ScrollFixed>
           <nav className={styles.nav}>
@@ -47,14 +46,14 @@ class App extends React.Component {
               to="/sites"
               className={styles.item}
             >
-              网址导航
+              导航
             </NavLink>
             <NavLink
               activeClassName={styles.active}
               to="/resources"
               className={styles.item}
             >
-              教程资源
+              教程
             </NavLink>
             <NavLink
               isActive={(match, { pathname }) => {
@@ -65,7 +64,7 @@ class App extends React.Component {
               to="/blogs"
               className={styles.item}
             >
-              优质好文
+              博客
             </NavLink>
             {/* <NavLink
               activeClassName={styles.active}
@@ -84,10 +83,6 @@ class App extends React.Component {
             </NavLink>
           </nav>
         </ScrollFixed>
-        <div className={styles.notice}>
-          <img width={20} src={noticeIcon} />
-          内容持续更新中！！！
-        </div>
         <div className={styles.content}>
           {this.props.children}
           <HotRank />

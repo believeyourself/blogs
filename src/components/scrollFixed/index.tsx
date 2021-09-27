@@ -6,6 +6,7 @@ export default function ScrollFixed(props: any) {
     width: '100%',
     position: needFixed ? 'fixed' : 'relative',
     top: 0,
+    zIndex: 999,
   };
 
   useEffect(() => {
@@ -13,7 +14,7 @@ export default function ScrollFixed(props: any) {
       const scrollTop = document.documentElement.scrollTop;
       if (scrollTop > 110 && !needFixed) {
         setNeedFixed(true);
-      } else if(scrollTop <= 100) {
+      } else if(scrollTop <= 110) {
         setNeedFixed(false);
       }
     };

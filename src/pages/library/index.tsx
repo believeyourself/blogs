@@ -4,21 +4,9 @@ import {
   EllipsisOutlined,
   ShareAltOutlined,
 } from '@ant-design/icons';
-import {
-  Avatar,
-  Card,
-  Col,
-  Dropdown,
-  Form,
-  List,
-  Menu,
-  Row,
-  Select,
-  Tooltip,
-} from 'antd';
 import type { FC } from 'react';
 import StandardFormRow from './components/StandardFormRow';
-import TagSelect from './components/TagSelect';
+import TagSelect from '@/components/tagSelect';
 import type { ListItemDataType } from './data';
 import styles from './style.less';
 

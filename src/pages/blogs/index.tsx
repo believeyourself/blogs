@@ -9,9 +9,23 @@
 import styles from './index.less';
 import blogs from '../../../data/blogs';
 import NavLink from '@/components/navLink';
+import TagSelect from '@/components/tagSelect';
+import {Divider} from "antd";
+import { useState,useMemo } from 'react';
 
 export default function Blogs() {
-  const records = blogs.map((item: any) => {
+  const [tag,setTag] = useState<string | null>(null);
+
+  const targetBlogs:any[] = useMemo(()=>{
+      return blogs.filter((blog:any)=>{
+      if(!tag){
+        return true;
+      }
+      return Array.isArray(blog.tags) && blog.tags.includes(tag);
+    })
+  },[tag]);
+
+  const records = targetBlogs.map((item: any) => {
     if (item.id) {
       return (
         <NavLink
@@ -38,5 +52,23 @@ export default function Blogs() {
       );
     }
   });
-  return <div className={styles.content}>{records}</div>;
+  return <div className={styles.content}>
+      <TagSelect 
+        hideCheckAll={true} 
+        multi={false}
+        onChange={(values)=>{
+          setTag(values[0]?.toString() || null);
+        }} 
+      expandable>
+          <TagSelect.Option value="react">React</TagSelect.Option>
+          {/* <TagSelect.Option value="vue">vue</TagSelect.Option>
+          <TagSelect.Option value="angular">angularJs</TagSelect.Option>
+          <TagSelect.Option value="canvas">canvas</TagSelect.Option>
+          <TagSelect.Option value="jqery">jquery</TagSelect.Option> */}
+          {/* <TagSelect.Option value="css">css</TagSelect.Option> */}
+          <TagSelect.Option value="node">NodeJs</TagSelect.Option>
+      </TagSelect>
+      <Divider />
+      {records}
+    </div>;
 }

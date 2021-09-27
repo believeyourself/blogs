@@ -22,22 +22,22 @@ export default defineConfig({
         // },
         {
           exact: true,
-          title: '优质好文',
+          title: '博客',
           path: '/',
           component: '@/pages/blogs',
         },
         {
           path: '/sites',
-          title: '网址导航',
+          title: '导航',
           component: '@/pages/sites',
         },
         {
-          title: '教程资源',
+          title: '教程',
           path: '/resources',
           component: '@/pages/resources',
         },
         {
-          title: '优质好文',
+          title: '博客',
           path: '/blogs',
           component: '@/pages/blogs',
         },

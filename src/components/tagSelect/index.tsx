@@ -45,6 +45,8 @@ export interface TagSelectProps {
     collapseText?: React.ReactNode;
     selectAllText?: React.ReactNode;
   };
+  multi?:boolean;
+  label?:string;
   className?: string;
   Option?: TagSelectOptionProps;
   children?: TagSelectOptionElement | TagSelectOptionElement[];
@@ -55,6 +57,8 @@ const TagSelect: FC<TagSelectProps> & { Option: typeof TagSelectOption } = (
 ) => {
   const {
     children,
+    label,
+    multi = true,
     hideCheckAll = false,
     className,
     style,
@@ -91,11 +95,15 @@ const TagSelect: FC<TagSelectProps> & { Option: typeof TagSelectOption } = (
   };
 
   const handleTagChange = (tag: string | number, checked: boolean) => {
-    const checkedTags: (string | number)[] = [...(value || [])];
+    let checkedTags: (string | number)[] = [...(value || [])];
 
     const index = checkedTags.indexOf(tag);
     if (checked && index === -1) {
-      checkedTags.push(tag);
+      if(multi){
+        checkedTags.push(tag);
+      }else{
+        checkedTags = [tag];
+      }
     } else if (!checked && index > -1) {
       checkedTags.splice(index, 1);
     }
@@ -125,6 +133,7 @@ const TagSelect: FC<TagSelectProps> & { Option: typeof TagSelectOption } = (
           {selectAllText}
         </CheckableTag>
       )}
+      {label && <label style={{fontWeight:600}}>{label}</label>}
       {children &&
         React.Children.map(children, (child: TagSelectOptionElement) => {
           if (isTagSelectOption(child)) {

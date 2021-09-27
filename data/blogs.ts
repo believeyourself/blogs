@@ -11,13 +11,13 @@ export default [
     title: 'React 团队开源新的性能分析工具 - Scheduling Profiler !',
     description:
       '最近，React 团队开源了一款新的性能分析工具 —— Scheduling Profiler',
-    tags:["React","性能分析"],
+    tags:["react","性能分析"],
   },
   {
     id: 3,
     title: 'umi实践问题汇总',
     description: '在使用umi的过程中所遇到问题的记录汇总',
-    tags:["umi"],
+    tags:["umi","脚手架"],
   },
   {
     id: 2,
