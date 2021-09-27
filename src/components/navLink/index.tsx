@@ -5,6 +5,7 @@ export interface NavLinkProps {
   className?: string;
   to: string;
   children: any;
+  onClick?:()=>void;
   isActive?: (match: any, { pathName }: any) => boolean;
   [key: string]: any;
 }
@@ -17,6 +18,9 @@ const NavLink = (props: NavLinkProps) => {
   return (
     <a
       href={props.to}
+      onClick={
+        props.onClick
+      }
       className={`${props.className} ${active && props.activeClassName}`}
     >
       {props.children}
