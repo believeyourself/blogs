@@ -3,7 +3,7 @@ export default [
     id: 6,
     title: '移动端适配方案',
     description:
-      '常用的移动端适配方案,包括：媒体查询，rem布局,vw&vh',
+      '常用的移动端适配方案,包括：媒体查询，rem布局，vw&vh',
     tags:["移动适配","布局"],
   },
   {
@@ -37,11 +37,6 @@ export default [
     title: '登录状态之cookies、session、token',
     description: '登录状态之cookies、session、token',
     tags:["登录状态","cookies","session","token"]
-  },
-  {
-    title: '屏幕尺寸、像素、分辨率和 devicePixelRatio',
-    description: '屏幕尺寸、像素、分辨率和 devicePixelRatio概念介绍',
-    url: 'https://segmentfault.com/a/1190000040282079',
   },
   {
     title: 'React 并发功能体验-前端的并发模式已经到来',
