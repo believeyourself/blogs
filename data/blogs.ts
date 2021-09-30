@@ -1,4 +1,11 @@
 export default [
+  {
+    id: 7,
+    title: 'SEO系列之基础概念',
+    description:
+      '常用的移动端适配方案,包括：媒体查询，rem布局，vw&vh',
+    tags:["SEO"],
+  },
    {
     id: 6,
     title: '移动端适配方案',
