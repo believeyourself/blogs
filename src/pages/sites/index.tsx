@@ -6,16 +6,15 @@
  * @LastEditors: lizejun
  * @LastEditTime: 2021-05-27 13:14:11
  */
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./index.less";
 import records from "../../../data/sites";
 import Card from "@/components/card";
 import SiteHeader from "@/components/siteHeader";
-import {Row,Col} from "antd";
+import { Row,Col,Card as AntCard,Space } from "antd";
 
 const scrollToAnchor = (anchorName: string) => {
   if (anchorName) {
-    // _hmt.push(["_trackEvent", "nav", "click", anchorName, ""])
     // 找到锚点
     const anchorElement = document.getElementById(anchorName);
     // 如果对应id的锚点存在，就跳转到锚点
@@ -51,12 +50,9 @@ export default function Sites () {
       );
     });
     resources.push(
-      <React.Fragment>
-        <p className={styles.category_title} id={item.id}>
-          {item.category}
-        </p>
+      <AntCard key={item.id} style={{marginBottom:10}} title={item.category} id={item.id}>
         <Row gutter={[10,10]} className={styles.category_list}>{categoryList}</Row>
-      </React.Fragment>
+      </AntCard>
     );
   });
   return (
@@ -67,7 +63,9 @@ export default function Sites () {
       <div className={styles.nav}>
         <ul>{navs}</ul>
       </div>
-      <div className={styles.content}>{resources}</div>
+      <div className={styles.content}>
+        {resources}
+      </div>
     </section>
   );
 }

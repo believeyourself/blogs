@@ -6,11 +6,12 @@
  * @LastEditors: lizejun
  * @LastEditTime: 2021-06-15 10:55:30
  */
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./index.less";
 import records from "../../../data/resource";
 import Card from "@/components/card";
 import SiteHeader from "@/components/siteHeader";
+import {Modal,Card as AntCard,Row,Col,Typography} from "antd";
 
 const scrollToAnchor = (anchorName: string) => {
   if (anchorName) {
@@ -25,6 +26,7 @@ const scrollToAnchor = (anchorName: string) => {
 
 export default function Resources () {
   const [active, setActive] = useState(0);
+  const [showDownload,setShowDownload] = useState(false);
   const navs: any[] = [];
   const resources: any[] = [];
   records.forEach((item, index) => {
@@ -58,36 +60,50 @@ export default function Resources () {
       });
 
       resources.push(
-        <React.Fragment key={item.id}>
-          <p className={styles.category_title} id={item.id}>
-            {item.category}
-            <span className={styles.download_url}>
-              下载缓慢？ 网盘下载：
-              <a
-                target="_blank"
-                href="https://pan.baidu.com/s/1xvVf3FlyN0gPMxlZJvqnlw" rel="noreferrer"
+        <AntCard extra={
+           <a className={styles.download_url} onClick={()=>{setShowDownload(true)}}>
+              下载慢？
+              <Modal 
+                title="PDF下载"
+                visible={showDownload}
+                footer={false}
+                onCancel={(evt)=>{
+                  setShowDownload(false);
+                  evt.stopPropagation();
+                }}
               >
-                https://pan.baidu.com/s/1xvVf3FlyN0gPMxlZJvqnlw
-              </a>{" "}
-              提取码：belf
-            </span>
-          </p>
-          <section className={styles.category_list}>{categoryList}</section>
-        </React.Fragment>
+                百度网盘：
+                <a
+                  target="_blank"
+                  href="https://pan.baidu.com/s/1xvVf3FlyN0gPMxlZJvqnlw" rel="noreferrer"
+                >
+                  https://pan.baidu.com/s/1xvVf3FlyN0gPMxlZJvqnlw
+                </a>
+                <p>
+                  提取码：<Typography.Text copyable>belf</Typography.Text>
+                </p>
+              </Modal>
+            </a>
+        } id={item.id} key={item.id} title={item.category}>
+          <section className={styles.category_list}>
+            {categoryList}
+          </section>
+        </AntCard>
       );
     } else {
       const categoryList = list.map((item: any) => {
         return (
-          <Card className={styles.category_list_item} key={item.title} {...item} />
+          <Col key={item.title} lg={12} md={12} sm={24} xs={24}>
+            <Card className={styles.category_list_item} {...item} />
+          </Col>
         );
       });
       resources.push(
-        <React.Fragment key={item.id}>
-          <p className={styles.category_title} id={item.id}>
-            {item.category}
-          </p>
-          <section className={styles.category_list}>{categoryList}</section>
-        </React.Fragment>
+        <AntCard className={styles.category_list} key={item.id} title={item.category}>
+          <Row gutter={[10,10]}>
+            {categoryList}
+          </Row>
+        </AntCard>
       );
     }
   });
