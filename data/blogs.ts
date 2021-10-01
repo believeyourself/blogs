@@ -3,47 +3,46 @@ export default [
     id: 7,
     title: 'SEO系列之基础概念',
     description:
-      '常用的移动端适配方案,包括：媒体查询，rem布局，vw&vh',
-    tags:["SEO"],
+      'SEO是什么，SEO对我们来说有什么用，SEO能用在哪里,什么是黑帽，白帽，灰帽，绿帽SEO',
+    tags: ['SEO'],
   },
-   {
+  {
     id: 6,
     title: '移动端适配方案',
-    description:
-      '常用的移动端适配方案,包括：媒体查询，rem布局，vw&vh',
-    tags:["移动适配","布局"],
+    description: '常用的移动端适配方案,包括：媒体查询，rem布局，vw&vh',
+    tags: ['移动适配', '布局'],
   },
   {
     id: 5,
     title: 'NodeJs发起https请求报错:certificate has expired',
     description:
       '在egg中发起https请求时提示证书过期错误（certificate has expired）问题记录',
-    tags:["node","https"],
+    tags: ['node', 'https'],
   },
   {
     id: 4,
     title: 'React 团队开源新的性能分析工具 - Scheduling Profiler !',
     description:
       '最近，React 团队开源了一款新的性能分析工具 —— Scheduling Profiler',
-    tags:["react","性能分析"],
+    tags: ['react', '性能分析'],
   },
   {
     id: 3,
     title: 'umi实践问题汇总',
     description: '在使用umi的过程中所遇到问题的记录汇总',
-    tags:["umi","脚手架"],
+    tags: ['umi', '脚手架'],
   },
   {
     id: 2,
     title: 'react中实现markdown文件读取展示',
     description: 'react中实现markdown文件读取展示',
-    tags:["react","markdown"],
+    tags: ['react', 'markdown'],
   },
   {
     id: 1,
     title: '登录状态之cookies、session、token',
     description: '登录状态之cookies、session、token',
-    tags:["登录状态","cookies","session","token"]
+    tags: ['登录状态', 'cookies', 'session', 'token'],
   },
   {
     title: 'React 并发功能体验-前端的并发模式已经到来',
