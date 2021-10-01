@@ -12,6 +12,11 @@ export default defineConfig({
       component: './exception/404',
     },
     {
+      name: 'PDF预览',
+      path: '/ebooks/:path',
+      component: './resources/previewPdf',
+    },
+    {
       path: '/',
       component: '@/layouts',
       routes: [

@@ -15889,6 +15889,21 @@
       return e;
     };
   },
+  O9ji: function (e, t, n) {
+    'use strict';
+    n.r(t);
+    var r = n('Ty5D'),
+      o = n('nKUr');
+    t['default'] = () => {
+      var e = Object(r['h'])(),
+        t = e.path;
+      return Object(o['jsx'])('embed', {
+        src: '/static/ebooks/'.concat(t),
+        type: 'application/pdf',
+        style: { width: '100vw', height: '100vh' },
+      });
+    };
+  },
   ODXe: function (e, t, n) {
     'use strict';
     n.d(t, 'a', function () {
@@ -34409,28 +34424,24 @@
           id: 'PDF',
           category: 'PDF',
           list: [
-            {
-              title: '\u7cbe\u901aGIT.pdf',
-              path: 'ebooks/\u7cbe\u901aGIT.pdf',
-            },
+            { title: '\u7cbe\u901aGIT.pdf', path: '\u7cbe\u901aGIT.pdf' },
             {
               title:
                 '\u4f60\u4e0d\u77e5\u9053\u7684JavaScript\uff08\u4e2d\u5377\uff09.pdf',
               path:
-                'ebooks/\u4f60\u4e0d\u77e5\u9053\u7684JavaScript\uff08\u4e2d\u5377\uff09.pdf',
+                '\u4f60\u4e0d\u77e5\u9053\u7684JavaScript\uff08\u4e2d\u5377\uff09.pdf',
             },
             {
               title: '\u524d\u7aef\u9762\u8bd5\u9898\u6c47\u603b.pdf',
-              path: 'ebooks/\u524d\u7aef\u9762\u8bd5\u9898\u6c47\u603b.pdf',
+              path: '\u524d\u7aef\u9762\u8bd5\u9898\u6c47\u603b.pdf',
             },
             {
               title: 'Git\u6743\u5a01\u6307\u5357.pdf',
-              path: 'ebooks/Git\u6743\u5a01\u6307\u5357.pdf',
+              path: 'Git\u6743\u5a01\u6307\u5357.pdf',
             },
             {
               title: 'HTML5 Canvas\u6e38\u620f\u5f00\u53d1\u5b9e\u6218.pdf',
-              path:
-                'ebooks/HTML5 Canvas\u6e38\u620f\u5f00\u53d1\u5b9e\u6218.pdf',
+              path: 'HTML5 Canvas\u6e38\u620f\u5f00\u53d1\u5b9e\u6218.pdf',
             },
             {
               title: 'HTML5\u79fb\u52a8Web\u5f00\u53d1\u6307\u5357.pdf',
@@ -34512,8 +34523,8 @@
                 'a',
                 {
                   className: Sr.a.pdf,
-                  download: !0,
-                  href: ''.concat(e.path),
+                  target: '_blank',
+                  href: '/ebooks/'.concat(e.path),
                   children: e.title,
                 },
                 e.title,
@@ -34529,7 +34540,7 @@
                         d(!0);
                       },
                       children: [
-                        '\u4e0b\u8f7d\u6162\uff1f',
+                        '\u4e0b\u8f7d',
                         Object(Pr['jsxs'])(rt, {
                           title: 'PDF\u4e0b\u8f7d',
                           visible: f,
@@ -40010,6 +40021,12 @@
     function ht() {
       var e = [
         { name: '404', path: '/404', component: n('3JQQ').default, exact: !0 },
+        {
+          name: 'PDF\u9884\u89c8',
+          path: '/ebooks/:path',
+          component: n('O9ji').default,
+          exact: !0,
+        },
         {
           path: '/',
           component: n('+ego').default,

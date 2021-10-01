@@ -6,12 +6,12 @@
  * @LastEditors: lizejun
  * @LastEditTime: 2021-06-15 10:55:30
  */
-import { useState } from "react";
-import styles from "./index.less";
-import records from "../../../data/resource";
-import Card from "@/components/card";
-import SiteHeader from "@/components/siteHeader";
-import {Modal,Card as AntCard,Row,Col,Typography} from "antd";
+import { useState } from 'react';
+import styles from './index.less';
+import records from '../../../data/resource';
+import Card from '@/components/card';
+import SiteHeader from '@/components/siteHeader';
+import { Modal, Card as AntCard, Row, Col, Typography } from 'antd';
 
 const scrollToAnchor = (anchorName: string) => {
   if (anchorName) {
@@ -19,21 +19,21 @@ const scrollToAnchor = (anchorName: string) => {
     const anchorElement = document.getElementById(anchorName);
     // 如果对应id的锚点存在，就跳转到锚点
     if (anchorElement) {
-      anchorElement.scrollIntoView({ block: "start", behavior: "smooth" });
+      anchorElement.scrollIntoView({ block: 'start', behavior: 'smooth' });
     }
   }
 };
 
-export default function Resources () {
+export default function Resources() {
   const [active, setActive] = useState(0);
-  const [showDownload,setShowDownload] = useState(false);
+  const [showDownload, setShowDownload] = useState(false);
   const navs: any[] = [];
   const resources: any[] = [];
   records.forEach((item, index) => {
     navs.push(
       <li key={item.id} className={styles.nav_item}>
         <a
-          className={index === active ? styles.active : ""}
+          className={index === active ? styles.active : ''}
           onClick={() => {
             setActive(index);
             scrollToAnchor(item.id);
@@ -41,18 +41,18 @@ export default function Resources () {
         >
           {item.category}
         </a>
-      </li>
+      </li>,
     );
     let categoryList: any[] = [];
-    const list:any[] = item.list || [];
-    if (item.category === "PDF") {
+    const list: any[] = item.list || [];
+    if (item.category === 'PDF') {
       categoryList = list.map((pdf: any) => {
         return (
           <a
             className={styles.pdf}
             key={pdf.title}
-            download
-            href={`${pdf.path}`}
+            target="_blank"
+            href={`/ebooks/${pdf.path}`}
           >
             {pdf.title}
           </a>
@@ -60,14 +60,20 @@ export default function Resources () {
       });
 
       resources.push(
-        <AntCard extra={
-           <a className={styles.download_url} onClick={()=>{setShowDownload(true)}}>
-              下载慢？
-              <Modal 
+        <AntCard
+          extra={
+            <a
+              className={styles.download_url}
+              onClick={() => {
+                setShowDownload(true);
+              }}
+            >
+              下载
+              <Modal
                 title="PDF下载"
                 visible={showDownload}
                 footer={false}
-                onCancel={(evt)=>{
+                onCancel={(evt) => {
                   setShowDownload(false);
                   evt.stopPropagation();
                 }}
@@ -75,7 +81,8 @@ export default function Resources () {
                 百度网盘：
                 <a
                   target="_blank"
-                  href="https://pan.baidu.com/s/1xvVf3FlyN0gPMxlZJvqnlw" rel="noreferrer"
+                  href="https://pan.baidu.com/s/1xvVf3FlyN0gPMxlZJvqnlw"
+                  rel="noreferrer"
                 >
                   https://pan.baidu.com/s/1xvVf3FlyN0gPMxlZJvqnlw
                 </a>
@@ -84,11 +91,13 @@ export default function Resources () {
                 </p>
               </Modal>
             </a>
-        } id={item.id} key={item.id} title={item.category}>
-          <section className={styles.category_list}>
-            {categoryList}
-          </section>
-        </AntCard>
+          }
+          id={item.id}
+          key={item.id}
+          title={item.category}
+        >
+          <section className={styles.category_list}>{categoryList}</section>
+        </AntCard>,
       );
     } else {
       const categoryList = list.map((item: any) => {
@@ -99,11 +108,13 @@ export default function Resources () {
         );
       });
       resources.push(
-        <AntCard className={styles.category_list} key={item.id} title={item.category}>
-          <Row gutter={[10,10]}>
-            {categoryList}
-          </Row>
-        </AntCard>
+        <AntCard
+          className={styles.category_list}
+          key={item.id}
+          title={item.category}
+        >
+          <Row gutter={[10, 10]}>{categoryList}</Row>
+        </AntCard>,
       );
     }
   });
