@@ -10,12 +10,12 @@ import React from 'react';
 import HotRank from '@/components/hotRank';
 import NavLink from '@/components/navLink';
 import styles from './index.less';
-import noticeIcon from '@/assets/images/notice.svg';
 import logo from '@/assets/images/logo.png';
 import { BackTop } from 'antd';
 import ScrollFixed from '@/components/scrollFixed';
 import Exception500 from '@/pages/exception/500';
-import Footer from "@/components/footer"
+import Footer from '@/components/footer';
+import RowAd from '@/components/rowAd';
 
 class App extends React.Component {
   state = {
@@ -87,6 +87,7 @@ class App extends React.Component {
           {this.props.children}
           <HotRank />
         </div>
+        <RowAd />
         <Footer />
         <BackTop />
       </div>

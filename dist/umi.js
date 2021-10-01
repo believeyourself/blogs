@@ -561,8 +561,33 @@
           className: Y.a.footer,
           children:
             '\xa92021 farmerlzj \u63d0\u4f9b\u6280\u672f\u652f\u6301 | \u8054\u7cfb\u6211\u4eec\uff1afarmerlzj@163.com',
+        }),
+      $ = () =>
+        Object(N['jsxs'])('div', {
+          children: [
+            Object(N['jsx'])('script', {
+              async: !0,
+              src:
+                'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2087076429727327',
+              crossorigin: 'anonymous',
+            }),
+            Object(N['jsx'])('ins', {
+              className: 'adsbygoogle',
+              style: { display: 'block' },
+              'data-ad-client': 'ca-pub-2087076429727327',
+              'data-ad-slot': '9331479126',
+              'data-ad-format': 'auto',
+              'data-full-width-responsive': 'true',
+            }),
+            Object(N['jsxs'])('script', {
+              children: [
+                '(adsbygoogle = window.adsbygoogle || []).push(',
+                ');',
+              ],
+            }),
+          ],
         });
-    class $ extends c.a.Component {
+    class Q extends c.a.Component {
       constructor() {
         super(...arguments), (this.state = { hasError: !1 });
       }
@@ -620,13 +645,14 @@
                   className: z.a.content,
                   children: [this.props.children, Object(N['jsx'])(L, {})],
                 }),
+                Object(N['jsx'])($, {}),
                 Object(N['jsx'])(J, {}),
                 Object(N['jsx'])(T, {}),
               ],
             });
       }
     }
-    t['default'] = $;
+    t['default'] = Q;
   },
   '+wdc': function (e, t, n) {
     'use strict';
