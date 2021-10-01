@@ -562,31 +562,7 @@
           children:
             '\xa92021 farmerlzj \u63d0\u4f9b\u6280\u672f\u652f\u6301 | \u8054\u7cfb\u6211\u4eec\uff1afarmerlzj@163.com',
         }),
-      $ = () =>
-        Object(N['jsxs'])('div', {
-          children: [
-            Object(N['jsx'])('script', {
-              async: !0,
-              src:
-                'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2087076429727327',
-              crossorigin: 'anonymous',
-            }),
-            Object(N['jsx'])('ins', {
-              className: 'adsbygoogle',
-              style: { display: 'block' },
-              'data-ad-client': 'ca-pub-2087076429727327',
-              'data-ad-slot': '9331479126',
-              'data-ad-format': 'auto',
-              'data-full-width-responsive': 'true',
-            }),
-            Object(N['jsxs'])('script', {
-              children: [
-                '(adsbygoogle = window.adsbygoogle || []).push(',
-                ');',
-              ],
-            }),
-          ],
-        });
+      $ = n('qhky');
     class Q extends c.a.Component {
       constructor() {
         super(...arguments), (this.state = { hasError: !1 });
@@ -599,6 +575,14 @@
           ? Object(N['jsx'])(K, {})
           : Object(N['jsxs'])('div', {
               children: [
+                Object(N['jsx'])($['a'], {
+                  children: Object(N['jsx'])('script', {
+                    'data-ad-client': 'ca-pub-2087076429727327',
+                    async: !0,
+                    src:
+                      'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
+                  }),
+                }),
                 Object(N['jsxs'])('header', {
                   className: z.a.header,
                   children: [
@@ -645,7 +629,6 @@
                   className: z.a.content,
                   children: [this.props.children, Object(N['jsx'])(L, {})],
                 }),
-                Object(N['jsx'])($, {}),
                 Object(N['jsx'])(J, {}),
                 Object(N['jsx'])(T, {}),
               ],
@@ -11815,6 +11798,7 @@
             children: [
               Object(V['jsx'])(K.Option, { value: 'react', children: 'React' }),
               Object(V['jsx'])(K.Option, { value: 'node', children: 'NodeJs' }),
+              Object(V['jsx'])(K.Option, { value: 'node', children: 'SEO' }),
             ],
           }),
           Object(V['jsx'])(d, {}),

@@ -16,6 +16,7 @@ import ScrollFixed from '@/components/scrollFixed';
 import Exception500 from '@/pages/exception/500';
 import Footer from '@/components/footer';
 import RowAd from '@/components/rowAd';
+import { Helmet } from '@/.umi/plugin-helmet/exports';
 
 class App extends React.Component {
   state = {
@@ -35,6 +36,15 @@ class App extends React.Component {
 
     return (
       <div>
+        <Helmet>
+          {process.env.REACT_APP_ENV === 'production' && (
+            <script
+              data-ad-client="ca-pub-2087076429727327"
+              async
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+            ></script>
+          )}
+        </Helmet>
         <header className={styles.header}>
           <img className={styles.title} src={logo} />
           <div className={styles.slogan}></div>
@@ -87,7 +97,6 @@ class App extends React.Component {
           {this.props.children}
           <HotRank />
         </div>
-        <RowAd />
         <Footer />
         <BackTop />
       </div>

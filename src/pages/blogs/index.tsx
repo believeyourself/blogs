@@ -10,30 +10,33 @@ import styles from './index.less';
 import blogs from '../../../data/blogs';
 import NavLink from '@/components/navLink';
 import TagSelect from '@/components/tagSelect';
-import {Divider} from "antd";
-import { useState,useMemo } from 'react';
+import { Divider } from 'antd';
+import { useState, useMemo } from 'react';
 
 export default function Blogs() {
-  const [tag,setTag] = useState<string | null>(null);
+  const [tag, setTag] = useState<string | null>(null);
 
-  const targetBlogs:any[] = useMemo(()=>{
-      return blogs.filter((blog:any)=>{
-      if(!tag){
+  const targetBlogs: any[] = useMemo(() => {
+    return blogs.filter((blog: any) => {
+      if (!tag) {
         return true;
       }
       return Array.isArray(blog.tags) && blog.tags.includes(tag);
-    })
-  },[tag]);
+    });
+  }, [tag]);
 
   const records = targetBlogs.map((item: any) => {
     if (item.id) {
       return (
         <NavLink
-          onClick={
-            ()=>{
-              (window as any)._hmt?.push(['_trackEvent', "blog","detail", item.id]);
-            }
-          }
+          onClick={() => {
+            (window as any)._hmt?.push([
+              '_trackEvent',
+              'blog',
+              'detail',
+              item.id,
+            ]);
+          }}
           to={`/blogs/detail/${item.id}`}
           key={item.url || item.id}
           className={styles.category_list_item}
@@ -57,23 +60,27 @@ export default function Blogs() {
       );
     }
   });
-  return <div className={styles.content}>
-      <TagSelect 
-        hideCheckAll={true} 
+  return (
+    <div className={styles.content}>
+      <TagSelect
+        hideCheckAll={true}
         multi={false}
-        onChange={(values)=>{
+        onChange={(values) => {
           setTag(values[0]?.toString() || null);
-        }} 
-      expandable>
-          <TagSelect.Option value="react">React</TagSelect.Option>
-          {/* <TagSelect.Option value="vue">vue</TagSelect.Option>
+        }}
+        expandable
+      >
+        <TagSelect.Option value="react">React</TagSelect.Option>
+        {/* <TagSelect.Option value="vue">vue</TagSelect.Option>
           <TagSelect.Option value="angular">angularJs</TagSelect.Option>
           <TagSelect.Option value="canvas">canvas</TagSelect.Option>
           <TagSelect.Option value="jqery">jquery</TagSelect.Option> */}
-          {/* <TagSelect.Option value="css">css</TagSelect.Option> */}
-          <TagSelect.Option value="node">NodeJs</TagSelect.Option>
+        {/* <TagSelect.Option value="css">css</TagSelect.Option> */}
+        <TagSelect.Option value="node">NodeJs</TagSelect.Option>
+        <TagSelect.Option value="node">SEO</TagSelect.Option>
       </TagSelect>
       <Divider />
       {records}
-    </div>;
+    </div>
+  );
 }
