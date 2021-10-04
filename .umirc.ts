@@ -38,8 +38,14 @@ export default defineConfig({
         },
         {
           title: '教程',
+          exact: true,
           path: '/resources',
           component: '@/pages/resources',
+        },
+        {
+          title: '教程',
+          path: '/resources/:id',
+          component: '@/pages/resources/more',
         },
         {
           title: '博客',

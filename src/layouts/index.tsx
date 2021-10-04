@@ -55,14 +55,14 @@ class App extends React.Component {
               to="/sites"
               className={styles.item}
             >
-              导航
+              网址导航
             </NavLink>
             <NavLink
               activeClassName={styles.active}
               to="/resources"
               className={styles.item}
             >
-              教程
+              源码教程
             </NavLink>
             <NavLink
               isActive={(match, { pathname }) => {
@@ -73,7 +73,7 @@ class App extends React.Component {
               to="/blogs"
               className={styles.item}
             >
-              博客
+              随笔博客
             </NavLink>
             {/* <NavLink
               activeClassName={styles.active}

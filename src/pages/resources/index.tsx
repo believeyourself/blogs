@@ -47,7 +47,7 @@ export default function Resources() {
         key={item.id}
         title={item.category}
         extra={
-          <a className={styles.download_url} href={`/resouces/:${item.id}`}>
+          <a className={styles.download_url} href={`/resources/${item.id}`}>
             查看更多
           </a>
         }
