@@ -4,6 +4,18 @@ export default [
     category: '视频教程',
     list: [
       {
+        title: 'React17+React Hook+TS4 最佳实践，仿 Jira 企业级项目（齐）',
+        description:
+          '链接：https://pan.baidu.com/s/1HwBl63CqiP15lwIG4OaCzQ 提取码：p8j8',
+        url: 'https://pan.baidu.com/s/1HwBl63CqiP15lwIG4OaCzQ',
+      },
+      {
+        title: 'vue3.0+ts仿知乎专栏企业级项目',
+        description:
+          '链接：https://pan.baidu.com/s/1xiQL_YIm2adwwhq3JN7SvQ 提取码：zqum',
+        url: 'https://pan.baidu.com/s/1xiQL_YIm2adwwhq3JN7SvQ',
+      },
+      {
         title: 'koa2从0开始构建预告片网站',
         description:
           '链接：https://pan.baidu.com/s/1jnb7v1yqlexygtd7gJJ8aw 提取码：duum',
@@ -39,6 +51,34 @@ export default [
     id: 'originCode',
     category: '开源项目',
     list: [
+      {
+        title: 'react-beautiful-dnd',
+        description: '漂亮易用的 React 列表拖拽库。',
+        url: 'https://github.com/atlassian/react-beautiful-dnd',
+      },
+      {
+        title: 'flat',
+        description:
+          '前后端完全开源、功能丰富的在线教室项目。通过它可以快速完成支持多人视频、语音、白板互动、录制回放等功能的在线教室。',
+        url: 'https://github.com/netless-io/flat',
+      },
+      {
+        title: 'milkdown',
+        description:
+          '一款清爽所见即所得的 Markdown 编辑器。不同于大多数 Markdown 编辑器它是插件驱动的，类似开源可自由扩展的 Typora。项目由 prosemirror+remark 构建，入门开发者从中可以学习到如何使用 prosemirror 来开发富文本编辑器，以及如何设计一个针对编辑器的插件系统。',
+        url: 'https://github.com/Saul-Mirone/milkdown',
+      },
+      {
+        title: 'iDataV',
+        description: '大屏数据可视化项目集合。',
+        url: 'https://github.com/yyhsong/iDataV',
+      },
+      {
+        title: 'Didact',
+        description:
+          '教你从零写一个 React 框架。通过一系列的文章和代码，教授如何实现 React 框架，从而能够更好的理解 React。',
+        url: 'https://github.com/pomber/didact',
+      },
       {
         title: '木及简历（React）',
         description: '一款用 `Markdown`就能写出好看简历(resume)的在线工具。',
@@ -117,6 +157,26 @@ export default [
       {
         title: '精通GIT.pdf',
         path: '精通GIT.pdf',
+      },
+      {
+        title: 'Learning Node.pdf',
+        path: 'Learning Node.pdf',
+      },
+      {
+        title: 'Node Cookbook.pdf',
+        path: 'Node Cookbook.pdf',
+      },
+      {
+        title: 'node js 中文文档.pdf',
+        path: 'node js 中文文档.pdf',
+      },
+      {
+        title: 'Node.js开发指南_中文正版.pdf',
+        path: 'Node.js开发指南_中文正版.pdf',
+      },
+      {
+        title: 'Node入门.pdf',
+        path: 'Node入门.pdf',
       },
       {
         title: '你不知道的JavaScript（中卷）.pdf',

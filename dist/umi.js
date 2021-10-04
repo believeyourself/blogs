@@ -34318,6 +34318,20 @@
           list: [
             {
               title:
+                'React17+React Hook+TS4 \u6700\u4f73\u5b9e\u8df5\uff0c\u4eff Jira \u4f01\u4e1a\u7ea7\u9879\u76ee\uff08\u9f50\uff09',
+              description:
+                '\u94fe\u63a5\uff1ahttps://pan.baidu.com/s/1HwBl63CqiP15lwIG4OaCzQ \u63d0\u53d6\u7801\uff1ap8j8',
+              url: 'https://pan.baidu.com/s/1HwBl63CqiP15lwIG4OaCzQ',
+            },
+            {
+              title:
+                'vue3.0+ts\u4eff\u77e5\u4e4e\u4e13\u680f\u4f01\u4e1a\u7ea7\u9879\u76ee',
+              description:
+                '\u94fe\u63a5\uff1ahttps://pan.baidu.com/s/1xiQL_YIm2adwwhq3JN7SvQ \u63d0\u53d6\u7801\uff1azqum',
+              url: 'https://pan.baidu.com/s/1xiQL_YIm2adwwhq3JN7SvQ',
+            },
+            {
+              title:
                 'koa2\u4ece0\u5f00\u59cb\u6784\u5efa\u9884\u544a\u7247\u7f51\u7ad9',
               description:
                 '\u94fe\u63a5\uff1ahttps://pan.baidu.com/s/1jnb7v1yqlexygtd7gJJ8aw \u63d0\u53d6\u7801\uff1aduum',
@@ -34357,6 +34371,36 @@
           id: 'originCode',
           category: '\u5f00\u6e90\u9879\u76ee',
           list: [
+            {
+              title: 'react-beautiful-dnd',
+              description:
+                '\u6f02\u4eae\u6613\u7528\u7684 React \u5217\u8868\u62d6\u62fd\u5e93\u3002',
+              url: 'https://github.com/atlassian/react-beautiful-dnd',
+            },
+            {
+              title: 'flat',
+              description:
+                '\u524d\u540e\u7aef\u5b8c\u5168\u5f00\u6e90\u3001\u529f\u80fd\u4e30\u5bcc\u7684\u5728\u7ebf\u6559\u5ba4\u9879\u76ee\u3002\u901a\u8fc7\u5b83\u53ef\u4ee5\u5feb\u901f\u5b8c\u6210\u652f\u6301\u591a\u4eba\u89c6\u9891\u3001\u8bed\u97f3\u3001\u767d\u677f\u4e92\u52a8\u3001\u5f55\u5236\u56de\u653e\u7b49\u529f\u80fd\u7684\u5728\u7ebf\u6559\u5ba4\u3002',
+              url: 'https://github.com/netless-io/flat',
+            },
+            {
+              title: 'milkdown',
+              description:
+                '\u4e00\u6b3e\u6e05\u723d\u6240\u89c1\u5373\u6240\u5f97\u7684 Markdown \u7f16\u8f91\u5668\u3002\u4e0d\u540c\u4e8e\u5927\u591a\u6570 Markdown \u7f16\u8f91\u5668\u5b83\u662f\u63d2\u4ef6\u9a71\u52a8\u7684\uff0c\u7c7b\u4f3c\u5f00\u6e90\u53ef\u81ea\u7531\u6269\u5c55\u7684 Typora\u3002\u9879\u76ee\u7531 prosemirror+remark \u6784\u5efa\uff0c\u5165\u95e8\u5f00\u53d1\u8005\u4ece\u4e2d\u53ef\u4ee5\u5b66\u4e60\u5230\u5982\u4f55\u4f7f\u7528 prosemirror \u6765\u5f00\u53d1\u5bcc\u6587\u672c\u7f16\u8f91\u5668\uff0c\u4ee5\u53ca\u5982\u4f55\u8bbe\u8ba1\u4e00\u4e2a\u9488\u5bf9\u7f16\u8f91\u5668\u7684\u63d2\u4ef6\u7cfb\u7edf\u3002',
+              url: 'https://github.com/Saul-Mirone/milkdown',
+            },
+            {
+              title: 'iDataV',
+              description:
+                '\u5927\u5c4f\u6570\u636e\u53ef\u89c6\u5316\u9879\u76ee\u96c6\u5408\u3002',
+              url: 'https://github.com/yyhsong/iDataV',
+            },
+            {
+              title: 'Didact',
+              description:
+                '\u6559\u4f60\u4ece\u96f6\u5199\u4e00\u4e2a React \u6846\u67b6\u3002\u901a\u8fc7\u4e00\u7cfb\u5217\u7684\u6587\u7ae0\u548c\u4ee3\u7801\uff0c\u6559\u6388\u5982\u4f55\u5b9e\u73b0 React \u6846\u67b6\uff0c\u4ece\u800c\u80fd\u591f\u66f4\u597d\u7684\u7406\u89e3 React\u3002',
+              url: 'https://github.com/pomber/didact',
+            },
             {
               title: '\u6728\u53ca\u7b80\u5386\uff08React\uff09',
               description:
@@ -34449,6 +34493,19 @@
           category: 'PDF',
           list: [
             { title: '\u7cbe\u901aGIT.pdf', path: '\u7cbe\u901aGIT.pdf' },
+            { title: 'Learning Node.pdf', path: 'Learning Node.pdf' },
+            { title: 'Node Cookbook.pdf', path: 'Node Cookbook.pdf' },
+            {
+              title: 'node js \u4e2d\u6587\u6587\u6863.pdf',
+              path: 'node js \u4e2d\u6587\u6587\u6863.pdf',
+            },
+            {
+              title:
+                'Node.js\u5f00\u53d1\u6307\u5357_\u4e2d\u6587\u6b63\u7248.pdf',
+              path:
+                'Node.js\u5f00\u53d1\u6307\u5357_\u4e2d\u6587\u6b63\u7248.pdf',
+            },
+            { title: 'Node\u5165\u95e8.pdf', path: 'Node\u5165\u95e8.pdf' },
             {
               title:
                 '\u4f60\u4e0d\u77e5\u9053\u7684JavaScript\uff08\u4e2d\u5377\uff09.pdf',
