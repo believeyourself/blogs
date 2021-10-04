@@ -15,7 +15,6 @@ import { BackTop } from 'antd';
 import ScrollFixed from '@/components/scrollFixed';
 import Exception500 from '@/pages/exception/500';
 import Footer from '@/components/footer';
-import RowAd from '@/components/rowAd';
 import { Helmet } from '@/.umi/plugin-helmet/exports';
 
 class App extends React.Component {

@@ -4,7 +4,31 @@ export default [
     category: '视频教程',
     list: [
       {
-        title: 'React17+React Hook+TS4 最佳实践，仿 Jira 企业级项目（齐）',
+        title: 'Flutter从入门到进阶实战携程网',
+        description:
+          '链接：https://pan.baidu.com/s/1HL_1bPbkJ1SrZV8NGcdjYg 提取码：ytin',
+        url: 'https://pan.baidu.com/s/1HL_1bPbkJ1SrZV8NGcdjYg',
+      },
+      {
+        title: 'Node.js+Koa2框架生态实战 - 从零模拟新浪微博',
+        description:
+          '链接：https://pan.baidu.com/s/1_VTelO9z0srgFzF5yixFaA 提取码：pgp7',
+        url: 'https://pan.baidu.com/s/1_VTelO9z0srgFzF5yixFaA',
+      },
+      {
+        title: '极客TypeScript',
+        description:
+          '链接：https://pan.baidu.com/s/1ntqmUX45L0xl4aCtVsomSQ 提取码：e8p5',
+        url: 'https://pan.baidu.com/s/1ntqmUX45L0xl4aCtVsomSQ',
+      },
+      {
+        title: '精讲TypeScript',
+        description:
+          '链接：https://pan.baidu.com/s/10ukk3mi1xzqtVlSt8YdpUA 提取码：qjss',
+        url: 'https://pan.baidu.com/s/10ukk3mi1xzqtVlSt8YdpUA',
+      },
+      {
+        title: 'React17+React Hook+TS4 最佳实践，仿Jira企业级项目',
         description:
           '链接：https://pan.baidu.com/s/1HwBl63CqiP15lwIG4OaCzQ 提取码：p8j8',
         url: 'https://pan.baidu.com/s/1HwBl63CqiP15lwIG4OaCzQ',

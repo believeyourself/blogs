@@ -5,7 +5,7 @@
   background-color: #f5f5f5;
 
   .nav {
-    width: 220px;
+    min-width: 220px;
     background-color: #fff;
 
     @media screen and (max-width: @mobile-width) {
@@ -58,16 +58,16 @@
       display: flex;
       flex-wrap: wrap;
       margin-bottom: 10px;
+    }
 
-      .pdf {
-        width: 300px;
-        margin-top: 20px;
-        color: #0396d7;
-        text-decoration: none;
+    .pdf {
+      width: 300px;
+      margin-top: 20px;
+      color: #0396d7;
+      text-decoration: none;
 
-        &:hover {
-          text-decoration: underline;
-        }
+      &:hover {
+        text-decoration: underline;
       }
     }
   }
