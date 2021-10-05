@@ -16415,7 +16415,7 @@
     'use strict';
     var r = n('nKUr');
     t['a'] = () =>
-      Object(r['jsxs'])('div', {
+      Object(r['jsxs'])(r['Fragment'], {
         children: [
           Object(r['jsx'])('script', {
             async: !0,
