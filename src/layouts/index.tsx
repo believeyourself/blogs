@@ -73,7 +73,7 @@ class App extends React.Component {
               to="/blogs"
               className={styles.item}
             >
-              随笔博客
+              博客随笔
             </NavLink>
             {/* <NavLink
               activeClassName={styles.active}

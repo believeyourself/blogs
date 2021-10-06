@@ -1,5 +1,11 @@
 export default [
   {
+    id: 9,
+    title: '原型与原型链、继承',
+    description: '原型与原型链、继承简单实现',
+    tags: ['js'],
+  },
+  {
     id: 8,
     title: 'SEO系列之搜索引擎工作原理',
     description: '了解搜索引擎工作原理。',

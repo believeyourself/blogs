@@ -77,6 +77,7 @@ export default function Blogs() {
           <TagSelect.Option value="jqery">jquery</TagSelect.Option> */}
         {/* <TagSelect.Option value="css">css</TagSelect.Option> */}
         <TagSelect.Option value="node">NodeJs</TagSelect.Option>
+        <TagSelect.Option value="js">Js</TagSelect.Option>
         <TagSelect.Option value="SEO">SEO</TagSelect.Option>
       </TagSelect>
       <Divider />
