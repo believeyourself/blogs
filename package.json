@@ -26,6 +26,7 @@
     "ahooks": "^2.10.9",
     "classnames": "^2.3.1",
     "express": "^4.17.1",
+    "js-md5": "^0.7.3",
     "marked": "^3.0.4",
     "moment": "^2.29.1",
     "numeral": "^2.0.6",
@@ -37,6 +38,7 @@
     "umi": "^3.5.18"
   },
   "devDependencies": {
+    "@types/js-md5": "^0.4.3",
     "@types/marked": "^3.0.1",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",

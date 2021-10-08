@@ -3,6 +3,7 @@ import { Helmet } from 'umi';
 import { Divider, Tabs } from 'antd';
 import { useState } from 'react';
 import JsonTree from './jsonTree/jsonTree';
+import MD5 from './md5/md5';
 import logo from '../../assets/images/logo.png';
 import style from './style.less';
 
@@ -50,8 +51,8 @@ export default () => {
           >
             <JsonTree />
           </Tabs.TabPane>
-          <Tabs.TabPane tab="MD5" key={ToolType.md5} tabKey={ToolType.md5}>
-            开发中。。。。
+          <Tabs.TabPane tab="加密" key={ToolType.md5} tabKey={ToolType.md5}>
+            <MD5 />
           </Tabs.TabPane>
           <Tabs.TabPane
             tab="AJAX"
