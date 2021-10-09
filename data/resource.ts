@@ -4,6 +4,36 @@ export default [
     category: '视频教程',
     list: [
       {
+        title: '掌握Taro多端框架 快速上手小程序H5开发',
+        description:
+          '链接:https://pan.baidu.com/s/1tqHc2htH1ZkBetJXpOx-gg 提取码:gstg',
+        url: 'https://pan.baidu.com/s/1tqHc2htH1ZkBetJXpOx-gg',
+      },
+      {
+        title: '前端框架及项目面试 聚焦VueReactWebpack',
+        description:
+          '链接:https://pan.baidu.com/s/1zk6aMq9urxTp1XMmMHkaEw 提取码:ddsw',
+        url: 'https://pan.baidu.com/s/1zk6aMq9urxTp1XMmMHkaEw',
+      },
+      {
+        title: 'React高级实战 打造大众点评 WebApp',
+        description:
+          '链接:https://pan.baidu.com/s/12ExLxxOG5CH2aLm-xdoYyg 提取码:52gr',
+        url: 'https://pan.baidu.com/s/12ExLxxOG5CH2aLm-xdoYyg',
+      },
+      {
+        title: '用 React.js+Egg.js 造轮子，全栈开发旅游电商应用',
+        description:
+          '链接:https://pan.baidu.com/s/1KsXg_0TMGNQkO1S5YDO_aw 提取码:ude5',
+        url: 'https://pan.baidu.com/s/1KsXg_0TMGNQkO1S5YDO_aw',
+      },
+      {
+        title: 'React源码深度解析 高级前端工程师必备技能',
+        description:
+          '链接:https://pan.baidu.com/s/1Oorq3EexMaw9zL7FHcMuyA 提取码:rk4c',
+        url: 'https://pan.baidu.com/s/1Oorq3EexMaw9zL7FHcMuyA',
+      },
+      {
         title: 'Flutter从入门到进阶实战携程网',
         description:
           '链接：https://pan.baidu.com/s/1HL_1bPbkJ1SrZV8NGcdjYg 提取码：ytin',

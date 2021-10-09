@@ -94,6 +94,29 @@ export default [
     ],
   },
   {
+    id: 'picture',
+    category: '图片素材',
+    sites: [
+      {
+        title: '爱给网',
+        description:
+          '中国最大的数字娱乐免费素材下载网站,免费提供免费的音效配乐|3D模型|视频|游戏素材资源下载。',
+        url: 'https://www.aigei.com/',
+      },
+      {
+        title: '觅元素',
+        description:
+          '觅元素,设计元素免费下载,免抠素材,位图,透明背景素材,透明背景图片,免抠png,高清png,图片素材,漂浮元素,装饰元素,节日元素,动植物元素,字体元素,标签元素,设计元素.',
+        url: 'http://www.51yuansu.com/',
+      },
+      {
+        title: 'Loading.io',
+        description: 'Loading图生成',
+        url: 'https://loading.io/',
+      },
+    ],
+  },
+  {
     id: 'organization',
     category: '团队组织',
     sites: [
@@ -225,7 +248,7 @@ export default [
   },
   {
     id: 'animation',
-    category: '图形动效',
+    category: '动画特效',
     sites: [
       {
         title: 'Animate.css',
@@ -406,8 +429,7 @@ export default [
     sites: [
       {
         title: '站长之家',
-        description:
-          '站长之家是站长的必备工具',
+        description: '站长之家是站长的必备工具',
         url: 'https://tool.chinaz.com/',
       },
       {
@@ -417,50 +439,42 @@ export default [
       },
       {
         title: 'CNZZ',
-        description:
-          'CNZZ网站流量统计',
+        description: 'CNZZ网站流量统计',
         url: 'http://fis.baidu.com/',
       },
       {
         title: '网站排名',
-        description:
-          'Alexa网站流量全球综合排名查询',
+        description: 'Alexa网站流量全球综合排名查询',
         url: 'http://www.alexa.cn/',
       },
       {
         title: '5188',
-        description:
-          '长尾词挖掘，营销情报，站长工具',
+        description: '长尾词挖掘，营销情报，站长工具',
         url: 'https://www.5118.com/',
       },
       {
         title: '爱站网',
-        description:
-          '各种网站工具，关键词排名',
+        description: '各种网站工具，关键词排名',
         url: 'https://www.aizhan.com/',
       },
       {
         title: '小码短链',
-        description:
-          '短网址跳转工具',
+        description: '短网址跳转工具',
         url: 'https://xiaomark.com/',
       },
       {
         title: '极客增长',
-        description:
-          '流量操盘手的必备工具',
+        description: '流量操盘手的必备工具',
         url: 'https://yinliu.club/member/KeywordHot/index',
       },
       {
         title: '二十次幂',
-        description:
-          '微信公众号数据分析',
+        description: '微信公众号数据分析',
         url: 'https://www.cimidata.com/',
       },
       {
         title: '大数据导航',
-        description:
-          '快速找到大数据相关的工具平台',
+        description: '快速找到大数据相关的工具平台',
         url: 'http://hao.199it.com/',
       },
     ],
