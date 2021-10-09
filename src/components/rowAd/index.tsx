@@ -1,16 +1,19 @@
+import { Helmet } from 'umi';
+
 export default () => {
-  if (process.env.REACT_APP_ENV === 'development') {
-    return null;
-  }
+  // if (process.env.REACT_APP_ENV === 'development') {
+  //   return null;
+  // }
 
   return (
     <>
-      <script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2087076429727327"
-        crossOrigin="anonymous"
-      ></script>
-      {/* <!-- row --> */}
+      <Helmet>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2087076429727327"
+          crossOrigin="anonymous"
+        ></script>
+      </Helmet>
       <ins
         className="adsbygoogle"
         style={{ display: 'block' }}
@@ -19,7 +22,6 @@ export default () => {
         data-ad-format="auto"
         data-full-width-responsive="true"
       ></ins>
-      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </>
   );
 };

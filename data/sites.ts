@@ -12,12 +12,6 @@ export default [
     category: '热门推荐',
     sites: [
       {
-        title: '小猫图片占位符',
-        description:
-          '只要在网址后面加上图片大小（宽度和高度），您就会获得一个小猫图片占位符。',
-        url: 'https://placekitten.com/',
-      },
-      {
         title: 'Online JavaScript Beautifier',
         description:
           '美化，解压缩或反混淆JavaScript和HTML，使JSON / JSONP可读等。',
@@ -46,11 +40,6 @@ export default [
         description:
           '深入挖掘国外前端新领域，为中国 Web 前端开发人员提供优质文档！',
         url: 'https://docschina.org/',
-      },
-      {
-        title: 'Placeholder Images',
-        description: '生成制定格式大小的图片占位符，支持JPG, GIF & PNG',
-        url: 'https://placeholder.com/',
       },
       {
         title: 'MDN Web 文档',
@@ -113,6 +102,17 @@ export default [
         title: 'Loading.io',
         description: 'Loading图生成',
         url: 'https://loading.io/',
+      },
+      {
+        title: '小猫图片占位符',
+        description:
+          '只要在网址后面加上图片大小（宽度和高度），您就会获得一个小猫图片占位符。',
+        url: 'https://placekitten.com/',
+      },
+      {
+        title: 'Placeholder Images',
+        description: '生成制定格式大小的图片占位符，支持JPG, GIF & PNG',
+        url: 'https://placeholder.com/',
       },
     ],
   },
