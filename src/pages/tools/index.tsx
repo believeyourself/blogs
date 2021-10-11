@@ -4,6 +4,7 @@ import { Divider, Tabs } from 'antd';
 import { useState } from 'react';
 import JsonTree from './jsonTree/jsonTree';
 import MD5 from './md5/md5';
+import Timestamp from './timestamp/timestamp';
 import logo from '../../assets/images/logo.png';
 import style from './style.less';
 
@@ -59,7 +60,7 @@ export default () => {
             key={ToolType.timestamp}
             tabKey={ToolType.timestamp}
           >
-            开发中。。。。
+            <Timestamp />
           </Tabs.TabPane>
           <Tabs.TabPane
             tab="图片压缩"

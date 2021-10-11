@@ -25,6 +25,7 @@
     "@ant-design/pro-layout": "^6.5.0",
     "ahooks": "^2.10.9",
     "classnames": "^2.3.1",
+    "dayjs": "^1.10.7",
     "express": "^4.17.1",
     "js-md5": "^0.7.3",
     "marked": "^3.0.4",

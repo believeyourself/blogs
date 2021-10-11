@@ -1,9 +1,9 @@
 import { Helmet } from 'umi';
 
 export default () => {
-  // if (process.env.REACT_APP_ENV === 'development') {
-  //   return null;
-  // }
+  if (process.env.REACT_APP_ENV === 'development') {
+    return null;
+  }
 
   return (
     <>
