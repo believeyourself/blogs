@@ -55,13 +55,6 @@ export default () => {
             <MD5 />
           </Tabs.TabPane>
           <Tabs.TabPane
-            tab="AJAX"
-            key={ToolType.interface}
-            tabKey={ToolType.interface}
-          >
-            开发中。。。。
-          </Tabs.TabPane>
-          <Tabs.TabPane
             tab="时间戳"
             key={ToolType.timestamp}
             tabKey={ToolType.timestamp}

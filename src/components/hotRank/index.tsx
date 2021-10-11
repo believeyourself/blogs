@@ -42,13 +42,6 @@ function HotRank() {
         <Tag
           onClick={() => (window.location.href = '/tools')}
           className={style.tool_tag}
-          color="gold"
-        >
-          在线Ajax
-        </Tag>
-        <Tag
-          onClick={() => (window.location.href = '/tools')}
-          className={style.tool_tag}
           color="error"
         >
           时间戳转换
