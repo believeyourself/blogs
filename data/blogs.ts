@@ -1,5 +1,11 @@
 export default [
   {
+    id: 10,
+    title: 'SEO系列之站内优化',
+    description: '介绍在网站内容，排版、用户体验等方面优化SEO及注意事项',
+    tags: ['SEO'],
+  },
+  {
     id: 9,
     title: '原型与原型链、继承',
     description: '原型与原型链、继承简单实现',
