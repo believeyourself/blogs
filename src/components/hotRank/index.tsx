@@ -33,26 +33,18 @@ function HotRank() {
           JSON格式化
         </Tag>
         <Tag
-          onClick={() => (window.location.href = '/tools')}
+          onClick={() => (window.location.href = '/tools/md5')}
           className={style.tool_tag}
           color="cyan"
         >
           MD5
         </Tag>
         <Tag
-          onClick={() => (window.location.href = '/tools')}
+          onClick={() => (window.location.href = '/tools/timestamp')}
           className={style.tool_tag}
           color="error"
         >
           时间戳转换
-        </Tag>
-        <Tag
-          onClick={() => (window.location.href = '/tools')}
-          data-type="imageCompress"
-          className={style.tool_tag}
-          color="geekblue"
-        >
-          图片压缩
         </Tag>
       </div>
     </div>

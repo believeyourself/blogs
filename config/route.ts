@@ -6,7 +6,7 @@ const route: any = [
   },
   {
     name: '在线工具',
-    path: '/tools',
+    path: '/tools/:type?',
     component: './tools',
   },
   {

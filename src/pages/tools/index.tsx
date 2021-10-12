@@ -1,5 +1,5 @@
 import RowAd from '@/components/rowAd';
-import { Helmet } from 'umi';
+import { Helmet,useParams } from 'umi';
 import { Divider, Tabs } from 'antd';
 import { useState } from 'react';
 import JsonTree from './jsonTree/jsonTree';
@@ -13,11 +13,11 @@ enum ToolType {
   md5 = 'md5',
   interface = 'interface',
   timestamp = 'timestamp',
-  imageCompression = 'imageCompression',
 }
 
 export default () => {
-  const [activeKey, setActiveKey] = useState<string>(ToolType.jsonTree);
+  const {type} = useParams<{type:string | undefined}>();
+  const [activeKey, setActiveKey] = useState<string>( type || ToolType.jsonTree);
   return (
     <>
       <Helmet>
@@ -61,13 +61,6 @@ export default () => {
             tabKey={ToolType.timestamp}
           >
             <Timestamp />
-          </Tabs.TabPane>
-          <Tabs.TabPane
-            tab="图片压缩"
-            key={ToolType.imageCompression}
-            tabKey={ToolType.imageCompression}
-          >
-            开发中。。。。
           </Tabs.TabPane>
         </Tabs>
       </div>

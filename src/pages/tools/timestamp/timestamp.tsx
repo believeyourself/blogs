@@ -28,17 +28,17 @@ export default () =>{
           }
           
         }
-      } value={(timestamp / timeType).toFixed(0)} addonBefore="UNIX时间戳" addonAfter={
+      } value={Math.floor(timestamp / timeType)} addonBefore="UNIX时间戳" addonAfter={
         <Select value={timeType} onChange={
           (value) => {
             setTimeType(value);
           }
         }>
           <Select.Option value={1000}>
-            毫秒
+            秒
           </Select.Option>
           <Select.Option value={1}>
-            秒
+            毫秒
           </Select.Option>
         </Select>
       } />
