@@ -1,9 +1,34 @@
-import React from 'react';
+import React,{RefObject} from 'react';
 import styles from './index.less';
 import titleImg from '@/assets/images/aboutUs.jpg';
 import SiteHeader from "@/components/siteHeader";
+import {Button, message} from "antd";
+import dayjs from 'dayjs';
 
 export default class AboutUs extends React.Component {
+  message: React.RefObject<HTMLTextAreaElement>;
+
+  constructor(props:any){
+    super(props);
+    this.message = React.createRef<HTMLTextAreaElement>();
+    this.sendMessage = this.sendMessage.bind(this);
+  }
+
+  async sendMessage(){
+    if(this.message.current && this.message.current.value){
+      (window as any)._hmt?.push(
+        [
+          '_trackEvent',
+          'message',
+          this.message.current?.value
+        ]
+      );
+      message.success("感谢您的宝贵意见！");
+    }else{
+      message.error("留言内容不能为空");
+    }
+  }
+
   render() {
     return (
       <div className={styles.content}>
@@ -45,7 +70,8 @@ export default class AboutUs extends React.Component {
         </div>
         <div className={styles.des}>
           <h3 className={styles.title}>留言板：</h3>
-          <p>敬请期待。。。</p>
+          <textarea ref={this.message} rows={8} className={styles.input}></textarea>
+          <Button onClick={this.sendMessage} type="primary" >留言</Button>
         </div>
       </div>
     );

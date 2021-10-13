@@ -30,14 +30,14 @@ export default function Blogs() {
     if (item.id) {
       return (
         <NavLink
-          onClick={() => {
-            (window as any)._hmt?.push([
-              '_trackEvent',
-              'blog',
-              'detail',
-              item.id,
-            ]);
-          }}
+          // onClick={() => {
+          //   (window as any)._hmt?.push([
+          //     '_trackEvent',
+          //     'blog',
+          //     'detail',
+          //     item.id,
+          //   ]);
+          // }}
           to={`/blogs/detail/${item.id}`}
           key={item.url || item.id}
           className={styles.category_list_item}
