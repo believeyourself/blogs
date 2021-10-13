@@ -53,7 +53,7 @@ export default function Blogs() {
           target="_blank"
           key={item.url || item.id}
           className={styles.category_list_item}
-          rel="noreferrer"
+          rel="nofollow"
         >
           <h4 className={styles.title}>{item.title}</h4>
           <p className={styles.description}>{item.description}</p>
@@ -81,9 +81,9 @@ export default function Blogs() {
           <TagSelect.Option value="angular">angularJs</TagSelect.Option>
           <TagSelect.Option value="canvas">canvas</TagSelect.Option>
           <TagSelect.Option value="jqery">jquery</TagSelect.Option> */}
-        {/* <TagSelect.Option value="css">css</TagSelect.Option> */}
+        <TagSelect.Option value="css">CSS</TagSelect.Option>
         <TagSelect.Option value="node">NodeJs</TagSelect.Option>
-        <TagSelect.Option value="js">Js</TagSelect.Option>
+        <TagSelect.Option value="js">JS</TagSelect.Option>
         <TagSelect.Option value="SEO">SEO</TagSelect.Option>
       </TagSelect>
       <Divider />

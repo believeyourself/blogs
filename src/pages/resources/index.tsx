@@ -10,7 +10,7 @@ import styles from './index.less';
 import records from '../../../data/resource';
 import Card from '@/components/card';
 import SiteHeader from '@/components/siteHeader';
-import { Card as AntCard, Row, Col, Space } from 'antd';
+import { Card as AntCard, Row, Col, Space,Alert } from 'antd';
 import SideAd from '@/components/sideAd';
 
 export default function Resources() {
@@ -69,6 +69,7 @@ export default function Resources() {
         <SideAd />
       </div>
       <Space direction="vertical" className={styles.content}>
+        <Alert closable type="warning" message="即将上线尚硅谷前端学科全套教程（总126.90GB）"/>
         {resources}
       </Space>
     </section>
