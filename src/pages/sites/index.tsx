@@ -57,9 +57,11 @@ export default function Sites () {
   });
   return (
     <section className={styles.container}>
-      <SiteHeader>
-        <meta name="baiduspider" content="nofollow" />
-      </SiteHeader>
+      <SiteHeader 
+        title="网址导航"
+        keywords="前端网，笔试面试，技术社区，游戏开发，调试工具，构建工具，站长工具，团队组织，图片素材"
+        description="前端网，热门工具整合，笔试面试，技术社区，游戏开发，调试工具，构建工具，站长工具，团队组织，图片素材"
+      /> 
       <div className={styles.nav}>
         <ul>{navs}</ul>
       </div>

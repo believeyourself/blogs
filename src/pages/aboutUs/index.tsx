@@ -1,14 +1,20 @@
 import React from 'react';
 import styles from './index.less';
-import tilteImg from '@/assets/images/aboutUs.jpg';
+import titleImg from '@/assets/images/aboutUs.jpg';
+import SiteHeader from "@/components/siteHeader";
 
 export default class AboutUs extends React.Component {
   render() {
     return (
       <div className={styles.content}>
+        <SiteHeader
+          title="关于我们"
+          keywords="前端网，web前端，vue，react，面试笔试，网址导航，教程资源，前端网"
+          description="前端网，前端工具网址导航，在线工具，视屏教程和开源源码分享，一个免费的前端及node技术学习平台。"
+         />
         <div className={styles.des}>
           <div className={styles.site}>
-            <img src={tilteImg} />
+            <img src={titleImg} alt="html,js,css" />
             <p>
               前端网
               是分享前端开发教程，资料，文章的前端网站，每个前端学习者和WEB前端开发工程师的前端大学。

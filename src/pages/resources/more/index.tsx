@@ -10,10 +10,9 @@ import styles from './index.less';
 import records from '../../../../data/resource';
 import Card from '@/components/card';
 import SiteHeader from '@/components/siteHeader';
-import { Card as AntCard, Row, Col, Space } from 'antd';
+import { Card as AntCard, Row, Col } from 'antd';
 import SideAd from '@/components/sideAd';
-import { Helmet, useParams } from 'umi';
-import Link from '@/components/navLink';
+import { useParams } from 'umi';
 
 export default function More() {
   const { id } = useParams<{ id: string }>();
@@ -48,10 +47,11 @@ export default function More() {
 
   return (
     <section className={styles.container}>
-      <SiteHeader>
-        <title>{resource.category} - 前端网</title>
-        <meta name="baiduspider" content="nofollow" />
-      </SiteHeader>
+      <SiteHeader
+        title={resource.category}
+        keywords="前端网，视频教程，电子书，PDF，开源项目，源码分享，React，Vue，Typescript，Egg，Node"
+        description="前端网，视频教程，电子书，PDF，开源项目，源码分享，React，Vue，Typescript，Egg，Node"
+      />
       <div className={styles.nav}>
         <SideAd />
       </div>

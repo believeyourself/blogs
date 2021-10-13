@@ -10,6 +10,7 @@ import styles from './index.less';
 import blogs from '../../../data/blogs';
 import NavLink from '@/components/navLink';
 import TagSelect from '@/components/tagSelect';
+import SiteHeader from '@/components/siteHeader';
 import { Divider } from 'antd';
 import { useState, useMemo } from 'react';
 
@@ -62,6 +63,11 @@ export default function Blogs() {
   });
   return (
     <div className={styles.content}>
+      <SiteHeader
+        title="博客随笔"
+        keywords="前端网，React，javascript，SEO，css，node，前端优质文章分享"
+        description="前端网，致力于前端领域技术研究，深入分析技术基础原理，包括但不限于javascript,css,React,vue,node,webpack,umi,antd"
+      />
       <TagSelect
         hideCheckAll={true}
         multi={false}

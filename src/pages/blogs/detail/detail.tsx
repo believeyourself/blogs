@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import marked from 'marked';
 import { Tag } from 'antd';
 import blogs from '../../../../data/blogs';
-import { Helmet } from '@/.umi/plugin-helmet/exports';
+import SiteHeader from "@/components/siteHeader"
 
 marked.setOptions({
   // marked 设置
@@ -51,11 +51,14 @@ function BlogDetail(props: any) {
   });
 
   const content = require(`../../../../data/blogs/${id}.md`);
+  const keywords = blog && blog.tags?.join(",")
   return (
     <div className={styles.content}>
-      <Helmet>
-        <title>{blog?.title} - 文章详情</title>
-      </Helmet>
+      <SiteHeader
+        title={blog?.title || ""}
+        keywords={`前端网,${keywords}`}
+        description={`前端网,${keywords},${blog?.description}`}
+      />
       <header>
         <Link className={styles.back} to="/">
           {' '}
