@@ -1,9 +1,8 @@
-import React,{RefObject} from 'react';
+import React from 'react';
 import styles from './index.less';
 import titleImg from '@/assets/images/aboutUs.jpg';
 import SiteHeader from "@/components/siteHeader";
 import {Button, message} from "antd";
-import dayjs from 'dayjs';
 
 export default class AboutUs extends React.Component {
   message: React.RefObject<HTMLTextAreaElement>;
@@ -23,6 +22,7 @@ export default class AboutUs extends React.Component {
           this.message.current?.value
         ]
       );
+      this.message.current.value = "";
       message.success("感谢您的宝贵意见！");
     }else{
       message.error("留言内容不能为空");
