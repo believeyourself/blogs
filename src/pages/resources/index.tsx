@@ -17,7 +17,7 @@ export default function Resources() {
   const resources: any[] = [];
   records.forEach((item) => {
     let categoryList: any[] = [];
-    const list: any[] = item.list?.splice(0, 4) || [];
+    const list: any[] = item.list?.splice(0, 6) || [];
     if (item.category === 'PDF') {
       categoryList = list.map((pdf: any) => {
         return (
@@ -69,7 +69,7 @@ export default function Resources() {
         <SideAd />
       </div>
       <Space direction="vertical" className={styles.content}>
-        <Alert closable type="warning" message="即将上线尚硅谷前端学科全套教程（总126.90GB）"/>
+        <Alert closable type="warning" message="已更新尚硅谷前端学科全套教程(126.90GB)"/>
         {resources}
       </Space>
     </section>
