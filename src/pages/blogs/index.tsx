@@ -44,6 +44,10 @@ export default function Blogs() {
         >
           <h4 className={styles.title}>{item.title}</h4>
           <p className={styles.description}>{item.description}</p>
+          <p className={styles.tip}>
+            来源: 本站 {"           "}
+            时间: {item.date}
+          </p>
         </NavLink>
       );
     } else {
@@ -57,6 +61,10 @@ export default function Blogs() {
         >
           <h4 className={styles.title}>{item.title}</h4>
           <p className={styles.description}>{item.description}</p>
+          <p className={styles.tip}>
+            来源: {item.source} {"          "}
+            时间: 未知
+          </p>
         </a>
       );
     }
