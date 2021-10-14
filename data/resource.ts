@@ -4,6 +4,12 @@ export default [
     category: '视频教程',
     list: [
       {
+        title: '尚硅谷前端全套学科教程',
+        description:
+          '链接:https://pan.baidu.com/s/1GcVS3D93K_Zv2PdqJ4nOpQ 提取码:z7ue',
+        url: 'https://pan.baidu.com/s/1GcVS3D93K_Zv2PdqJ4nOpQ',
+      },
+       {
         title: '掌握Taro多端框架 快速上手小程序H5开发',
         description:
           '链接:https://pan.baidu.com/s/1tqHc2htH1ZkBetJXpOx-gg 提取码:gstg',
@@ -208,6 +214,26 @@ export default [
     id: 'PDF',
     category: 'PDF',
     list: [
+      {
+        title: '如何避免 CDN 为 PC 端缓存移动端页面.pdf',
+        path: '如何避免 CDN 为 PC 端缓存移动端页面.pdf',
+      },
+      {
+        title: '响应式开发剖析.pdf',
+        path: '响应式开发剖析.pdf',
+      },
+      {
+        title: '页面渲染原理剖析.pdf',
+        path: '页面渲染原理剖析.pdf',
+      },
+      {
+        title: 'HTTPS工作流程.pdf',
+        path: 'HTTPS工作流程.pdf',
+      },
+      {
+        title: 'js防抖和节流剖析.pdf',
+        path: 'js防抖和节流剖析.pdf',
+      },
       {
         title: '精通GIT.pdf',
         path: '精通GIT.pdf',
