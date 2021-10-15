@@ -60,15 +60,15 @@ function BlogDetail(props: any) {
         description={`前端网,${keywords},${blog?.description}`}
       />
       <header>
-        <Link className={styles.back} to="/">
+        <a className={styles.back} href="/">
           {' '}
           首页
-        </Link>{' '}
+        </a>{' '}
         /
-        <Link className={styles.back} to="/blogs">
+        <a className={styles.back} href="/blogs">
           {' '}
           博客
-        </Link>
+        </a>
       </header>
       <article dangerouslySetInnerHTML={{ __html: marked(content.default) }} />
       <div style={{ paddingBottom: 40 }}>{tags}</div>
