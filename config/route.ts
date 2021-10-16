@@ -61,6 +61,11 @@ const route: any = [
         component: '@/pages/softwares',
       },
       {
+        title: '软件下载',
+        path: '/softwares/detail/:id',
+        component: '@/pages/softwares/detail/detail',
+      },
+      {
         title: '关于我们',
         path: '/aboutUs',
         component: '@/pages/aboutUs',

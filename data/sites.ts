@@ -479,4 +479,76 @@ export default [
       },
     ],
   },
+  {
+    id: 'statistic',
+    category: '埋点统计',
+    sites: [
+      {
+        title: '百度统计',
+        description:
+          '基于百度统计专业技术，实现全域数据自动化采集、融合多种模型算法，赋能企业深入分析洞察用户行为的SaaS分析平台。分析云电商版提供电商行业专属数据解决方案，预置电商专属行业看板、运营坑位转化贡献分析、维度表扩展支持更多精细分析，从洞察业务到提升转化，全链路助力业务增长。',
+        url: 'https://tongji.baidu.com/',
+      },
+      {
+        title: '友盟+',
+        description:
+          '提供统计分析、社会化分享、性能监控、消息推送等低成本、轻开发的服务，帮助开发者快速搭建应用，提供更好的用户体验。',
+        url: 'https://www.umeng.com/',
+      },
+      {
+        title: 'Google Analytics',
+        description:
+          'Google Analytics lets you measure your advertising ROI as well as track your Flash, video, and social networking sites and applications.',
+        url: 'https://analytics.google.com/',
+      },
+      {
+        title: '阿拉丁',
+        description:
+          '阿拉丁是一家全网小程序智能数据平台，专注于小程序的第三方全域数据服务商。主要包括微信小程序、小游戏统计平台、小程序监测平台、小程序全网指数排名、小程序运营平台水滴魔方、小程序推送平台小神推等产品。',
+        url: 'https://www.aldwx.com/index',
+      },
+    ],
+  },
+  {
+    id: 'play',
+    category: '影视娱乐',
+    sites: [
+      {
+        title: '暗云影视',
+        description:
+          '提供最新影视排行榜,最新电影电视剧在线观看,提供最新韩剧、美剧、日剧、泰剧在线观看,最新综艺节目、最新动漫剧集超高清在线观看!',
+        url: 'https://www.anyuntv.com/',
+      },
+      {
+        title: '低端影视网',
+        description:
+          '低端影视官网在线观看(ddrk),免费提供最新电影、电视剧、动漫和综艺在线观看，赶快来看看吧！',
+        url: 'http://www.tzwhxx.com/',
+      },
+      {
+        title: '在线之家电影网',
+        description:
+          '在线之家电影网（zxzj），免费提供最新电视、电影、综艺和动漫在线观看，赶快来在线之家影院吧！',
+        url: 'http://www.mxldyxx.com/',
+      },
+      {
+        title: '电视猫',
+        description:
+          '电视猫为您提供电视剧原创分集剧情介绍、演员表、人物大结局等信息，最新一期综艺节目预告、热门电影、明星资料以及每周电视节目单，电视猫是您看电视看剧情的必备网站。',
+        url: 'https://www.tvmao.com/',
+      },
+      {
+        title: '去看吧',
+        description:
+          '海外更新最快的動漫網，是壹個在海外動漫資源最全，日漫更新速度第壹，播放資源高清完整版的壹個大型動漫社區，同时为您提供无修动漫在线免费观看，和bl动漫在线免费动漫观看，bl动漫大全和bl漫画免费等等和bl动漫相关的作品。',
+        url: 'https://www.k8dm.com/',
+      },
+      {
+        title: '异世界动漫',
+        description:
+          '异世界动漫 YSJDM.COM 新番动漫 720P 1080P 在线播放 最新动漫资讯,在线动漫',
+        url: 'http://tv.kudm.net/',
+      },
+    ],
+  },
 ];

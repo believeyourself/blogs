@@ -83,7 +83,13 @@ class App extends React.Component {
               实用库
             </NavLink> */}
             {/* <NavLink activeClassName={styles.active} to="/effects" className={styles.item}>css效果</NavLink> */}
-            {/* <NavLink activeClassName={styles.active} to="/softwares" className={styles.item}>软件下载</NavLink> */}
+            <NavLink
+              activeClassName={styles.active}
+              to="/softwares"
+              className={styles.item}
+            >
+              软件下载
+            </NavLink>
             <NavLink
               activeClassName={styles.active}
               to="/aboutUs"

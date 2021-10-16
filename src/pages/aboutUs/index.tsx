@@ -1,31 +1,29 @@
 import React from 'react';
 import styles from './index.less';
 import titleImg from '@/assets/images/aboutUs.jpg';
-import SiteHeader from "@/components/siteHeader";
-import {Button, message} from "antd";
+import SiteHeader from '@/components/siteHeader';
+import { Button, message } from 'antd';
 
 export default class AboutUs extends React.Component {
   message: React.RefObject<HTMLTextAreaElement>;
 
-  constructor(props:any){
+  constructor(props: any) {
     super(props);
     this.message = React.createRef<HTMLTextAreaElement>();
     this.sendMessage = this.sendMessage.bind(this);
   }
 
-  async sendMessage(){
-    if(this.message.current && this.message.current.value){
-      (window as any)._hmt?.push(
-        [
-          '_trackEvent',
-          'message',
-          this.message.current?.value
-        ]
-      );
-      this.message.current.value = "";
-      message.success("感谢您的宝贵意见！");
-    }else{
-      message.error("留言内容不能为空");
+  async sendMessage() {
+    if (this.message.current && this.message.current.value) {
+      (window as any)._hmt?.push([
+        '_trackEvent',
+        'message',
+        this.message.current?.value,
+      ]);
+      this.message.current.value = '';
+      message.success('感谢您的宝贵意见！');
+    } else {
+      message.error('留言内容不能为空');
     }
   }
 
@@ -36,7 +34,7 @@ export default class AboutUs extends React.Component {
           title="关于我们"
           keywords="前端网，web前端，vue，react，面试笔试，网址导航，教程资源，前端网"
           description="前端网，前端工具网址导航，在线工具，视屏教程和开源源码分享，一个免费的前端及node技术学习平台。"
-         />
+        />
         <div className={styles.des}>
           <div className={styles.site}>
             <img src={titleImg} alt="html,js,css" />
@@ -55,11 +53,13 @@ export default class AboutUs extends React.Component {
         </div>
         <div className={styles.des}>
           <h3 className={styles.title}>关于每个栏目的内容说明：</h3>
-          <p>网址导航：分享实用的学习网站，工具。</p>
-          <p>教程资源：电子书，教学视频以及项目源码收集分享。</p>
-          <p>优质好文：优秀博客收集分享。</p>
-          <p>软件下载：常用开发软件下载。</p>
-          <p>库分享：常用的功能库，效果库分享。</p>
+          <p>网址导航：分享实用的学习网站，工具网站。</p>
+          <p>源码教程：电子书，教学视频以及项目源码收集分享。</p>
+          <p>博客随笔：优秀博客收集分享。</p>
+          <p>软件下载：常用开发软件,办公软件下载。</p>
+          <p>
+            在线工具：常用在线工具集合，包括但不限于JSON格式化，MD5加密，base64,时间戳转换等。
+          </p>
         </div>
         <div className={styles.des}>
           <h3 className={styles.title}>联系我们：</h3>
@@ -70,8 +70,14 @@ export default class AboutUs extends React.Component {
         </div>
         <div className={styles.des}>
           <h3 className={styles.title}>留言板：</h3>
-          <textarea ref={this.message} rows={8} className={styles.input}></textarea>
-          <Button onClick={this.sendMessage} type="primary" >留言</Button>
+          <textarea
+            ref={this.message}
+            rows={8}
+            className={styles.input}
+          ></textarea>
+          <Button onClick={this.sendMessage} type="primary">
+            留言
+          </Button>
         </div>
       </div>
     );
