@@ -14,16 +14,16 @@ export default () => {
           }}
           className={style.list_item}
         >
-          <img
-            sizes="contain"
-            src={require(`../../assets/softwares/${software.img}`)}
-            title={software.title}
-            alt={software.title}
-          />
+          <div
+            className={style.img}
+            style={{
+              backgroundImage: `url("/static/softwares/${software.img}")`,
+            }}
+          ></div>
           <div className={style.list_item_content}>
             <h2>{software.title}</h2>
             <p>{software.description}</p>
-            <p>最近更新时间：{software.date}</p>
+            <p>最近更新：{software.date}</p>
           </div>
         </div>
         <Divider />

@@ -11,7 +11,7 @@ export default {
     },
     {
       id: 2,
-      title: 'PhotoShop',
+      title: 'PhotoShop破解版--持续更新',
       img: '2.svg',
       description:
         '使用出色的照片和设计编辑器 Adobe Photoshop 编辑您的照片和图像。立即购买或免费试用，可随时随地改进图像。',
