@@ -23,6 +23,10 @@
         width: 200px;
         height: 150px;
         border: 1px solid #ddd;
+
+        @media screen and (max-width: @mobile-width) {
+          display: none;
+        }
       }
 
       .list_item_content {
