@@ -45,7 +45,7 @@ class App extends React.Component {
           )}
         </Helmet>
         <header className={styles.header}>
-          <img className={styles.title} src={logo} />
+          <img alt="前端网" className={styles.title} src={logo} />
           <div className={styles.slogan}></div>
         </header>
         <ScrollFixed>

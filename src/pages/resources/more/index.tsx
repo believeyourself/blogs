@@ -57,7 +57,7 @@ export default function More() {
       </div>
       <AntCard
         extra={<a href="/resources">返回</a>}
-        title={resource.category}
+        title={<h1 style={{fontSize:"16px",fontWeight:500}}>{resource.category}</h1>}
         className={styles.content}
       >
         <Row gutter={[10, 10]}>{categoryList}</Row>
