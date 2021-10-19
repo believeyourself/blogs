@@ -28,7 +28,7 @@ class App extends React.Component {
   }
 
   render() {
-    const host = window.location.origin;
+    const host = process.env.SITE_DOMAIN
     if (this.state.hasError) {
       // 你可以自定义降级后的 UI 并渲染
       return <Exception500 />;

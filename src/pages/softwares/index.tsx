@@ -5,7 +5,7 @@ import React from 'react';
 const softwares = data.pc.concat(data.mobile);
 
 export default () => {
-  const host = window.location.origin;
+  const host = process.env.SITE_DOMAIN
   const records = softwares.map((software) => {
     return (
       <React.Fragment key={software.id}>

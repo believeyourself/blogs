@@ -15,7 +15,7 @@ import { Divider } from 'antd';
 import { useState, useMemo } from 'react';
 
 export default function Blogs() {
-  const host = window.location.origin;
+  const host = process.env.SITE_DOMAIN
   const [tag, setTag] = useState<string | null>(null);
   const targetBlogs: any[] = useMemo(() => {
     return blogs.filter((blog: any) => {

@@ -6,7 +6,7 @@ import { Tag } from 'antd';
 const rank = blogs.slice(0, 5);
 
 function HotRank() {
-  const host = window.location.origin;
+  const host = process.env.SITE_DOMAIN
   const listItems = rank.map((item: any, index: number) => {
     return (
       <li key={item.id}>

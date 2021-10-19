@@ -14,7 +14,7 @@ import { Card as AntCard, Row, Col, Space,Alert } from 'antd';
 import SideAd from '@/components/sideAd';
 
 export default function Resources() {
-  const host = window.location.origin;
+  const host = process.env.SITE_DOMAIN
   const resources: any[] = [];
   records.forEach((item) => {
     let categoryList: any[] = [];
