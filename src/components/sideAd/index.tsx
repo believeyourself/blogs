@@ -20,7 +20,6 @@ export default () => {
           width: '220px',
           display: 'flex',
           justifyContent: 'center',
-          alignItems: 'center',
         }}
       >
         <AdSense.Google

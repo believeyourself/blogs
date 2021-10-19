@@ -16,7 +16,7 @@ export default () => {
         ></script>
       </Helmet>
       <div
-        style={{ width: '280px', display: 'flex', justifyContent: 'center' }}
+        style={{ width: '220px', display: 'flex', justifyContent: 'center' }}
       >
         <AdSense.Google
           client="ca-pub-2087076429727327"

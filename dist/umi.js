@@ -774,7 +774,7 @@
             }),
             Object(z['jsx'])('div', {
               style: {
-                width: '280px',
+                width: '220px',
                 display: 'flex',
                 justifyContent: 'center',
               },
@@ -31774,7 +31774,6 @@
               width: '220px',
               display: 'flex',
               justifyContent: 'center',
-              alignItems: 'center',
             },
             children: Object(i['jsx'])(a.a.Google, {
               client: 'ca-pub-2087076429727327',
