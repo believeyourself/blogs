@@ -14,6 +14,7 @@ import { Card as AntCard, Row, Col, Space,Alert } from 'antd';
 import SideAd from '@/components/sideAd';
 
 export default function Resources() {
+  const host = window.location.origin;
   const resources: any[] = [];
   records.forEach((item) => {
     let categoryList: any[] = [];
@@ -26,7 +27,7 @@ export default function Resources() {
             key={pdf.title}
             target="_blank"
             rel="nofollow"
-            href={`/ebooks/${pdf.path}`}
+            href={`${host}/ebooks/${pdf.path}`}
           >
             {pdf.title}
           </a>
@@ -48,7 +49,7 @@ export default function Resources() {
         key={item.id}
         title={item.category}
         extra={
-          <a className={styles.download_url} href={`/resources/${item.id}`}>
+          <a className={styles.download_url} href={`${host}/resources/${item.id}`}>
             查看更多
           </a>
         }

@@ -6,11 +6,12 @@ import { Tag } from 'antd';
 const rank = blogs.slice(0, 5);
 
 function HotRank() {
+  const host = window.location.origin;
   const listItems = rank.map((item: any, index: number) => {
     return (
       <li key={item.id}>
         <NavLink
-          to={`/blogs/detail/${item.id}`}
+          to={`${host}/blogs/detail/${item.id}`}
           className={style.rank_item}
           rel="nofollow"
         >
@@ -26,21 +27,21 @@ function HotRank() {
       <p className={style.title}>常用工具</p>
       <div className={style.tool_tags}>
         <Tag
-          onClick={() => (window.location.href = '/tools')}
+          onClick={() => (window.location.href = host + '/tools')}
           className={style.tool_tag}
           color="blue"
         >
           JSON格式化
         </Tag>
         <Tag
-          onClick={() => (window.location.href = '/tools/md5')}
+          onClick={() => (window.location.href = host + '/tools/md5')}
           className={style.tool_tag}
           color="cyan"
         >
           MD5
         </Tag>
         <Tag
-          onClick={() => (window.location.href = '/tools/timestamp')}
+          onClick={() => (window.location.href = host + '/tools/timestamp')}
           className={style.tool_tag}
           color="error"
         >

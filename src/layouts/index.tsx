@@ -28,6 +28,7 @@ class App extends React.Component {
   }
 
   render() {
+    const host = window.location.origin;
     if (this.state.hasError) {
       // 你可以自定义降级后的 UI 并渲染
       return <Exception500 />;
@@ -52,14 +53,14 @@ class App extends React.Component {
           <nav className={styles.nav}>
             <NavLink
               activeClassName={styles.active}
-              to="/sites"
+              to={host + "/sites"}
               className={styles.item}
             >
               网址导航
             </NavLink>
             <NavLink
               activeClassName={styles.active}
-              to="/resources"
+              to={host + "/resources"}
               className={styles.item}
             >
               源码教程
@@ -70,7 +71,7 @@ class App extends React.Component {
                 return false;
               }}
               activeClassName={styles.active}
-              to="/blogs"
+              to={host + "/blogs"}
               className={styles.item}
             >
               博客随笔
@@ -85,14 +86,14 @@ class App extends React.Component {
             {/* <NavLink activeClassName={styles.active} to="/effects" className={styles.item}>css效果</NavLink> */}
             <NavLink
               activeClassName={styles.active}
-              to="/softwares"
+              to={host + "/softwares"}
               className={styles.item}
             >
               软件下载
             </NavLink>
             <NavLink
               activeClassName={styles.active}
-              to="/aboutUs"
+              to={host + "/aboutUs"}
               className={styles.item}
             >
               关于我们

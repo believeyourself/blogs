@@ -37,7 +37,7 @@ export default class AboutUs extends React.Component {
         />
         <div className={styles.des}>
           <div className={styles.site}>
-            <img src={titleImg} alt="html,js,css" />
+            <img src={titleImg} alt="vue,react,前端" />
             <p>
               前端网
               是分享前端开发教程，资料，文章的前端网站，每个前端学习者和WEB前端开发工程师的前端大学。
@@ -65,7 +65,7 @@ export default class AboutUs extends React.Component {
           <h3 className={styles.title}>联系我们：</h3>
           <p>
             如果您有什么好的建议或好的资源分享，可以联系我们
-            <a href="mailto:farmerlzj@163.com">farmerlzj@163.com</a>.
+            <a href="mailto:farmerlzj@163.com" rel="nofollow">farmerlzj@163.com</a>.
           </p>
         </div>
         <div className={styles.des}>

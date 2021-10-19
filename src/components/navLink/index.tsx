@@ -14,7 +14,7 @@ const NavLink = (props: NavLinkProps) => {
   const match = useParams();
   const active =
     (props.isActive && props.isActive(match, url)) ||
-    url.pathname.startsWith(props.to);
+    props.to.endsWith(url.pathname);
   return (
     <a
       href={props.to}

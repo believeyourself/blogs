@@ -15,8 +15,8 @@ import { Divider } from 'antd';
 import { useState, useMemo } from 'react';
 
 export default function Blogs() {
+  const host = window.location.origin;
   const [tag, setTag] = useState<string | null>(null);
-
   const targetBlogs: any[] = useMemo(() => {
     return blogs.filter((blog: any) => {
       if (!tag) {
@@ -38,7 +38,7 @@ export default function Blogs() {
           //     item.id,
           //   ]);
           // }}
-          to={`/blogs/detail/${item.id}`}
+          to={`${host}/blogs/detail/${item.id}`}
           key={item.url || item.id}
           className={styles.category_list_item}
         >

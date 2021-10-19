@@ -5,12 +5,13 @@ import React from 'react';
 const softwares = data.pc.concat(data.mobile);
 
 export default () => {
+  const host = window.location.origin;
   const records = softwares.map((software) => {
     return (
       <React.Fragment key={software.id}>
         <div
           onClick={() => {
-            window.location.href = `/softwares/detail/${software.id}`;
+            window.location.href = `${host}/softwares/detail/${software.id}`;
           }}
           className={style.list_item}
         >

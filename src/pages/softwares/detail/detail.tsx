@@ -17,6 +17,7 @@ marked.setOptions({
 const records = softwares.pc.concat(softwares.mobile);
 
 function BlogDetail(props: any) {
+  const host = window.location.host;
   const id = props.match.params.id;
   const software = records.find((software: any) => {
     return software.id == id;
@@ -32,12 +33,12 @@ function BlogDetail(props: any) {
         description={`前端网,${keywords},${software?.description}`}
       />
       <header>
-        <a className={styles.back} href="/">
+        <a className={styles.back} href={host}>
           {' '}
           首页
         </a>{' '}
         /
-        <a className={styles.back} href="/softwares">
+        <a className={styles.back} href={host + "/softwares"}>
           {' '}
           软件下载
         </a>
