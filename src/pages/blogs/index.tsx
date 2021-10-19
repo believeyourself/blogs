@@ -13,6 +13,7 @@ import TagSelect from '@/components/tagSelect';
 import SiteHeader from '@/components/siteHeader';
 import { Divider } from 'antd';
 import { useState, useMemo } from 'react';
+import SideAd from '@/components/sideAd';
 
 export default function Blogs() {
   const host = process.env.SITE_DOMAIN
@@ -70,6 +71,8 @@ export default function Blogs() {
     }
   });
   return (
+    <>
+    <SideAd />
     <div className={styles.content}>
       <SiteHeader
         title="博客随笔"
@@ -97,5 +100,6 @@ export default function Blogs() {
       <Divider />
       {records}
     </div>
+    </>
   );
 }

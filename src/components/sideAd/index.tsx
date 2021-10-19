@@ -13,7 +13,7 @@ export default () => {
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2087076429727327"
      crossOrigin="anonymous"></script>
       </Helmet>
-      <div style={{ width:"220px",display:"flex",alignItems:"center",justifyContent:"center"}}>
+      <div style={{ width:"220px",display:"flex",justifyContent:"center"}}>
         <AdSense.Google
           client='ca-pub-2087076429727327'
           slot='5545640106'

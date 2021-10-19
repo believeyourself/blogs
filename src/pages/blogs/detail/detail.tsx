@@ -1,9 +1,9 @@
 import styles from './detail.less';
-import { Link } from 'react-router-dom';
 import marked from 'marked';
 import { Tag } from 'antd';
 import blogs from '../../../../data/blogs';
 import SiteHeader from "@/components/siteHeader"
+import SideAd from '@/components/sideAd';
 
 marked.setOptions({
   // marked 设置
@@ -53,6 +53,8 @@ function BlogDetail(props: any) {
   const content = require(`../../../../data/blogs/${id}.md`);
   const keywords = blog && blog.tags?.join(",")
   return (
+    <>
+    <SideAd />
     <div className={styles.content}>
       <SiteHeader
         title={blog?.title || ""}
@@ -73,6 +75,7 @@ function BlogDetail(props: any) {
       <article dangerouslySetInnerHTML={{ __html: marked(content.default) }} />
       <div style={{ paddingBottom: 40 }}>{tags}</div>
     </div>
+    </>
   );
 }
 

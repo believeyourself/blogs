@@ -66,9 +66,7 @@ export default function Resources() {
         keywords="前端网，视频教程，电子书，PDF，开源项目，源码分享"
         description="前端网，最新网上视频教程和开源项目分享，电子书在线预览，学习路线推荐"
       />
-      <div className={styles.nav}>
-        <SideAd />
-      </div>
+      <SideAd />
       <Space direction="vertical" className={styles.content}>
         <Alert closable type="warning" message="已更新尚硅谷前端学科全套教程(126.90GB)"/>
         {resources}

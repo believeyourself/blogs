@@ -3,6 +3,7 @@ import data from '../../../data/softwares';
 import { Divider } from 'antd';
 import React from 'react';
 const softwares = data.pc.concat(data.mobile);
+import SideAd from "@/components/sideAd";
 
 export default () => {
   const host = process.env.SITE_DOMAIN
@@ -34,6 +35,7 @@ export default () => {
 
   return (
     <div className={style.container}>
+      <SideAd />
       <div className={style.content}>{records}</div>
     </div>
   );

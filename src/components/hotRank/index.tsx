@@ -2,6 +2,7 @@ import style from './index.less';
 import blogs from '../../../data/blogs';
 import NavLink from '../navLink';
 import { Tag } from 'antd';
+import SquareAd from '../squareAd';
 
 const rank = blogs.slice(0, 5);
 
@@ -48,6 +49,7 @@ function HotRank() {
           时间戳转换
         </Tag>
       </div>
+      <SquareAd />
     </div>
   );
 }

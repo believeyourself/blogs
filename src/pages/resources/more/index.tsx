@@ -52,9 +52,7 @@ export default function More() {
         keywords="前端网，视频教程，电子书，PDF，开源项目，源码分享，React，Vue，Typescript，Egg，Node"
         description="前端网，视频教程，电子书，PDF，开源项目，源码分享，React，Vue，Typescript，Egg，Node"
       />
-      <div className={styles.nav}>
-        <SideAd />
-      </div>
+      <SideAd />
       <AntCard
         extra={<a href="/resources">返回</a>}
         title={<h1 style={{fontSize:"16px",fontWeight:500}}>{resource.category}</h1>}
