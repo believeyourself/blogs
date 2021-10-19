@@ -13,6 +13,9 @@ export default () => {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2087076429727327"
           crossOrigin="anonymous"
         ></script>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
       </Helmet>
       <ins
         className="adsbygoogle"
