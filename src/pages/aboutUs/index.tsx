@@ -3,6 +3,7 @@ import styles from './index.less';
 import titleImg from '@/assets/images/aboutUs.jpg';
 import SiteHeader from '@/components/siteHeader';
 import { Button, message } from 'antd';
+import SideAd from '@/components/sideAd';
 
 export default class AboutUs extends React.Component {
   message: React.RefObject<HTMLTextAreaElement>;
@@ -29,57 +30,60 @@ export default class AboutUs extends React.Component {
 
   render() {
     return (
-      <div className={styles.content}>
-        <SiteHeader
-          title="关于我们"
-          keywords="前端网，web前端，vue，react，面试笔试，网址导航，教程资源，前端网"
-          description="前端网，前端工具网址导航，在线工具，视屏教程和开源源码分享，一个免费的前端及node技术学习平台。"
-        />
-        <div className={styles.des}>
-          <div className={styles.site}>
-            <img src={titleImg} alt="vue,react,前端" />
+      <>
+        <SideAd />
+        <div className={styles.content}>
+          <SiteHeader
+            title="关于我们"
+            keywords="前端网，web前端，vue，react，面试笔试，网址导航，教程资源，前端网"
+            description="前端网，前端工具网址导航，在线工具，视屏教程和开源源码分享，一个免费的前端及node技术学习平台。"
+          />
+          <div className={styles.des}>
+            <div className={styles.site}>
+              <img src={titleImg} alt="vue,react,前端" />
+              <p>
+                前端网
+                是分享前端开发教程，资料，文章的前端网站，每个前端学习者和WEB前端开发工程师的前端大学。
+              </p>
+              <p>我们要做web前端开发技术学习交流分享的专业前端网站！</p>
+              <p>
+                本站包括了HTML、CSS、Javascript、vue.js，react.js，angular.js等各种编程教程。同时本站中也提供了大量的在线实例，通过实例，您可以更好地学习如何编程开发。
+              </p>
+              <p>
+                本站所有资源是完全免费的，并且会根据当前互联网的变化实时更新本站内容。同时本站内容如果有不足的地方，也欢迎广大编程爱好者留言提供意见。
+              </p>
+            </div>
+          </div>
+          <div className={styles.des}>
+            <h3 className={styles.title}>关于每个栏目的内容说明：</h3>
+            <p>网址导航：分享实用的学习网站，工具网站。</p>
+            <p>源码教程：电子书，教学视频以及项目源码收集分享。</p>
+            <p>博客随笔：优秀博客收集分享。</p>
+            <p>软件下载：常用开发软件,办公软件下载。</p>
             <p>
-              前端网
-              是分享前端开发教程，资料，文章的前端网站，每个前端学习者和WEB前端开发工程师的前端大学。
-            </p>
-            <p>我们要做web前端开发技术学习交流分享的专业前端网站！</p>
-            <p>
-              本站包括了HTML、CSS、Javascript、vue.js，react.js，angular.js等各种编程教程。同时本站中也提供了大量的在线实例，通过实例，您可以更好地学习如何编程开发。
-            </p>
-            <p>
-              本站所有资源是完全免费的，并且会根据当前互联网的变化实时更新本站内容。同时本站内容如果有不足的地方，也欢迎广大编程爱好者留言提供意见。
+              在线工具：常用在线工具集合，包括但不限于JSON格式化，MD5加密，base64,时间戳转换等。
             </p>
           </div>
+          <div className={styles.des}>
+            <h3 className={styles.title}>联系我们：</h3>
+            <p>
+              如果您有什么好的建议或好的资源分享，可以联系我们
+              <a href="mailto:farmerlzj@163.com" rel="nofollow">farmerlzj@163.com</a>.
+            </p>
+          </div>
+          <div className={styles.des}>
+            <h3 className={styles.title}>留言板：</h3>
+            <textarea
+              ref={this.message}
+              rows={8}
+              className={styles.input}
+            ></textarea>
+            <Button onClick={this.sendMessage} type="primary">
+              留言
+            </Button>
+          </div>
         </div>
-        <div className={styles.des}>
-          <h3 className={styles.title}>关于每个栏目的内容说明：</h3>
-          <p>网址导航：分享实用的学习网站，工具网站。</p>
-          <p>源码教程：电子书，教学视频以及项目源码收集分享。</p>
-          <p>博客随笔：优秀博客收集分享。</p>
-          <p>软件下载：常用开发软件,办公软件下载。</p>
-          <p>
-            在线工具：常用在线工具集合，包括但不限于JSON格式化，MD5加密，base64,时间戳转换等。
-          </p>
-        </div>
-        <div className={styles.des}>
-          <h3 className={styles.title}>联系我们：</h3>
-          <p>
-            如果您有什么好的建议或好的资源分享，可以联系我们
-            <a href="mailto:farmerlzj@163.com" rel="nofollow">farmerlzj@163.com</a>.
-          </p>
-        </div>
-        <div className={styles.des}>
-          <h3 className={styles.title}>留言板：</h3>
-          <textarea
-            ref={this.message}
-            rows={8}
-            className={styles.input}
-          ></textarea>
-          <Button onClick={this.sendMessage} type="primary">
-            留言
-          </Button>
-        </div>
-      </div>
+      </>
     );
   }
 }
