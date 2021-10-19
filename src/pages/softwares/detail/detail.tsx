@@ -17,7 +17,7 @@ marked.setOptions({
 const records = softwares.pc.concat(softwares.mobile);
 
 function BlogDetail(props: any) {
-  const host = window.location.host;
+  const host = window.location.origin;
   const id = props.match.params.id;
   const software = records.find((software: any) => {
     return software.id == id;
