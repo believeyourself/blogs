@@ -9,28 +9,17 @@ export default () => {
   return (
     <>
       <Helmet>
-        {/* <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2087076429727327"
-          crossOrigin="anonymous"
-        ></script> */}
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       </Helmet>
-      <AdSense.Google
-        client='ca-pub-2087076429727327'
-        slot='9331479126'
-        style={{ display: 'block' }}
-        format='auto'
-        responsive="true"
-      />
-      {/* <ins
-        className="adsbygoogle"
-        style={{ display: 'block' }}
-        data-ad-client="ca-pub-2087076429727327"
-        data-ad-slot="9331479126"
-        data-ad-format="auto"
-        data-full-width-responsive="true"
-      ></ins> */}
+      <div style={{display:"flex",alignItems:"center",justifyContent:"center"}}>
+        <AdSense.Google
+          client='ca-pub-2087076429727327'
+          slot='9331479126'
+          style={{display:"inline-block",width:"728px",height:"90px"}}
+          format='auto'
+          responsive="true"
+        />
+      </div>
     </>
   );
 };
