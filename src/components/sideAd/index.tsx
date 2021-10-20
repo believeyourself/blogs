@@ -1,9 +1,10 @@
 import { Helmet } from 'umi';
 import AdSense from 'react-adsense';
+import style from './style.less';
 
 export default () => {
   if (process.env.REACT_APP_ENV === 'development') {
-    return <div style={{ width: '220px' }}></div>;
+    return <div className={style.container}></div>;
   }
 
   return (
@@ -15,13 +16,7 @@ export default () => {
           crossOrigin="anonymous"
         ></script>
       </Helmet>
-      <div
-        style={{
-          width: '220px',
-          display: 'flex',
-          justifyContent: 'center',
-        }}
-      >
+      <div className={style.container}>
         <AdSense.Google
           client="ca-pub-2087076429727327"
           slot="5545640106"

@@ -10,11 +10,11 @@ import styles from './index.less';
 import records from '../../../data/resource';
 import Card from '@/components/card';
 import SiteHeader from '@/components/siteHeader';
-import { Card as AntCard, Row, Col, Space,Alert } from 'antd';
+import { Card as AntCard, Row, Col, Space, Alert } from 'antd';
 import SideAd from '@/components/sideAd';
 
 export default function Resources() {
-  const host = process.env.SITE_DOMAIN
+  const host = process.env.SITE_DOMAIN;
   const resources: any[] = [];
   records.forEach((item) => {
     let categoryList: any[] = [];
@@ -49,7 +49,10 @@ export default function Resources() {
         key={item.id}
         title={item.category}
         extra={
-          <a className={styles.download_url} href={`${host}/resources/${item.id}`}>
+          <a
+            className={styles.download_url}
+            href={`${host}/resources/${item.id}`}
+          >
             查看更多
           </a>
         }
@@ -60,7 +63,7 @@ export default function Resources() {
   });
 
   return (
-    <section className={styles.container}>
+    <>
       <SiteHeader
         title="教程资源"
         keywords="前端网，视频教程，电子书，PDF，开源项目，源码分享"
@@ -68,9 +71,13 @@ export default function Resources() {
       />
       <SideAd />
       <Space direction="vertical" className={styles.content}>
-        <Alert closable type="warning" message="已更新尚硅谷前端学科全套教程(126.90GB)"/>
+        <Alert
+          closable
+          type="warning"
+          message="已更新尚硅谷前端学科全套教程(126.90GB)"
+        />
         {resources}
       </Space>
-    </section>
+    </>
   );
 }
