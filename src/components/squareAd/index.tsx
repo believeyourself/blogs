@@ -9,14 +9,19 @@ export default () => {
   return (
     <>
       <Helmet>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2087076429727327"
-     crossOrigin="anonymous"></script>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2087076429727327"
+          crossOrigin="anonymous"
+        ></script>
       </Helmet>
-      <div style={{ width:"280px",display:"flex",justifyContent:"center"}}>
+      <div
+        style={{ width: '220px', display: 'flex', justifyContent: 'center' }}
+      >
         <AdSense.Google
-          client='ca-pub-2087076429727327'
-          slot='7022357395'
-          style={{display:"inline-block",width:"280px",height:"500px"}}
+          client="ca-pub-2087076429727327"
+          slot="7022357395"
+          style={{ display: 'inline-block', width: '220px', height: '1000px' }}
         />
       </div>
     </>
