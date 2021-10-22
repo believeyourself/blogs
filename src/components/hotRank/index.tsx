@@ -1,7 +1,7 @@
 import style from './index.less';
 import blogs from '../../../data/blogs';
 import NavLink from '../navLink';
-import { Divider, Tag } from 'antd';
+import { Divider, Space, Tag } from 'antd';
 import SquareAd from '../squareAd';
 
 const rank = blogs.slice(0, 5);
@@ -49,6 +49,19 @@ function HotRank() {
           时间戳转换
         </Tag>
       </div>
+      <Divider />
+      <Space>
+        Node交流群:
+        <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=AzXgep7P0kzB_-TIxBDDNFILZFxh4BdS&jump_from=webapi">
+          <img src="//pub.idqqimg.com/wpa/images/group.png" alt="Node交流群" title="Node交流群" />
+        </a>
+      </Space>
+      <Space>
+        前端交流群:
+        <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=R-am4ZcuufvTEuyilwZgihmk2Fp_lQsy&jump_from=webapi">
+          <img src="//pub.idqqimg.com/wpa/images/group.png" alt="前端技术交流" title="前端技术交流" />
+        </a>
+      </Space>
       <Divider />
       <SquareAd />
     </div>
