@@ -70,18 +70,18 @@ export default function Blogs() {
       />
       <SideAd />
       <div className={styles.content}>
-        <Carousel autoplay>
+        {/* <Carousel autoplay>
           <NavLink className={styles.topic} to={''}>
             前端入门学习
           </NavLink>
-          <NavLink className={styles.topic} to={''}>
+          <NavLink className={styles.topic} to={'/topics/react'}>
             React 专题学习
           </NavLink>
           <NavLink className={styles.topic} to={''}>
             Node 专题学习
           </NavLink>
         </Carousel>
-        <Divider />
+        <Divider /> */}
         <TagSelect
           hideCheckAll={true}
           multi={false}
@@ -91,10 +91,6 @@ export default function Blogs() {
           expandable
         >
           <TagSelect.Option value="react">React</TagSelect.Option>
-          {/* <TagSelect.Option value="vue">vue</TagSelect.Option>
-          <TagSelect.Option value="angular">angularJs</TagSelect.Option>
-          <TagSelect.Option value="canvas">canvas</TagSelect.Option>
-          <TagSelect.Option value="jqery">jquery</TagSelect.Option> */}
           <TagSelect.Option value="css">CSS</TagSelect.Option>
           <TagSelect.Option value="node">NodeJs</TagSelect.Option>
           <TagSelect.Option value="js">JS</TagSelect.Option>

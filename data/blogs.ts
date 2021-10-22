@@ -4,8 +4,8 @@ export default [
     title: 'antd的carousel走马灯组件在flex布局下会出现无限宽度的BUG，显示异常',
     description:
       '记录antd的carousel走马灯组件在flex布局下会出现无限宽度的BUG及其解决办法',
-    tags: ['node', 'egg', '定时任务', 'node-schedule'],
-    date: '2021-10-20',
+    tags: ['react', 'antd', 'carousel', '走马灯'],
+    date: '2021-10-22',
   },
   {
     id: 11,

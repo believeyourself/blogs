@@ -51,6 +51,11 @@ const route: any = [
         component: '@/pages/blogs',
       },
       {
+        title: 'topics/react',
+        path: '/topics/react',
+        component: '@/pages/topics/react',
+      },
+      {
         title: '文章详情',
         path: '/blogs/detail/:id',
         component: '@/pages/blogs/detail/detail',
