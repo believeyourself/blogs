@@ -5,25 +5,34 @@ export interface NavLinkProps {
   className?: string;
   to: string;
   children: any;
-  onClick?:()=>void;
+  onClick?: () => void;
   isActive?: (match: any, { pathName }: any) => boolean;
   [key: string]: any;
 }
 const NavLink = (props: NavLinkProps) => {
+  const {
+    activeClassName,
+    className,
+    to,
+    children,
+    onClick,
+    isActive,
+    ...restProps
+  } = props;
+  const host = process.env.SITE_DOMAIN;
   const url = useLocation();
   const match = useParams();
   const active =
     (props.isActive && props.isActive(match, url)) ||
-    props.to.endsWith(url.pathname);
+    url.pathname.startsWith(props.to);
   return (
     <a
-      href={props.to}
-      onClick={
-        props.onClick
-      }
-      className={`${props.className} ${active && props.activeClassName}`}
+      {...restProps}
+      href={host + to}
+      onClick={onClick}
+      className={`${className} ${active && activeClassName}`}
     >
-      {props.children}
+      {children}
     </a>
   );
 };

@@ -11,12 +11,11 @@ import blogs from '../../../data/blogs';
 import NavLink from '@/components/navLink';
 import TagSelect from '@/components/tagSelect';
 import SiteHeader from '@/components/siteHeader';
-import { Divider,Carousel } from 'antd';
+import { Divider, Carousel } from 'antd';
 import { useState, useMemo } from 'react';
 import SideAd from '@/components/sideAd';
 
 export default function Blogs() {
-  const host = process.env.SITE_DOMAIN
   const [tag, setTag] = useState<string | null>(null);
   const targetBlogs: any[] = useMemo(() => {
     return blogs.filter((blog: any) => {
@@ -31,14 +30,14 @@ export default function Blogs() {
     if (item.id) {
       return (
         <NavLink
-          to={`${host}/blogs/detail/${item.id}`}
+          to={`/blogs/detail/${item.id}`}
           key={item.url || item.id}
           className={styles.category_list_item}
         >
           <h4 className={styles.title}>{item.title}</h4>
           <p className={styles.description}>{item.description}</p>
           <p className={styles.tip}>
-            来源: 本站 {"           "}
+            来源: 本站 {'           '}
             时间: {item.date}
           </p>
         </NavLink>
@@ -55,7 +54,7 @@ export default function Blogs() {
           <h4 className={styles.title}>{item.title}</h4>
           <p className={styles.description}>{item.description}</p>
           <p className={styles.tip}>
-            来源: {item.source} {"          "}
+            来源: {item.source} {'          '}
             时间: 未知
           </p>
         </a>
@@ -64,39 +63,46 @@ export default function Blogs() {
   });
   return (
     <>
-    <SiteHeader
-      title="博客随笔"
-      keywords="前端网，前端开发，前端学习，前端博客，React，javascript，SEO，css，node"
-      description="前端网，致力于前端开发领域技术研究，深入分析技术基础原理，包括但不限于javascript,css,React,vue,node,webpack,umi,antd"
-    />
-    <SideAd />
-    <div className={styles.content}>
-      <Carousel autoplay>
-        <h3 className={styles.topic}>React 专题</h3>
-        <h3 className={styles.topic}>Node 专题</h3>
-      </Carousel>
-      <Divider />
-      <TagSelect
-        hideCheckAll={true}
-        multi={false}
-        onChange={(values) => {
-          setTag(values[0]?.toString() || null);
-        }}
-        expandable
-      >
-        <TagSelect.Option value="react">React</TagSelect.Option>
-        {/* <TagSelect.Option value="vue">vue</TagSelect.Option>
+      <SiteHeader
+        title="博客随笔"
+        keywords="前端网，前端开发，前端学习，前端博客，React，javascript，SEO，css，node"
+        description="前端网，致力于前端开发领域技术研究，深入分析技术基础原理，包括但不限于javascript,css,React,vue,node,webpack,umi,antd"
+      />
+      <SideAd />
+      <div className={styles.content}>
+        <Carousel autoplay>
+          <NavLink className={styles.topic} to={''}>
+            前端入门学习
+          </NavLink>
+          <NavLink className={styles.topic} to={''}>
+            React 专题学习
+          </NavLink>
+          <NavLink className={styles.topic} to={''}>
+            Node 专题学习
+          </NavLink>
+        </Carousel>
+        <Divider />
+        <TagSelect
+          hideCheckAll={true}
+          multi={false}
+          onChange={(values) => {
+            setTag(values[0]?.toString() || null);
+          }}
+          expandable
+        >
+          <TagSelect.Option value="react">React</TagSelect.Option>
+          {/* <TagSelect.Option value="vue">vue</TagSelect.Option>
           <TagSelect.Option value="angular">angularJs</TagSelect.Option>
           <TagSelect.Option value="canvas">canvas</TagSelect.Option>
           <TagSelect.Option value="jqery">jquery</TagSelect.Option> */}
-        <TagSelect.Option value="css">CSS</TagSelect.Option>
-        <TagSelect.Option value="node">NodeJs</TagSelect.Option>
-        <TagSelect.Option value="js">JS</TagSelect.Option>
-        <TagSelect.Option value="SEO">SEO</TagSelect.Option>
-      </TagSelect>
-      <Divider />
-      {records}
-    </div>
+          <TagSelect.Option value="css">CSS</TagSelect.Option>
+          <TagSelect.Option value="node">NodeJs</TagSelect.Option>
+          <TagSelect.Option value="js">JS</TagSelect.Option>
+          <TagSelect.Option value="SEO">SEO</TagSelect.Option>
+        </TagSelect>
+        <Divider />
+        {records}
+      </div>
     </>
   );
 }

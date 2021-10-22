@@ -13,6 +13,7 @@ import SiteHeader from '@/components/siteHeader';
 import { Card as AntCard, Row, Col } from 'antd';
 import SideAd from '@/components/sideAd';
 import { useParams } from 'umi';
+import NavLink from '@/components/navLink';
 
 export default function More() {
   const { id } = useParams<{ id: string }>();
@@ -54,8 +55,12 @@ export default function More() {
       />
       <SideAd />
       <AntCard
-        extra={<a href="/resources">返回</a>}
-        title={<h1 style={{fontSize:"16px",fontWeight:500}}>{resource.category}</h1>}
+        extra={<NavLink to="/resources">返回</NavLink>}
+        title={
+          <h1 style={{ fontSize: '16px', fontWeight: 500 }}>
+            {resource.category}
+          </h1>
+        }
         className={styles.content}
       >
         <Row gutter={[10, 10]}>{categoryList}</Row>

@@ -2,8 +2,9 @@ import styles from './detail.less';
 import marked from 'marked';
 import { Tag } from 'antd';
 import blogs from '../../../../data/blogs';
-import SiteHeader from "@/components/siteHeader"
+import SiteHeader from '@/components/siteHeader';
 import SideAd from '@/components/sideAd';
+import NavLink from '@/components/navLink';
 
 marked.setOptions({
   // marked 设置
@@ -51,30 +52,32 @@ function BlogDetail(props: any) {
   });
 
   const content = require(`../../../../data/blogs/${id}.md`);
-  const keywords = blog && blog.tags?.join(",")
+  const keywords = blog && blog.tags?.join(',');
   return (
     <>
-    <SideAd />
-    <div className={styles.content}>
-      <SiteHeader
-        title={blog?.title || ""}
-        keywords={`前端网,${keywords}`}
-        description={`前端网,${keywords},${blog?.description}`}
-      />
-      <header>
-        <a className={styles.back} href="/">
-          {' '}
-          首页
-        </a>{' '}
-        /
-        <a className={styles.back} href="/blogs">
-          {' '}
-          博客
-        </a>
-      </header>
-      <article dangerouslySetInnerHTML={{ __html: marked(content.default) }} />
-      <div style={{ paddingBottom: 40 }}>{tags}</div>
-    </div>
+      <SideAd />
+      <div className={styles.content}>
+        <SiteHeader
+          title={blog?.title || ''}
+          keywords={`前端网,${keywords}`}
+          description={`前端网,${keywords},${blog?.description}`}
+        />
+        <header>
+          <NavLink className={styles.back} to="/">
+            {' '}
+            首页
+          </NavLink>{' '}
+          /
+          <NavLink className={styles.back} to="/blogs">
+            {' '}
+            博客
+          </NavLink>
+        </header>
+        <article
+          dangerouslySetInnerHTML={{ __html: marked(content.default) }}
+        />
+        <div style={{ paddingBottom: 40 }}>{tags}</div>
+      </div>
     </>
   );
 }

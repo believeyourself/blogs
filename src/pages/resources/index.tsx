@@ -12,9 +12,9 @@ import Card from '@/components/card';
 import SiteHeader from '@/components/siteHeader';
 import { Card as AntCard, Row, Col, Space, Alert } from 'antd';
 import SideAd from '@/components/sideAd';
+import NavLink from '@/components/navLink';
 
 export default function Resources() {
-  const host = process.env.SITE_DOMAIN;
   const resources: any[] = [];
   records.forEach((item) => {
     let categoryList: any[] = [];
@@ -22,15 +22,15 @@ export default function Resources() {
     if (item.category === 'PDF') {
       categoryList = list.map((pdf: any) => {
         return (
-          <a
+          <NavLink
             className={styles.pdf}
             key={pdf.title}
             target="_blank"
             rel="nofollow"
-            href={`${host}/ebooks/${pdf.path}`}
+            to={`/ebooks/${pdf.path}`}
           >
             {pdf.title}
-          </a>
+          </NavLink>
         );
       });
     } else {
@@ -49,12 +49,9 @@ export default function Resources() {
         key={item.id}
         title={item.category}
         extra={
-          <a
-            className={styles.download_url}
-            href={`${host}/resources/${item.id}`}
-          >
+          <NavLink className={styles.download_url} to={`/resources/${item.id}`}>
             查看更多
-          </a>
+          </NavLink>
         }
       >
         <Row gutter={[10, 10]}>{categoryList}</Row>
