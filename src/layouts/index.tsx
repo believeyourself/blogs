@@ -15,7 +15,8 @@ import { BackTop } from 'antd';
 import ScrollFixed from '@/components/scrollFixed';
 import Exception500 from '@/pages/exception/500';
 import Footer from '@/components/footer';
-import { Helmet } from '@/.umi/plugin-helmet/exports';
+import { Helmet } from 'umi';
+
 
 class App extends React.Component {
   state = {
@@ -35,7 +36,7 @@ class App extends React.Component {
     }
 
     return (
-      <div>
+      <>
         <Helmet>
           {process.env.REACT_APP_ENV === 'production' && (
             <script
@@ -106,7 +107,7 @@ class App extends React.Component {
         </div>
         <Footer />
         <BackTop />
-      </div>
+      </>
     );
   }
 }

@@ -11,7 +11,7 @@ import blogs from '../../../data/blogs';
 import NavLink from '@/components/navLink';
 import TagSelect from '@/components/tagSelect';
 import SiteHeader from '@/components/siteHeader';
-import { Divider } from 'antd';
+import { Divider,Carousel } from 'antd';
 import { useState, useMemo } from 'react';
 import SideAd from '@/components/sideAd';
 
@@ -31,14 +31,6 @@ export default function Blogs() {
     if (item.id) {
       return (
         <NavLink
-          // onClick={() => {
-          //   (window as any)._hmt?.push([
-          //     '_trackEvent',
-          //     'blog',
-          //     'detail',
-          //     item.id,
-          //   ]);
-          // }}
           to={`${host}/blogs/detail/${item.id}`}
           key={item.url || item.id}
           className={styles.category_list_item}
@@ -72,13 +64,18 @@ export default function Blogs() {
   });
   return (
     <>
+    <SiteHeader
+      title="博客随笔"
+      keywords="前端网，前端开发，前端学习，前端博客，React，javascript，SEO，css，node"
+      description="前端网，致力于前端开发领域技术研究，深入分析技术基础原理，包括但不限于javascript,css,React,vue,node,webpack,umi,antd"
+    />
     <SideAd />
     <div className={styles.content}>
-      <SiteHeader
-        title="博客随笔"
-        keywords="前端网，前端开发，前端学习，前端博客，React，javascript，SEO，css，node"
-        description="前端网，致力于前端开发领域技术研究，深入分析技术基础原理，包括但不限于javascript,css,React,vue,node,webpack,umi,antd"
-      />
+      <Carousel autoplay>
+        <h3 className={styles.topic}>React 专题</h3>
+        <h3 className={styles.topic}>Node 专题</h3>
+      </Carousel>
+      <Divider />
       <TagSelect
         hideCheckAll={true}
         multi={false}

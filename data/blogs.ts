@@ -1,5 +1,12 @@
 export default [
   {
+    id: 12,
+    title: 'antd的carousel走马灯组件在flex布局下会出现无限宽度的BUG，显示异常',
+    description: '记录antd的carousel走马灯组件在flex布局下会出现无限宽度的BUG极其解决办法',
+    tags: ['node', 'egg', '定时任务', 'node-schedule'],
+    date: '2021-10-20',
+  },
+  {
     id: 11,
     title: 'Node定时任务怎么做',
     description: 'linux有crontab定时任务，那么在Node中，定时任务该如何实现?',
