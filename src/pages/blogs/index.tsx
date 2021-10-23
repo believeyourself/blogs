@@ -70,18 +70,15 @@ export default function Blogs() {
       />
       <SideAd />
       <div className={styles.content}>
-        {/* <Carousel autoplay>
-          <NavLink className={styles.topic} to={''}>
-            前端入门学习
-          </NavLink>
+        <Carousel autoplay>
           <NavLink className={styles.topic} to={'/topics/react'}>
-            React 专题学习
+            React 专题
           </NavLink>
-          <NavLink className={styles.topic} to={''}>
-            Node 专题学习
-          </NavLink>
+          {/* <NavLink className={styles.topic} to={''}>
+            Node 专题
+          </NavLink> */}
         </Carousel>
-        <Divider /> */}
+        <Divider />
         <TagSelect
           hideCheckAll={true}
           multi={false}

@@ -68,9 +68,9 @@ export default [
   },
   {
     id: 3,
-    title: 'umi实践问题汇总',
+    title: 'umi实践问题汇总--持续更新',
     description: '在使用umi的过程中所遇到问题的记录汇总',
-    tags: ['umi', '脚手架'],
+    tags: ['react', 'umi', '脚手架'],
     date: '2021-09-19',
   },
   {
