@@ -28,12 +28,6 @@ export default [
         url: 'https://pan.baidu.com/s/1HL_1bPbkJ1SrZV8NGcdjYg',
       },
       {
-        title: 'Node.js+Koa2框架生态实战 - 从零模拟新浪微博',
-        description:
-          '链接：https://pan.baidu.com/s/1_VTelO9z0srgFzF5yixFaA 提取码：pgp7',
-        url: 'https://pan.baidu.com/s/1_VTelO9z0srgFzF5yixFaA',
-      },
-      {
         title: '极客TypeScript',
         description:
           '链接：https://pan.baidu.com/s/1ntqmUX45L0xl4aCtVsomSQ 提取码：e8p5',
@@ -50,12 +44,6 @@ export default [
         description:
           '链接：https://pan.baidu.com/s/1xiQL_YIm2adwwhq3JN7SvQ 提取码：zqum',
         url: 'https://pan.baidu.com/s/1xiQL_YIm2adwwhq3JN7SvQ',
-      },
-      {
-        title: 'koa2从0开始构建预告片网站',
-        description:
-          '链接：https://pan.baidu.com/s/1jnb7v1yqlexygtd7gJJ8aw 提取码：duum',
-        url: 'https://pan.baidu.com/s/1jnb7v1yqlexygtd7gJJ8aw',
       },
       {
         title: '带你入门Vue2.0及学习实战项目',
@@ -105,37 +93,10 @@ export default [
         url: 'https://github.com/yyhsong/iDataV',
       },
       {
-        title: '局域网聊天室',
-        description:
-          'koa + vue开发的局域网聊天室，支持群聊、文件传输、粘贴截图、文件列表、聊天记录（本地存储文本文件模拟数据库）等模块',
-        url: 'https://github.com/shb190802/chat',
-      },
-      {
-        title: 'node-jenkins',
-        description: '使用nodejs模拟的jenkins打包vue项目功能',
-        url: 'https://github.com/shb190802/node-jenkins',
-      },
-      {
-        title: '从零到部署：用 Vue 和 Express 实现迷你全栈电商应用',
-        description:
-          '【已完成】这里是《从零到部署：用 Vue 和 Express 实现迷你全栈电商应用》系列教程的源代码仓库。',
-        url: 'https://github.com/believeyourself/vue-online-shop-frontend',
-      },
-      {
-        title: '全网影视采集解析播放的开源项目',
-        description: '技术栈是 koa + swig模板引擎 + jQuery',
-        url: 'https://github.com/believeyourself/koa-video',
-      },
-      {
         title: '婚礼大屏互动，微信请柬一站式解决方案',
         description:
           '项目分为微信端和大屏端。微信端可以作为电子请柬提前分享给大家，部署的服务器域名最好有备案，不然容易被屏蔽。大屏端是放在婚礼现场的大屏幕上，现场的宾客可以刷弹幕上墙，并且有照片播放页，迎宾页，抽奖页面。另外微信端也作为现场互动的入口，扫码签到可参与抽奖，发弹幕送祝福上大屏幕。',
         url: 'https://github.com/believeyourself/wedding',
-      },
-      {
-        title: '铜钟聚合音乐',
-        description: '一个网站，三家平台的音乐',
-        url: 'https://github.com/believeyourself/tongzhong-music',
       },
     ],
   },

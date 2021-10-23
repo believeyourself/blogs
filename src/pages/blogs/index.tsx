@@ -74,9 +74,9 @@ export default function Blogs() {
           <NavLink className={styles.topic} to={'/topics/react'}>
             React 专题
           </NavLink>
-          {/* <NavLink className={styles.topic} to={''}>
+          <NavLink className={styles.topic} to={'/topics/node'}>
             Node 专题
-          </NavLink> */}
+          </NavLink>
         </Carousel>
         <Divider />
         <TagSelect

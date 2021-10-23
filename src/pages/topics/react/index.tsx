@@ -63,20 +63,42 @@ export default function Resources() {
       <Space direction="vertical" className={styles.content}>
         <AntCard title="React 相关文档">
           <div className={styles.doc}>
-            <a href="https://zh-hans.reactjs.org/">React</a>
-            <a href="https://www.redux.org.cn/">Redux</a>
-            <a href="https://react-guide.github.io/react-router-cn/">
+            <a target="_blank" href="https://zh-hans.reactjs.org/">
+              React
+            </a>
+            <a target="_blank" href="https://www.redux.org.cn/">
+              Redux
+            </a>
+            <a
+              target="_blank"
+              href="https://react-guide.github.io/react-router-cn/"
+            >
               React Router
             </a>
-            <a href="https://redux-saga-in-chinese.js.org/docs/introduction/BeginnerTutorial.html/">
+            <a
+              target="_blank"
+              href="https://redux-saga-in-chinese.js.org/docs/introduction/BeginnerTutorial.html/"
+            >
               redux-saga
             </a>
-            <a href="https://dvajs.com/guide/">dva</a>
-            <a href="https://create-react-app.dev/docs/getting-started">
+            <a target="_blank" href="https://dvajs.com/guide/">
+              dva
+            </a>
+            <a
+              target="_blank"
+              href="https://create-react-app.dev/docs/getting-started"
+            >
               create-react-app
             </a>
-            <a href="https://umijs.org/zh-CN/docs">umi</a>
-            <a href="https://ant.design/docs/react/introduce-cn">ant-design</a>
+            <a target="_blank" href="https://umijs.org/zh-CN/docs">
+              umi
+            </a>
+            <a
+              target="_blank"
+              href="https://ant.design/docs/react/introduce-cn"
+            >
+              ant-design
+            </a>
           </div>
         </AntCard>
         <AntCard title="React 教程">

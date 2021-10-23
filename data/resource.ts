@@ -9,7 +9,7 @@ export default [
           '链接:https://pan.baidu.com/s/1GcVS3D93K_Zv2PdqJ4nOpQ 提取码:z7ue',
         url: 'https://pan.baidu.com/s/1GcVS3D93K_Zv2PdqJ4nOpQ',
       },
-       {
+      {
         title: '掌握Taro多端框架 快速上手小程序H5开发',
         description:
           '链接:https://pan.baidu.com/s/1tqHc2htH1ZkBetJXpOx-gg 提取码:gstg',
@@ -204,7 +204,7 @@ export default [
         url: 'https://github.com/believeyourself/wedding',
       },
       {
-        title: '铜钟聚合音乐',
+        title: '铜钟聚合音乐(React)',
         description: '一个网站，三家平台的音乐',
         url: 'https://github.com/believeyourself/tongzhong-music',
       },

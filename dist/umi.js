@@ -12441,6 +12441,259 @@
         return n;
       };
   },
+  EWex: function (e, t, n) {
+    'use strict';
+    n.r(t),
+      n.d(t, 'default', function () {
+        return g;
+      });
+    n('DYRE');
+    var r = n('zeV3'),
+      o = (n('14J3'), n('BMrR')),
+      a = (n('jCWc'), n('kPKH')),
+      i = n('k1fw'),
+      c = (n('IzEo'), n('bx4M')),
+      u = n('yrMb'),
+      l = n.n(u),
+      s = n('q5Ws'),
+      f = n('Scb0'),
+      d = {
+        videos: [
+          {
+            title:
+              '\u7528 React.js+Egg.js \u9020\u8f6e\u5b50\uff0c\u5168\u6808\u5f00\u53d1\u65c5\u6e38\u7535\u5546\u5e94\u7528',
+            description:
+              '\u94fe\u63a5:https://pan.baidu.com/s/1KsXg_0TMGNQkO1S5YDO_aw \u63d0\u53d6\u7801:ude5',
+            url: 'https://pan.baidu.com/s/1KsXg_0TMGNQkO1S5YDO_aw',
+          },
+          {
+            title:
+              'Node.js+Koa2\u6846\u67b6\u751f\u6001\u5b9e\u6218 - \u4ece\u96f6\u6a21\u62df\u65b0\u6d6a\u5fae\u535a',
+            description:
+              '\u94fe\u63a5\uff1ahttps://pan.baidu.com/s/1_VTelO9z0srgFzF5yixFaA \u63d0\u53d6\u7801\uff1apgp7',
+            url: 'https://pan.baidu.com/s/1_VTelO9z0srgFzF5yixFaA',
+          },
+          {
+            title:
+              'koa2\u4ece0\u5f00\u59cb\u6784\u5efa\u9884\u544a\u7247\u7f51\u7ad9',
+            description:
+              '\u94fe\u63a5\uff1ahttps://pan.baidu.com/s/1jnb7v1yqlexygtd7gJJ8aw \u63d0\u53d6\u7801\uff1aduum',
+            url: 'https://pan.baidu.com/s/1jnb7v1yqlexygtd7gJJ8aw',
+          },
+        ],
+        codes: [
+          {
+            title: '\u5c40\u57df\u7f51\u804a\u5929\u5ba4',
+            description:
+              'koa + vue\u5f00\u53d1\u7684\u5c40\u57df\u7f51\u804a\u5929\u5ba4\uff0c\u652f\u6301\u7fa4\u804a\u3001\u6587\u4ef6\u4f20\u8f93\u3001\u7c98\u8d34\u622a\u56fe\u3001\u6587\u4ef6\u5217\u8868\u3001\u804a\u5929\u8bb0\u5f55\uff08\u672c\u5730\u5b58\u50a8\u6587\u672c\u6587\u4ef6\u6a21\u62df\u6570\u636e\u5e93\uff09\u7b49\u6a21\u5757',
+            url: 'https://github.com/shb190802/chat',
+          },
+          {
+            title: 'node-jenkins',
+            description:
+              '\u4f7f\u7528nodejs\u6a21\u62df\u7684jenkins\u6253\u5305vue\u9879\u76ee\u529f\u80fd',
+            url: 'https://github.com/shb190802/node-jenkins',
+          },
+          {
+            title:
+              '\u4ece\u96f6\u5230\u90e8\u7f72\uff1a\u7528 Vue \u548c Express \u5b9e\u73b0\u8ff7\u4f60\u5168\u6808\u7535\u5546\u5e94\u7528',
+            description:
+              '\u3010\u5df2\u5b8c\u6210\u3011\u8fd9\u91cc\u662f\u300a\u4ece\u96f6\u5230\u90e8\u7f72\uff1a\u7528 Vue \u548c Express \u5b9e\u73b0\u8ff7\u4f60\u5168\u6808\u7535\u5546\u5e94\u7528\u300b\u7cfb\u5217\u6559\u7a0b\u7684\u6e90\u4ee3\u7801\u4ed3\u5e93\u3002',
+            url: 'https://github.com/believeyourself/vue-online-shop-frontend',
+          },
+          {
+            title:
+              '\u5168\u7f51\u5f71\u89c6\u91c7\u96c6\u89e3\u6790\u64ad\u653e\u7684\u5f00\u6e90\u9879\u76ee',
+            description:
+              '\u6280\u672f\u6808\u662f koa + swig\u6a21\u677f\u5f15\u64ce + jQuery',
+            url: 'https://github.com/believeyourself/koa-video',
+          },
+          {
+            title: '\u6210\u90fd\u623f\u534f\u7f51\u6570\u636e\u5206\u6790',
+            description:
+              '\u524d\u7aefReact+\u540e\u7aefKoa\u5b9e\u73b0\u7684\u6210\u90fd\u623f\u534f\u7f51\u6570\u636e\u5206\u6790\u7f51\u7ad9\u3002',
+            url: 'https://github.com/believeyourself/cdfang-spider',
+          },
+          {
+            title: '\u540e\u53f0\u6570\u636e\u7ba1\u7406\u7cfb\u7edf',
+            description:
+              'react+redux+express+MongoDB,\u53c8\u4e00\u5957 CRUD\uff08\u589e\u5220\u6539\u67e5\uff09\u540e\u53f0\u6570\u636e\u7ba1\u7406\u7cfb\u7edf\uff0c\u53ea\u4e0d\u8fc7\u7528\u5230\u7684\u6280\u672f\u6808\u6bd4\u8f83\u65b0\uff08\u76ee\u524d\u6211\u6240\u7406\u89e3\u7684\u6700\u4f73\u5b9e\u8df5\uff09\uff0c\u5177\u6709\u4e00\u5b9a\u7684\u53c2\u8003\u610f\u4e49\u3002',
+            url: 'https://github.com/zerosoul/static-site-data-management',
+          },
+        ],
+        pdfs: [],
+      },
+      p = n('feFQ'),
+      h = n('UOy+'),
+      v = n('9Irh'),
+      b = n('nKUr'),
+      m = h['a'].map((e) =>
+        !Array.isArray(e.tags) ||
+        (Array.isArray(e.tags) && !e.tags.includes('node'))
+          ? null
+          : e.id
+          ? Object(b['jsxs'])(
+              v['a'],
+              {
+                to: '/blogs/detail/'.concat(e.id),
+                className: l.a.blog,
+                children: [
+                  Object(b['jsx'])('h4', {
+                    className: l.a.title,
+                    children: e.title,
+                  }),
+                  Object(b['jsx'])('p', {
+                    className: l.a.description,
+                    children: e.description,
+                  }),
+                ],
+              },
+              e.url || e.id,
+            )
+          : Object(b['jsxs'])(
+              'a',
+              {
+                href: e.url,
+                target: '_blank',
+                className: l.a.blog,
+                rel: 'nofollow',
+                children: [
+                  Object(b['jsx'])('h4', {
+                    className: l.a.title,
+                    children: e.title,
+                  }),
+                  Object(b['jsx'])('p', {
+                    className: l.a.description,
+                    children: e.description,
+                  }),
+                ],
+              },
+              e.url || e.id,
+            ),
+      );
+    function g() {
+      var e = d.videos,
+        t = d.codes;
+      return Object(b['jsxs'])(b['Fragment'], {
+        children: [
+          Object(b['jsx'])(s['a'], {
+            title:
+              'NodeJs\u6587\u6863\uff0cNodeJs\u6559\u7a0b\uff0cNodeJs\u5f00\u6e90\u9879\u76ee',
+            keywords:
+              'NodeJs\u5f00\u53d1\uff0cNodeJs\u6587\u6863\uff0cNodeJs\u6559\u7a0b\uff0cNodeJs\u5f00\u6e90\u9879\u76ee',
+            description:
+              'NodeJs\u5b66\u4e60\u8def\u7ebf\u3001\u6587\u6863\u3001\u6559\u7a0b\u3001\u5f00\u6e90\u9879\u76ee\uff0c\u52a9\u529b\u5b66\u4e60\u638c\u63e1NodeJs,\u63d0\u5347NodeJs\u5f00\u53d1\u6548\u7387',
+          }),
+          Object(b['jsx'])(f['a'], {}),
+          Object(b['jsxs'])(r['b'], {
+            direction: 'vertical',
+            className: l.a.content,
+            children: [
+              Object(b['jsx'])(c['a'], {
+                title: 'NodeJs \u76f8\u5173\u6587\u6863',
+                children: Object(b['jsxs'])('div', {
+                  className: l.a.doc,
+                  children: [
+                    Object(b['jsx'])('a', {
+                      target: '_blank',
+                      href: 'http://nodejs.cn/',
+                      children: 'NodeJs',
+                    }),
+                    Object(b['jsx'])('a', {
+                      target: '_blank',
+                      href:
+                        'https://expressjs.com/zh-cn/starter/installing.html',
+                      children: 'Express',
+                    }),
+                    Object(b['jsx'])('a', {
+                      target: '_blank',
+                      href: 'https://koa.bootcss.com/',
+                      children: 'Koa',
+                    }),
+                    Object(b['jsx'])('a', {
+                      target: '_blank',
+                      href:
+                        'https://chenshenhai.github.io/koa2-note/note/start/quick.html',
+                      children: 'Koa2',
+                    }),
+                    Object(b['jsx'])('a', {
+                      target: '_blank',
+                      href: 'https://eggjs.org/zh-cn/intro/',
+                      children: 'egg',
+                    }),
+                    Object(b['jsx'])('a', {
+                      target: '_blank',
+                      href: 'https://pinus.io/',
+                      children: 'pinus',
+                    }),
+                  ],
+                }),
+              }),
+              Object(b['jsx'])(c['a'], {
+                title: 'NodeJs \u6559\u7a0b',
+                children: Object(b['jsx'])(o['a'], {
+                  gutter: [10, 10],
+                  children: e.map((e) =>
+                    Object(b['jsx'])(
+                      a['a'],
+                      {
+                        lg: 12,
+                        md: 12,
+                        sm: 24,
+                        xs: 24,
+                        children: Object(b['jsx'])(
+                          p['a'],
+                          Object(i['a'])(
+                            { className: l.a.category_list_item },
+                            e,
+                          ),
+                        ),
+                      },
+                      e.title,
+                    ),
+                  ),
+                }),
+              }),
+              Object(b['jsx'])(c['a'], {
+                title: 'NodeJs \u5f00\u6e90\u9879\u76ee',
+                children: Object(b['jsx'])(o['a'], {
+                  gutter: [10, 10],
+                  children: t.map((e) =>
+                    Object(b['jsx'])(
+                      a['a'],
+                      {
+                        lg: 12,
+                        md: 12,
+                        sm: 24,
+                        xs: 24,
+                        children: Object(b['jsx'])(
+                          p['a'],
+                          Object(i['a'])(
+                            { className: l.a.category_list_item },
+                            e,
+                          ),
+                        ),
+                      },
+                      e.title,
+                    ),
+                  ),
+                }),
+              }),
+              Object(b['jsx'])(c['a'], {
+                title: 'NodeJs \u6587\u7ae0',
+                children: m,
+              }),
+              Object(b['jsx'])(c['a'], {
+                title: 'NodeJs PDF',
+                children:
+                  '\u5236\u4f5c\u4e2d\uff0c\u656c\u8bf7\u671f\u5f85\u3002\u3002\u3002',
+              }),
+            ],
+          }),
+        ],
+      });
+    }
+  },
   EdiO: function (e, t) {
     function n(e, t) {
       (null == t || t > e.length) && (t = e.length);
@@ -16236,13 +16489,20 @@
           Object(Ye['jsxs'])('div', {
             className: xe.a.content,
             children: [
-              Object(Ye['jsx'])(we, {
+              Object(Ye['jsxs'])(we, {
                 autoplay: !0,
-                children: Object(Ye['jsx'])(Ce['a'], {
-                  className: xe.a.topic,
-                  to: '/topics/react',
-                  children: 'React \u4e13\u9898',
-                }),
+                children: [
+                  Object(Ye['jsx'])(Ce['a'], {
+                    className: xe.a.topic,
+                    to: '/topics/react',
+                    children: 'React \u4e13\u9898',
+                  }),
+                  Object(Ye['jsx'])(Ce['a'], {
+                    className: xe.a.topic,
+                    to: '/topics/node',
+                    children: 'Node \u4e13\u9898',
+                  }),
+                ],
               }),
               Object(Ye['jsx'])(r['a'], {}),
               Object(Ye['jsxs'])(Xe, {
@@ -21076,6 +21336,12 @@
               '\u524d\u7aefReact+\u540e\u7aefKoa\u5b9e\u73b0\u7684\u6210\u90fd\u623f\u534f\u7f51\u6570\u636e\u5206\u6790\u7f51\u7ad9\u3002',
             url: 'https://github.com/believeyourself/cdfang-spider',
           },
+          {
+            title: '\u94dc\u949f\u805a\u5408\u97f3\u4e50',
+            description:
+              '\u4e00\u4e2a\u7f51\u7ad9\uff0c\u4e09\u5bb6\u5e73\u53f0\u7684\u97f3\u4e50',
+            url: 'https://github.com/believeyourself/tongzhong-music',
+          },
         ],
         pdfs: [],
       },
@@ -21151,35 +21417,43 @@
                   className: l.a.doc,
                   children: [
                     Object(b['jsx'])('a', {
+                      target: '_blank',
                       href: 'https://zh-hans.reactjs.org/',
                       children: 'React',
                     }),
                     Object(b['jsx'])('a', {
+                      target: '_blank',
                       href: 'https://www.redux.org.cn/',
                       children: 'Redux',
                     }),
                     Object(b['jsx'])('a', {
+                      target: '_blank',
                       href: 'https://react-guide.github.io/react-router-cn/',
                       children: 'React Router',
                     }),
                     Object(b['jsx'])('a', {
+                      target: '_blank',
                       href:
                         'https://redux-saga-in-chinese.js.org/docs/introduction/BeginnerTutorial.html/',
                       children: 'redux-saga',
                     }),
                     Object(b['jsx'])('a', {
+                      target: '_blank',
                       href: 'https://dvajs.com/guide/',
                       children: 'dva',
                     }),
                     Object(b['jsx'])('a', {
+                      target: '_blank',
                       href: 'https://create-react-app.dev/docs/getting-started',
                       children: 'create-react-app',
                     }),
                     Object(b['jsx'])('a', {
+                      target: '_blank',
                       href: 'https://umijs.org/zh-CN/docs',
                       children: 'umi',
                     }),
                     Object(b['jsx'])('a', {
+                      target: '_blank',
                       href: 'https://ant.design/docs/react/introduce-cn',
                       children: 'ant-design',
                     }),
@@ -35753,7 +36027,7 @@
             url: 'https://github.com/believeyourself/wedding',
           },
           {
-            title: '\u94dc\u949f\u805a\u5408\u97f3\u4e50',
+            title: '\u94dc\u949f\u805a\u5408\u97f3\u4e50(React)',
             description:
               '\u4e00\u4e2a\u7f51\u7ad9\uff0c\u4e09\u5bb6\u5e73\u53f0\u7684\u97f3\u4e50',
             url: 'https://github.com/believeyourself/tongzhong-music',
@@ -61691,7 +61965,7 @@
               component: n('mB2O').default,
             },
             {
-              title: '\u6559\u7a0b',
+              title: '\u5168\u90e8\u6559\u7a0b',
               path: '/resources/:id',
               component: n('9AFy').default,
               exact: !0,
@@ -61703,7 +61977,13 @@
               exact: !0,
             },
             {
-              title: 'topics/react',
+              title: 'NodeJs\u4e13\u9898',
+              path: '/topics/node',
+              component: n('EWex').default,
+              exact: !0,
+            },
+            {
+              title: 'React\u4e13\u9898',
               path: '/topics/react',
               component: n('NFi0').default,
               exact: !0,
@@ -75289,6 +75569,16 @@
       },
     ),
       a('includes');
+  },
+  yrMb: function (e, t, n) {
+    e.exports = {
+      content: 'content___Y3iNe',
+      doc: 'doc___yYMuQ',
+      blog: 'blog___2UFbC',
+      title: 'title___2uRqP',
+      description: 'description___34RNW',
+      tip: 'tip___3sBmS',
+    };
   },
   z8NH: function (e, t, n) {
     var r = n('dOgj');

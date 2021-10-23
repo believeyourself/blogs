@@ -68,6 +68,11 @@ export default {
       description: '前端React+后端Koa实现的成都房协网数据分析网站。',
       url: 'https://github.com/believeyourself/cdfang-spider',
     },
+    {
+      title: '铜钟聚合音乐',
+      description: '一个网站，三家平台的音乐',
+      url: 'https://github.com/believeyourself/tongzhong-music',
+    },
   ],
   pdfs: [],
 };

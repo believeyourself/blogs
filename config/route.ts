@@ -41,7 +41,7 @@ const route: any = [
         component: '@/pages/resources',
       },
       {
-        title: '教程',
+        title: '全部教程',
         path: '/resources/:id',
         component: '@/pages/resources/more',
       },
@@ -51,7 +51,12 @@ const route: any = [
         component: '@/pages/blogs',
       },
       {
-        title: 'topics/react',
+        title: 'NodeJs专题',
+        path: '/topics/node',
+        component: '@/pages/topics/node',
+      },
+      {
+        title: 'React专题',
         path: '/topics/react',
         component: '@/pages/topics/react',
       },
