@@ -1,3 +1,5 @@
+https://www.qianduan.shop/topics/react
+https://www.qianduan.shop/blogs/detail/12
 https://www.qianduan.shop/blogs/detail/11
 https://www.qianduan.shop/blogs/detail/10
 https://www.qianduan.shop/blogs/detail/9
@@ -13,6 +15,8 @@ https://www.qianduan.shop/softwares/detail/1
 https://www.qianduan.shop/softwares/detail/2
 https://www.qianduan.shop/softwares/detail/1000
 https://www.qianduan.shop/softwares
+https://www.qianduan.shop/tools/md5
+https://www.qianduan.shop/tools/timestamp
 https://www.qianduan.shop/tools
 https://www.qianduan.shop/blogs
 https://www.qianduan.shop/sites

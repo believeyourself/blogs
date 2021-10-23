@@ -8405,7 +8405,6 @@ module.exports = (function (e) {
   '9fu+': function (e, t) {
     e.exports = {
       content: 'content___zVHaz',
-      ant_carousel: 'ant_carousel___3zTpz',
       topic: 'topic___1a253',
       category_list_item: 'category_list_item___3-yP_',
       title: 'title___30tCC',
