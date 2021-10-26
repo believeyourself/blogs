@@ -29,11 +29,12 @@ export default () => {
         <title>在线工具 - 前端网</title>
         <meta
           name="keywords"
-          content="web前端,在线工具，JSON格式化，MD5加密，Ajax请求，时间戳转换，图片压缩,cron表达式生成"
+          content="web前端,在线工具，JSON格式化，MD5加密，时间戳转换,cron表达式生成"
         />
         <meta
           name="description"
-          content="web前端在线工具，在线JSON格式化，在线MD5加密，在线Ajax请求，在线时间戳转化，在线图片压缩，在线cron表达式生成"
+          content="web前端在线工具，在线JSON格式化，在线MD5加密，在线时间戳转化，在线cron表达式生成，帮助您在线完成诸多工作.
+          "
         />
       </Helmet>
       <header className={style.header}>

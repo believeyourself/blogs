@@ -18,7 +18,8 @@ https://www.qianduan.shop/softwares/detail/1000
 https://www.qianduan.shop/softwares
 https://www.qianduan.shop/tools/md5
 https://www.qianduan.shop/tools/timestamp
-https://www.qianduan.shop/tools
+https://www.qianduan.shop/tools/jsonTree
+https://www.qianduan.shop/tools/cron
 https://www.qianduan.shop/blogs
 https://www.qianduan.shop/sites
 https://www.qianduan.shop/resources
