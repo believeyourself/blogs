@@ -99,6 +99,12 @@ export default function Resources() {
             >
               ant-design
             </a>
+            <a
+              target="_blank"
+              href="https://semi.design/zh-CN/start/introduction"
+            >
+              semi-design
+            </a>
           </div>
         </AntCard>
         <AntCard title="React 教程">
