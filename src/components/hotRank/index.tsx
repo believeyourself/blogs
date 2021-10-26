@@ -48,6 +48,13 @@ function HotRank() {
         >
           时间戳转换
         </Tag>
+        <Tag
+          onClick={() => (window.location.href = host + '/tools/cron')}
+          className={style.tool_tag}
+          color="green"
+        >
+          Cron表达式生成
+        </Tag>
       </div>
       <Divider />
       <Space>
