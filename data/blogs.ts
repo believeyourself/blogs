@@ -5,7 +5,7 @@ export default [
     description:
       '介绍react实现的cron表达式生成组件qnn-react-cron以及其前身组件react-cron-antd',
     tags: ['react', 'antd', 'cron表达式'],
-    date: '2021-10-22',
+    date: '2021-10-27',
   },
   {
     id: 12,
