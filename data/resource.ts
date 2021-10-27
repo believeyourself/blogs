@@ -112,6 +112,35 @@ export default [
     category: '开源项目',
     list: [
       {
+        title: 'sharedb',
+        description:
+          '基于 JSON 数据 OT 算法的实时数据库。简单来说就是实时协同数据框架，可用来实现当页面因用户操作发生数据变化时，实时把数据同步展示到其它用户页面上，其中 OT 算法就是解决此协同过程中问题的通用算法。常见的场景比如：多用户之间的状态同步、在线协作文档、离线后数据改动同步等',
+        url: 'https://github.com/share/sharedb',
+      },
+      {
+        title: '30-Days-Of-JavaScript',
+        description:
+          '30 天 JavaScript 编程挑战。该教程虽然是英文教程但是图文并茂通俗易通，内容循序渐进包含练习题，适合零基础想要学习 JavaScript 的同学',
+        url: 'https://github.com/Asabeneh/30-Days-Of-JavaScript',
+      },
+      {
+        title: 'YesPlayMusic（Vue版）',
+        description:
+          '高颜值的第三方网易云播放器。它不仅拥有简洁美观的外观，还有丰富的功能',
+        url: 'https://github.com/qier222/YesPlayMusic',
+      },
+      {
+        title: 'javascript风格指南',
+        description: 'Airbnb 开源的 JavaScript 风格指南。',
+        url: 'https://github.com/lin-123/javascript',
+      },
+      {
+        title: 'spy-debugger',
+        description:
+          '远程调试手机页面和抓包的工具。操作简单仅需手机和电脑在同一个 WIFI 下，即可在实现真机调试页面',
+        url: 'https://github.com/wuchangming/spy-debugger',
+      },
+      {
         title: 'react-beautiful-dnd',
         description: '漂亮易用的 React 列表拖拽库。',
         url: 'https://github.com/atlassian/react-beautiful-dnd',

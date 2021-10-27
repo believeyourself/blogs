@@ -1,5 +1,13 @@
 export default [
   {
+    id: 13,
+    title: 'react cron表达式生成组件qnn-react-cron',
+    description:
+      '介绍react实现的cron表达式生成组件qnn-react-cron以及其前身组件react-cron-antd',
+    tags: ['react', 'antd', 'cron表达式'],
+    date: '2021-10-22',
+  },
+  {
     id: 12,
     title: 'antd的carousel走马灯组件在flex布局下会出现无限宽度的BUG，显示异常',
     description:
