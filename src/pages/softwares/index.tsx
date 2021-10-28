@@ -2,11 +2,14 @@ import style from './style.less';
 import data from '../../../data/softwares';
 import { Divider } from 'antd';
 import React from 'react';
-const softwares = data.pc.concat(data.mobile);
-import SideAd from "@/components/sideAd";
+import SideAd from '@/components/sideAd';
+
+const softwares = data.pc.concat(data.mobile).sort((pre, next) => {
+  return pre.date > next.date ? -1 : 1;
+});
 
 export default () => {
-  const host = process.env.SITE_DOMAIN
+  const host = process.env.SITE_DOMAIN;
   const records = softwares.map((software) => {
     return (
       <React.Fragment key={software.id}>

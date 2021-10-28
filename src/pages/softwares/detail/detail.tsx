@@ -17,7 +17,7 @@ marked.setOptions({
 const records = softwares.pc.concat(softwares.mobile);
 
 function BlogDetail(props: any) {
-  const host = process.env.SITE_DOMAIN
+  const host = process.env.SITE_DOMAIN;
   const id = props.match.params.id;
   const software = records.find((software: any) => {
     return software.id == id;
@@ -38,9 +38,9 @@ function BlogDetail(props: any) {
           首页
         </a>{' '}
         /
-        <a className={styles.back} href={host + "/softwares"}>
+        <a className={styles.back} href={host + '/softwares'}>
           {' '}
-          软件下载
+          软件分享
         </a>
       </header>
       <article dangerouslySetInnerHTML={{ __html: marked(content.default) }} />

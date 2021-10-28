@@ -30,6 +30,15 @@ export default {
   ],
   mobile: [
     {
+      id: 1001,
+      title: 'Google Opinion Rewards 有奖问卷调查',
+      img: '1001.webp',
+      description:
+        '我们做海外赚钱项目，一定绕不过谷歌，虽然说它也曾在我们国内被使用过，但是真正了解谷歌的朋友占比一直都不高，而Googleplay的赚钱渠道更多。今天我要和大家分享的就是一个由谷歌公司推出的APP产品，一个兼职赚钱的APP，在海外已经流行多年，这里面有很多的及时调查，我们只要抽时间完成一个，APP就能给我们结算一些资金。这些奖励资金我们可以提现，也可以购买Googleplay里的一些商品或者游戏等物品。',
+      date: '2021-10-28',
+      tags: ['everything，windows，文件搜索工具'],
+    },
+    {
       id: 1000,
       title: 'apkpure',
       img: '1000.webp',
