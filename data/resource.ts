@@ -112,6 +112,66 @@ export default [
     category: '开源项目',
     list: [
       {
+        title: 'Checka11y.css',
+        description:
+          '一个CSS样式表，可以快速突出所有关注的内容。',
+        url: 'https://github.com/jackdomleo7/Checka11y.css',
+      },
+      {
+        title: 'animated-emojis',
+        description:
+          '带有动画表情符号的库。',
+        url: 'https://github.com/beerose/animated-emojis',
+      },
+      {
+        title: 'use-mui',
+        description:
+          'Material UI 的 React 钩子。对于每个状态，每个钩子都接受一个可选的默认状态并返回一个状态设置实用程序函数。',
+        url: 'https://github.com/CharlesStover/use-mui',
+      },
+      {
+        title: 'typescript-boilerplate',
+        description:
+          '现代 TypeScript 项目设置，适用于 Node.js 和浏览器（使用 esbuild）。',
+        url: 'https://github.com/metachris/typescript-boilerplate',
+      },
+      {
+        title: 'ml5-library',
+        description:
+          'ml5.js 旨在让机器学习对广大艺术家、创意编码人员和学生来说变得容易上手。该库提供对浏览器中机器学习算法和模型的访问，构建在 TensorFlow.js 之上。',
+        url: 'https://github.com/ml5js/ml5-library',
+      },
+      {
+        title: 'FrontEndCollection',
+        description:
+          '前端软件工程师注意事项。涵盖常见的数据结构和算法、基本的 Web 概念、HTML & CSS & Javascript。',
+        url: 'https://github.com/cheatsheet1999/FrontEndCollection',
+      },
+      {
+        title: 'fragstore',
+        description:
+          'Tiny (~800 B)，简单易用的库来管理你的 React 状态。商店更新后 -> 仅呈现使用更新属性的组件。',
+        url: 'https://github.com/aralroca/fragstore',
+      },
+      {
+        title: 'headlessui',
+        description:
+          '完全无样式、完全可访问的 UI 组件，旨在与 Tailwind CSS 完美集成。',
+        url: 'https://github.com/tailwindlabs/headlessui',
+      },
+      {
+        title: 'react-hooks-in-svelte',
+        description:
+          '在 Svelte 中使用 React hooks 的示例.',
+        url: 'https://github.com/joshnuss/react-hooks-in-svelte',
+      },
+      {
+        title: 'sucrase',
+        description:
+          'Sucrase 而不是编译大量的 JS 功能，以便能够在 Internet Explorer 中使用最近的浏览器或最近的 Node.js 版本。',
+        url: 'https://github.com/alangpierce/sucrase',
+      },
+      {
         title: 'sharedb',
         description:
           '基于 JSON 数据 OT 算法的实时数据库。简单来说就是实时协同数据框架，可用来实现当页面因用户操作发生数据变化时，实时把数据同步展示到其它用户页面上，其中 OT 算法就是解决此协同过程中问题的通用算法。常见的场景比如：多用户之间的状态同步、在线协作文档、离线后数据改动同步等',
