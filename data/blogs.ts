@@ -1,5 +1,13 @@
 export default [
   {
+    id: 14,
+    title: 'SEO系列之快速排名方法',
+    description:
+      '新站，老站，单个页面，移动端快速排名的一些方法介绍',
+    tags: ['SEO',"快速排名"],
+    date: '2021-11-02',
+  },
+  {
     id: 13,
     title: 'react cron表达式生成组件qnn-react-cron',
     description:
