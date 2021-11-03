@@ -10,7 +10,7 @@ export interface SiteHeaderProps {
 export default ({ title, description, keywords,children }: SiteHeaderProps) => {
   return (
     <Helmet>
-      <title>前端网 - {title}</title>
+      <title>{title} - 前端网</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
       {children}

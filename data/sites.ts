@@ -12,6 +12,12 @@ export default [
     category: '热门推荐',
     sites: [
       {
+        title: 'Chrome插件扩展下载网',
+        description:
+          '扩展迷-专业的Chrome插件网,提供Chrome商店/谷歌应用商店里各类Chrome插件下载服务,拥有最好用的谷歌浏览器插件,最全面的Chrome插件资源,使用Chrome插件可以为谷歌浏览器带来功能性的扩展。',
+        url: 'https://www.extfans.com/',
+      },
+      {
         title: 'Online JavaScript Beautifier',
         description:
           '美化，解压缩或反混淆JavaScript和HTML，使JSON / JSONP可读等。',
