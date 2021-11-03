@@ -54,7 +54,7 @@ export default function Resources() {
           </NavLink>
         }
       >
-        <Row gutter={[10, 10]} gutter={[10, 10]}>
+        <Row gutter={[10, 10]}>
           {categoryList}
         </Row>
       </AntCard>,

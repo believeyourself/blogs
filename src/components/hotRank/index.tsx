@@ -25,7 +25,7 @@ function HotRank() {
     <div className={style.container}>
       <p className={style.title}>热门排行</p>
       <ul className={style.rank_list}>{listItems}</ul>
-      <p className={style.title}>常用工具</p>
+      <p className={style.title}>在线工具</p>
       <div className={style.tool_tags}>
         <Tag
           onClick={() => (window.location.href = host + '/tools')}

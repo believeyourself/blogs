@@ -25,9 +25,9 @@ const route: any = [
       // },
       {
         exact: true,
-        title: '博客',
+        title: '首页',
         path: '/',
-        component: '@/pages/blogs',
+        component: '@/pages/home',
       },
       {
         path: '/sites',

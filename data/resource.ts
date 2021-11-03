@@ -144,7 +144,7 @@ export default [
       {
         title: 'FrontEndCollection',
         description:
-          '前端软件工程师注意事项。涵盖常见的数据结构和算法、基本的 Web 概念、HTML & CSS & Javascript。',
+          '前端软件工程师注意事项。涵盖常见的数据结构和算法、基本的 Web 概念、HTML & CSS & JavaScript。',
         url: 'https://github.com/cheatsheet1999/FrontEndCollection',
       },
       {
@@ -190,9 +190,9 @@ export default [
         url: 'https://github.com/qier222/YesPlayMusic',
       },
       {
-        title: 'javascript风格指南',
+        title: 'JavaScript风格指南',
         description: 'Airbnb 开源的 JavaScript 风格指南。',
-        url: 'https://github.com/lin-123/javascript',
+        url: 'https://github.com/lin-123/JavaScript',
       },
       {
         title: 'spy-debugger',

@@ -47,7 +47,7 @@ export default class AboutUs extends React.Component {
               </p>
               <p>我们要做web前端开发技术学习交流分享的专业前端网站！</p>
               <p>
-                本站包括了HTML、CSS、Javascript、vue.js，react.js，angular.js等各种编程教程。同时本站中也提供了大量的在线实例，通过实例，您可以更好地学习如何编程开发。
+                本站包括了HTML、CSS、JavaScript、vue.js，react.js，angular.js等各种编程教程。同时本站中也提供了大量的在线实例，通过实例，您可以更好地学习如何编程开发。
               </p>
               <p>
                 本站所有资源是完全免费的，并且会根据当前互联网的变化实时更新本站内容。同时本站内容如果有不足的地方，也欢迎广大编程爱好者留言提供意见。

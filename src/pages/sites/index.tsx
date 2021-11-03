@@ -11,7 +11,7 @@ import styles from './index.less';
 import records from '../../../data/sites';
 import Card from '@/components/card';
 import SiteHeader from '@/components/siteHeader';
-import { Row, Col, Card as AntCard, Space } from 'antd';
+import { Row, Col, Card as AntCard } from 'antd';
 import RowAd from '@/components/rowAd';
 
 const scrollToAnchor = (anchorName: string) => {

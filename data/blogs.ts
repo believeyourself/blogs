@@ -151,7 +151,7 @@ export default [
     title: 'js算法和数据结构',
     description: '包含了多种基于 JavaScript 的算法与数据结构',
     url:
-      'https://github.com/believeyourself/javascript-algorithms/blob/master/README.zh-CN.md',
+      'https://github.com/believeyourself/JavaScript-algorithms/blob/master/README.zh-CN.md',
     tags: ['js'],
     source: 'github',
   },

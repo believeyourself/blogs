@@ -15,6 +15,18 @@ export default [
         title: 'Chrome插件扩展下载网',
         description:
           '扩展迷-专业的Chrome插件网,提供Chrome商店/谷歌应用商店里各类Chrome插件下载服务,拥有最好用的谷歌浏览器插件,最全面的Chrome插件资源,使用Chrome插件可以为谷歌浏览器带来功能性的扩展。',
+        url: 'https://color.uisdc.com/pick.html',
+      },
+      {
+        title: '配色导航',
+        description:
+          '配色案例,网页配色,设计配色,配色图表,配色卡,SDC优设网配色工具。',
+        url: 'https://color.uisdc.com/pick.html',
+      },
+      {
+        title: '在线Markdown',
+        description:
+          'markdown编辑器。',
         url: 'https://www.extfans.com/',
       },
       {
@@ -54,11 +66,6 @@ export default [
         url: 'https://developer.mozilla.org/zh-CN/',
       },
       {
-        title: 'Be JSON',
-        description: '好用的在线JSON校验格式化工具',
-        url: 'http://www.bejson.com/',
-      },
-      {
         title: '草料二维码生成器',
         description: '提供在线二维码生成，美化，印制，管理，统计等服务',
         url: 'https://cli.im/',
@@ -84,7 +91,7 @@ export default [
         title: '前端面试真题',
         description: '前端面试真题，会80%直接进大厂副本',
         url:
-          'https://vjyd1gg9jl.feishu.cn/base/app4Dlc49N1Z9e4LrAoZ36lPMNi?table=tblWLqkBQVBu7BvN&view=vew9iquA45',
+          'https://vjyd1gg9jl.feishu.cn/base/app4Dlc49N1Z9e4LrAoZ36lPMNi?from=from_copylink',
       },
     ],
   },

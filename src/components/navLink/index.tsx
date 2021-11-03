@@ -5,6 +5,7 @@ export interface NavLinkProps {
   className?: string;
   to: string;
   children: any;
+  exact?:boolean,
   onClick?: () => void;
   isActive?: (match: any, { pathName }: any) => boolean;
   [key: string]: any;
@@ -14,6 +15,7 @@ const NavLink = (props: NavLinkProps) => {
     activeClassName,
     className,
     to,
+    exact,
     children,
     onClick,
     isActive,
@@ -24,7 +26,8 @@ const NavLink = (props: NavLinkProps) => {
   const match = useParams();
   const active =
     (props.isActive && props.isActive(match, url)) ||
-    url.pathname.startsWith(props.to);
+    (!exact && url.pathname.startsWith(props.to)) || 
+    (exact && url.pathname === props.to);
   return (
     <a
       {...restProps}

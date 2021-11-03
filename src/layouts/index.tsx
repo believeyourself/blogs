@@ -52,6 +52,14 @@ class App extends React.Component {
           <nav className={styles.nav}>
             <NavLink
               activeClassName={styles.active}
+              exact={true}
+              to={'/'}
+              className={styles.item}
+            >
+              首页
+            </NavLink>
+            <NavLink
+              activeClassName={styles.active}
               to={'/sites'}
               className={styles.item}
             >
@@ -65,10 +73,6 @@ class App extends React.Component {
               源码教程
             </NavLink>
             <NavLink
-              isActive={(match, { pathname }) => {
-                if (pathname === '/' || pathname === '/blogs') return true;
-                return false;
-              }}
               activeClassName={styles.active}
               to={'/blogs'}
               className={styles.item}
