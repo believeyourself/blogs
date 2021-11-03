@@ -25,8 +25,7 @@ export default [
       },
       {
         title: '在线Markdown',
-        description:
-          'markdown编辑器。',
+        description: 'markdown编辑器。',
         url: 'https://www.extfans.com/',
       },
       {
@@ -554,7 +553,7 @@ export default [
         title: '去看吧',
         description:
           '海外更新最快的動漫網，是壹個在海外動漫資源最全，日漫更新速度第壹，播放資源高清完整版的壹個大型動漫社區，同时为您提供无修动漫在线免费观看，和bl动漫在线免费动漫观看，bl动漫大全和bl漫画免费等等和bl动漫相关的作品。',
-        url: 'https://www.k8dm.com/',
+        url: 'https://www.k6dm.com/',
       },
       {
         title: '异世界动漫',
