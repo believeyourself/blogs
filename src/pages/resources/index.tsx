@@ -26,7 +26,6 @@ export default function Resources() {
             className={styles.pdf}
             key={pdf.title}
             target="_blank"
-            rel="nofollow"
             to={`/ebooks/${pdf.path}`}
           >
             {pdf.title}
