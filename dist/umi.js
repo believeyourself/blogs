@@ -2129,7 +2129,7 @@
               title: '\u53bb\u770b\u5427',
               description:
                 '\u6d77\u5916\u66f4\u65b0\u6700\u5feb\u7684\u52d5\u6f2b\u7db2\uff0c\u662f\u58f9\u500b\u5728\u6d77\u5916\u52d5\u6f2b\u8cc7\u6e90\u6700\u5168\uff0c\u65e5\u6f2b\u66f4\u65b0\u901f\u5ea6\u7b2c\u58f9\uff0c\u64ad\u653e\u8cc7\u6e90\u9ad8\u6e05\u5b8c\u6574\u7248\u7684\u58f9\u500b\u5927\u578b\u52d5\u6f2b\u793e\u5340\uff0c\u540c\u65f6\u4e3a\u60a8\u63d0\u4f9b\u65e0\u4fee\u52a8\u6f2b\u5728\u7ebf\u514d\u8d39\u89c2\u770b\uff0c\u548cbl\u52a8\u6f2b\u5728\u7ebf\u514d\u8d39\u52a8\u6f2b\u89c2\u770b\uff0cbl\u52a8\u6f2b\u5927\u5168\u548cbl\u6f2b\u753b\u514d\u8d39\u7b49\u7b49\u548cbl\u52a8\u6f2b\u76f8\u5173\u7684\u4f5c\u54c1\u3002',
-              url: 'https://www.k8dm.com/',
+              url: 'https://www.k6dm.com/',
             },
             {
               title: '\u5f02\u4e16\u754c\u52a8\u6f2b',
@@ -17176,37 +17176,36 @@
       });
     n('14J3');
     var r = n('BMrR'),
-      a = (n('/zsF'), n('PArb')),
-      o = (n('jCWc'), n('kPKH')),
-      i = n('k1fw'),
-      c = n('U0+B'),
-      u = n.n(c),
-      l = n('UOy+'),
-      s = n('U90E'),
-      f = n('9Irh'),
-      d = n('feFQ'),
-      p = n('q5Ws'),
-      h = n('nKUr'),
-      v = l['a'].slice(0, 10),
-      b = s['a'][1].list.slice(0, 4),
-      m = v.map((e) =>
+      a = (n('jCWc'), n('kPKH')),
+      o = n('k1fw'),
+      i = n('U0+B'),
+      c = n.n(i),
+      u = n('UOy+'),
+      l = n('U90E'),
+      s = n('9Irh'),
+      f = n('feFQ'),
+      d = n('q5Ws'),
+      p = n('nKUr'),
+      h = u['a'].slice(0, 10),
+      v = l['a'][1].list.slice(0, 4),
+      b = h.map((e) =>
         e.id
-          ? Object(h['jsxs'])(
-              f['a'],
+          ? Object(p['jsxs'])(
+              s['a'],
               {
                 to: '/blogs/detail/'.concat(e.id),
-                className: u.a.category_list_item,
+                className: c.a.category_list_item,
                 children: [
-                  Object(h['jsx'])('h4', {
-                    className: u.a.title,
+                  Object(p['jsx'])('h4', {
+                    className: c.a.title,
                     children: e.title,
                   }),
-                  Object(h['jsx'])('p', {
-                    className: u.a.description,
+                  Object(p['jsx'])('p', {
+                    className: c.a.description,
                     children: e.description,
                   }),
-                  Object(h['jsxs'])('p', {
-                    className: u.a.tip,
+                  Object(p['jsxs'])('p', {
+                    className: c.a.tip,
                     children: [
                       '\u6765\u6e90: \u672c\u7ad9 ',
                       '           ',
@@ -17218,24 +17217,24 @@
               },
               e.url || e.id,
             )
-          : Object(h['jsxs'])(
+          : Object(p['jsxs'])(
               'a',
               {
                 href: e.url,
                 target: '_blank',
-                className: u.a.category_list_item,
+                className: c.a.category_list_item,
                 rel: 'nofollow',
                 children: [
-                  Object(h['jsx'])('h4', {
-                    className: u.a.title,
+                  Object(p['jsx'])('h4', {
+                    className: c.a.title,
                     children: e.title,
                   }),
-                  Object(h['jsx'])('p', {
-                    className: u.a.description,
+                  Object(p['jsx'])('p', {
+                    className: c.a.description,
                     children: e.description,
                   }),
-                  Object(h['jsxs'])('p', {
-                    className: u.a.tip,
+                  Object(p['jsxs'])('p', {
+                    className: c.a.tip,
                     children: [
                       '\u6765\u6e90: ',
                       e.source,
@@ -17249,137 +17248,134 @@
               e.url || e.id,
             ),
       ),
-      g = b.map((e) =>
-        Object(h['jsx'])(
-          o['a'],
+      m = v.map((e) =>
+        Object(p['jsx'])(
+          a['a'],
           {
             md: 12,
             sm: 24,
-            children: Object(h['jsx'])(d['a'], Object(i['a'])({}, e)),
+            children: Object(p['jsx'])(f['a'], Object(o['a'])({}, e)),
           },
           e.url,
         ),
-      );
+      ),
+      g = (e) =>
+        Object(p['jsxs'])('h2', {
+          className: c.a.part,
+          children: [
+            Object(p['jsx'])('span', { children: e.title }),
+            Object(p['jsx'])(s['a'], {
+              to: null === e || void 0 === e ? void 0 : e.more,
+              children: null === e || void 0 === e ? void 0 : e.description,
+            }),
+          ],
+        });
     function y() {
-      return Object(h['jsxs'])(h['Fragment'], {
+      return Object(p['jsxs'])(p['Fragment'], {
         children: [
-          Object(h['jsx'])(p['a'], {
+          Object(p['jsx'])(d['a'], {
             title: '\u9996\u9875 - React,Node,JavaScript,SEO',
             keywords:
               'React\uff0cJavaScript\uff0cjs\uff0cSEO\uff0ccss\uff0cnode\uff0c\u524d\u7aef\u5f00\u53d1\uff0c\u524d\u7aef\u5b66\u4e60\uff0c\u524d\u7aef\u535a\u5ba2\uff0cant-design\uff0cdva\uff0credux',
             description:
               '\u81f4\u529b\u4e8e\u524d\u7aef\u5f00\u53d1\u9886\u57df\u6280\u672f\u7814\u7a76\uff0c\u6df1\u5165\u5206\u6790\u6280\u672f\u57fa\u7840\u539f\u7406\uff0c\u6559\u7a0b\u8d44\u6e90\uff0c\u5f00\u6e90\u9879\u76ee\uff0c\u5f00\u53d1\u5de5\u5177\u5206\u4eab\uff0c\u5305\u62ec\u4f46\u4e0d\u9650\u4e8eJavaScript,css,React,vue,node,webpack,umi,ant-design,dav',
           }),
-          Object(h['jsxs'])('div', {
-            className: u.a.content,
+          Object(p['jsxs'])('div', {
+            className: c.a.content,
             children: [
-              Object(h['jsx'])(a['a'], {
-                children: '\u5e38\u7528\u7f51\u5740',
+              Object(p['jsx'])(g, {
+                title: '\u5e38\u7528\u7f51\u5740',
+                more: '/sites',
+                description: '\u66f4\u591a\u7f51\u5740 >>',
               }),
-              Object(h['jsxs'])('div', {
-                className: u.a.sites,
+              Object(p['jsxs'])('div', {
+                className: c.a.sites,
                 children: [
-                  Object(h['jsx'])('a', {
+                  Object(p['jsx'])('a', {
                     href: '',
                     target: '_blank',
                     rel: 'nofollow',
                     children: 'Chrome\u63d2\u4ef6',
                   }),
-                  Object(h['jsx'])('a', {
+                  Object(p['jsx'])('a', {
                     href: '',
                     target: '_blank',
                     rel: 'nofollow',
                     children: '\u56fe\u7247\u538b\u7f29',
                   }),
-                  Object(h['jsx'])('a', {
+                  Object(p['jsx'])('a', {
                     href: 'https://www.tutieshi.com/',
                     target: '_blank',
                     rel: 'nofollow',
                     children: 'gif\u5236\u4f5c',
                   }),
-                  Object(h['jsx'])(f['a'], {
+                  Object(p['jsx'])(s['a'], {
                     to: '/tools/jsonTree',
                     target: '_blank',
                     rel: 'nofollow',
                     children: 'JSON\u683c\u5f0f\u8f6c\u6362',
                   }),
-                  Object(h['jsx'])('a', {
+                  Object(p['jsx'])('a', {
                     href:
                       'https://vjyd1gg9jl.feishu.cn/base/app4Dlc49N1Z9e4LrAoZ36lPMNi?from=from_copylink',
                     target: '_blank',
                     rel: 'nofollow',
                     children: '\u524d\u7aef\u9762\u8bd5\u771f\u9898',
                   }),
-                  Object(h['jsx'])('a', {
+                  Object(p['jsx'])('a', {
                     href: 'https://tool.lu/markdown/',
                     target: '_blank',
                     rel: 'nofollow',
                     children: '\u5728\u7ebfMarkdown',
                   }),
-                  Object(h['jsx'])('a', {
+                  Object(p['jsx'])('a', {
                     href: 'https://cli.im/',
                     target: '_blank',
                     rel: 'nofollow',
                     children: '\u4e8c\u7ef4\u7801\u751f\u6210\u5668',
                   }),
-                  Object(h['jsx'])('a', {
+                  Object(p['jsx'])('a', {
                     href: 'https://color.uisdc.com/pick.html',
                     target: '_blank',
                     rel: 'nofollow',
                     children: '\u914d\u8272\u5bfc\u822a',
                   }),
-                  Object(h['jsx'])('a', {
+                  Object(p['jsx'])('a', {
                     href: 'https://juejin.cn/',
                     target: '_blank',
                     rel: 'nofollow',
                     children: '\u6398\u91d1',
                   }),
-                  Object(h['jsx'])(f['a'], {
-                    to: '/sites',
-                    children: '\u66f4\u591a\u7f51\u5740>>',
-                  }),
                 ],
               }),
-              Object(h['jsx'])(a['a'], {
-                children: '\u5f00\u6e90\u9879\u76ee',
+              Object(p['jsx'])(g, {
+                title: '\u5f00\u6e90\u9879\u76ee',
+                more: '/resources/originCode',
+                description: '\u66f4\u591a\u9879\u76ee >>',
               }),
-              Object(h['jsx'])(r['a'], { gutter: [10, 10], children: g }),
-              Object(h['jsx'])('div', {
-                style: { textAlign: 'center', padding: 20 },
-                children: Object(h['jsxs'])(f['a'], {
-                  to: '/resources/originCode',
-                  children: ['\u66f4\u591a\u5f00\u6e90\u9879\u76ee >>', ' '],
-                }),
-              }),
-              Object(h['jsx'])(a['a'], {
-                children: '\u4e13\u9898\u6c47\u603b',
-              }),
-              Object(h['jsxs'])('div', {
+              Object(p['jsx'])(r['a'], { gutter: [10, 10], children: m }),
+              Object(p['jsx'])(g, { title: '\u4e13\u9898\u6c47\u603b' }),
+              Object(p['jsxs'])('div', {
                 style: { display: 'flex', gap: 20 },
                 children: [
-                  Object(h['jsx'])(f['a'], {
-                    className: u.a.topic,
+                  Object(p['jsx'])(s['a'], {
+                    className: c.a.topic,
                     to: '/topics/react',
                     children: 'React \u4e13\u9898',
                   }),
-                  Object(h['jsx'])(f['a'], {
-                    className: u.a.topic,
+                  Object(p['jsx'])(s['a'], {
+                    className: c.a.topic,
                     to: '/topics/node',
                     children: 'Node \u4e13\u9898',
                   }),
                 ],
               }),
-              Object(h['jsx'])(a['a'], {
-                children: '\u6587\u7ae0\u968f\u7b14',
+              Object(p['jsx'])(g, {
+                title: '\u535a\u5ba2\u968f\u7b14',
+                more: '/blogs',
+                description: '\u66f4\u591a\u6587\u7ae0 >>',
               }),
-              m,
-              Object(h['jsx'])('div', {
-                style: { textAlign: 'center' },
-                children: Object(h['jsxs'])(f['a'], {
-                  to: '/blogs',
-                  children: ['\u66f4\u591a\u6587\u7ae0 >>', ' '],
-                }),
-              }),
+              b,
             ],
           }),
         ],
@@ -26148,15 +26144,19 @@
   O9ji: function (e, t, n) {
     'use strict';
     n.r(t);
-    var r = n('Ty5D'),
-      a = n('9kvl'),
+    var r = n('q5Ws'),
+      a = n('Ty5D'),
       o = n('nKUr');
     t['default'] = () => {
-      var e = Object(r['h'])(),
-        t = e.path;
+      var e = Object(a['h'])(),
+        t = e.path,
+        n = t.split('.')[0];
       return Object(o['jsxs'])(o['Fragment'], {
         children: [
-          Object(o['jsx'])(a['a'], {
+          Object(o['jsx'])(r['a'], {
+            title: n,
+            keywords: ''.concat(n, ',\u524d\u7aef'),
+            description: ''.concat(n, ',\u524d\u7aef'),
             children: Object(o['jsx'])('title', { children: t.split('.')[0] }),
           }),
           Object(o['jsx'])('embed', {
@@ -36338,6 +36338,7 @@
   'U0+B': function (e, t, n) {
     e.exports = {
       content: 'content___1lxfE',
+      part: 'part___2_KVc',
       sites: 'sites___3xFBo',
       topic: 'topic___173ib',
       category_list_item: 'category_list_item___1zGvA',
@@ -51340,7 +51341,6 @@
                     {
                       className: L.a.pdf,
                       target: '_blank',
-                      rel: 'nofollow',
                       to: '/ebooks/'.concat(e.path),
                       children: e.title,
                     },
