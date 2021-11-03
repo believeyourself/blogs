@@ -38,7 +38,6 @@ export default () => {
 
   return (
     <div className={style.container}>
-      <SideAd />
       <div className={style.content}>{records}</div>
     </div>
   );

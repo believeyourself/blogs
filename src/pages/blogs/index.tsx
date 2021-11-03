@@ -68,7 +68,6 @@ export default function Blogs() {
         keywords="前端网，前端开发，前端学习，前端博客，React，JavaScript，SEO，css，node"
         description="前端网，致力于前端开发领域技术研究，深入分析技术基础原理，包括但不限于JavaScript,css,React,vue,node,webpack,umi,antd"
       />
-      <SideAd />
       <div className={styles.content}>
         <Carousel autoplay>
           <NavLink className={styles.topic} to={'/topics/react'}>

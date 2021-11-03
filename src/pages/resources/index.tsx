@@ -54,9 +54,7 @@ export default function Resources() {
           </NavLink>
         }
       >
-        <Row gutter={[10, 10]}>
-          {categoryList}
-        </Row>
+        <Row gutter={[10, 10]}>{categoryList}</Row>
       </AntCard>,
     );
   });
@@ -68,7 +66,6 @@ export default function Resources() {
         keywords="前端网，视频教程，电子书，PDF，开源项目，源码分享"
         description="前端网，最新网上视频教程和开源项目分享，电子书在线预览，学习路线推荐"
       />
-      <SideAd />
       <Space direction="vertical" className={styles.content}>
         <Alert
           closable

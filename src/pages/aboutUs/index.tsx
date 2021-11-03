@@ -31,7 +31,6 @@ export default class AboutUs extends React.Component {
   render() {
     return (
       <>
-        <SideAd />
         <div className={styles.content}>
           <SiteHeader
             title="关于我们"
@@ -68,7 +67,10 @@ export default class AboutUs extends React.Component {
             <h3 className={styles.title}>联系我们：</h3>
             <p>
               如果您有什么好的建议或好的资源分享，可以联系我们
-              <a href="mailto:farmerlzj@163.com" rel="nofollow">farmerlzj@163.com</a>.
+              <a href="mailto:farmerlzj@163.com" rel="nofollow">
+                farmerlzj@163.com
+              </a>
+              .
             </p>
           </div>
           <div className={styles.des}>

@@ -1,10 +1,11 @@
 import styles from './detail.less';
 import marked from 'marked';
-import { Tag } from 'antd';
+import { Divider, Tag } from 'antd';
 import blogs from '../../../../data/blogs';
 import SiteHeader from '@/components/siteHeader';
 import SideAd from '@/components/sideAd';
 import NavLink from '@/components/navLink';
+import RowAd from '@/components/rowAd';
 
 marked.setOptions({
   // marked 设置
@@ -76,7 +77,9 @@ function BlogDetail(props: any) {
         <article
           dangerouslySetInnerHTML={{ __html: marked(content.default) }}
         />
-        <div style={{ paddingBottom: 40 }}>{tags}</div>
+        <div>{tags}</div>
+        <Divider />
+        <RowAd />
       </div>
     </>
   );
