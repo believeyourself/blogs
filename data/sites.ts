@@ -15,7 +15,7 @@ export default [
         title: 'Chrome插件扩展下载网',
         description:
           '扩展迷-专业的Chrome插件网,提供Chrome商店/谷歌应用商店里各类Chrome插件下载服务,拥有最好用的谷歌浏览器插件,最全面的Chrome插件资源,使用Chrome插件可以为谷歌浏览器带来功能性的扩展。',
-        url: 'https://color.uisdc.com/pick.html',
+        url: 'https://www.extfans.com/',
       },
       {
         title: '配色导航',
@@ -26,7 +26,7 @@ export default [
       {
         title: '在线Markdown',
         description: 'markdown编辑器。',
-        url: 'https://www.extfans.com/',
+        url: 'https://pandao.github.io/editor.md/',
       },
       {
         title: 'Online JavaScript Beautifier',
