@@ -91,7 +91,6 @@ export default function Blogs() {
           <TagSelect.Option value="node">NodeJs</TagSelect.Option>
           <TagSelect.Option value="js">JS</TagSelect.Option>
           <TagSelect.Option value="SEO">SEO</TagSelect.Option>
-          <TagSelect.Option value="生活随笔">生活随笔</TagSelect.Option>
         </TagSelect>
         <Divider />
         {records}
