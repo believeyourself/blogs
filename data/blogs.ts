@@ -1,9 +1,17 @@
 export default [
   {
+    id: 18,
+    title: 'mysql添加索引后导致cpu飙升问题记录',
+    description:
+      '生产环境中给某个表（三百多万1.4G数据）加索引导致cpu飙升至95+%，问题排查及解决',
+    tags: ['mysql', '索引'],
+    date: '2021-11-14',
+  },
+  {
     id: 17,
     title: 'node事件循环（Event loop）',
     description:
-      '本文将简述浏览器中的js事件循环机制，帮助我们理解Node中代码是如何运行的。Javascript的一大特点是单线程，也就意味着同一时间他只能做一件事。那Node是如何支撑高并发的呢？',
+      '本文将简述浏览器中的js事件循环机制，帮助我们理解Node中代码是如何运行的。Javascript的一大特点是单线程，也就意味着同一时间他只能做一件事。那Node是如何支撑高并发呢？',
     tags: ['node', '事件循环'],
     date: '2021-11-06',
   },
