@@ -61,6 +61,11 @@ const route: any = [
         component: '@/pages/topics/react',
       },
       {
+        title: 'vscode插件',
+        path: '/topics/vscode/:page',
+        component: '@/pages/topics/vscode',
+      },
+      {
         title: '文章详情',
         path: '/blogs/detail/:id',
         component: '@/pages/blogs/detail/detail',

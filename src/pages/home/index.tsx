@@ -135,6 +135,9 @@ export default function Blogs() {
           <NavLink className={styles.topic} to={'/topics/node'}>
             Node 专题
           </NavLink>
+          {/* <NavLink className={styles.topic} to={'/topics/vscode/1'}>
+            vscode 插件专题
+          </NavLink> */}
         </div>
         <Title
           title="开源项目"
