@@ -15,7 +15,7 @@ import Card from '@/components/card';
 import blogs from '../../../../data/blogs';
 import reactComponents from '../../../../data/topics/react/components';
 import NavLink from '@/components/navLink';
-import UIComonent, { UIComponentProps } from '@/components/uiComonent';
+import UIComonent from '@/components/uiComonent';
 
 const reactBlogs = blogs.map((item: any) => {
   if (
