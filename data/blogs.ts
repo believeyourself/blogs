@@ -1,8 +1,5 @@
 export default [
   {
-
-  },
-  {
     id: 17,
     title: 'node事件循环（Event loop）',
     description:

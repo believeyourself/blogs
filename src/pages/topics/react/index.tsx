@@ -13,7 +13,9 @@ import SideAd from '@/components/sideAd';
 import source from '../../../../data/topics/react';
 import Card from '@/components/card';
 import blogs from '../../../../data/blogs';
+import reactComponents from '../../../../data/topics/react/components';
 import NavLink from '@/components/navLink';
+import UIComonent, { UIComponentProps } from '@/components/uiComonent';
 
 const reactBlogs = blogs.map((item: any) => {
   if (
@@ -55,16 +57,16 @@ export default function Resources() {
   return (
     <>
       <SiteHeader
-        title="React文档，React教程，React开源项目"
-        keywords="React文档，React教程，React开源项目"
-        description="React学习路线、文档、教程、开源项目，助力学习掌握React,提升React开发效率"
+        title="React文档，React组件，React教程，React开源项目"
+        keywords="React文档，React教程，React开源项目,React组件"
+        description="React文档、教程、开源项目,组件，助力学习掌握React,提升React开发效率"
       />
       <SideAd />
       <Space direction="vertical" className={styles.content}>
         <AntCard title="React 相关文档">
           <div className={styles.doc}>
             <a target="_blank" href="https://zh-hans.reactjs.org/">
-              React
+              React中文
             </a>
             <a target="_blank" href="https://www.redux.org.cn/">
               Redux
@@ -105,6 +107,19 @@ export default function Resources() {
             >
               semi-design
             </a>
+          </div>
+        </AntCard>
+        <AntCard title="React 组件">
+          <div className={styles.components}>
+            {reactComponents.map((item: any, index: number) => {
+              return (
+                <UIComonent
+                  key={item.title}
+                  color={index}
+                  {...item}
+                ></UIComonent>
+              );
+            })}
           </div>
         </AntCard>
         <AntCard title="React 教程">
