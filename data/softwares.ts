@@ -1,6 +1,15 @@
 export default {
   pc: [
     {
+      id: 4,
+      title: '推荐几款PC端的GIF录制工具',
+      img: '4.jpg',
+      description:
+        '写博客时图文并茂才能更好的描述内容，但有时候截图不能很好的表达，不方便读者理解，借助GIF动态图片，能更好的展现效果，如何制作GIF图片也很简单，这里推荐几款工具就能简单方便的制作GIF。',
+      date: '2021-11-14',
+      tags: ['GIF制作工具'],
+    },
+    {
       id: 3,
       title: 'Everything 适用于 Windows 的免费搜索工具',
       img: '3.jpg',
