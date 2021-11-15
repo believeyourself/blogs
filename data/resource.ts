@@ -112,6 +112,66 @@ export default [
     category: '开源项目',
     list: [
       {
+        title: 'Clarity',
+        description:
+          '一个行为分析库，它使用 dom 突变和用户交互来生成聚合见解。Clarity 是一款免费且易于使用的工具，可捕捉真实用户如何实际使用您的网站。设置很简单，您将在几分钟内开始获取数据。',
+        url: 'https://github.com/microsoft/clarity',
+      },
+      {
+        title: 'OpenUI5',
+        description:
+          'OpenUI5 可让您构建企业级 Web 应用程序，响应所有设备，几乎可以在您选择的任何浏览器上运行。',
+        url: 'https://github.com/SAP/openui5',
+      },
+      {
+        title: 'mercurius',
+        description:
+          '使用 Fastify 实现 GraphQL 服务器和网关。',
+        url: 'https://github.com/mercurius-js/mercurius',
+      },
+      {
+        title: '30 Days Of JavaScript',
+        description:
+          '30 天的 JavaScript 编程挑战是在 30 天内学习 JavaScript 编程语言的分步指南。此挑战可能需要 100 多天，请按照自己的节奏进行。',
+        url: 'https://github.com/Asabeneh/30-Days-Of-JavaScript',
+      },
+      {
+        title: 'GitHub Readme Stats',
+        description:
+          '为您的 GitHub 自述文件动态生成的统计信息',
+        url: 'https://github.com/anuraghazra/github-readme-stats',
+      },
+      {
+        title: 'Spark Joy',
+        description:
+          '为你的产品添加设计风格、用户满意度和奇思妙想的简单方法！',
+        url: 'https://github.com/sw-yx/spark-joy',
+      },
+      {
+        title: 'Dripsy',
+        description:
+          'React Native + Web 的响应式、无样式的 UI 原语。',
+        url: 'https://github.com/nandorojo/dripsy',
+      },
+      {
+        title: 'it',
+        description:
+          '一组实用程序，用于让使用可迭代对象更易于使用。',
+        url: 'https://github.com/achingbrain/it',
+      },
+      {
+        title: 'quicktype',
+        description:
+          '基于 React 的框架，用于构建由 Shopify 驱动的动态自定义店面。',
+        url: 'https://github.com/Shopify/hydrogen',
+      },
+      {
+        title: 'Hydrogen',
+        description:
+          'quicktype 从 JSON、JSON Schema、TypeScript 和 GraphQL 查询生成强类型模型和序列化程序，这使得在许多编程语言中以类型安全的方式使用 JSON 变得轻而易举。',
+        url: 'https://github.com/quicktype/quicktype',
+      },
+      {
         title: 'Checka11y.css',
         description:
           '一个CSS样式表，可以快速突出所有关注的内容。',

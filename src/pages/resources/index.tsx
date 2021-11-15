@@ -11,7 +11,6 @@ import records from '../../../data/resource';
 import Card from '@/components/card';
 import SiteHeader from '@/components/siteHeader';
 import { Card as AntCard, Row, Col, Space, Alert } from 'antd';
-import SideAd from '@/components/sideAd';
 import NavLink from '@/components/navLink';
 
 export default function Resources() {
@@ -69,7 +68,7 @@ export default function Resources() {
         <Alert
           closable
           type="warning"
-          message="已更新尚硅谷前端学科全套教程(126.90GB)"
+          message="上周最有意思和 yyds 的 10 大前端项目 - 2021-11-15日更新"
         />
         {resources}
       </Space>
