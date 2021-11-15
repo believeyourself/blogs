@@ -18,11 +18,6 @@ const route: any = [
     path: '/',
     component: '@/layouts',
     routes: [
-      // {
-      //   name: '实用库',
-      //   path: '/library',
-      //   component: './library',
-      // },
       {
         exact: true,
         title: '首页',
