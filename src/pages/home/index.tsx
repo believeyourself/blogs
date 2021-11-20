@@ -78,6 +78,9 @@ export default function Blogs() {
       <div className={styles.content}>
         <Title title="常用网址" more="/sites" description={'更多网址 >>'} />
         <div className={styles.sites}>
+          <a href="https://s.qiniu.com/JzIJFv" target="_blank" rel="nofollow">
+            七牛云
+          </a>
           <NavLink to="/tools/timestamp" target="_blank">
             时间戳转换
           </NavLink>

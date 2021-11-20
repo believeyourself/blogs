@@ -40,7 +40,7 @@ function BlogDetail(props: any) {
         /
         <a className={styles.back} href={host + '/softwares'}>
           {' '}
-          软件分享
+          软件
         </a>
       </header>
       <article dangerouslySetInnerHTML={{ __html: marked(content.default) }} />

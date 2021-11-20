@@ -1039,11 +1039,7 @@
               }),
             }),
             Object(U['jsx'])('div', {
-              style: {
-                width: '220px',
-                display: 'flex',
-                justifyContent: 'center',
-              },
+              style: { display: 'flex', justifyContent: 'center' },
               children: Object(U['jsx'])(z.a.Google, {
                 client: 'ca-pub-2087076429727327',
                 slot: '7022357395',
@@ -3113,7 +3109,7 @@
               Object(l['jsxs'])('a', {
                 className: a.a.back,
                 href: r + '/softwares',
-                children: [' ', '\u8f6f\u4ef6\u5206\u4eab'],
+                children: [' ', '\u8f6f\u4ef6'],
               }),
             ],
           }),
@@ -12152,7 +12148,7 @@
     'use strict';
     n.r(t),
       n.d(t, 'default', function () {
-        return b;
+        return v;
       });
     n('IzEo');
     var r = n('bx4M'),
@@ -12164,21 +12160,20 @@
       l = n('U90E'),
       s = n('feFQ'),
       f = n('q5Ws'),
-      d = n('Scb0'),
-      p = n('Ty5D'),
-      h = n('9Irh'),
-      v = n('nKUr');
-    function b() {
-      var e = Object(p['h'])(),
+      d = n('Ty5D'),
+      p = n('9Irh'),
+      h = n('nKUr');
+    function v() {
+      var e = Object(d['h'])(),
         t = e.id,
         n = l['a'].find((e) => e.id === t),
         c = [],
-        b = n.list || [];
+        v = n.list || [];
       return (
         (c =
           'PDF' === t
-            ? b.map((e) =>
-                Object(v['jsx'])(
+            ? v.map((e) =>
+                Object(h['jsx'])(
                   'a',
                   {
                     className: u.a.pdf,
@@ -12189,15 +12184,15 @@
                   e.title,
                 ),
               )
-            : b.map((e) =>
-                Object(v['jsx'])(
+            : v.map((e) =>
+                Object(h['jsx'])(
                   o['a'],
                   {
                     lg: 12,
                     md: 12,
                     sm: 24,
                     xs: 24,
-                    children: Object(v['jsx'])(
+                    children: Object(h['jsx'])(
                       s['a'],
                       Object(i['a'])({ className: u.a.category_list_item }, e),
                     ),
@@ -12205,28 +12200,27 @@
                   e.title,
                 ),
               )),
-        Object(v['jsxs'])('section', {
+        Object(h['jsxs'])('section', {
           className: u.a.container,
           children: [
-            Object(v['jsx'])(f['a'], {
+            Object(h['jsx'])(f['a'], {
               title: n.category,
               keywords:
                 '\u524d\u7aef\u7f51\uff0c\u89c6\u9891\u6559\u7a0b\uff0c\u7535\u5b50\u4e66\uff0cPDF\uff0c\u5f00\u6e90\u9879\u76ee\uff0c\u6e90\u7801\u5206\u4eab\uff0cReact\uff0cVue\uff0cTypescript\uff0cEgg\uff0cNode',
               description:
                 '\u524d\u7aef\u7f51\uff0c\u89c6\u9891\u6559\u7a0b\uff0c\u7535\u5b50\u4e66\uff0cPDF\uff0c\u5f00\u6e90\u9879\u76ee\uff0c\u6e90\u7801\u5206\u4eab\uff0cReact\uff0cVue\uff0cTypescript\uff0cEgg\uff0cNode',
             }),
-            Object(v['jsx'])(d['a'], {}),
-            Object(v['jsx'])(r['a'], {
-              extra: Object(v['jsx'])(h['a'], {
+            Object(h['jsx'])(r['a'], {
+              extra: Object(h['jsx'])(p['a'], {
                 to: '/resources',
                 children: '\u8fd4\u56de',
               }),
-              title: Object(v['jsx'])('h1', {
+              title: Object(h['jsx'])('h1', {
                 style: { fontSize: '16px', fontWeight: 500 },
                 children: n.category,
               }),
               className: u.a.content,
-              children: Object(v['jsx'])(a['a'], {
+              children: Object(h['jsx'])(a['a'], {
                 gutter: [10, 10],
                 children: c,
               }),
@@ -17420,6 +17414,12 @@
               Object(p['jsxs'])('div', {
                 className: c.a.sites,
                 children: [
+                  Object(p['jsx'])('a', {
+                    href: 'https://s.qiniu.com/JzIJFv',
+                    target: '_blank',
+                    rel: 'nofollow',
+                    children: '\u4e03\u725b\u4e91',
+                  }),
                   Object(p['jsx'])(s['a'], {
                     to: '/tools/timestamp',
                     target: '_blank',
@@ -35553,10 +35553,9 @@
       u = n.n(c),
       l = n('UOy+'),
       s = n('q5Ws'),
-      f = n('Scb0'),
-      d = n('9Irh'),
-      p = n('dfwb'),
-      h = n('nKUr');
+      f = n('9Irh'),
+      d = n('dfwb'),
+      p = n('nKUr');
     u.a.setOptions({
       renderer: new u.a.Renderer(),
       gfm: !0,
@@ -35566,7 +35565,7 @@
       smartLists: !0,
       smartypants: !1,
     });
-    var v = [
+    var h = [
       'geekblue',
       'volcano',
       'error',
@@ -35585,65 +35584,62 @@
       'processing',
       'warning',
     ];
-    function b(e) {
+    function v(e) {
       var t,
         o,
         c = e.match.params.id,
-        b = l['a'].find((e) => e.id == c),
-        m =
-          null === b || void 0 === b || null === (t = b.tags) || void 0 === t
+        v = l['a'].find((e) => e.id == c),
+        b =
+          null === v || void 0 === v || null === (t = v.tags) || void 0 === t
             ? void 0
             : t.map((e, t) => {
-                var n = t % v.length;
-                return Object(h['jsx'])(
+                var n = t % h.length;
+                return Object(p['jsx'])(
                   a['a'],
-                  { icon: '#', color: v[n], children: e },
+                  { icon: '#', color: h[n], children: e },
                   e,
                 );
               }),
-        g = n('1hAn')('./'.concat(c, '.md')),
-        y = b && (null === (o = b.tags) || void 0 === o ? void 0 : o.join(','));
-      return Object(h['jsxs'])(h['Fragment'], {
-        children: [
-          Object(h['jsx'])(f['a'], {}),
-          Object(h['jsxs'])('div', {
-            className: i.a.content,
-            children: [
-              Object(h['jsx'])(s['a'], {
-                title: (null === b || void 0 === b ? void 0 : b.title) || '',
-                keywords: '\u524d\u7aef\u7f51,'.concat(y),
-                description: '\u524d\u7aef\u7f51,'
-                  .concat(y, ',')
-                  .concat(null === b || void 0 === b ? void 0 : b.description),
-              }),
-              Object(h['jsxs'])('header', {
-                children: [
-                  Object(h['jsxs'])(d['a'], {
-                    className: i.a.back,
-                    to: '/',
-                    children: [' ', '\u9996\u9875'],
-                  }),
-                  ' ',
-                  '/',
-                  Object(h['jsxs'])(d['a'], {
-                    className: i.a.back,
-                    to: '/blogs',
-                    children: [' ', '\u535a\u5ba2'],
-                  }),
-                ],
-              }),
-              Object(h['jsx'])('article', {
-                dangerouslySetInnerHTML: { __html: u()(g.default) },
-              }),
-              Object(h['jsx'])('div', { children: m }),
-              Object(h['jsx'])(r['a'], {}),
-              Object(h['jsx'])(p['a'], {}),
-            ],
-          }),
-        ],
+        m = n('1hAn')('./'.concat(c, '.md')),
+        g = v && (null === (o = v.tags) || void 0 === o ? void 0 : o.join(','));
+      return Object(p['jsx'])(p['Fragment'], {
+        children: Object(p['jsxs'])('div', {
+          className: i.a.content,
+          children: [
+            Object(p['jsx'])(s['a'], {
+              title: (null === v || void 0 === v ? void 0 : v.title) || '',
+              keywords: '\u524d\u7aef\u7f51,'.concat(g),
+              description: '\u524d\u7aef\u7f51,'
+                .concat(g, ',')
+                .concat(null === v || void 0 === v ? void 0 : v.description),
+            }),
+            Object(p['jsxs'])('header', {
+              children: [
+                Object(p['jsxs'])(f['a'], {
+                  className: i.a.back,
+                  to: '/',
+                  children: [' ', '\u9996\u9875'],
+                }),
+                ' ',
+                '/',
+                Object(p['jsxs'])(f['a'], {
+                  className: i.a.back,
+                  to: '/blogs',
+                  children: [' ', '\u535a\u5ba2'],
+                }),
+              ],
+            }),
+            Object(p['jsx'])('article', {
+              dangerouslySetInnerHTML: { __html: u()(m.default) },
+            }),
+            Object(p['jsx'])('div', { children: b }),
+            Object(p['jsx'])(r['a'], {}),
+            Object(p['jsx'])(d['a'], {}),
+          ],
+        }),
       });
     }
-    t['default'] = b;
+    t['default'] = v;
   },
   T5bk: function (e, t, n) {
     'use strict';
@@ -48009,11 +48005,7 @@
             children: Object(i['jsx'])(o.a.Google, {
               client: 'ca-pub-2087076429727327',
               slot: '9331479126',
-              style: {
-                display: 'inline-block',
-                width: '728px',
-                height: '90px',
-              },
+              style: { display: 'inline-block', height: '90px' },
             }),
           }),
         ],

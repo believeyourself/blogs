@@ -15,9 +15,7 @@ export default () => {
           crossOrigin="anonymous"
         ></script>
       </Helmet>
-      <div
-        style={{ width: '220px', display: 'flex', justifyContent: 'center' }}
-      >
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
         <AdSense.Google
           client="ca-pub-2087076429727327"
           slot="7022357395"

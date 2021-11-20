@@ -56,7 +56,6 @@ function BlogDetail(props: any) {
   const keywords = blog && blog.tags?.join(',');
   return (
     <>
-      <SideAd />
       <div className={styles.content}>
         <SiteHeader
           title={blog?.title || ''}
