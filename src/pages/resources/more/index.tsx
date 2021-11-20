@@ -11,7 +11,6 @@ import records from '../../../../data/resource';
 import Card from '@/components/card';
 import SiteHeader from '@/components/siteHeader';
 import { Card as AntCard, Row, Col } from 'antd';
-import SideAd from '@/components/sideAd';
 import { useParams } from 'umi';
 import NavLink from '@/components/navLink';
 
