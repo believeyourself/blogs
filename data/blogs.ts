@@ -1,10 +1,18 @@
 export default [
   {
+    id: 20,
+    title: 'node + mysql保存Emoji失败乱码问题',
+    description: 'mysql保存Emoji表情，字符串直接存进去会变编码问题',
+    tags: ['mysql', 'Emoji', 'node'],
+    date: '2021-11-17',
+  },
+  {
     id: 19,
-    title: '2021年中国开发者755万全球第二，Javascript最受欢迎您，数据来源：GitHub',
+    title:
+      '2021年中国开发者755万全球第二，Javascript最受欢迎您，数据来源：GitHub',
     description:
       '2021年11月17 日，GitHub发布2021年度报告：全球GitHub开发者用户超过7300万 ，其中 56.8% 来自北美之外的地区。美国开发者最多，共有1355万，中国开发者占 10%，有 755 万，位居全球第二。',
-    tags: ['GitHub','2021编程语言', 'js'],
+    tags: ['GitHub', '2021编程语言', 'js'],
     date: '2021-11-17',
   },
   {

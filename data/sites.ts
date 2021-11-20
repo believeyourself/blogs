@@ -18,21 +18,21 @@ export default [
         url: 'https://www.extfans.com/',
       },
       {
+        title: '阿里前端开发技术图谱',
+        description:
+          '前端开发技能全覆盖 ，HTML / CSS / JavaScript / jQuery / Vue / React / Angular / NodeJS。',
+        url: 'https://developer.aliyun.com/graph/frontend',
+      },
+      {
         title: '配色导航',
         description:
           '配色案例,网页配色,设计配色,配色图表,配色卡,SDC优设网配色工具。',
         url: 'https://color.uisdc.com/pick.html',
       },
       {
-        title: '在线Markdown',
+        title: 'markdown编辑器。',
         description: 'markdown编辑器。',
         url: 'https://pandao.github.io/editor.md/',
-      },
-      {
-        title: 'Online JavaScript Beautifier',
-        description:
-          '美化，解压缩或反混淆JavaScript和HTML，使JSON / JSONP可读等。',
-        url: 'https://beautifier.io/',
       },
       {
         title: 'CodePen',
@@ -51,12 +51,6 @@ export default [
         description:
           'Unicode（统一码、万国码、单一码）是计算机科学领域里的一项业界标准，包括字符集、编码方案等。',
         url: 'https://unicode-table.com/cn/',
-      },
-      {
-        title: '印记中文',
-        description:
-          '深入挖掘国外前端新领域，为中国 Web 前端开发人员提供优质文档！',
-        url: 'https://docschina.org/',
       },
       {
         title: 'MDN Web 文档',
@@ -129,136 +123,6 @@ export default [
     ],
   },
   {
-    id: 'organization',
-    category: '团队组织',
-    sites: [
-      {
-        title: '腾讯AlloyTeam',
-        description:
-          '致力于Web前端技术的研究，热衷HTML5、移动Web技术，用最酷的新技术开发各种有趣的开源项目。',
-        url: 'http://www.alloyteam.com/',
-      },
-      {
-        title: '凹凸实验室',
-        description:
-          'O2面向多终端技术体系，致力于构建沉淀与分享包括但不限于交互、页面制作技巧、前端开发、原生APP开发等方面的专业知识及案例。',
-        url: 'https://aotu.io/',
-      },
-      {
-        title: 'FEX',
-        description:
-          'FEX 原属于「Web 前端研发部」，现在核心成员都在百度云，致力于将前端技术做成技术产品。',
-        url: 'http://fex.baidu.com/',
-      },
-      {
-        title: '奇舞团',
-        description:
-          '360奇舞团（奇虎75Team）是 奇虎360公司Web平台部前端工程师 + 部分特约嘉宾 组成的一个前端团队。',
-        url: 'https://75.team/',
-      },
-      {
-        title: 'Taobao FED',
-        description: '淘宝前端团队，用技术为体验提供无限可能。',
-        url: 'http://www.taobaofed.org/',
-      },
-      {
-        title: 'EFE Tech',
-        description: '百度EFE（Excellent FrontEnd）技术体系，有很多开源产品',
-        url: 'https://efe.baidu.com/',
-      },
-      {
-        title: 'Tencent ISUX Design',
-        description:
-          '腾讯社交用户体验设计，简称ISUX (Internet Social User Experience)，是腾讯集团核心、全球最具规模的UX设计团队。',
-        url: 'https://isux.tencent.com/',
-      },
-      {
-        title: 'JDC',
-        description:
-          '京东用户体验设计部门，致力于创造更美好的电子商务购物体验。JDC关注于电子商务视觉设计、交互设计、用户研究、前端开发。',
-        url: 'https://jelly.jd.com/',
-      },
-      {
-        title: '美团技术团队',
-        description:
-          '以浓厚的学习和分享氛围享誉业界：每天不止一场内部技术讲座与分享，帮助同学拓展视野，追求卓越；',
-        url: 'https://tech.meituan.com/',
-      },
-      {
-        title: '有赞技术团队',
-        description: 'Thoughts, stories and ideas.',
-        url: 'https://tech.youzan.com/',
-      },
-      {
-        title: '饿了么前端',
-        description: '只是一群热爱技术又爱玩的人在写好用的文章',
-        url: 'https://zhuanlan.zhihu.com/ElemeFE',
-      },
-    ],
-  },
-  {
-    id: 'community',
-    category: '技术社区',
-    sites: [
-      {
-        title: 'GitHub',
-        description:
-          '星球上最流行的基于git的托管服务，越来越多知名开源项目迁入。',
-        url: 'https://github.com/',
-      },
-      {
-        title: 'Stack Overflow',
-        description: '国外技术问答，开发人员学习、分享和建立职业生涯的地方。',
-        url: 'https://stackoverflow.com/',
-      },
-      {
-        title: '掘金',
-        description:
-          '一个帮助开发者成长的社区，技术文章由技术大牛和极客共同编辑筛选出最优质的干货，包括：Android、iOS、前端、后端等方面的内容。',
-        url: 'https://juejin.cn/',
-      },
-      {
-        title: 'SegmentFault',
-        description:
-          '国内技术问答，为开发者提供问答、学习与交流编程知识的平台，创造属于开发者的时代！',
-        url: 'https://segmentfault.com/',
-      },
-      {
-        title: 'CNode',
-        description: 'Node.js专业中文社区',
-        url: 'https://cnodejs.org/',
-      },
-      {
-        title: '博客园',
-        description:
-          '一直致力并专注于为开发者打造一个纯净的技术交流社区，推动并帮助开发者通过互联网分享知识，从而让更多开发者从中受益。',
-        url: 'https://www.cnblogs.com/',
-      },
-      {
-        title: 'OSCHINA',
-        description:
-          '是目前领先的中文开源技术社区。我们传播开源的理念，推广开源项目，为 IT 开发者提供了一个发现、使用、并交流开源技术的平台',
-        url: 'https://www.oschina.net/',
-      },
-      {
-        title: 'V2ex',
-        description: '是一个关于分享和探索的地方',
-        url: 'https://www.v2ex.com/',
-      },
-      {
-        title: '微信开放社区',
-        description: '官方小程序、小游戏、微信支付交流社区',
-        url: 'https://developers.weixin.qq.com/community/homepage',
-      },
-      {
-        title: '蓝色理想',
-        description:
-          '以建设网站设计与开发人员之家为宗旨，以介绍网络开发技术与网站创作设计交流为主要内容。',
-        url: 'http://www.blueidea.com/',
-      },
-    ],
-  },
-  {
     id: 'animation',
     category: '动画特效',
     sites: [
@@ -282,29 +146,6 @@ export default [
         title: 'vivify',
         description: 'Vivify is free CSS animation library.',
         url: 'http://vivify.mkcreative.cz/',
-      },
-    ],
-  },
-  {
-    id: 'game',
-    category: '游戏开发',
-    sites: [
-      {
-        title: 'PixiJS',
-        description: '使用最快，最灵活的2D WebGL渲染器创建精美的数字内容。',
-        url: 'https://www.pixijs.com/',
-      },
-      {
-        title: 'Cocos Creator',
-        description:
-          '以内容创作为核心，实现了脚本化、组件化和数据驱动的游戏开发工具。',
-        url: 'https://docs.cocos.com/creator/manual/zh/',
-      },
-      {
-        title: 'Egret',
-        description:
-          '效率至上的一站式完整开发工作流，2D/3D双核心渲染，开发工具链闭环整合，全流程开发，由此开始',
-        url: 'https://www.egret.com/',
       },
     ],
   },
@@ -445,6 +286,12 @@ export default [
         url: 'https://tool.chinaz.com/',
       },
       {
+        title: '网站诊断分析',
+        description: '在线图片压缩工具',
+        url:
+          'https://zijian.aliyun.com/?spm=a2c1d.8251892.content.2.39d55b76A9OHww',
+      },
+      {
         title: '51.LA',
         description: '51la网站流量统计',
         url: 'https://www.51.la/',
@@ -518,48 +365,6 @@ export default [
         description:
           '阿拉丁是一家全网小程序智能数据平台，专注于小程序的第三方全域数据服务商。主要包括微信小程序、小游戏统计平台、小程序监测平台、小程序全网指数排名、小程序运营平台水滴魔方、小程序推送平台小神推等产品。',
         url: 'https://www.aldwx.com/index',
-      },
-    ],
-  },
-  {
-    id: 'play',
-    category: '影视娱乐',
-    sites: [
-      {
-        title: '暗云影视',
-        description:
-          '提供最新影视排行榜,最新电影电视剧在线观看,提供最新韩剧、美剧、日剧、泰剧在线观看,最新综艺节目、最新动漫剧集超高清在线观看!',
-        url: 'https://www.anyuntv.com/',
-      },
-      {
-        title: '低端影视网',
-        description:
-          '低端影视官网在线观看(ddrk),免费提供最新电影、电视剧、动漫和综艺在线观看，赶快来看看吧！',
-        url: 'http://www.tzwhxx.com/',
-      },
-      {
-        title: '在线之家电影网',
-        description:
-          '在线之家电影网（zxzj），免费提供最新电视、电影、综艺和动漫在线观看，赶快来在线之家影院吧！',
-        url: 'http://www.mxldyxx.com/',
-      },
-      {
-        title: '电视猫',
-        description:
-          '电视猫为您提供电视剧原创分集剧情介绍、演员表、人物大结局等信息，最新一期综艺节目预告、热门电影、明星资料以及每周电视节目单，电视猫是您看电视看剧情的必备网站。',
-        url: 'https://www.tvmao.com/',
-      },
-      {
-        title: '去看吧',
-        description:
-          '海外更新最快的動漫網，是壹個在海外動漫資源最全，日漫更新速度第壹，播放資源高清完整版的壹個大型動漫社區，同时为您提供无修动漫在线免费观看，和bl动漫在线免费动漫观看，bl动漫大全和bl漫画免费等等和bl动漫相关的作品。',
-        url: 'https://www.k6dm.com/',
-      },
-      {
-        title: '异世界动漫',
-        description:
-          '异世界动漫 YSJDM.COM 新番动漫 720P 1080P 在线播放 最新动漫资讯,在线动漫',
-        url: 'http://tv.kudm.net/',
       },
     ],
   },

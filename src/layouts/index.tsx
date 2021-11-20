@@ -60,46 +60,31 @@ class App extends React.Component {
             </NavLink>
             <NavLink
               activeClassName={styles.active}
-              to={'/sites'}
-              className={styles.item}
-            >
-              网址导航
-            </NavLink>
-            <NavLink
-              activeClassName={styles.active}
               to={'/resources'}
               className={styles.item}
             >
-              源码教程
+              教程
             </NavLink>
             <NavLink
               activeClassName={styles.active}
               to={'/blogs'}
               className={styles.item}
             >
-              博客随笔
+              博客
             </NavLink>
-            {/* <NavLink
-              activeClassName={styles.active}
-              to="/library"
-              className={styles.item}
-            >
-              实用库
-            </NavLink> */}
-            {/* <NavLink activeClassName={styles.active} to="/effects" className={styles.item}>css效果</NavLink> */}
             <NavLink
               activeClassName={styles.active}
               to={'/softwares'}
               className={styles.item}
             >
-              软件分享
+              软件
             </NavLink>
             <NavLink
               activeClassName={styles.active}
               to={'/aboutUs'}
               className={styles.item}
             >
-              关于我们
+              关于
             </NavLink>
           </nav>
         </ScrollFixed>
