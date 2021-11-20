@@ -68,7 +68,7 @@ export default function Resources() {
         <Alert
           closable
           type="warning"
-          message="上周最有意思和 yyds 的 10 大前端项目 - 2021-11-15日更新"
+          message="更新30本js相关PDF电子书 - 2021-11-20日更新"
         />
         {resources}
       </Space>

@@ -125,8 +125,7 @@ export default [
       },
       {
         title: 'mercurius',
-        description:
-          '使用 Fastify 实现 GraphQL 服务器和网关。',
+        description: '使用 Fastify 实现 GraphQL 服务器和网关。',
         url: 'https://github.com/mercurius-js/mercurius',
       },
       {
@@ -137,26 +136,22 @@ export default [
       },
       {
         title: 'GitHub Readme Stats',
-        description:
-          '为您的 GitHub 自述文件动态生成的统计信息',
+        description: '为您的 GitHub 自述文件动态生成的统计信息',
         url: 'https://github.com/anuraghazra/github-readme-stats',
       },
       {
         title: 'Spark Joy',
-        description:
-          '为你的产品添加设计风格、用户满意度和奇思妙想的简单方法！',
+        description: '为你的产品添加设计风格、用户满意度和奇思妙想的简单方法！',
         url: 'https://github.com/sw-yx/spark-joy',
       },
       {
         title: 'Dripsy',
-        description:
-          'React Native + Web 的响应式、无样式的 UI 原语。',
+        description: 'React Native + Web 的响应式、无样式的 UI 原语。',
         url: 'https://github.com/nandorojo/dripsy',
       },
       {
         title: 'it',
-        description:
-          '一组实用程序，用于让使用可迭代对象更易于使用。',
+        description: '一组实用程序，用于让使用可迭代对象更易于使用。',
         url: 'https://github.com/achingbrain/it',
       },
       {
@@ -173,14 +168,12 @@ export default [
       },
       {
         title: 'Checka11y.css',
-        description:
-          '一个CSS样式表，可以快速突出所有关注的内容。',
+        description: '一个CSS样式表，可以快速突出所有关注的内容。',
         url: 'https://github.com/jackdomleo7/Checka11y.css',
       },
       {
         title: 'animated-emojis',
-        description:
-          '带有动画表情符号的库。',
+        description: '带有动画表情符号的库。',
         url: 'https://github.com/beerose/animated-emojis',
       },
       {
@@ -221,8 +214,7 @@ export default [
       },
       {
         title: 'react-hooks-in-svelte',
-        description:
-          '在 Svelte 中使用 React hooks 的示例.',
+        description: '在 Svelte 中使用 React hooks 的示例.',
         url: 'https://github.com/joshnuss/react-hooks-in-svelte',
       },
       {
@@ -454,6 +446,126 @@ export default [
       {
         title: 'Web开发权威指南.pdf',
         path: 'Web开发权威指南.pdf',
+      },
+      {
+        title: '《编写高质量代码--Web前端开发修炼之道》.pdf',
+        path: '《编写高质量代码--Web前端开发修炼之道》.pdf',
+      },
+      {
+        title: '《编写高质量代码：Web前端开发修炼之道》 (2).pdf',
+        path: '《编写高质量代码：Web前端开发修炼之道》 (2).pdf',
+      },
+      {
+        title: '《高性能JavaScript》.pdf',
+        path: '《高性能JavaScript》.pdf',
+      },
+      {
+        title: '《高性能JavaScript编程》.pdf',
+        path: '《高性能JavaScript编程》.pdf',
+      },
+      {
+        title: '《高性能JavaScript编程》中英对照版.pdf',
+        path: '《高性能JavaScript编程》中英对照版.pdf',
+      },
+      {
+        title: '《全面理解Javascript》.pdf',
+        path: '《全面理解Javascript》.pdf',
+      },
+      {
+        title: '《数据结构与算法JavaScript描述》.pdf',
+        path: '《数据结构与算法JavaScript描述》.pdf',
+      },
+      {
+        title: '《网站设计解构  有效的交互设计框架和模式》.pdf',
+        path: '《网站设计解构  有效的交互设计框架和模式》.pdf',
+      },
+      {
+        title: '《无懈可击的web设计》.pdf',
+        path: '《无懈可击的web设计》.pdf',
+      },
+      {
+        title: '《悟透javascript》.pdf',
+        path: '《悟透javascript》.pdf',
+      },
+      {
+        title: '《javascript 权威指南》第6版.pdf',
+        path: '《javascript 权威指南》第6版.pdf',
+      },
+      {
+        title: '《JavaScript 设计模式》.pdf',
+        path: '《JavaScript 设计模式》.pdf',
+      },
+      {
+        title: '《JavaScript宝典》第7版.pdf',
+        path: '《JavaScript宝典》第7版.pdf',
+      },
+      {
+        title: '《JavaScript高级程序设计》.pdf',
+        path: '《JavaScript高级程序设计》.pdf',
+      },
+      {
+        title: '《JavaScript高级程序设计》（中文优化版）.pdf',
+        path: '《JavaScript高级程序设计》（中文优化版）.pdf',
+      },
+      {
+        title: '《JavaScript快速全栈开发《.pdf',
+        path: '《JavaScript快速全栈开发《.pdf',
+      },
+      {
+        title: '《javascript面向对象编程》.pdf',
+        path: '《javascript面向对象编程》.pdf',
+      },
+      {
+        title: '《JavaScript模式》.pdf',
+        path: '《JavaScript模式》.pdf',
+      },
+      {
+        title: '《javascript权威指南》第六版.pdf',
+        path: '《javascript权威指南》第六版.pdf',
+      },
+      {
+        title: '《JavaScript网页特效编程百宝箱》.pdf',
+        path: '《JavaScript网页特效编程百宝箱》.pdf',
+      },
+      {
+        title: '《JavaScript异步编程：设计快速响应的网络应用》.pdf',
+        path: '《JavaScript异步编程：设计快速响应的网络应用》.pdf',
+      },
+      {
+        title: '《JavaScript语言精粹_修订版》.pdf',
+        path: '《JavaScript语言精粹_修订版》.pdf',
+      },
+      {
+        title: '《javascriptdom编程艺术》.pdf',
+        path: '《javascriptdom编程艺术》.pdf',
+      },
+      {
+        title: '《jQuery高级编程》).pdf',
+        path: '《jQuery高级编程》).pdf',
+      },
+      {
+        title: '《jQuery权威指南》.pdf',
+        path: '《jQuery权威指南》.pdf',
+      },
+      {
+        title: '《js网页特效应用》.pdf',
+        path: '《js网页特效应用》.pdf',
+      },
+      {
+        title: '《Line-height 全面解析》.pdf',
+        path: '《Line-height 全面解析》.pdf',
+      },
+      {
+        title: '《W3Cfuns JavaScript DOM编程艺术第一版（中文）》.pdf',
+        path: '《W3Cfuns JavaScript DOM编程艺术第一版（中文）》.pdf',
+      },
+      {
+        title: '《Web性能权威指南》.pdf',
+        path: '《Web性能权威指南》.pdf',
+      },
+      {
+        title: '【图灵程序设计丛书】正则表达式必知必会.pdf',
+        path: '【图灵程序设计丛书】正则表达式必知必会.pdf',
       },
     ],
   },
