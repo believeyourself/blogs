@@ -1,5 +1,12 @@
 export default [
   {
+    title: 'react-pdf',
+    description: 'pdf预览',
+    category: 'pdf预览',
+    image: '',
+    github: 'https://github.com/wojtekmaj/react-pdf',
+  },
+  {
     title: 'react-draggable',
     description: '实现原生的拖拽功能',
     category: '拖拽组件',
