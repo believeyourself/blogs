@@ -26399,7 +26399,7 @@
             children: Object(o['jsx'])('title', { children: t.split('.')[0] }),
           }),
           Object(o['jsx'])('embed', {
-            src: '/static/ebooks/'.concat(t),
+            src: 'http://cloud.qianduan.shop/'.concat(t),
             type: 'application/pdf',
             style: { width: '100vw', height: '100vh' },
           }),

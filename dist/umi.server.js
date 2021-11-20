@@ -20127,7 +20127,7 @@ module.exports = (function (e) {
             children: Object(o['jsx'])('title', { children: t.split('.')[0] }),
           }),
           Object(o['jsx'])('embed', {
-            src: `/static/ebooks/${t}`,
+            src: `http://cloud.qianduan.shop/${t}`,
             type: 'application/pdf',
             style: { width: '100vw', height: '100vh' },
           }),
