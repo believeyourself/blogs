@@ -27129,7 +27129,7 @@
     'use strict';
     n.r(t),
       n.d(t, 'default', function () {
-        return P;
+        return M;
       });
     n('DYRE');
     var r = n('zeV3'),
@@ -27140,16 +27140,15 @@
       u = n('tSx8'),
       l = n.n(u),
       s = n('q5Ws'),
-      f = n('Scb0'),
-      d = n('JzeJ'),
-      p = n('feFQ'),
-      h = n('Ti25'),
-      v = n('UOy+'),
-      m = n('wIsG'),
-      b = n('9Irh'),
-      g = n('VTBJ'),
-      y = n('q1tI'),
-      O = {
+      f = n('JzeJ'),
+      d = n('feFQ'),
+      p = n('Ti25'),
+      h = n('UOy+'),
+      v = n('wIsG'),
+      m = n('9Irh'),
+      b = n('VTBJ'),
+      g = n('q1tI'),
+      y = {
         icon: {
           tag: 'svg',
           attrs: { viewBox: '64 64 896 896', focusable: 'false' },
@@ -27166,20 +27165,20 @@
         name: 'unordered-list',
         theme: 'outlined',
       },
-      w = O,
-      j = n('6VBw'),
-      E = function (e, t) {
-        return y['createElement'](
-          j['a'],
-          Object(g['a'])(Object(g['a'])({}, e), {}, { ref: t, icon: w }),
+      O = y,
+      w = n('6VBw'),
+      j = function (e, t) {
+        return g['createElement'](
+          w['a'],
+          Object(b['a'])(Object(b['a'])({}, e), {}, { ref: t, icon: O }),
         );
       };
-    E.displayName = 'UnorderedListOutlined';
-    var x = y['forwardRef'](E),
-      k = n('IFUR'),
-      C = n.n(k),
-      S = n('nKUr'),
-      A = [
+    j.displayName = 'UnorderedListOutlined';
+    var E = g['forwardRef'](j),
+      x = n('IFUR'),
+      k = n.n(x),
+      C = n('nKUr'),
+      S = [
         '#fb8228',
         '#2ab4ff',
         '#172027',
@@ -27188,54 +27187,54 @@
         '#d96a6a',
         '#3caab6',
       ],
-      D = (e) => {
-        var t = A[e.color % A.length];
-        return Object(S['jsxs'])('a', {
+      A = (e) => {
+        var t = S[e.color % S.length];
+        return Object(C['jsxs'])('a', {
           target: '_blank',
           rel: 'nofollow',
           href: e.github,
-          className: C.a.container,
+          className: k.a.container,
           children: [
-            Object(S['jsx'])('div', {
-              className: C.a.image,
+            Object(C['jsx'])('div', {
+              className: k.a.image,
               style: { backgroundColor: t },
-              children: Object(S['jsx'])('img', {
+              children: Object(C['jsx'])('img', {
                 alt: e.title + ', ' + e.category,
                 src: e.image || '/static/images/components.jpg',
               }),
             }),
-            Object(S['jsx'])('h4', { className: C.a.title, children: e.title }),
-            Object(S['jsx'])('p', {
-              className: C.a.description,
+            Object(C['jsx'])('h4', { className: k.a.title, children: e.title }),
+            Object(C['jsx'])('p', {
+              className: k.a.description,
               children: e.description,
             }),
-            Object(S['jsxs'])('p', {
-              className: C.a.category,
-              children: [Object(S['jsx'])(x, {}), ' ', e.category],
+            Object(C['jsxs'])('p', {
+              className: k.a.category,
+              children: [Object(C['jsx'])(E, {}), ' ', e.category],
             }),
-            Object(S['jsx'])('div', {
-              className: C.a.operation,
+            Object(C['jsx'])('div', {
+              className: k.a.operation,
               children: 'www.qianduan.shop',
             }),
           ],
         });
       },
-      M = v['a'].map((e) =>
+      D = h['a'].map((e) =>
         !Array.isArray(e.tags) ||
         (Array.isArray(e.tags) && !e.tags.includes('react'))
           ? null
           : e.id
-          ? Object(S['jsxs'])(
-              b['a'],
+          ? Object(C['jsxs'])(
+              m['a'],
               {
                 to: '/blogs/detail/'.concat(e.id),
                 className: l.a.blog,
                 children: [
-                  Object(S['jsx'])('h4', {
+                  Object(C['jsx'])('h4', {
                     className: l.a.title,
                     children: e.title,
                   }),
-                  Object(S['jsx'])('p', {
+                  Object(C['jsx'])('p', {
                     className: l.a.description,
                     children: e.description,
                   }),
@@ -27243,7 +27242,7 @@
               },
               e.url || e.id,
             )
-          : Object(S['jsxs'])(
+          : Object(C['jsxs'])(
               'a',
               {
                 href: e.url,
@@ -27251,11 +27250,11 @@
                 className: l.a.blog,
                 rel: 'nofollow',
                 children: [
-                  Object(S['jsx'])('h4', {
+                  Object(C['jsx'])('h4', {
                     className: l.a.title,
                     children: e.title,
                   }),
-                  Object(S['jsx'])('p', {
+                  Object(C['jsx'])('p', {
                     className: l.a.description,
                     children: e.description,
                   }),
@@ -27264,12 +27263,12 @@
               e.url || e.id,
             ),
       );
-    function P() {
-      var e = d['a'].videos,
-        t = d['a'].codes;
-      return Object(S['jsxs'])(S['Fragment'], {
+    function M() {
+      var e = f['a'].videos,
+        t = f['a'].codes;
+      return Object(C['jsxs'])(C['Fragment'], {
         children: [
-          Object(S['jsx'])(s['a'], {
+          Object(C['jsx'])(s['a'], {
             title:
               'React\u6587\u6863\uff0cReact\u7ec4\u4ef6\uff0cReact\u6559\u7a0b\uff0cReact\u5f00\u6e90\u9879\u76ee',
             keywords:
@@ -27277,58 +27276,57 @@
             description:
               'React\u6587\u6863\u3001\u6559\u7a0b\u3001\u5f00\u6e90\u9879\u76ee,\u7ec4\u4ef6\uff0c\u52a9\u529b\u5b66\u4e60\u638c\u63e1React,\u63d0\u5347React\u5f00\u53d1\u6548\u7387',
           }),
-          Object(S['jsx'])(f['a'], {}),
-          Object(S['jsxs'])(r['b'], {
+          Object(C['jsxs'])(r['b'], {
             direction: 'vertical',
             className: l.a.content,
             children: [
-              Object(S['jsx'])(c['a'], {
+              Object(C['jsx'])(c['a'], {
                 title: 'React \u76f8\u5173\u6587\u6863',
-                children: Object(S['jsxs'])('div', {
+                children: Object(C['jsxs'])('div', {
                   className: l.a.doc,
                   children: [
-                    Object(S['jsx'])('a', {
+                    Object(C['jsx'])('a', {
                       target: '_blank',
                       href: 'https://zh-hans.reactjs.org/',
                       children: 'React\u4e2d\u6587',
                     }),
-                    Object(S['jsx'])('a', {
+                    Object(C['jsx'])('a', {
                       target: '_blank',
                       href: 'https://www.redux.org.cn/',
                       children: 'Redux',
                     }),
-                    Object(S['jsx'])('a', {
+                    Object(C['jsx'])('a', {
                       target: '_blank',
                       href: 'https://react-guide.github.io/react-router-cn/',
                       children: 'React Router',
                     }),
-                    Object(S['jsx'])('a', {
+                    Object(C['jsx'])('a', {
                       target: '_blank',
                       href:
                         'https://redux-saga-in-chinese.js.org/docs/introduction/BeginnerTutorial.html/',
                       children: 'redux-saga',
                     }),
-                    Object(S['jsx'])('a', {
+                    Object(C['jsx'])('a', {
                       target: '_blank',
                       href: 'https://dvajs.com/guide/',
                       children: 'dva',
                     }),
-                    Object(S['jsx'])('a', {
+                    Object(C['jsx'])('a', {
                       target: '_blank',
                       href: 'https://create-react-app.dev/docs/getting-started',
                       children: 'create-react-app',
                     }),
-                    Object(S['jsx'])('a', {
+                    Object(C['jsx'])('a', {
                       target: '_blank',
                       href: 'https://umijs.org/zh-CN/docs',
                       children: 'umi',
                     }),
-                    Object(S['jsx'])('a', {
+                    Object(C['jsx'])('a', {
                       target: '_blank',
                       href: 'https://ant.design/docs/react/introduce-cn',
                       children: 'ant-design',
                     }),
-                    Object(S['jsx'])('a', {
+                    Object(C['jsx'])('a', {
                       target: '_blank',
                       href: 'https://semi.design/zh-CN/start/introduction',
                       children: 'semi-design',
@@ -27336,15 +27334,15 @@
                   ],
                 }),
               }),
-              Object(S['jsx'])(c['a'], {
+              Object(C['jsx'])(c['a'], {
                 title: 'React \u7ec4\u4ef6',
-                children: Object(S['jsxs'])('div', {
+                children: Object(C['jsxs'])('div', {
                   className: l.a.components,
                   children: [
-                    Object(S['jsx'])(h['a'], { width: 250, heigth: 300 }),
-                    m['a'].map((e, t) =>
-                      Object(S['jsx'])(
-                        D,
+                    Object(C['jsx'])(p['a'], { width: 250, heigth: 300 }),
+                    v['a'].map((e, t) =>
+                      Object(C['jsx'])(
+                        A,
                         Object(i['a'])({ color: t }, e),
                         e.title,
                       ),
@@ -27352,20 +27350,20 @@
                   ],
                 }),
               }),
-              Object(S['jsx'])(c['a'], {
+              Object(C['jsx'])(c['a'], {
                 title: 'React \u6559\u7a0b',
-                children: Object(S['jsx'])(a['a'], {
+                children: Object(C['jsx'])(a['a'], {
                   gutter: [10, 10],
                   children: e.map((e) =>
-                    Object(S['jsx'])(
+                    Object(C['jsx'])(
                       o['a'],
                       {
                         lg: 12,
                         md: 12,
                         sm: 24,
                         xs: 24,
-                        children: Object(S['jsx'])(
-                          p['a'],
+                        children: Object(C['jsx'])(
+                          d['a'],
                           Object(i['a'])(
                             { className: l.a.category_list_item },
                             e,
@@ -27377,20 +27375,20 @@
                   ),
                 }),
               }),
-              Object(S['jsx'])(c['a'], {
+              Object(C['jsx'])(c['a'], {
                 title: 'React \u5f00\u6e90\u9879\u76ee',
-                children: Object(S['jsx'])(a['a'], {
+                children: Object(C['jsx'])(a['a'], {
                   gutter: [10, 10],
                   children: t.map((e) =>
-                    Object(S['jsx'])(
+                    Object(C['jsx'])(
                       o['a'],
                       {
                         lg: 12,
                         md: 12,
                         sm: 24,
                         xs: 24,
-                        children: Object(S['jsx'])(
-                          p['a'],
+                        children: Object(C['jsx'])(
+                          d['a'],
                           Object(i['a'])(
                             { className: l.a.category_list_item },
                             e,
@@ -27402,11 +27400,11 @@
                   ),
                 }),
               }),
-              Object(S['jsx'])(c['a'], {
+              Object(C['jsx'])(c['a'], {
                 title: 'React \u6587\u7ae0',
-                children: M,
+                children: D,
               }),
-              Object(S['jsx'])(c['a'], {
+              Object(C['jsx'])(c['a'], {
                 title: 'React PDF',
                 children:
                   '\u5236\u4f5c\u4e2d\uff0c\u656c\u8bf7\u671f\u5f85\u3002\u3002\u3002',

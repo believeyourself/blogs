@@ -9,7 +9,6 @@
 import styles from './index.less';
 import SiteHeader from '@/components/siteHeader';
 import { Card as AntCard, Space, Row, Col } from 'antd';
-import SideAd from '@/components/sideAd';
 import source from '../../../../data/topics/react';
 import Card from '@/components/card';
 import SquareAd from '@/components/squareAd';
@@ -62,7 +61,6 @@ export default function Resources() {
         keywords="React文档，React教程，React开源项目,React组件"
         description="React文档、教程、开源项目,组件，助力学习掌握React,提升React开发效率"
       />
-      <SideAd />
       <Space direction="vertical" className={styles.content}>
         <AntCard title="React 相关文档">
           <div className={styles.doc}>

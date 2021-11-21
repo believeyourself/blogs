@@ -24924,7 +24924,7 @@ module.exports = (function (e) {
     'use strict';
     n.r(t),
       n.d(t, 'default', function () {
-        return A;
+        return _;
       });
     n('DYRE');
     var r = n('zeV3'),
@@ -24934,16 +24934,15 @@ module.exports = (function (e) {
       s = n('tSx8'),
       c = n.n(s),
       l = n('q5Ws'),
-      u = n('Scb0'),
-      f = n('JzeJ'),
-      d = n('feFQ'),
-      p = n('Ti25'),
-      h = n('UOy+'),
-      m = n('wIsG'),
-      b = n('9Irh'),
-      v = n('VTBJ'),
-      g = n('q1tI'),
-      y = {
+      u = n('JzeJ'),
+      f = n('feFQ'),
+      d = n('Ti25'),
+      p = n('UOy+'),
+      h = n('wIsG'),
+      m = n('9Irh'),
+      b = n('VTBJ'),
+      v = n('q1tI'),
+      g = {
         icon: {
           tag: 'svg',
           attrs: { viewBox: '64 64 896 896', focusable: 'false' },
@@ -24960,20 +24959,20 @@ module.exports = (function (e) {
         name: 'unordered-list',
         theme: 'outlined',
       },
-      E = y,
-      O = n('6VBw'),
-      w = function (e, t) {
-        return g['createElement'](
-          O['a'],
-          Object(v['a'])(Object(v['a'])({}, e), {}, { ref: t, icon: E }),
+      y = g,
+      E = n('6VBw'),
+      O = function (e, t) {
+        return v['createElement'](
+          E['a'],
+          Object(b['a'])(Object(b['a'])({}, e), {}, { ref: t, icon: y }),
         );
       };
-    w.displayName = 'UnorderedListOutlined';
-    var T = g['forwardRef'](w),
-      x = n('IFUR'),
-      k = n.n(x),
-      j = n('nKUr');
-    const C = [
+    O.displayName = 'UnorderedListOutlined';
+    var w = v['forwardRef'](O),
+      T = n('IFUR'),
+      x = n.n(T),
+      k = n('nKUr');
+    const j = [
       '#fb8228',
       '#2ab4ff',
       '#172027',
@@ -24982,54 +24981,54 @@ module.exports = (function (e) {
       '#d96a6a',
       '#3caab6',
     ];
-    var S = (e) => {
-      let t = C[e.color % C.length];
-      return Object(j['jsxs'])('a', {
+    var C = (e) => {
+      let t = j[e.color % j.length];
+      return Object(k['jsxs'])('a', {
         target: '_blank',
         rel: 'nofollow',
         href: e.github,
-        className: k.a.container,
+        className: x.a.container,
         children: [
-          Object(j['jsx'])('div', {
-            className: k.a.image,
+          Object(k['jsx'])('div', {
+            className: x.a.image,
             style: { backgroundColor: t },
-            children: Object(j['jsx'])('img', {
+            children: Object(k['jsx'])('img', {
               alt: e.title + ', ' + e.category,
               src: e.image || '/static/images/components.jpg',
             }),
           }),
-          Object(j['jsx'])('h4', { className: k.a.title, children: e.title }),
-          Object(j['jsx'])('p', {
-            className: k.a.description,
+          Object(k['jsx'])('h4', { className: x.a.title, children: e.title }),
+          Object(k['jsx'])('p', {
+            className: x.a.description,
             children: e.description,
           }),
-          Object(j['jsxs'])('p', {
-            className: k.a.category,
-            children: [Object(j['jsx'])(T, {}), ' ', e.category],
+          Object(k['jsxs'])('p', {
+            className: x.a.category,
+            children: [Object(k['jsx'])(w, {}), ' ', e.category],
           }),
-          Object(j['jsx'])('div', {
-            className: k.a.operation,
+          Object(k['jsx'])('div', {
+            className: x.a.operation,
             children: 'www.qianduan.shop',
           }),
         ],
       });
     };
-    const _ = h['a'].map((e) =>
+    const S = p['a'].map((e) =>
       !Array.isArray(e.tags) ||
       (Array.isArray(e.tags) && !e.tags.includes('react'))
         ? null
         : e.id
-        ? Object(j['jsxs'])(
-            b['a'],
+        ? Object(k['jsxs'])(
+            m['a'],
             {
               to: `/blogs/detail/${e.id}`,
               className: c.a.blog,
               children: [
-                Object(j['jsx'])('h4', {
+                Object(k['jsx'])('h4', {
                   className: c.a.title,
                   children: e.title,
                 }),
-                Object(j['jsx'])('p', {
+                Object(k['jsx'])('p', {
                   className: c.a.description,
                   children: e.description,
                 }),
@@ -25037,7 +25036,7 @@ module.exports = (function (e) {
             },
             e.url || e.id,
           )
-        : Object(j['jsxs'])(
+        : Object(k['jsxs'])(
             'a',
             {
               href: e.url,
@@ -25045,11 +25044,11 @@ module.exports = (function (e) {
               className: c.a.blog,
               rel: 'nofollow',
               children: [
-                Object(j['jsx'])('h4', {
+                Object(k['jsx'])('h4', {
                   className: c.a.title,
                   children: e.title,
                 }),
-                Object(j['jsx'])('p', {
+                Object(k['jsx'])('p', {
                   className: c.a.description,
                   children: e.description,
                 }),
@@ -25058,12 +25057,12 @@ module.exports = (function (e) {
             e.url || e.id,
           ),
     );
-    function A() {
-      const e = f['a'].videos,
-        t = f['a'].codes;
-      return Object(j['jsxs'])(j['Fragment'], {
+    function _() {
+      const e = u['a'].videos,
+        t = u['a'].codes;
+      return Object(k['jsxs'])(k['Fragment'], {
         children: [
-          Object(j['jsx'])(l['a'], {
+          Object(k['jsx'])(l['a'], {
             title:
               'React\u6587\u6863\uff0cReact\u7ec4\u4ef6\uff0cReact\u6559\u7a0b\uff0cReact\u5f00\u6e90\u9879\u76ee',
             keywords:
@@ -25071,58 +25070,57 @@ module.exports = (function (e) {
             description:
               'React\u6587\u6863\u3001\u6559\u7a0b\u3001\u5f00\u6e90\u9879\u76ee,\u7ec4\u4ef6\uff0c\u52a9\u529b\u5b66\u4e60\u638c\u63e1React,\u63d0\u5347React\u5f00\u53d1\u6548\u7387',
           }),
-          Object(j['jsx'])(u['a'], {}),
-          Object(j['jsxs'])(r['b'], {
+          Object(k['jsxs'])(r['b'], {
             direction: 'vertical',
             className: c.a.content,
             children: [
-              Object(j['jsx'])(i['a'], {
+              Object(k['jsx'])(i['a'], {
                 title: 'React \u76f8\u5173\u6587\u6863',
-                children: Object(j['jsxs'])('div', {
+                children: Object(k['jsxs'])('div', {
                   className: c.a.doc,
                   children: [
-                    Object(j['jsx'])('a', {
+                    Object(k['jsx'])('a', {
                       target: '_blank',
                       href: 'https://zh-hans.reactjs.org/',
                       children: 'React\u4e2d\u6587',
                     }),
-                    Object(j['jsx'])('a', {
+                    Object(k['jsx'])('a', {
                       target: '_blank',
                       href: 'https://www.redux.org.cn/',
                       children: 'Redux',
                     }),
-                    Object(j['jsx'])('a', {
+                    Object(k['jsx'])('a', {
                       target: '_blank',
                       href: 'https://react-guide.github.io/react-router-cn/',
                       children: 'React Router',
                     }),
-                    Object(j['jsx'])('a', {
+                    Object(k['jsx'])('a', {
                       target: '_blank',
                       href:
                         'https://redux-saga-in-chinese.js.org/docs/introduction/BeginnerTutorial.html/',
                       children: 'redux-saga',
                     }),
-                    Object(j['jsx'])('a', {
+                    Object(k['jsx'])('a', {
                       target: '_blank',
                       href: 'https://dvajs.com/guide/',
                       children: 'dva',
                     }),
-                    Object(j['jsx'])('a', {
+                    Object(k['jsx'])('a', {
                       target: '_blank',
                       href: 'https://create-react-app.dev/docs/getting-started',
                       children: 'create-react-app',
                     }),
-                    Object(j['jsx'])('a', {
+                    Object(k['jsx'])('a', {
                       target: '_blank',
                       href: 'https://umijs.org/zh-CN/docs',
                       children: 'umi',
                     }),
-                    Object(j['jsx'])('a', {
+                    Object(k['jsx'])('a', {
                       target: '_blank',
                       href: 'https://ant.design/docs/react/introduce-cn',
                       children: 'ant-design',
                     }),
-                    Object(j['jsx'])('a', {
+                    Object(k['jsx'])('a', {
                       target: '_blank',
                       href: 'https://semi.design/zh-CN/start/introduction',
                       children: 'semi-design',
@@ -25130,31 +25128,31 @@ module.exports = (function (e) {
                   ],
                 }),
               }),
-              Object(j['jsx'])(i['a'], {
+              Object(k['jsx'])(i['a'], {
                 title: 'React \u7ec4\u4ef6',
-                children: Object(j['jsxs'])('div', {
+                children: Object(k['jsxs'])('div', {
                   className: c.a.components,
                   children: [
-                    Object(j['jsx'])(p['a'], { width: 250, heigth: 300 }),
-                    m['a'].map((e, t) =>
-                      Object(j['jsx'])(S, { color: t, ...e }, e.title),
+                    Object(k['jsx'])(d['a'], { width: 250, heigth: 300 }),
+                    h['a'].map((e, t) =>
+                      Object(k['jsx'])(C, { color: t, ...e }, e.title),
                     ),
                   ],
                 }),
               }),
-              Object(j['jsx'])(i['a'], {
+              Object(k['jsx'])(i['a'], {
                 title: 'React \u6559\u7a0b',
-                children: Object(j['jsx'])(a['a'], {
+                children: Object(k['jsx'])(a['a'], {
                   gutter: [10, 10],
                   children: e.map((e) =>
-                    Object(j['jsx'])(
+                    Object(k['jsx'])(
                       o['a'],
                       {
                         lg: 12,
                         md: 12,
                         sm: 24,
                         xs: 24,
-                        children: Object(j['jsx'])(d['a'], {
+                        children: Object(k['jsx'])(f['a'], {
                           className: c.a.category_list_item,
                           ...e,
                         }),
@@ -25164,19 +25162,19 @@ module.exports = (function (e) {
                   ),
                 }),
               }),
-              Object(j['jsx'])(i['a'], {
+              Object(k['jsx'])(i['a'], {
                 title: 'React \u5f00\u6e90\u9879\u76ee',
-                children: Object(j['jsx'])(a['a'], {
+                children: Object(k['jsx'])(a['a'], {
                   gutter: [10, 10],
                   children: t.map((e) =>
-                    Object(j['jsx'])(
+                    Object(k['jsx'])(
                       o['a'],
                       {
                         lg: 12,
                         md: 12,
                         sm: 24,
                         xs: 24,
-                        children: Object(j['jsx'])(d['a'], {
+                        children: Object(k['jsx'])(f['a'], {
                           className: c.a.category_list_item,
                           ...e,
                         }),
@@ -25186,11 +25184,11 @@ module.exports = (function (e) {
                   ),
                 }),
               }),
-              Object(j['jsx'])(i['a'], {
+              Object(k['jsx'])(i['a'], {
                 title: 'React \u6587\u7ae0',
-                children: _,
+                children: S,
               }),
-              Object(j['jsx'])(i['a'], {
+              Object(k['jsx'])(i['a'], {
                 title: 'React PDF',
                 children:
                   '\u5236\u4f5c\u4e2d\uff0c\u656c\u8bf7\u671f\u5f85\u3002\u3002\u3002',
