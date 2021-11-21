@@ -1,10 +1,12 @@
 import { Helmet } from 'umi';
 import AdSense from 'react-adsense';
 
-export default () => {
+export default (props: any) => {
   if (process.env.REACT_APP_ENV === 'development') {
     return null;
   }
+
+  const { width = 220, height = 1000 } = props;
 
   return (
     <>
@@ -19,7 +21,7 @@ export default () => {
         <AdSense.Google
           client="ca-pub-2087076429727327"
           slot="7022357395"
-          style={{ display: 'inline-block', width: '220px', height: '1000px' }}
+          style={{ display: 'inline-block', width, height }}
         />
       </div>
     </>

@@ -12,6 +12,7 @@ import { Card as AntCard, Space, Row, Col } from 'antd';
 import SideAd from '@/components/sideAd';
 import source from '../../../../data/topics/react';
 import Card from '@/components/card';
+import SquareAd from '@/components/squareAd';
 import blogs from '../../../../data/blogs';
 import reactComponents from '../../../../data/topics/react/components';
 import NavLink from '@/components/navLink';
@@ -111,6 +112,7 @@ export default function Resources() {
         </AntCard>
         <AntCard title="React 组件">
           <div className={styles.components}>
+            <SquareAd width={250} heigth={300} />
             {reactComponents.map((item: any, index: number) => {
               return (
                 <UIComonent
