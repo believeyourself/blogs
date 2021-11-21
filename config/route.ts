@@ -42,7 +42,7 @@ const route: any = [
       },
       {
         title: '博客',
-        path: '/blogs',
+        path: '/blogs/:page?/:filter?',
         component: '@/pages/blogs',
       },
       {
