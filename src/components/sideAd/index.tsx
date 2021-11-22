@@ -9,13 +9,6 @@ export default () => {
 
   return (
     <>
-      <Helmet>
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2087076429727327"
-          crossOrigin="anonymous"
-        ></script>
-      </Helmet>
       <div className={style.container}>
         <AdSense.Google
           client="ca-pub-2087076429727327"
