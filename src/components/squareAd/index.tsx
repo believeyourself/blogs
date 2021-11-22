@@ -2,11 +2,10 @@ import { Helmet } from 'umi';
 import AdSense from 'react-adsense';
 
 export default (props: any) => {
+  const { width = 250, height = 300 } = props;
   if (process.env.REACT_APP_ENV === 'development') {
     return null;
   }
-
-  const { width = 250, height = 300 } = props;
 
   return (
     <>
@@ -17,7 +16,7 @@ export default (props: any) => {
           crossOrigin="anonymous"
         ></script>
       </Helmet>
-      <div style={{ display: 'flex', justifyContent: 'center', width, height }}>
+      <div style={{ textAlign:"center", width, height }}>
         <AdSense.Google
           client="ca-pub-2087076429727327"
           slot="7022357395"
