@@ -110,7 +110,6 @@ export default function Resources() {
         </AntCard>
         <AntCard title="React 组件">
           <div className={styles.components}>
-            <SquareAd width={250} heigth={300} />
             {reactComponents.map((item: any, index: number) => {
               return (
                 <UIComonent
