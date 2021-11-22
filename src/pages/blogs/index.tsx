@@ -7,35 +7,25 @@
  * @LastEditTime: 2021-06-15 10:55:30
  */
 import styles from './index.less';
-import allBlogs from '../../../data/blogs';
+import blogs from '../../../data/blogs';
 import NavLink from '@/components/navLink';
 import TagSelect from '@/components/tagSelect';
 import SiteHeader from '@/components/siteHeader';
-import { Divider, Carousel, Pagination } from 'antd';
-import { useParams } from 'react-router';
-
-type UrlParams = {
-  page: string | undefined;
-  filter: string | undefined;
-};
+import { Divider, Carousel } from 'antd';
+import { useState, useMemo } from 'react';
 
 export default function Blogs() {
-  let { page = 1, filter } = useParams<UrlParams>();
-  page = Number(page);
+  const [tag, setTag] = useState<string | null>(null);
+  const targetBlogs: any[] = useMemo(() => {
+    return blogs.filter((blog: any) => {
+      if (!tag) {
+        return true;
+      }
+      return Array.isArray(blog.tags) && blog.tags.includes(tag);
+    });
+  }, [tag]);
 
-  const filterBlogs: any[] = allBlogs.filter((blog: any) => {
-    if (!filter) {
-      return true;
-    }
-    return Array.isArray(blog.tags) && blog.tags.includes(filter);
-  });
-
-  if (page > Math.ceil(filterBlogs.length / 10)) {
-    page = 1;
-  }
-  const blogs = filterBlogs.slice((page - 1) * 10, page * 10);
-
-  const records = blogs.map((item: any) => {
+  const records = targetBlogs.map((item: any) => {
     if (item.id) {
       return (
         <NavLink
@@ -90,13 +80,8 @@ export default function Blogs() {
         <TagSelect
           hideCheckAll={true}
           multi={false}
-          value={filter ? [filter] : []}
           onChange={(values) => {
-            if (values[0]) {
-              location.href = `/blogs/${page}/${values[0].toString()}`;
-            } else {
-              location.href = `/blogs/1`;
-            }
+            setTag(values[0]?.toString() || null);
           }}
           expandable
         >
@@ -109,16 +94,6 @@ export default function Blogs() {
         </TagSelect>
         <Divider />
         {records}
-        <div>
-          <Pagination
-            style={{ float: 'right' }}
-            current={page}
-            total={filterBlogs.length}
-            onChange={(page: number) => {
-              location.href = `/blogs/${page}`;
-            }}
-          />
-        </div>
       </div>
     </>
   );
