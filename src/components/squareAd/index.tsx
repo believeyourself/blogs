@@ -16,11 +16,11 @@ export default (props: any) => {
           crossOrigin="anonymous"
         ></script>
       </Helmet>
-      <div style={{ textAlign:"center", width, height }}>
+      <div style={{ textAlign:"center" }}>
         <AdSense.Google
           client="ca-pub-2087076429727327"
           slot="7022357395"
-          style={{ display: 'inline-block', width, height }}
+          style={{ display: 'inline-block', width,maxWidth:width, height,maxHeight:height }}
         />
       </div>
     </>
