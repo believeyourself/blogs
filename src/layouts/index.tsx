@@ -53,6 +53,10 @@ class App extends React.Component {
             <NavLink
               activeClassName={styles.active}
               exact={true}
+              isActive={(match,{pathName})=>{
+                console.log(match,pathName);
+                return false;
+              }}
               to={'/'}
               className={styles.item}
             >

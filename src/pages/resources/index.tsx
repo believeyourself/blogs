@@ -21,14 +21,14 @@ export default function Resources() {
     if (item.category === 'PDF') {
       categoryList = list.map((pdf: any) => {
         return (
-          <NavLink
+          <a
             className={styles.pdf}
             key={pdf.title}
             target="_blank"
-            to={`/ebooks/${pdf.path}`}
+            href={`https://cloud.qianduan.shop/${pdf.title}`}
           >
             {pdf.title}
-          </NavLink>
+          </a>
         );
       });
     } else {

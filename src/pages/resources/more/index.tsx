@@ -29,7 +29,7 @@ export default function More() {
           className={styles.pdf}
           key={pdf.title}
           target="_blank"
-          href={`/ebooks/${pdf.path}`}
+          href={`https://cloud.qianduan.shop/${pdf.title}`}
         >
           {pdf.title}
         </a>
