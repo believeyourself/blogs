@@ -1,5 +1,12 @@
 export default [
   {
+    id: 22,
+    title: '如何从零开始实现一个cli命令行工具',
+    description: '我们已经习惯了使用各种开源cli工具，协助我们进行日常开发，本文将从零开始构建我们自己的cli命令行工具。',
+    tags: ['node', 'cli', '命令行工具'],
+    date: '2021-11-22',
+  },
+  {
     id: 21,
     title: 'React 实现 PDF 预览',
     description: '使用 embed 标签 和 react-pdf 组件实现PDF预览',
