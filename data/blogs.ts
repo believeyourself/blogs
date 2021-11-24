@@ -1,4 +1,11 @@
 export default [
+   {
+    id: 23,
+    title: 'husky add hook命令不起作用问题',
+    description: '配置husky时，husky add hook不起作用，没有正常添加hook',
+    tags: ['git', 'hook', 'husky-v7',"node","npm" ,"add"],
+    date: '2021-11-24',
+  },
   {
     id: 22,
     title: '如何从零开始实现一个cli命令行工具',
