@@ -1,29 +1,30 @@
 .card {
-  border: 1px solid #edf5fb;
+  height: 120px;
   padding: 10px;
-  height:120px;
+  border: 1px solid #edf5fb;
 
   &:hover {
     background-color: #eff5fe;
   }
 
   .title {
-    text-decoration: none;
-    color: #0396d7;
+    display: block;
     overflow: hidden;
-    text-overflow: ellipsis;
+    color: #0396d7;
     white-space: nowrap;
+    text-decoration: none;
+    text-overflow: ellipsis;
   }
 
   .description {
-    color: #666666;
+    display: -webkit-box;
     margin-top: 10px;
     overflow: hidden;
-    text-overflow: ellipsis;
+    color: #666666;
     font-size: 13px;
     line-height: 20px;
-    display:-webkit-box;
-    -webkit-line-clamp:3;
-    -webkit-box-orient:vertical;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
   }
 }

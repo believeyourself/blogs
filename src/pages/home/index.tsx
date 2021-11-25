@@ -12,9 +12,9 @@ import resource from '../../../data/resource';
 import NavLink from '@/components/navLink';
 import Card from '@/components/card';
 import SiteHeader from '@/components/siteHeader';
-import { Divider, Card as AntCard, Row, Col } from 'antd';
+import { Row, Col } from 'antd';
 
-const someBlogs = blogs.slice(0, 10);
+const someBlogs = blogs.slice(0, 5);
 const someProjects = resource[1].list.slice(0, 4);
 const blogRecords = someBlogs.map((item: any) => {
   if (item.id) {
@@ -53,7 +53,7 @@ const blogRecords = someBlogs.map((item: any) => {
 });
 const projectRecords = someProjects.map((item) => {
   return (
-    <Col key={item.title} md={12} sm={24}>
+    <Col key={item.title} md={6} sm={12}>
       <Card {...item}></Card>
     </Col>
   );

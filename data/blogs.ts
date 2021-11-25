@@ -1,15 +1,16 @@
 export default [
-   {
+  {
     id: 23,
-    title: 'husky add hook命令不起作用问题',
-    description: '配置husky时，husky add hook不起作用，没有正常添加hook',
-    tags: ['git', 'hook', 'husky-v7',"node","npm" ,"add"],
+    title: 'husky7 add hook命令不起作用问题',
+    description: '配置husky7时，husky add hook不起作用，没有正常添加hook',
+    tags: ['git', 'hook', 'husky-v7', 'node', 'npm', 'add'],
     date: '2021-11-24',
   },
   {
     id: 22,
     title: '如何从零开始实现一个cli命令行工具',
-    description: '我们已经习惯了使用各种开源cli工具，协助我们进行日常开发，本文将从零开始构建我们自己的cli命令行工具。',
+    description:
+      '我们已经习惯了使用各种开源cli工具，协助我们进行日常开发，本文将从零开始构建我们自己的cli命令行工具。',
     tags: ['node', 'cli', '命令行工具'],
     date: '2021-11-22',
   },

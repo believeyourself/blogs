@@ -136,7 +136,7 @@ export default function Resources() {
           <Row gutter={[10, 10]}>
             {codes.map((item: any) => {
               return (
-                <Col key={item.title} lg={12} md={12} sm={24} xs={24}>
+                <Col key={item.title} lg={6} md={6} sm={12} xs={24}>
                   <Card className={styles.category_list_item} {...item} />
                 </Col>
               );
