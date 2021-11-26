@@ -9847,7 +9847,7 @@
     'use strict';
     n.r(t),
       (t['default'] =
-        '# husky add hook\u547d\u4ee4\u4e0d\u8d77\u4f5c\u7528\u95ee\u9898\r\n\r\n## \u80cc\u666f\r\n\r\n\u5f00\u53d1\u73af\u5883\uff1agit v2.22 + node v14.17.5 + npm v6.6.14 + win10 + husky v7.0.4 \r\n\r\n\u9879\u76ee\u9700\u8981\u914d\u7f6egit hook\uff0c\u5728commit\u4e4b\u524d\u6267\u884c\u4ee3\u7801\u6821\u9a8cESLint\uff0c\u89c4\u8303commit\u63d0\u4ea4\u65e5\u5fd7\u683c\u5f0f\u3002\u6211\u4eec\u4f7f\u7528husky\u6765\u914d\u7f6egit hook.\r\n\r\n## \u89e3\u51b3\u529e\u6cd5\r\n\r\n\u5347\u7ea7 npm \u5230v7\u7248\u672c\u6216\u66f4\u9ad8\u3002\r\n\r\n## \u8fc7\u7a0b\r\n\r\n\u53c2\u8003 husky \u6587\u6863\u6267\u884c\u547d\u4ee4\uff1a<a href="https://github.com/typicode/husky" rel="nofollow">husky github</a>\r\n\r\n```\r\n  npm install husky -D \r\n  npm set-script prepare "husky install"\r\n```\r\n\r\n\u5230\u8fd9\u4e00\u6b65\uff0cnpm set-script\u547d\u4ee4\u4e0d\u5b58\u5728\uff0c\u6240\u4ee5\u6211\u4eec\u624b\u52a8\u6267\u884c\u3002\r\n\r\n```\r\n  npx husky install\r\n  npx husky add .husky/commit-msg \'npx --no-install commitlint --edit "$1"\'\r\n```\r\n\r\nhusky add \u64cd\u4f5c\u4e0d\u8d77\u4f5c\u7528\uff0c\u63d0\u793a\u5982\u4e0b\uff1a\r\n\r\n```\r\nUsage:\r\n  husky install [dir] (default: .husky)\r\n  husky uninstall\r\n  husky set|add <file> [cmd]\r\n\r\n```\r\n\r\n\u7136\u540e\u53bbgithub issue\u53bb\u627e\u6709\u89e3\u51b3\u529e\u6cd5\u6ca1\u6709\uff0c\u6709\u4eba\u9047\u5230\u76f8\u540c\u7684\u95ee\u9898\uff1a\r\n<a href="https://github.com/typicode/husky/issues/1010" rel="nofollow">Can\'t add a hook</a>\r\n\r\n\u6709\u4eba\u63d0\u5230\u4f7f\u7528\u4ee5\u4e0b\u547d\u4ee4:\r\n\r\n```\r\nnode node_modules/.bin/husky install ...\r\nnode node_modules/.bin/husky add ...\r\n\r\n```\r\n\r\n\u4f46\u662f\u6211\u8fd9\u91cc\u8fd8\u662f\u4e0d\u884c\uff0c\u8fd8\u662f\u6709\u62a5\u9519\uff1a\r\n\r\n```\r\nC:\\Users\\user\\projects\\project\\node_modules\\.bin\\husky:2\r\nbasedir=$(dirname "$(echo "$0" | sed -e \'s,\\\\,/,g\')")\r\n          ^^^^^^^\r\nSyntaxError: missing ) after argument list\r\n\r\n```\r\n\r\n\u6700\u540e\u8fd8\u662f\u5347\u7ea7 npm \u5230\u6700\u65b0\u7684 v8 \u624d\u641e\u5b9a');
+        '# husky7 add hook\u547d\u4ee4\u4e0d\u8d77\u4f5c\u7528\u95ee\u9898\r\n\r\n## \u80cc\u666f\r\n\r\n\u5f00\u53d1\u73af\u5883\uff1agit 2.20.1.windows.1 + node v14.15.1 + npm v6.14.8 + win10 + husky v7.0.4 \r\n\r\n\u9879\u76ee\u9700\u8981\u914d\u7f6egit hook\uff0c\u5728commit\u4e4b\u524d\u6267\u884c\u4ee3\u7801\u6821\u9a8cESLint\uff0c\u89c4\u8303commit\u63d0\u4ea4\u65e5\u5fd7\u683c\u5f0f\u3002\u6211\u4eec\u4f7f\u7528husky\u6765\u914d\u7f6egit hook.\r\n\r\n## \u89e3\u51b3\u529e\u6cd5\r\n\r\n\u5347\u7ea7 npm \u5230v7\u7248\u672c\u6216\u66f4\u9ad8\u3002\r\n\r\n## \u8fc7\u7a0b\r\n\r\n\u53c2\u8003 husky \u6587\u6863\u6267\u884c\u547d\u4ee4\uff1a<a href="https://github.com/typicode/husky" rel="nofollow">husky github</a>\r\n\r\n```\r\n  npm install husky -D \r\n  npm set-script prepare "husky install"\r\n```\r\n\r\n\u5230\u8fd9\u4e00\u6b65\uff0cnpm set-script\u547d\u4ee4\u4e0d\u5b58\u5728\uff0c\u6240\u4ee5\u6211\u4eec\u624b\u52a8\u6267\u884c\u3002\r\n\r\n```\r\n  npx husky install\r\n  npx husky add .husky/commit-msg \'npx --no-install commitlint --edit "$1"\'\r\n```\r\n\r\nhusky add \u64cd\u4f5c\u4e0d\u8d77\u4f5c\u7528\uff0c\u63d0\u793a\u5982\u4e0b\uff1a\r\n\r\n```\r\nUsage:\r\n  husky install [dir] (default: .husky)\r\n  husky uninstall\r\n  husky set|add <file> [cmd]\r\n\r\n```\r\n\r\n\u7136\u540e\u53bbgithub issue\u53bb\u627e\u6709\u89e3\u51b3\u529e\u6cd5\u6ca1\u6709\uff0c\u6709\u4eba\u9047\u5230\u76f8\u540c\u7684\u95ee\u9898\uff1a\r\n<a href="https://github.com/typicode/husky/issues/1010" rel="nofollow">Can\'t add a hook</a>\r\n\r\n\u6709\u4eba\u63d0\u5230\u4f7f\u7528\u4ee5\u4e0b\u547d\u4ee4:\r\n\r\n```\r\nnode node_modules/.bin/husky install ...\r\nnode node_modules/.bin/husky add ...\r\n\r\n```\r\n\r\n\u4f46\u662f\u6211\u8fd9\u91cc\u8fd8\u662f\u4e0d\u884c\uff0c\u8fd8\u662f\u6709\u62a5\u9519\uff1a\r\n\r\n```\r\nC:\\Users\\user\\projects\\project\\node_modules\\.bin\\husky:2\r\nbasedir=$(dirname "$(echo "$0" | sed -e \'s,\\\\,/,g\')")\r\n          ^^^^^^^\r\nSyntaxError: missing ) after argument list\r\n\r\n```\r\n\r\n\u6700\u540e\u8fd8\u662f\u5347\u7ea7 npm \u5230\u6700\u65b0\u7684 v8 \u624d\u641e\u5b9a');
   },
   '6ldB': function (e, t, n) {
     'use strict';
@@ -17304,40 +17304,42 @@
     'use strict';
     n.r(t),
       n.d(t, 'default', function () {
-        return y;
+        return w;
       });
     n('14J3');
     var r = n('BMrR'),
-      a = (n('jCWc'), n('kPKH')),
-      o = n('k1fw'),
-      i = n('U0+B'),
-      c = n.n(i),
-      u = n('UOy+'),
-      l = n('U90E'),
-      s = n('9Irh'),
-      f = n('feFQ'),
-      d = n('q5Ws'),
-      p = n('nKUr'),
-      h = u['a'].slice(0, 10),
-      v = l['a'][1].list.slice(0, 4),
-      m = h.map((e) =>
+      a = (n('IzEo'), n('bx4M')),
+      o = (n('fOrg'), n('+KLJ')),
+      i = (n('jCWc'), n('kPKH')),
+      c = n('k1fw'),
+      u = n('U0+B'),
+      l = n.n(u),
+      s = n('UOy+'),
+      f = n('U90E'),
+      d = n('9Irh'),
+      p = n('feFQ'),
+      h = n('q5Ws'),
+      v = n('nKUr'),
+      m = s['a'].slice(0, 5),
+      b = f['a'][1].list.slice(0, 4),
+      g = m.map((e) =>
         e.id
-          ? Object(p['jsxs'])(
-              s['a'],
+          ? Object(v['jsxs'])(
+              d['a'],
               {
                 to: '/blogs/detail/'.concat(e.id),
-                className: c.a.category_list_item,
+                className: l.a.category_list_item,
                 children: [
-                  Object(p['jsx'])('h4', {
-                    className: c.a.title,
+                  Object(v['jsx'])('h4', {
+                    className: l.a.title,
                     children: e.title,
                   }),
-                  Object(p['jsx'])('p', {
-                    className: c.a.description,
+                  Object(v['jsx'])('p', {
+                    className: l.a.description,
                     children: e.description,
                   }),
-                  Object(p['jsxs'])('p', {
-                    className: c.a.tip,
+                  Object(v['jsxs'])('p', {
+                    className: l.a.tip,
                     children: [
                       '\u6765\u6e90: \u672c\u7ad9 ',
                       '           ',
@@ -17349,24 +17351,24 @@
               },
               e.url || e.id,
             )
-          : Object(p['jsxs'])(
+          : Object(v['jsxs'])(
               'a',
               {
                 href: e.url,
                 target: '_blank',
-                className: c.a.category_list_item,
+                className: l.a.category_list_item,
                 rel: 'nofollow',
                 children: [
-                  Object(p['jsx'])('h4', {
-                    className: c.a.title,
+                  Object(v['jsx'])('h4', {
+                    className: l.a.title,
                     children: e.title,
                   }),
-                  Object(p['jsx'])('p', {
-                    className: c.a.description,
+                  Object(v['jsx'])('p', {
+                    className: l.a.description,
                     children: e.description,
                   }),
-                  Object(p['jsxs'])('p', {
-                    className: c.a.tip,
+                  Object(v['jsxs'])('p', {
+                    className: l.a.tip,
                     children: [
                       '\u6765\u6e90: ',
                       e.source,
@@ -17380,111 +17382,111 @@
               e.url || e.id,
             ),
       ),
-      b = v.map((e) =>
-        Object(p['jsx'])(
-          a['a'],
+      y = b.map((e) =>
+        Object(v['jsx'])(
+          i['a'],
           {
-            md: 12,
-            sm: 24,
-            children: Object(p['jsx'])(f['a'], Object(o['a'])({}, e)),
+            md: 6,
+            sm: 12,
+            children: Object(v['jsx'])(p['a'], Object(c['a'])({}, e)),
           },
           e.title,
         ),
       ),
-      g = (e) =>
-        Object(p['jsxs'])('h2', {
-          className: c.a.part,
+      O = (e) =>
+        Object(v['jsxs'])('h2', {
+          className: l.a.part,
           children: [
-            Object(p['jsx'])('span', { children: e.title }),
-            Object(p['jsx'])(s['a'], {
+            Object(v['jsx'])('span', { children: e.title }),
+            Object(v['jsx'])(d['a'], {
               to: null === e || void 0 === e ? void 0 : e.more,
               children: null === e || void 0 === e ? void 0 : e.description,
             }),
           ],
         });
-    function y() {
-      return Object(p['jsxs'])(p['Fragment'], {
+    function w() {
+      return Object(v['jsxs'])(v['Fragment'], {
         children: [
-          Object(p['jsx'])(d['a'], {
+          Object(v['jsx'])(h['a'], {
             title: '\u9996\u9875 - React,Node,JavaScript,SEO',
             keywords:
               'React\uff0credux\uff0creact-router\uff0cJavaScript\uff0cjs\uff0cSEO\uff0ccss\uff0cnode\uff0c\u524d\u7aef\u5f00\u53d1\uff0c\u524d\u7aef\u5b66\u4e60\uff0c\u524d\u7aef\u535a\u5ba2\uff0cant-design\uff0cdva',
             description:
               '\u81f4\u529b\u4e8eReact\u524d\u7aef\u5f00\u53d1\u548cNode\u5f00\u53d1\u76f8\u5173\u9886\u57df\u6280\u672f\u7814\u7a76\uff0c\u6df1\u5165\u5206\u6790\u6280\u672f\u57fa\u7840\u539f\u7406\uff0c\u6559\u7a0b\u8d44\u6e90\uff0c\u5f00\u6e90\u9879\u76ee\uff0c\u5f00\u53d1\u5de5\u5177\u5206\u4eab\uff0c\u5305\u62ec\u4f46\u4e0d\u9650\u4e8eJavaScript,css,React,node,webpack,umi,ant-design,dav',
           }),
-          Object(p['jsxs'])('div', {
-            className: c.a.content,
+          Object(v['jsxs'])('div', {
+            className: l.a.content,
             children: [
-              Object(p['jsx'])(g, {
+              Object(v['jsx'])(O, {
                 title: '\u5e38\u7528\u7f51\u5740',
                 more: '/sites',
                 description: '\u66f4\u591a\u7f51\u5740 >>',
               }),
-              Object(p['jsxs'])('div', {
-                className: c.a.sites,
+              Object(v['jsxs'])('div', {
+                className: l.a.sites,
                 children: [
-                  Object(p['jsx'])('a', {
+                  Object(v['jsx'])('a', {
                     href: 'https://s.qiniu.com/JzIJFv',
                     target: '_blank',
                     rel: 'nofollow',
                     children: '\u4e03\u725b\u4e91',
                   }),
-                  Object(p['jsx'])(s['a'], {
+                  Object(v['jsx'])(d['a'], {
                     to: '/tools/timestamp',
                     target: '_blank',
                     children: '\u65f6\u95f4\u6233\u8f6c\u6362',
                   }),
-                  Object(p['jsx'])('a', {
+                  Object(v['jsx'])('a', {
                     href: 'https://www.extfans.com/',
                     target: '_blank',
                     rel: 'nofollow',
                     children: 'Chrome\u63d2\u4ef6',
                   }),
-                  Object(p['jsx'])('a', {
+                  Object(v['jsx'])('a', {
                     href: 'https://tinypng.com/',
                     target: '_blank',
                     rel: 'nofollow',
                     children: '\u56fe\u7247\u538b\u7f29',
                   }),
-                  Object(p['jsx'])(s['a'], {
+                  Object(v['jsx'])(d['a'], {
                     to: '/tools/jsonTree',
                     target: '_blank',
                     rel: 'nofollow',
                     children: 'JSON\u683c\u5f0f\u8f6c\u6362',
                   }),
-                  Object(p['jsx'])('a', {
+                  Object(v['jsx'])('a', {
                     href:
                       'https://vjyd1gg9jl.feishu.cn/base/app4Dlc49N1Z9e4LrAoZ36lPMNi?from=from_copylink',
                     target: '_blank',
                     rel: 'nofollow',
                     children: '\u524d\u7aef\u9762\u8bd5\u771f\u9898',
                   }),
-                  Object(p['jsx'])('a', {
+                  Object(v['jsx'])('a', {
                     href: 'https://cli.im/',
                     target: '_blank',
                     rel: 'nofollow',
                     children: '\u4e8c\u7ef4\u7801\u751f\u6210\u5668',
                   }),
-                  Object(p['jsx'])('a', {
+                  Object(v['jsx'])('a', {
                     href: 'https://color.uisdc.com/pick.html',
                     target: '_blank',
                     rel: 'nofollow',
                     children: '\u914d\u8272\u5bfc\u822a',
                   }),
-                  Object(p['jsx'])('a', {
+                  Object(v['jsx'])('a', {
                     href: 'https://h5.bce.baidu.com/',
                     target: '_blank',
                     rel: 'nofollow',
                     children: '\u767e\u5ea6H5\u5728\u7ebf\u5236\u4f5c',
                   }),
-                  Object(p['jsx'])('a', {
+                  Object(v['jsx'])('a', {
                     href: 'https://developer.aliyun.com/graph/frontend',
                     target: '_blank',
                     rel: 'nofollow',
                     children:
                       '\u963f\u91cc\u524d\u7aef\u5f00\u53d1\u6280\u672f\u56fe\u8c31',
                   }),
-                  Object(p['jsx'])('a', {
+                  Object(v['jsx'])('a', {
                     href:
                       'https://zijian.aliyun.com/?spm=a2c1d.8251892.content.2.39d55b76A9OHww',
                     target: '_blank',
@@ -17493,34 +17495,135 @@
                   }),
                 ],
               }),
-              Object(p['jsx'])(g, { title: '\u4e13\u9898\u6c47\u603b' }),
-              Object(p['jsxs'])('div', {
+              Object(v['jsx'])(O, { title: '\u5f00\u7bb1\u5373\u7528' }),
+              Object(v['jsx'])(o['a'], {
+                message:
+                  '\u6536\u96c6\u514d\u8d39\u6216\u6709\u514d\u8d39\u989d\u5ea6\u7684\u8d44\u6e90\uff01',
+                closable: !0,
+              }),
+              Object(v['jsxs'])('div', {
+                className: l.a.free_resource,
+                children: [
+                  Object(v['jsx'])(a['a'], {
+                    title: 'API\u63a5\u53e3',
+                    children: Object(v['jsxs'])('div', {
+                      className: l.a.resource_item,
+                      children: [
+                        Object(v['jsx'])('a', {
+                          href: 'https://www.juhe.cn/docs',
+                          rel: 'nofollow',
+                          children:
+                            '\u805a\u5408\u6570\u636e - \u90e8\u5206\u63a5\u53e3\u6570\u636e\u514d\u8d39',
+                        }),
+                        Object(v['jsx'])('a', {
+                          href: 'https://open.saintic.com/openapi',
+                          rel: 'nofollow',
+                          children: 'saintic - OpenApi',
+                        }),
+                        Object(v['jsx'])('a', {
+                          href: 'https://www.juhe.cn/docs',
+                          rel: 'nofollow',
+                          children:
+                            '\u5f00\u653eAPI - \u70ed\u641c\uff0c\u751f\u6d3b\uff0c\u5b89\u5168\u7c7b\u514d\u8d39\u63a5\u53e3',
+                        }),
+                      ],
+                    }),
+                  }),
+                  Object(v['jsx'])(a['a'], {
+                    title: '\u57cb\u70b9\u7edf\u8ba1',
+                    children: Object(v['jsxs'])('div', {
+                      className: l.a.resource_item,
+                      children: [
+                        Object(v['jsx'])('a', {
+                          href: 'https://analytics.google.com/',
+                          rel: 'nofollow',
+                          children:
+                            'Google\u5206\u6790 - \u7f51\u7ad9\u7edf\u8ba1\u5206\u6790',
+                        }),
+                        Object(v['jsx'])('a', {
+                          href: 'https://www.aldwx.com/index',
+                          rel: 'nofollow',
+                          children:
+                            '\u963f\u62c9\u4e01 - \u5c0f\u7a0b\u5e8f\u667a\u80fd\u6570\u636e\u5e73\u53f0',
+                        }),
+                        Object(v['jsx'])('a', {
+                          href: 'https://tongji.baidu.com/',
+                          rel: 'nofollow',
+                          children:
+                            '\u767e\u5ea6\u7edf\u8ba1 - \u7f51\u7ad9\u3001\u79fb\u52a8\u7edf\u8ba1\uff0c\u7528\u6237\u884c\u4e3a\u5206\u6790',
+                        }),
+                        Object(v['jsx'])('a', {
+                          href: 'https://www.umeng.com/',
+                          rel: 'nofollow',
+                          children:
+                            '\u53cb\u76df+ - \u7edf\u8ba1\u5206\u6790\u3001\u793e\u4f1a\u5316\u5206\u4eab\u3001\u6027\u80fd\u76d1\u63a7\u3001\u6d88\u606f\u63a8\u9001',
+                        }),
+                      ],
+                    }),
+                  }),
+                  Object(v['jsx'])(a['a'], {
+                    title: '\u4e91\u670d\u52a1',
+                    children: Object(v['jsxs'])('div', {
+                      className: l.a.resource_item,
+                      children: [
+                        Object(v['jsx'])('a', {
+                          href: 'https://s.qiniu.com/JzIJFv',
+                          rel: 'nofollow',
+                          children:
+                            '\u4e03\u725b\u4e91 - \u6bcf\u670810\u4e2aG\u7684\u514d\u8d39\u5bf9\u8c61\u5b58\u50a8',
+                        }),
+                        Object(v['jsx'])('a', {
+                          href: 'https://amazonaws.cn',
+                          rel: 'nofollow',
+                          children:
+                            '\u4e9a\u9a6c\u900a\u4e2d\u56fd - \u65b0\u7528\u6237\u4e00\u5e74\u514d\u8d39\u5957\u9910\uff0c\u591a\u79cd\u670d\u52a1\u53ef\u7528',
+                        }),
+                      ],
+                    }),
+                  }),
+                  Object(v['jsx'])(a['a'], {
+                    title: 'CMS\u7ba1\u7406\u7cfb\u7edf',
+                    children: Object(v['jsx'])('div', {
+                      className: l.a.resource_item,
+                      children: Object(v['jsx'])('a', {
+                        href:
+                          'https://strapi.io/documentation/developer-docs/latest/getting-started/introduction.html',
+                        rel: 'nofollow',
+                        children:
+                          'strapi - \u81ea\u6258\u7ba1\u514d\u8d39\u5f00\u6e90',
+                      }),
+                    }),
+                  }),
+                ],
+              }),
+              Object(v['jsx'])(O, { title: '\u4e13\u9898\u6c47\u603b' }),
+              Object(v['jsxs'])('div', {
                 style: { display: 'flex', gap: 20 },
                 children: [
-                  Object(p['jsx'])(s['a'], {
-                    className: c.a.topic,
+                  Object(v['jsx'])(d['a'], {
+                    className: l.a.topic,
                     to: '/topics/react',
                     children: 'React',
                   }),
-                  Object(p['jsx'])(s['a'], {
-                    className: c.a.topic,
+                  Object(v['jsx'])(d['a'], {
+                    className: l.a.topic,
                     to: '/topics/node',
                     children: 'Node',
                   }),
                 ],
               }),
-              Object(p['jsx'])(g, {
+              Object(v['jsx'])(O, {
                 title: '\u5f00\u6e90\u9879\u76ee',
                 more: '/resources/originCode',
                 description: '\u66f4\u591a\u9879\u76ee >>',
               }),
-              Object(p['jsx'])(r['a'], { gutter: [10, 10], children: b }),
-              Object(p['jsx'])(g, {
+              Object(v['jsx'])(r['a'], { gutter: [10, 10], children: y }),
+              Object(v['jsx'])(O, {
                 title: '\u535a\u5ba2\u968f\u7b14',
                 more: '/blogs',
                 description: '\u66f4\u591a\u6587\u7ae0 >>',
               }),
-              m,
+              g,
             ],
           }),
         ],
@@ -26232,9 +26335,9 @@
                     Object(k['jsx'])(
                       o['a'],
                       {
-                        lg: 12,
-                        md: 12,
-                        sm: 24,
+                        lg: 6,
+                        md: 6,
+                        sm: 12,
                         xs: 24,
                         children: Object(k['jsx'])(
                           d['a'],
@@ -36578,6 +36681,8 @@
     e.exports = {
       content: 'content___1lxfE',
       part: 'part___2_KVc',
+      free_resource: 'free_resource___lYLK9',
+      resource_item: 'resource_item___1I6H1',
       sites: 'sites___3xFBo',
       topic: 'topic___173ib',
       category_list_item: 'category_list_item___1zGvA',
@@ -37277,9 +37382,10 @@
     t['a'] = [
       {
         id: 23,
-        title: 'husky add hook\u547d\u4ee4\u4e0d\u8d77\u4f5c\u7528\u95ee\u9898',
+        title:
+          'husky7 add hook\u547d\u4ee4\u4e0d\u8d77\u4f5c\u7528\u95ee\u9898',
         description:
-          '\u914d\u7f6ehusky\u65f6\uff0chusky add hook\u4e0d\u8d77\u4f5c\u7528\uff0c\u6ca1\u6709\u6b63\u5e38\u6dfb\u52a0hook',
+          '\u914d\u7f6ehusky7\u65f6\uff0chusky add hook\u4e0d\u8d77\u4f5c\u7528\uff0c\u6ca1\u6709\u6b63\u5e38\u6dfb\u52a0hook',
         tags: ['git', 'hook', 'husky-v7', 'node', 'npm', 'add'],
         date: '2021-11-24',
       },
