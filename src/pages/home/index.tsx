@@ -12,7 +12,7 @@ import resource from '../../../data/resource';
 import NavLink from '@/components/navLink';
 import Card from '@/components/card';
 import SiteHeader from '@/components/siteHeader';
-import { Row, Col } from 'antd';
+import { Card as AntdCard, Alert, Row, Col } from 'antd';
 
 const someBlogs = blogs.slice(0, 5);
 const someProjects = resource[1].list.slice(0, 4);
@@ -127,6 +127,59 @@ export default function Blogs() {
           >
             网站诊断分析
           </a>
+        </div>
+        <Title title="开箱即用" />
+        <Alert message="收集免费或有免费额度的资源！" closable />
+        <div className={styles.free_resource}>
+          <AntdCard title="API接口">
+            <div className={styles.resource_item}>
+              <a href="https://www.juhe.cn/docs" rel="nofollow">
+                聚合数据 - 部分接口数据免费
+              </a>
+              <a href="https://open.saintic.com/openapi" rel="nofollow">
+                saintic - OpenApi
+              </a>
+              <a href="https://www.juhe.cn/docs" rel="nofollow">
+                开放API - 热搜，生活，安全类免费接口
+              </a>
+            </div>
+          </AntdCard>
+          <AntdCard title="埋点统计">
+            <div className={styles.resource_item}>
+              <a href="https://analytics.google.com/" rel="nofollow">
+                Google分析 - 网站统计分析
+              </a>
+              <a href="https://www.aldwx.com/index" rel="nofollow">
+                阿拉丁 - 小程序智能数据平台
+              </a>
+              <a href="https://tongji.baidu.com/" rel="nofollow">
+                百度统计 - 网站、移动统计，用户行为分析
+              </a>
+              <a href="https://www.umeng.com/" rel="nofollow">
+                友盟+ - 统计分析、社会化分享、性能监控、消息推送
+              </a>
+            </div>
+          </AntdCard>
+          <AntdCard title="云服务">
+            <div className={styles.resource_item}>
+              <a href="https://s.qiniu.com/JzIJFv" rel="nofollow">
+                七牛云 - 每月10个G的免费对象存储
+              </a>
+              <a href="https://amazonaws.cn" rel="nofollow">
+                亚马逊中国 - 新用户一年免费套餐，多种服务可用
+              </a>
+            </div>
+          </AntdCard>
+          <AntdCard title="CMS管理系统">
+            <div className={styles.resource_item}>
+              <a
+                href="https://strapi.io/documentation/developer-docs/latest/getting-started/introduction.html"
+                rel="nofollow"
+              >
+                strapi - 自托管免费开源
+              </a>
+            </div>
+          </AntdCard>
         </div>
         <Title title="专题汇总" />
         <div style={{ display: 'flex', gap: 20 }}>
