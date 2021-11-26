@@ -21,7 +21,7 @@ class ErrorBoundary extends Component<any, any> {
   }
 
   shouldComponentUpdate(nextProps: any, nextState: any) {
-    return !nextProps.ignore;
+    return nextState.hasError && !nextProps.ignore;
   }
 
   render() {

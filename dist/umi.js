@@ -48454,7 +48454,7 @@
         return console.log('UI ERROR:', e), { hasError: !0 };
       }
       shouldComponentUpdate(e, t) {
-        return !e.ignore;
+        return t.hasError && !e.ignore;
       }
       render() {
         return this.state.hasError
