@@ -955,16 +955,18 @@ module.exports = (function (e) {
       D = n('9Irh'),
       F = n('6ldB'),
       H = n.n(F),
-      B = n('nKUr'),
-      z = (e) => {
+      B = n('fWWA'),
+      z = n('nKUr'),
+      U = (e) => {
         const t = e.width,
           n = void 0 === t ? 250 : t,
           r = e.height,
           a = void 0 === r ? 300 : r;
-        return Object(B['jsx'])(B['Fragment'], {
-          children: Object(B['jsx'])('div', {
+        return Object(z['jsx'])(B['a'], {
+          ignore: !0,
+          children: Object(z['jsx'])('div', {
             style: { textAlign: 'center' },
-            children: Object(B['jsx'])(H.a.Google, {
+            children: Object(z['jsx'])(H.a.Google, {
               client: 'ca-pub-2087076429727327',
               slot: '7022357395',
               style: {
@@ -978,14 +980,14 @@ module.exports = (function (e) {
           }),
         });
       };
-    const U = L['a'].slice(0, 5);
-    function q() {
+    const q = L['a'].slice(0, 5);
+    function V() {
       const e = 'https://qianduan.shop',
-        t = U.map((e, t) =>
-          Object(B['jsx'])(
+        t = q.map((e, t) =>
+          Object(z['jsx'])(
             'li',
             {
-              children: Object(B['jsxs'])(D['a'], {
+              children: Object(z['jsxs'])(D['a'], {
                 to: `/blogs/detail/${e.id}`,
                 className: I.a.rank_item,
                 rel: 'nofollow',
@@ -995,40 +997,40 @@ module.exports = (function (e) {
             e.id,
           ),
         );
-      return Object(B['jsxs'])('div', {
+      return Object(z['jsxs'])('div', {
         className: I.a.container,
         children: [
-          Object(B['jsx'])('p', {
+          Object(z['jsx'])('p', {
             className: I.a.title,
             children: '\u70ed\u95e8\u6392\u884c',
           }),
-          Object(B['jsx'])('ul', { className: I.a.rank_list, children: t }),
-          Object(B['jsx'])('p', {
+          Object(z['jsx'])('ul', { className: I.a.rank_list, children: t }),
+          Object(z['jsx'])('p', {
             className: I.a.title,
             children: '\u5728\u7ebf\u5de5\u5177',
           }),
-          Object(B['jsxs'])('div', {
+          Object(z['jsxs'])('div', {
             className: I.a.tool_tags,
             children: [
-              Object(B['jsx'])(P['a'], {
+              Object(z['jsx'])(P['a'], {
                 onClick: () => (window.location.href = e + '/tools'),
                 className: I.a.tool_tag,
                 color: 'blue',
                 children: 'JSON\u683c\u5f0f\u5316',
               }),
-              Object(B['jsx'])(P['a'], {
+              Object(z['jsx'])(P['a'], {
                 onClick: () => (window.location.href = e + '/tools/md5'),
                 className: I.a.tool_tag,
                 color: 'cyan',
                 children: 'MD5',
               }),
-              Object(B['jsx'])(P['a'], {
+              Object(z['jsx'])(P['a'], {
                 onClick: () => (window.location.href = e + '/tools/timestamp'),
                 className: I.a.tool_tag,
                 color: 'error',
                 children: '\u65f6\u95f4\u6233\u8f6c\u6362',
               }),
-              Object(B['jsx'])(P['a'], {
+              Object(z['jsx'])(P['a'], {
                 onClick: () => (window.location.href = e + '/tools/cron'),
                 className: I.a.tool_tag,
                 color: 'green',
@@ -1036,19 +1038,19 @@ module.exports = (function (e) {
               }),
             ],
           }),
-          Object(B['jsx'])(M['a'], {}),
-          Object(B['jsxs'])(N['b'], {
+          Object(z['jsx'])(M['a'], {}),
+          Object(z['jsxs'])(N['b'], {
             children: [
-              Object(B['jsx'])('span', {
+              Object(z['jsx'])('span', {
                 className: I.a.qq_label,
                 children: 'Node\u4ea4\u6d41\u7fa4:',
               }),
-              Object(B['jsx'])('a', {
+              Object(z['jsx'])('a', {
                 rel: 'nofollow',
                 target: '_blank',
                 href:
                   'https://qm.qq.com/cgi-bin/qm/qr?k=AzXgep7P0kzB_-TIxBDDNFILZFxh4BdS&jump_from=webapi',
-                children: Object(B['jsx'])('img', {
+                children: Object(z['jsx'])('img', {
                   src: '//pub.idqqimg.com/wpa/images/group.png',
                   alt: 'Node\u4ea4\u6d41\u7fa4',
                   title: 'Node\u4ea4\u6d41\u7fa4',
@@ -1056,18 +1058,18 @@ module.exports = (function (e) {
               }),
             ],
           }),
-          Object(B['jsxs'])(N['b'], {
+          Object(z['jsxs'])(N['b'], {
             children: [
-              Object(B['jsx'])('span', {
+              Object(z['jsx'])('span', {
                 className: I.a.qq_label,
                 children: '\u524d\u7aef\u4ea4\u6d41\u7fa4:',
               }),
-              Object(B['jsx'])('a', {
+              Object(z['jsx'])('a', {
                 rel: 'nofollow',
                 target: '_blank',
                 href:
                   'https://qm.qq.com/cgi-bin/qm/qr?k=R-am4ZcuufvTEuyilwZgihmk2Fp_lQsy&jump_from=webapi',
-                children: Object(B['jsx'])('img', {
+                children: Object(z['jsx'])('img', {
                   src: '//pub.idqqimg.com/wpa/images/group.png',
                   alt: '\u524d\u7aef\u6280\u672f\u4ea4\u6d41',
                   title: '\u524d\u7aef\u6280\u672f\u4ea4\u6d41',
@@ -1075,20 +1077,20 @@ module.exports = (function (e) {
               }),
             ],
           }),
-          Object(B['jsx'])(M['a'], {}),
-          Object(B['jsx'])(z, {}),
+          Object(z['jsx'])(M['a'], {}),
+          Object(z['jsx'])(U, {}),
         ],
       });
     }
-    var V = q,
-      W = n('H4Hi'),
-      K = n.n(W),
-      G = n('nWR2'),
-      Y = n.n(G),
-      $ = n('tJVT');
-    function J(e) {
+    var W = V,
+      K = n('H4Hi'),
+      G = n.n(K),
+      Y = n('nWR2'),
+      $ = n.n(Y),
+      J = n('tJVT');
+    function X(e) {
       const t = Object(i['useState'])(!1),
-        n = Object($['a'])(t, 2),
+        n = Object(J['a'])(t, 2),
         r = n[0],
         a = n[1],
         o = {
@@ -1104,31 +1106,22 @@ module.exports = (function (e) {
             e > 110 && !r ? a(!0) : e <= 110 && a(!1);
           };
         }, []),
-        Object(B['jsx'])('div', {
+        Object(z['jsx'])('div', {
           className: e.className,
           style: o,
           children: e.children,
         })
       );
     }
-    n('J+/v');
-    var X = n('MoRW'),
-      Q = () =>
-        Object(B['jsx'])(X['a'], {
-          status: '500',
-          title: '500',
-          style: { background: 'none' },
-          subTitle: 'Sorry, something went wrong!',
-        }),
-      Z = n('TdNQ'),
-      ee = n.n(Z),
-      te = () =>
-        Object(B['jsxs'])('footer', {
-          className: ee.a.footer,
+    var Q = n('TdNQ'),
+      Z = n.n(Q),
+      ee = () =>
+        Object(z['jsxs'])('footer', {
+          className: Z.a.footer,
           children: [
             '\xa92021 farmerlzj \u63d0\u4f9b\u6280\u672f\u652f\u6301 | \u8054\u7cfb\u6211\u4eec\uff1afarmerlzj@163.com |',
             ' ',
-            Object(B['jsx'])('a', {
+            Object(z['jsx'])('a', {
               href: 'https://beian.miit.gov.cn/',
               rel: 'nofollow',
               target: '_blank',
@@ -1136,90 +1129,80 @@ module.exports = (function (e) {
             }),
           ],
         }),
-      ne = n('9kvl');
-    class re extends s.a.Component {
-      constructor(...e) {
-        super(...e), (this.state = { hasError: !1 });
-      }
-      static getDerivedStateFromError(e) {
-        return console.log('UI ERROR:', e), { hasError: !0 };
-      }
+      te = n('9kvl');
+    class ne extends s.a.Component {
       render() {
-        return this.state.hasError
-          ? Object(B['jsx'])(Q, {})
-          : Object(B['jsxs'])(B['Fragment'], {
+        return Object(z['jsxs'])(B['a'], {
+          children: [
+            Object(z['jsx'])(te['a'], {
+              children: Object(z['jsx'])('script', {
+                'data-ad-client': 'ca-pub-2087076429727327',
+                async: !0,
+                src:
+                  'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
+              }),
+            }),
+            Object(z['jsxs'])('header', {
+              className: G.a.header,
               children: [
-                Object(B['jsx'])(ne['a'], {
-                  children: Object(B['jsx'])('script', {
-                    'data-ad-client': 'ca-pub-2087076429727327',
-                    async: !0,
-                    src:
-                      'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
-                  }),
+                Object(z['jsx'])('img', {
+                  alt: '\u524d\u7aef\u7f51',
+                  className: G.a.title,
+                  src: $.a,
                 }),
-                Object(B['jsxs'])('header', {
-                  className: K.a.header,
-                  children: [
-                    Object(B['jsx'])('img', {
-                      alt: '\u524d\u7aef\u7f51',
-                      className: K.a.title,
-                      src: Y.a,
-                    }),
-                    Object(B['jsx'])('div', { className: K.a.slogan }),
-                  ],
-                }),
-                Object(B['jsx'])(J, {
-                  children: Object(B['jsxs'])('nav', {
-                    className: K.a.nav,
-                    children: [
-                      Object(B['jsx'])(D['a'], {
-                        activeClassName: K.a.active,
-                        exact: !0,
-                        isActive: (e, { pathName: t }) => (
-                          console.log(e, t), !1
-                        ),
-                        to: '/',
-                        className: K.a.item,
-                        children: '\u9996\u9875',
-                      }),
-                      Object(B['jsx'])(D['a'], {
-                        activeClassName: K.a.active,
-                        to: '/resources',
-                        className: K.a.item,
-                        children: '\u6559\u7a0b',
-                      }),
-                      Object(B['jsx'])(D['a'], {
-                        activeClassName: K.a.active,
-                        to: '/blogs',
-                        className: K.a.item,
-                        children: '\u535a\u5ba2',
-                      }),
-                      Object(B['jsx'])(D['a'], {
-                        activeClassName: K.a.active,
-                        to: '/softwares',
-                        className: K.a.item,
-                        children: '\u8f6f\u4ef6',
-                      }),
-                      Object(B['jsx'])(D['a'], {
-                        activeClassName: K.a.active,
-                        to: '/aboutUs',
-                        className: K.a.item,
-                        children: '\u5173\u4e8e',
-                      }),
-                    ],
-                  }),
-                }),
-                Object(B['jsxs'])('div', {
-                  className: K.a.content,
-                  children: [this.props.children, Object(B['jsx'])(V, {})],
-                }),
-                Object(B['jsx'])(te, {}),
-                Object(B['jsx'])(A, {}),
+                Object(z['jsx'])('div', { className: G.a.slogan }),
               ],
-            });
+            }),
+            Object(z['jsx'])(X, {
+              children: Object(z['jsxs'])('nav', {
+                className: G.a.nav,
+                children: [
+                  Object(z['jsx'])(D['a'], {
+                    activeClassName: G.a.active,
+                    exact: !0,
+                    isActive: (e, { pathName: t }) => (console.log(e, t), !1),
+                    to: '/',
+                    className: G.a.item,
+                    children: '\u9996\u9875',
+                  }),
+                  Object(z['jsx'])(D['a'], {
+                    activeClassName: G.a.active,
+                    to: '/resources',
+                    className: G.a.item,
+                    children: '\u6559\u7a0b',
+                  }),
+                  Object(z['jsx'])(D['a'], {
+                    activeClassName: G.a.active,
+                    to: '/blogs',
+                    className: G.a.item,
+                    children: '\u535a\u5ba2',
+                  }),
+                  Object(z['jsx'])(D['a'], {
+                    activeClassName: G.a.active,
+                    to: '/softwares',
+                    className: G.a.item,
+                    children: '\u8f6f\u4ef6',
+                  }),
+                  Object(z['jsx'])(D['a'], {
+                    activeClassName: G.a.active,
+                    to: '/aboutUs',
+                    className: G.a.item,
+                    children: '\u5173\u4e8e',
+                  }),
+                ],
+              }),
+            }),
+            Object(z['jsxs'])('div', {
+              className: G.a.content,
+              children: [this.props.children, Object(z['jsx'])(W, {})],
+            }),
+            Object(z['jsx'])(ee, {}),
+            Object(z['jsx'])(A, {}),
+          ],
+        });
       }
     }
-    t['default'] = re;
+    t['default'] = ne;
   },
   '+hnl': function (e, t) {
     e.exports = {};
@@ -38138,16 +38121,18 @@ module.exports = (function (e) {
   },
   Scb0: function (e, t, n) {
     'use strict';
-    var r = n('6ldB'),
-      a = n.n(r),
-      o = n('Ll6Q'),
-      i = n.n(o),
-      s = n('nKUr');
+    var r = n('fWWA'),
+      a = n('6ldB'),
+      o = n.n(a),
+      i = n('Ll6Q'),
+      s = n.n(i),
+      c = n('nKUr');
     t['a'] = () =>
-      Object(s['jsx'])(s['Fragment'], {
-        children: Object(s['jsx'])('div', {
-          className: i.a.container,
-          children: Object(s['jsx'])(a.a.Google, {
+      Object(c['jsx'])(r['a'], {
+        ignore: !0,
+        children: Object(c['jsx'])('div', {
+          className: s.a.container,
+          children: Object(c['jsx'])(o.a.Google, {
             client: 'ca-pub-2087076429727327',
             slot: '5545640106',
             style: {
@@ -49587,12 +49572,14 @@ module.exports = (function (e) {
     'use strict';
     var r = n('6ldB'),
       a = n.n(r),
-      o = n('nKUr');
+      o = n('fWWA'),
+      i = n('nKUr');
     t['a'] = () =>
-      Object(o['jsx'])(o['Fragment'], {
-        children: Object(o['jsx'])('div', {
+      Object(i['jsx'])(o['a'], {
+        ignore: !0,
+        children: Object(i['jsx'])('div', {
           style: { display: 'flex', justifyContent: 'center' },
-          children: Object(o['jsx'])(a.a.Google, {
+          children: Object(i['jsx'])(a.a.Google, {
             client: 'ca-pub-2087076429727327',
             slot: '9331479126',
             style: { display: 'inline-block', height: '90px' },
@@ -49756,6 +49743,33 @@ module.exports = (function (e) {
       return a(e) ? o : r(o, n(e));
     }
     e.exports = o;
+  },
+  fWWA: function (e, t, n) {
+    'use strict';
+    var r = n('q1tI'),
+      a = (n('J+/v'), n('MoRW')),
+      o = n('nKUr'),
+      i = () =>
+        Object(o['jsx'])(a['a'], {
+          status: '500',
+          title: '500',
+          style: { background: 'none' },
+          subTitle: 'Sorry, something went wrong!',
+        });
+    class s extends r['Component'] {
+      constructor(...e) {
+        super(...e), (this.state = { hasError: !1 });
+      }
+      static getDerivedStateFromError(e) {
+        return console.log('UI ERROR:', e), { hasError: !0 };
+      }
+      render() {
+        return this.state.hasError && !this.props.ignore
+          ? Object(o['jsx'])(i, {})
+          : this.props.children;
+      }
+    }
+    t['a'] = s;
   },
   feFQ: function (e, t, n) {
     'use strict';

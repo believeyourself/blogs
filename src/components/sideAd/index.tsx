@@ -1,4 +1,4 @@
-import { Helmet } from 'umi';
+import ErrorBoundary from '../ErrorBoundary';
 import AdSense from 'react-adsense';
 import style from './style.less';
 
@@ -8,7 +8,7 @@ export default () => {
   }
 
   return (
-    <>
+    <ErrorBoundary ignore={true}>
       <div className={style.container}>
         <AdSense.Google
           client="ca-pub-2087076429727327"
@@ -18,6 +18,6 @@ export default () => {
           responsive="true"
         />
       </div>
-    </>
+    </ErrorBoundary>
   );
 };

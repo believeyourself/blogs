@@ -13,28 +13,14 @@ import styles from './index.less';
 import logo from '@/assets/images/logo.png';
 import { BackTop } from 'antd';
 import ScrollFixed from '@/components/scrollFixed';
-import Exception500 from '@/pages/exception/500';
 import Footer from '@/components/footer';
 import { Helmet } from 'umi';
+import ErrorBoundary from '@/components/ErrorBoundary';
 
 class App extends React.Component {
-  state = {
-    hasError: false,
-  };
-  static getDerivedStateFromError(error: any) {
-    // 更新 state 使下一次渲染能够显示降级后的 UI
-    console.log('UI ERROR:', error);
-    return { hasError: true };
-  }
-
   render() {
-    if (this.state.hasError) {
-      // 你可以自定义降级后的 UI 并渲染
-      return <Exception500 />;
-    }
-
     return (
-      <>
+      <ErrorBoundary>
         <Helmet>
           {process.env.REACT_APP_ENV === 'production' && (
             <script
@@ -53,8 +39,8 @@ class App extends React.Component {
             <NavLink
               activeClassName={styles.active}
               exact={true}
-              isActive={(match,{pathName})=>{
-                console.log(match,pathName);
+              isActive={(match, { pathName }) => {
+                console.log(match, pathName);
                 return false;
               }}
               to={'/'}
@@ -98,7 +84,7 @@ class App extends React.Component {
         </div>
         <Footer />
         <BackTop />
-      </>
+      </ErrorBoundary>
     );
   }
 }
