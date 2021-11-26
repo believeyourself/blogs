@@ -48453,12 +48453,11 @@
       static getDerivedStateFromError(e) {
         return console.log('UI ERROR:', e), { hasError: !0 };
       }
-      shouldComponentUpdate(e, t) {
-        return t.hasError && !e.ignore;
-      }
       render() {
         return this.state.hasError
-          ? Object(o['jsx'])(i, {})
+          ? this.props.ignore
+            ? null
+            : Object(o['jsx'])(i, {})
           : this.props.children;
       }
     }
