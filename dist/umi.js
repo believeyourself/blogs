@@ -48103,7 +48103,7 @@
           children: Object(i['jsx'])(a.a.Google, {
             client: 'ca-pub-2087076429727327',
             slot: '9331479126',
-            style: { display: 'inline-block', height: '90px' },
+            style: { display: 'block', height: '90px' },
           }),
         }),
       });
@@ -48453,8 +48453,11 @@
       static getDerivedStateFromError(e) {
         return console.log('UI ERROR:', e), { hasError: !0 };
       }
+      shouldComponentUpdate(e, t) {
+        return !e.ignore;
+      }
       render() {
-        return this.state.hasError && !this.props.ignore
+        return this.state.hasError
           ? Object(o['jsx'])(i, {})
           : this.props.children;
       }

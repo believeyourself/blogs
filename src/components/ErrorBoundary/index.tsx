@@ -20,8 +20,12 @@ class ErrorBoundary extends Component<any, any> {
     return { hasError: true };
   }
 
+  shouldComponentUpdate(nextProps: any, nextState: any) {
+    return !nextProps.ignore;
+  }
+
   render() {
-    if (this.state.hasError && !this.props.ignore) {
+    if (this.state.hasError) {
       // 你可以自定义降级后的 UI 并渲染
       return <Exception500 />;
     }

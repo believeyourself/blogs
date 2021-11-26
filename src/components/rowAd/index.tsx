@@ -12,7 +12,7 @@ export default () => {
         <AdSense.Google
           client="ca-pub-2087076429727327"
           slot="9331479126"
-          style={{ display: 'inline-block', height: '90px' }}
+          style={{ display: 'block', height: '90px' }}
         />
       </div>
     </ErrorBoundary>
