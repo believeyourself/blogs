@@ -1,5 +1,12 @@
 export default [
   {
+    id: 24,
+    title: 'http强缓存和协商缓存',
+    description: '重温http缓存的基本原理及浏览器缓存流程。',
+    tags: ['http缓存', '强缓存', '协商缓存'],
+    date: '2021-11-29',
+  },
+  {
     id: 23,
     title: 'husky7 add hook命令不起作用问题',
     description: '配置husky7时，husky add hook不起作用，没有正常添加hook',
