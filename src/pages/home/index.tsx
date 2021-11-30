@@ -3,8 +3,8 @@
  * @version:
  * @Author: lizejun
  * @Date: 2021-05-26 13:27:33
- * @LastEditors: lizejun
- * @LastEditTime: 2021-06-15 10:55:30
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2021-11-30 19:18:29
  */
 import styles from './index.less';
 import blogs from '../../../data/blogs';
@@ -166,7 +166,7 @@ export default function Blogs() {
                 七牛云 - 每月10个G的免费对象存储
               </a>
               <a href="https://amazonaws.cn" rel="nofollow">
-                亚马逊中国 - 新用户一年免费套餐，多种服务可用
+                亚马逊中国 - 新用户多种服务一年免费套餐
               </a>
             </div>
           </AntdCard>
@@ -176,7 +176,7 @@ export default function Blogs() {
                 href="https://strapi.io/documentation/developer-docs/latest/getting-started/introduction.html"
                 rel="nofollow"
               >
-                strapi - 自托管免费开源
+                strapi - 自托管、免费、开源
               </a>
             </div>
           </AntdCard>
