@@ -112,10 +112,52 @@ export default [
     category: '开源项目',
     list: [
       {
-        title: 'Clarity',
+        title: 'React Location',
         description:
-          '一个行为分析库，它使用 dom 突变和用户交互来生成聚合见解。Clarity 是一款免费且易于使用的工具，可捕捉真实用户如何实际使用您的网站。设置很简单，您将在几分钟内开始获取数据。',
-        url: 'https://github.com/microsoft/clarity',
+          '基于 React 的框架，用于构建由 Shopify 驱动的动态自定义店面。',
+        url: 'https://github.com/tannerlinsley/react-location',
+      },
+      {
+        title: 'Programming Fonts',
+        description:
+          '在浏览器中在线测试驱动编程字体。所有字体都集中在一个地方。',
+        url: 'https://github.com/braver/programmingfonts',
+      },
+      {
+        title: 'Hieroglyphy',
+        description:
+          '用于将字符串、数字和脚本转换为 ()[]{}+! 的等效序列的工具和 javascript 库！在浏览器中运行的字符。',
+        url: 'https://github.com/alcuadrado/hieroglyphy',
+      },
+      {
+        title: 'next-cms-ghost',
+        description:
+          '使用 Next.js 和 Ghost CMS 发布快速的博客。',
+        url: 'https://github.com/styxlab/next-cms-ghost',
+      },
+      {
+        title: 'just',
+        description:
+          '一个只做一件事的无依赖 JavaScript 函数库。',
+        url: 'https://github.com/angus-c/just',
+      },
+      {
+        title: 'free-programming-books',
+        description:
+          '免费可用编程书籍列表，它已经成长为GitHub最受欢迎的存储库之一。',
+        url: 'https://github.com/EbookFoundation/free-programming-books',
+      },
+      {
+        title: 'budibase',
+        description:
+          'Budibase 是一个开源的低代码平台，用于在几分钟内创建内部应用程序。支持 PostgreSQL, MySQL, MSSQL, MongoDB, Rest API, Docker, K8s 🚀',
+        url: 'https://github.com/Budibase/budibase',
+      },
+      {
+        title: 'lazygit',
+        description:
+          'git 命令的简单终端用户界面。',
+        url: 'https://github.com/jesseduffield/lazygit',
       },
       {
         title: 'OpenUI5',

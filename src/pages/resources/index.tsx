@@ -3,8 +3,8 @@
  * @version:
  * @Author: lizejun
  * @Date: 2021-05-26 13:27:33
- * @LastEditors: lizejun
- * @LastEditTime: 2021-06-15 10:55:30
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2021-12-01 09:13:00
  */
 import styles from './index.less';
 import records from '../../../data/resource';
@@ -68,7 +68,7 @@ export default function Resources() {
         <Alert
           closable
           type="warning"
-          message="更新30本js相关PDF电子书 - 2021-11-20日更新"
+          message="更新开源项目列表 - 2021-12-01日更新"
         />
         {resources}
       </Space>

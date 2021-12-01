@@ -3,8 +3,8 @@
  * @version:
  * @Author: lizejun
  * @Date: 2021-05-26 13:33:28
- * @LastEditors: lizejun
- * @LastEditTime: 2021-06-09 10:39:23
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2021-12-01 09:10:48
  */
 export default [
   {
@@ -85,6 +85,12 @@ export default [
         description: '前端面试真题，会80%直接进大厂副本',
         url:
           'https://vjyd1gg9jl.feishu.cn/base/app4Dlc49N1Z9e4LrAoZ36lPMNi?from=from_copylink',
+      },
+      {
+        title: 'coding-interview-university',
+        description: '软件工程师的完整计算机科学学习计划。',
+        url:
+          'https://stargazing.dev/projects/jwasham/project/coding-interview-university',
       },
     ],
   },

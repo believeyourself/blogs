@@ -3,15 +3,14 @@
  * @version:
  * @Author: lizejun
  * @Date: 2021-05-26 13:27:33
- * @LastEditors: lizejun
- * @LastEditTime: 2021-06-15 10:55:30
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2021-12-01 09:19:14
  */
 import styles from './index.less';
 import SiteHeader from '@/components/siteHeader';
 import { Card as AntCard, Space, Row, Col } from 'antd';
 import source from '../../../../data/topics/react';
 import Card from '@/components/card';
-import SquareAd from '@/components/squareAd';
 import blogs from '../../../../data/blogs';
 import reactComponents from '../../../../data/topics/react/components';
 import NavLink from '@/components/navLink';
