@@ -374,4 +374,22 @@ export default [
       },
     ],
   },
+  {
+    id: 'play',
+    category: '划水摸鱼',
+    sites: [
+      {
+        title: '去看吧',
+        description:
+          '免費動漫网 - 去看吧_耽美動漫_高清動漫_无修动漫_完整版免费在线播放。',
+        url: 'https://www.k6dm.com/',
+      },
+      {
+        title: '努努影院',
+        description:
+          '努努影院每天搜集互联网最新电影和电视剧，为广大用户免费提供无广告在线观看电影和电视剧服务，及时收录最新、最热、最全的电影大片,高清正版免费看。',
+        url: 'https://www.nunuyy.top/',
+      },
+    ],
+  },
 ];

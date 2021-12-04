@@ -50,6 +50,13 @@ class App extends React.Component {
             </NavLink>
             <NavLink
               activeClassName={styles.active}
+              to={'/sites'}
+              className={styles.item}
+            >
+              网址
+            </NavLink>
+            <NavLink
+              activeClassName={styles.active}
               to={'/resources'}
               className={styles.item}
             >

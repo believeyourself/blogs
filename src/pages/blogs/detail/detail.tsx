@@ -3,7 +3,6 @@ import marked from 'marked';
 import { Divider, Tag } from 'antd';
 import blogs from '../../../../data/blogs';
 import SiteHeader from '@/components/siteHeader';
-import SideAd from '@/components/sideAd';
 import NavLink from '@/components/navLink';
 import RowAd from '@/components/rowAd';
 
