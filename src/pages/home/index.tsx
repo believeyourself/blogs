@@ -133,48 +133,59 @@ export default function Blogs() {
         <div className={styles.free_resource}>
           <AntdCard title="API接口">
             <div className={styles.resource_item}>
-              <a href="https://www.juhe.cn/docs"
-                target="_blank" rel="nofollow">
+              <a href="https://www.juhe.cn/docs" target="_blank" rel="nofollow">
                 聚合数据 - 部分接口数据免费
               </a>
-              <a href="https://open.saintic.com/openapi"
-                target="_blank" rel="nofollow">
+              <a
+                href="https://open.saintic.com/openapi"
+                target="_blank"
+                rel="nofollow"
+              >
                 saintic - OpenApi
               </a>
-              <a href="https://www.juhe.cn/docs"
-                target="_blank" rel="nofollow">
+              <a href="https://www.juhe.cn/docs" target="_blank" rel="nofollow">
                 开放API - 热搜，生活，安全类免费接口
               </a>
             </div>
           </AntdCard>
           <AntdCard title="埋点统计">
             <div className={styles.resource_item}>
-              <a href="https://analytics.google.com/"
-                target="_blank" rel="nofollow">
+              <a
+                href="https://analytics.google.com/"
+                target="_blank"
+                rel="nofollow"
+              >
                 Google分析 - 网站统计分析
               </a>
-              <a href="https://www.aldwx.com/index"
-                target="_blank" rel="nofollow">
+              <a
+                href="https://www.aldwx.com/index"
+                target="_blank"
+                rel="nofollow"
+              >
                 阿拉丁 - 小程序智能数据平台
               </a>
-              <a href="https://tongji.baidu.com/"
-                target="_blank" rel="nofollow">
+              <a
+                href="https://tongji.baidu.com/"
+                target="_blank"
+                rel="nofollow"
+              >
                 百度统计 - 网站、移动统计，用户行为分析
               </a>
-              <a href="https://www.umeng.com/"
-                target="_blank" rel="nofollow">
+              <a href="https://www.umeng.com/" target="_blank" rel="nofollow">
                 友盟+ - 统计分析、社会化分享、性能监控、消息推送
               </a>
             </div>
           </AntdCard>
           <AntdCard title="云服务">
             <div className={styles.resource_item}>
-              <a href="https://s.qiniu.com/JzIJFv"
-                target="_blank" rel="nofollow">
+              <a
+                href="https://s.qiniu.com/JzIJFv"
+                target="_blank"
+                rel="nofollow"
+              >
                 七牛云 - 每月10个G的免费对象存储
               </a>
-              <a href="https://amazonaws.cn" 
-                target="_blank" rel="nofollow">
+              <a href="https://amazonaws.cn" target="_blank" rel="nofollow">
                 亚马逊中国 - 新用户多种服务一年免费套餐
               </a>
             </div>
@@ -205,6 +216,9 @@ export default function Blogs() {
           </NavLink>
           <NavLink className={styles.topic} to={'/topics/node'}>
             Node
+          </NavLink>
+          <NavLink className={styles.topic} to={'/topics/vscode'}>
+            Vscode 插件
           </NavLink>
         </div>
         <Title

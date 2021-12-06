@@ -10,19 +10,16 @@ import styles from './index.less';
 import SiteHeader from '@/components/siteHeader';
 import { Card as AntCard, Space, Alert } from 'antd';
 import SideAd from '@/components/sideAd';
-import source from '../../../../data/topics/react';
+import source from '../../../../data/topics/vscode';
 import Card from '@/components/card';
-import reactComponents from '../../../../data/topics/react/components';
 import NavLink from '@/components/navLink';
 
 export default function Resources() {
-  const { videos, codes } = source;
-
   return (
     <>
       <SiteHeader
-        title="React文档，React组件，React教程，React开源项目"
-        keywords="React文档，React教程，React开源项目,React组件"
+        title="VS code必备前端插件，你值得拥有！"
+        keywords="前端，IDE,VS code"
         description="React文档、教程、开源项目,组件，助力学习掌握React,提升React开发效率"
       />
       <SideAd />
@@ -30,7 +27,7 @@ export default function Resources() {
         <Alert
           message={
             <p>
-              vscode插件，持续更新中，欢迎向我们
+              vscode必备前端插件，你值得拥有！
               <NavLink target="_blank" to="/aboutUs">
                 留言
               </NavLink>
@@ -40,7 +37,7 @@ export default function Resources() {
           closable
           type="success"
         />
-        <AntCard title="全部插件">
+        <AntCard>
           <div className={styles.doc}></div>
         </AntCard>
       </Space>

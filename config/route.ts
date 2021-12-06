@@ -57,7 +57,7 @@ const route: any = [
       },
       {
         title: 'vscode插件',
-        path: '/topics/vscode/:page',
+        path: '/topics/vscode',
         component: '@/pages/topics/vscode',
       },
       {
