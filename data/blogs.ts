@@ -1,5 +1,12 @@
 export default [
   {
+    id: 26,
+    title: 'umi antd中报错 load component failed Error: Module "./antd/es/drawer/style" does not exist in container',
+    description: '第一次引入antd Drawer组件出错，提示 load component failed Error: Module "./antd/es/drawer/style" does not exist in container',
+    tags: ['react', 'umi', 'JSX', 'MDX'],
+    date: '2021-12-07',
+  },
+  {
     id: 25,
     title: '使用MDX在md文件中解析React组件',
     description: '使用 MDX 实现 md 与 React JSX结合来丰富我们的展现形式',
