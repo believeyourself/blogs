@@ -218,7 +218,7 @@ export default function Blogs() {
             Node
           </NavLink>
           <NavLink className={styles.topic} to={'/topics/vscode'}>
-            Vscode 插件
+            VS Code 插件
           </NavLink>
         </div>
         <Title
