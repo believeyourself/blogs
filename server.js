@@ -1,3 +1,9 @@
+/*
+ * @Date: 2021-09-29 17:27:38
+ * @LastEditors: lzj
+ * @LastEditTime: 2021-12-09 15:21:32
+ * @FilePath: \qianduan.shop\server.js
+ */
 const express = require('express');
 const Stream = require('stream');
 const app = express();
@@ -32,7 +38,7 @@ app.use(async (req, res) => {
       res.end();
     });
   } else {
-    res.send(res);
+    res.send();
   }
 });
 app.listen(8080);
