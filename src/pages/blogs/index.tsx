@@ -3,8 +3,8 @@
  * @version:
  * @Author: lizejun
  * @Date: 2021-05-26 13:27:33
- * @LastEditors: lizejun
- * @LastEditTime: 2021-06-15 10:55:30
+ * @LastEditors: lzj
+ * @LastEditTime: 2021-12-09 17:53:52
  */
 import styles from './index.less';
 import blogs from '../../../data/blogs';
@@ -75,6 +75,9 @@ export default function Blogs() {
           <NavLink className={styles.topic} to={'/topics/node'}>
             Node 专题
           </NavLink>
+          <NavLink className={styles.topic} to={'/topics/vscode'}>
+            VS Code 插件
+          </NavLink>
         </Carousel>
         <Divider />
         <TagSelect
@@ -91,6 +94,7 @@ export default function Blogs() {
           <TagSelect.Option value="js">JS</TagSelect.Option>
           <TagSelect.Option value="SEO">SEO</TagSelect.Option>
           <TagSelect.Option value="mysql">Mysql</TagSelect.Option>
+          <TagSelect.Option value="aws">AWS</TagSelect.Option>
         </TagSelect>
         <Divider />
         {records}
