@@ -3,8 +3,8 @@
  * @version:
  * @Author: lizejun
  * @Date: 2021-05-26 13:33:28
- * @LastEditors: Please set LastEditors
- * @LastEditTime: 2021-12-01 09:10:48
+ * @LastEditors: lzj
+ * @LastEditTime: 2021-12-10 15:48:55
  */
 export default [
   {
@@ -221,6 +221,12 @@ export default [
         description:
           '优秀的，完善的接口测试工具。能够高效的帮助后端开发人员独立进行接口测试。',
         url: 'https://www.postman.com/',
+      },
+      {
+        title: 'apifox',
+        description:
+          'API 文档、API 调试、API Mock、API 自动化测试。Apifox = Postman + Swagger + Mock + JMeter',
+        url: 'https://www.apifox.cn/',
       },
       {
         title: 'Browsersync',
