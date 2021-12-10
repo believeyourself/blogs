@@ -1,5 +1,12 @@
 export default [
   {
+    id: 28,
+    title: 'AWS EBS 与 SSD 的区别',
+    description: '介绍父组件通过 Refs 引用子组件，在不同情况下的用法。',
+    tags: ['aws', '磁盘', 'EBS', 'SSD'],
+    date: '2021-12-10',
+  },
+  {
     id: 27,
     title: 'React 父组件如何调用子组件方法',
     description: '介绍父组件通过 Refs 引用子组件，在不同情况下的用法。',
@@ -8,8 +15,10 @@ export default [
   },
   {
     id: 26,
-    title: 'umi antd中报错 load component failed Error: Module "./antd/es/drawer/style" does not exist in container',
-    description: '第一次引入antd Drawer组件出错，提示 load component failed Error: Module "./antd/es/drawer/style" does not exist in container',
+    title:
+      'umi antd中报错 load component failed Error: Module "./antd/es/drawer/style" does not exist in container',
+    description:
+      '第一次引入antd Drawer组件出错，提示 load component failed Error: Module "./antd/es/drawer/style" does not exist in container',
     tags: ['react', 'umi', 'JSX', 'MDX'],
     date: '2021-12-07',
   },
