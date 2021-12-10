@@ -227,6 +227,31 @@ export default function Blogs() {
           description={'更多项目 >>'}
         />
         <Row gutter={[10, 10]}>{projectRecords}</Row>
+        <Title title="求职招聘" />
+        <div
+          style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'space-between',
+          }}
+        >
+          <a className={styles.job} href="" target="_blank" rel="follow">
+            <span>Boss直聘</span>
+            <p>专业的计算机人才招聘平台</p>
+          </a>
+          <a className={styles.job} href="" target="_blank" rel="follow">
+            <span>拉勾网</span>
+            <p>一家专为互联网从业者提供工作机会的招聘网站</p>
+          </a>
+          <a className={styles.job} href="" target="_blank" rel="follow">
+            <span>牛客网</span>
+            <p>集笔面试系统、题库、社群交流于一体</p>
+          </a>
+          <a className={styles.job} href="" target="_blank" rel="follow">
+            <span>LeetCode 力扣</span>
+            <p>全球极客挚爱的技术成长平台官方</p>
+          </a>
+        </div>
         <Title title="博客随笔" more="/blogs" description={'更多文章 >>'} />
         {blogRecords}
       </div>
