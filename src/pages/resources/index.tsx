@@ -17,18 +17,19 @@ export default function Resources() {
   const resources: any[] = [];
   records.forEach((item) => {
     let categoryList: any[] = [];
-    const list: any[] = item.list?.splice(0, 6) || [];
+    const list: any[] = item.list?.slice(0, 6) || [];
     if (item.category === 'PDF') {
       categoryList = list.map((pdf: any) => {
         return (
-          <a
+          <NavLink
             className={styles.pdf}
             key={pdf.title}
             target="_blank"
-            href={`https://cloud.qianduan.shop/${pdf.title}`}
+            // href={`https://cloud.qianduan.shop/${pdf.title}`}
+            to={`/ebooks/${pdf.title}`}
           >
             {pdf.title}
-          </a>
+          </NavLink>
         );
       });
     } else {
