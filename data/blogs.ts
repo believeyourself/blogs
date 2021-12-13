@@ -1,9 +1,10 @@
 export default [
   {
     id: 28,
-    title: 'AWS EBS 与 SSD 的区别',
-    description: '介绍父组件通过 Refs 引用子组件，在不同情况下的用法。',
-    tags: ['aws', '磁盘', 'EBS', 'SSD'],
+    title: 'AWS EC2 扩展 EBS 文件系统',
+    description:
+      'AWS EC2 磁盘空间不够用，常常被日志占满导致服务中断，此文记录 EC2 扩展 EBS 文件系统的操作步骤。',
+    tags: ['aws', 'EC2', '磁盘', 'EBS'],
     date: '2021-12-10',
   },
   {
