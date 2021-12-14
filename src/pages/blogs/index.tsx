@@ -95,6 +95,7 @@ export default function Blogs() {
           <TagSelect.Option value="SEO">SEO</TagSelect.Option>
           <TagSelect.Option value="mysql">Mysql</TagSelect.Option>
           <TagSelect.Option value="aws">AWS</TagSelect.Option>
+          <TagSelect.Option value="doris">Doris</TagSelect.Option>
         </TagSelect>
         <Divider />
         {records}

@@ -1,5 +1,21 @@
 export default [
   {
+    id: 30,
+    title: 'Doris-1.4.2 Linux 直接编译问题记录',
+    description:
+      '在 AWS 上的 EC2 直接编译 Doris，本文主要记录按官方文档操作直接编译过程中遇到的问题，方便查询。',
+    tags: ['doris', 'aws', 'EC2'],
+    date: '2021-12-14',
+  },
+  {
+    id: 29,
+    title: 'Doris 部署，启动 FE 报错：',
+    description:
+      '错误提示：java.io.IOException: the self host 172.31.26.7 does not equal to the host in ROLE file 172.17.0.1. You need to set “priority_networks” config in fe.conf to match the host 172.17.0.1',
+    tags: ['doris', 'fe', 'aws', 'EC2'],
+    date: '2021-12-14',
+  },
+  {
     id: 28,
     title: 'AWS EC2 扩展 EBS 文件系统',
     description:

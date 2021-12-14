@@ -21,8 +21,8 @@ export default defineConfig({
     'react-dom': 'window.ReactDOM',
   },
   scripts: [
-    'https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js',
-    'https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js',
+    'https://cloud.qianduan.shop/react.min.js',
+    'https://cloud.qianduan.shop/react-dom.min.js',
   ],
   chainWebpack: function (config, { webpack }) {
     config.merge({
