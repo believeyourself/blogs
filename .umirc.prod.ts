@@ -1,7 +1,7 @@
 /*
  * @Date: 2021-09-22 08:59:01
  * @LastEditors: lzj
- * @LastEditTime: 2021-12-09 15:31:51
+ * @LastEditTime: 2021-12-14 09:14:24
  * @FilePath: \qianduan.shop\.umirc.prod.ts
  */
 import { defineConfig } from 'umi';
@@ -21,8 +21,8 @@ export default defineConfig({
     'react-dom': 'window.ReactDOM',
   },
   scripts: [
-    'https://unpkg.com/react@17.0.2/umd/react.production.min.js',
-    'https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js',
   ],
   chainWebpack: function (config, { webpack }) {
     config.merge({
