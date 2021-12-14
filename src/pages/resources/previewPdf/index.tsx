@@ -52,7 +52,8 @@ export default () => {
         <title>{path.split('.')[0]}</title>
       </SiteHeader>
       <embed
-        src={`https://cloud.qianduan.shop/${path}`}
+        //src={`https://cloud.qianduan.shop/${path}`}
+        src={`/ebooks/${path}`}
         type="application/pdf"
         style={{ width: '100vw', height: '100vh' }}
       ></embed>

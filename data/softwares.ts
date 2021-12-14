@@ -1,6 +1,15 @@
 export default {
   pc: [
     {
+      id: 5,
+      title: 'Apifox',
+      img: '5.png',
+      description:
+        'Apifox = Postman + Swagger + Mock + JMeter。集接口文档工具、接口Mock工具、接口自动化测试工具、接口调试工具于一体，提升 10 倍研发效率。是最好用的API文档工具，API自动化测试工具，API Mock工具，接口文档管理工具，接口文档生成工具。',
+      date: '2021-12-11',
+      tags: ['API','文档','调试',"Mock","自动化测试"],
+    },
+    {
       id: 4,
       title: '推荐几款PC端的GIF录制工具',
       img: '4.jpg',

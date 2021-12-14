@@ -25,14 +25,15 @@ export default function More() {
   if (id === 'PDF') {
     categoryList = list.map((pdf: any) => {
       return (
-        <a
+        <NavLink
           className={styles.pdf}
           key={pdf.title}
           target="_blank"
-          href={`https://cloud.qianduan.shop/${pdf.title}`}
+          // href={`https://cloud.qianduan.shop/${pdf.title}`}
+          to={`/ebooks/${pdf.title}`}
         >
           {pdf.title}
-        </a>
+        </NavLink>
       );
     });
   } else {
