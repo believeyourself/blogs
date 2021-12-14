@@ -22,7 +22,6 @@ export default () => {
   const { type = ToolType.jsonTree } = useParams<{
     type: string | undefined;
   }>();
-  console.log(type);
   return (
     <>
       <Helmet>

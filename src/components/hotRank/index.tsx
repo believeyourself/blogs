@@ -69,6 +69,7 @@ function HotRank() {
       </Space>
       <Divider />
       <SquareAd />
+      <Divider />
       <SquareAd />
     </div>
   );

@@ -8,11 +8,11 @@ export default () => {
 
   return (
     <ErrorBoundary ignore={true}>
-      <div style={{ textAlign: 'center' }}>
+      <div style={{ textAlign: 'center', height: '300px' }}>
         <AdSense.Google
           client="ca-pub-2087076429727327"
           slot="7022357395"
-          style="display:inline-block;width:250px;height:300px"
+          style={{ display: 'inline-block', width: '250px', height: '300px' }}
         />
       </div>
     </ErrorBoundary>

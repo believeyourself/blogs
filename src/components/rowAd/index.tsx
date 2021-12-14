@@ -8,13 +8,16 @@ export default () => {
 
   return (
     <ErrorBoundary ignore={true}>
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
-        <AdSense.Google
-          client="ca-pub-2087076429727327"
-          slot="9331479126"
-          style={{ display: 'block', height: '90px' }}
-        />
-      </div>
+      <AdSense.Google
+        client="ca-pub-2087076429727327"
+        slot="9331479126"
+        style={{
+          display: 'block',
+          textAlign: 'center',
+          width: '100%',
+          height: '90px',
+        }}
+      />
     </ErrorBoundary>
   );
 };

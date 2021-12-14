@@ -21,15 +21,6 @@ class App extends React.Component {
   render() {
     return (
       <ErrorBoundary>
-        <Helmet>
-          {process.env.REACT_APP_ENV === 'production' && (
-            <script
-              data-ad-client="ca-pub-2087076429727327"
-              async
-              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-            ></script>
-          )}
-        </Helmet>
         <header className={styles.header}>
           <img alt="前端网" className={styles.title} src={logo} />
           <div className={styles.slogan}></div>
@@ -39,10 +30,6 @@ class App extends React.Component {
             <NavLink
               activeClassName={styles.active}
               exact={true}
-              isActive={(match, { pathName }) => {
-                console.log(match, pathName);
-                return false;
-              }}
               to={'/'}
               className={styles.item}
             >
