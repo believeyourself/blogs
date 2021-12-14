@@ -3,8 +3,8 @@
  * @version:
  * @Author: lizejun
  * @Date: 2021-05-26 13:27:33
- * @LastEditors: Please set LastEditors
- * @LastEditTime: 2021-12-01 09:13:00
+ * @LastEditors: lzj
+ * @LastEditTime: 2021-12-14 09:01:45
  */
 import styles from './index.less';
 import records from '../../../data/resource';
@@ -68,7 +68,7 @@ export default function Resources() {
         <Alert
           closable
           type="warning"
-          message="更新开源项目列表 - 2021-12-01日更新"
+          message="推荐 12 个好用的 React 的开源项目！ - 2021-12-14日更新"
         />
         {resources}
       </Space>
