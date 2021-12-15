@@ -3,8 +3,8 @@
  * @version:
  * @Author: lizejun
  * @Date: 2021-05-26 13:27:33
- * @LastEditors: Please set LastEditors
- * @LastEditTime: 2021-12-01 09:14:57
+ * @LastEditors: lzj
+ * @LastEditTime: 2021-12-15 17:05:01
  */
 import styles from './index.less';
 import blogs from '../../../data/blogs';
@@ -205,6 +205,13 @@ export default function Blogs() {
                 rel="nofollow"
               >
                 next-cms-ghost - 发布快速的博客
+              </a>
+              <a
+                href="https://github.com/facebook/docusaurus/tree/main/website"
+                target="_blank"
+                rel="nofollow"
+              >
+                docusaurus - 构建以内容为核心、Markdown 驱动的网站。
               </a>
             </div>
           </AntdCard>
