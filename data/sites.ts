@@ -299,7 +299,8 @@ export default [
       },
       {
         title: '网站诊断分析',
-        description: '在线图片压缩工具',
+        description:
+          '一站式的网站、网络运维工具，可自助诊断域名、dns、网站、备案等建站中常见问题',
         url:
           'https://zijian.aliyun.com/?spm=a2c1d.8251892.content.2.39d55b76A9OHww',
       },
