@@ -1,5 +1,13 @@
 export default [
   {
+    id: 31,
+    title: 'Doris be运行一段时间后异常断开连接',
+    description:
+      '错误提示：terminate called after throwing an instance of "std::bad_alloc"',
+    tags: ['doris', 'be',"OOM"],
+    date: '2021-12-16',
+  },
+  {
     id: 30,
     title: 'Doris-1.4.2 Linux 直接编译问题记录',
     description:
