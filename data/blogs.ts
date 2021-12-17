@@ -1,5 +1,13 @@
 export default [
   {
+    id: 32,
+    title: 'Doris 启动 BE 报错：file descriptors limit is too small',
+    description:
+      '错误提示：file descriptors limit is too small',
+    tags: ['doris', 'be',"file descriptors limit"],
+    date: '2021-12-17',
+  },
+  {
     id: 31,
     title: 'Doris be运行一段时间后异常断开连接',
     description:
