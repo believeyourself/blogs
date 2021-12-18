@@ -68,7 +68,7 @@ function HotRank() {
       </Space>
       <Divider />
       <p className={style.title}>微信公众号</p>
-      <img alt="前端微信公众号" src="static/images/weixin.jpg" />
+      <img alt="前端微信公众号" src="/static/images/weixin.jpg" />
       <Divider />
       <SquareAd />
       <Divider />

@@ -7,6 +7,7 @@
  * @LastEditTime: 2021-12-01 09:19:14
  */
 import styles from './index.less';
+import { useState } from 'react';
 import SiteHeader from '@/components/siteHeader';
 import { Card as AntCard, Space, Row, Col } from 'antd';
 import source from '../../../../data/topics/react';
@@ -15,6 +16,7 @@ import blogs from '../../../../data/blogs';
 import reactComponents from '../../../../data/topics/react/components';
 import NavLink from '@/components/navLink';
 import UIComonent from '@/components/uiComonent';
+import 'react-photo-view/dist/index.css';
 
 const reactBlogs = blogs.map((item: any) => {
   if (
