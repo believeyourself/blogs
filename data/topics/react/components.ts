@@ -1,5 +1,19 @@
 export default [
   {
+    title: 'react-select',
+    description: 'Select组件',
+    category: 'Select',
+    image: '',
+    github: 'https://github.com/JedWatson/react-select',
+  },
+  {
+    title: 'react-virtualized',
+    description: '虚拟列表',
+    category: '列表',
+    image: '/static/images/react_virtulized.png',
+    github: 'https://github.com/bvaughn/react-virtualized',
+  },
+  {
     title: 'react-pdf',
     description: 'pdf预览',
     category: 'pdf预览',

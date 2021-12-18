@@ -113,26 +113,12 @@ export default [
     list: [
       {
         title: 'slate',
-        description:
-          '用于构建富文本编辑器的完全可定制的框架。',
+        description: '用于构建富文本编辑器的完全可定制的框架。',
         url: 'https://github.com/ianstormtaylor/slate',
       },
       {
-        title: 'react-virtualized',
-        description:
-          'React 组件可有效呈现大型列表和表格数据。',
-        url: 'https://github.com/bvaughn/react-virtualized',
-      },
-      {
-        title: 'react-select',
-        description:
-          'React.js 的 Select 组件',
-        url: 'https://github.com/JedWatson/react-select',
-      },
-      {
         title: 'react-query',
-        description:
-          '在 React 中获取、缓存和更新异步数据的钩子。',
+        description: '在 React 中获取、缓存和更新异步数据的钩子。',
         url: 'https://github.com/tannerlinsley/react-query',
       },
       {
@@ -143,8 +129,7 @@ export default [
       },
       {
         title: 'awesome-react-components',
-        description:
-          'React 组件和库的精选列表。',
+        description: 'React 组件和库的精选列表。',
         url: 'https://github.com/brillout/awesome-react-components',
       },
       {
@@ -173,8 +158,7 @@ export default [
       },
       {
         title: 'react-use',
-        description:
-          '必不可少的 React Hooks 集合. 移植 libreact。',
+        description: '必不可少的 React Hooks 集合. 移植 libreact。',
         url: 'https://github.com/streamich/react-use',
       },
       {
@@ -197,14 +181,12 @@ export default [
       },
       {
         title: 'next-cms-ghost',
-        description:
-          '使用 Next.js 和 Ghost CMS 发布快速的博客。',
+        description: '使用 Next.js 和 Ghost CMS 发布快速的博客。',
         url: 'https://github.com/styxlab/next-cms-ghost',
       },
       {
         title: 'just',
-        description:
-          '一个只做一件事的无依赖 JavaScript 函数库。',
+        description: '一个只做一件事的无依赖 JavaScript 函数库。',
         url: 'https://github.com/angus-c/just',
       },
       {
@@ -221,8 +203,7 @@ export default [
       },
       {
         title: 'lazygit',
-        description:
-          'git 命令的简单终端用户界面。',
+        description: 'git 命令的简单终端用户界面。',
         url: 'https://github.com/jesseduffield/lazygit',
       },
       {

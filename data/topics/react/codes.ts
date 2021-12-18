@@ -8,75 +8,55 @@
  */
 export default [
   {
-        title: 'slate',
-        description:
-          '用于构建富文本编辑器的完全可定制的框架。',
-        url: 'https://github.com/ianstormtaylor/slate',
-      },
-      {
-        title: 'react-virtualized',
-        description:
-          'React 组件可有效呈现大型列表和表格数据。',
-        url: 'https://github.com/bvaughn/react-virtualized',
-      },
-      {
-        title: 'react-select',
-        description:
-          'React.js 的 Select 组件',
-        url: 'https://github.com/JedWatson/react-select',
-      },
-      {
-        title: 'react-query',
-        description:
-          '在 React 中获取、缓存和更新异步数据的钩子。',
-        url: 'https://github.com/tannerlinsley/react-query',
-      },
-      {
-        title: 'react-hook-form',
-        description:
-          '用于表单状态管理和验证的 React Hooks (Web + React Native)。',
-        url: 'https://github.com/react-hook-form/react-hook-form',
-      },
-      {
-        title: 'awesome-react-components',
-        description:
-          'React 组件和库的精选列表。',
-        url: 'https://github.com/brillout/awesome-react-components',
-      },
-      {
-        title: 'docusaurus',
-        description:
-          '快速构建以内容为核心的最佳网站。Markdown 驱动、使用 React 构建、翻译就绪。',
-        url: 'https://github.com/facebook/docusaurus',
-      },
-      {
-        title: 'formik',
-        description:
-          'Formik 是世界上最流行的 React 和 React Native 开源表单库。',
-        url: 'https://github.com/jaredpalmer/formik',
-      },
-      {
-        title: 'preact',
-        description:
-          '具有相同现代 API 的快速 3kB React 替代方案。组件和虚拟 DOM。',
-        url: 'https://github.com/preactjs/preact',
-      },
-      {
-        title: 'gatsby',
-        description:
-          'Gatsby是一个基于反应的自由和开源框架，帮助开发人员构建炽热的快速网站和应用程序。它将动态呈现的网站的控制和可扩展性与静态站点生成的速度结合起来，创建了一个全新的可能性网络。',
-        url: 'https://github.com/gatsbyjs/gatsby',
-      },
-      {
-        title: 'react-use',
-        description:
-          '必不可少的 React Hooks 集合. 移植 libreact。',
-        url: 'https://github.com/streamich/react-use',
-      },
+    title: 'slate',
+    description: '用于构建富文本编辑器的完全可定制的框架。',
+    url: 'https://github.com/ianstormtaylor/slate',
+  },
+  {
+    title: 'react-query',
+    description: '在 React 中获取、缓存和更新异步数据的钩子。',
+    url: 'https://github.com/tannerlinsley/react-query',
+  },
+  {
+    title: 'react-hook-form',
+    description: '用于表单状态管理和验证的 React Hooks (Web + React Native)。',
+    url: 'https://github.com/react-hook-form/react-hook-form',
+  },
+  {
+    title: 'awesome-react-components',
+    description: 'React 组件和库的精选列表。',
+    url: 'https://github.com/brillout/awesome-react-components',
+  },
+  {
+    title: 'docusaurus',
+    description:
+      '快速构建以内容为核心的最佳网站。Markdown 驱动、使用 React 构建、翻译就绪。',
+    url: 'https://github.com/facebook/docusaurus',
+  },
+  {
+    title: 'formik',
+    description: 'Formik 是世界上最流行的 React 和 React Native 开源表单库。',
+    url: 'https://github.com/jaredpalmer/formik',
+  },
+  {
+    title: 'preact',
+    description: '具有相同现代 API 的快速 3kB React 替代方案。组件和虚拟 DOM。',
+    url: 'https://github.com/preactjs/preact',
+  },
+  {
+    title: 'gatsby',
+    description:
+      'Gatsby是一个基于反应的自由和开源框架，帮助开发人员构建炽热的快速网站和应用程序。它将动态呈现的网站的控制和可扩展性与静态站点生成的速度结合起来，创建了一个全新的可能性网络。',
+    url: 'https://github.com/gatsbyjs/gatsby',
+  },
+  {
+    title: 'react-use',
+    description: '必不可少的 React Hooks 集合. 移植 libreact。',
+    url: 'https://github.com/streamich/react-use',
+  },
   {
     title: 'React Location',
-    description:
-      '基于 React 的框架，用于构建由 Shopify 驱动的动态自定义店面。',
+    description: '基于 React 的框架，用于构建由 Shopify 驱动的动态自定义店面。',
     url: 'https://github.com/tannerlinsley/react-location',
   },
   {

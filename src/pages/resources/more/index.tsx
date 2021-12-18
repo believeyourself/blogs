@@ -54,6 +54,7 @@ export default function More() {
         description="前端网，视频教程，电子书，PDF，开源项目，源码分享，React，Vue，Typescript，Egg，Node"
       />
       <AntCard
+        style={{ maxWidth: '100vw' }}
         extra={<NavLink to="/resources">返回</NavLink>}
         title={
           <h1 style={{ fontSize: '16px', fontWeight: 500 }}>

@@ -105,6 +105,9 @@ export default function Resources() {
             >
               semi-design
             </a>
+            <a target="_blank" href="https://remix.run/docs/en/v1">
+              remix
+            </a>
           </div>
         </AntCard>
         <AntCard title="React 组件">
