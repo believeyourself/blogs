@@ -1,5 +1,4 @@
 import style from './index.less';
-import NavLink from '../navLink';
 import { Divider, Space, Tag } from 'antd';
 import SquareAd from '../squareAd';
 
@@ -67,6 +66,9 @@ function HotRank() {
           />
         </a>
       </Space>
+      <Divider />
+      <p className={style.title}>微信公众号</p>
+      <img alt="前端微信公众号" src="static/images/weixin.jpg" />
       <Divider />
       <SquareAd />
       <Divider />

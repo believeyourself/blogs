@@ -128,6 +128,81 @@ export default function Blogs() {
             网站诊断分析
           </a>
         </div>
+        <Title title="学习平台" more="/sites" />
+        <div className={styles.sites}>
+          <a
+            className={styles.job}
+            href="https://www.runoob.com/"
+            target="_blank"
+            rel="nofollow"
+          >
+            <span>菜鸟教程</span>
+            <p>写的不仅是技术，更是梦想！</p>
+          </a>
+          <a
+            className={styles.job}
+            href="https://www.yiibai.com/"
+            target="_blank"
+            rel="nofollow"
+          >
+            <span>易百教程</span>
+            <p>专注IT教程与实例</p>
+          </a>
+          <a
+            className={styles.job}
+            href="https://www.w3school.com.cn/"
+            target="_blank"
+            rel="nofollow"
+          >
+            <span>W3School</span>
+            <p>全球最大的中文 WEB 技术教程！</p>
+          </a>
+          <a
+            className={styles.job}
+            href="https://www.imooc.com/"
+            target="_blank"
+            rel="nofollow"
+          >
+            <span>GitChat</span>
+            <p>IT知识分享平台</p>
+          </a>
+          <a
+            className={styles.job}
+            href="https://www.github.com/"
+            target="_blank"
+            rel="nofollow"
+          >
+            <span>Github</span>
+            <p>全球最大的开源代码共享社区</p>
+          </a>
+          <a
+            className={styles.job}
+            href="https://gitee.com/"
+            target="_blank"
+            rel="nofollow"
+          >
+            <span>Gitee</span>
+            <p>中国最大的开源代码共享社区</p>
+          </a>
+          <a
+            className={styles.job}
+            href="https://www.twle.cn/"
+            target="_blank"
+            rel="nofollow"
+          >
+            <span>简单教程</span>
+            <p>简单教程，简单编程</p>
+          </a>
+          <a
+            className={styles.job}
+            href="https://wiki.jikexueyuan.com/"
+            target="_blank"
+            rel="nofollow"
+          >
+            <span>极客学院</span>
+            <p>中国专业的IT职业在线教育平台</p>
+          </a>
+        </div>
         <Title title="开箱即用" />
         <Alert message="收集免费或有免费额度的资源！" closable />
         <div className={styles.free_resource}>
@@ -242,19 +317,39 @@ export default function Blogs() {
             justifyContent: 'space-between',
           }}
         >
-          <a className={styles.job} href="" target="_blank" rel="follow">
+          <a
+            className={styles.job}
+            href="https://www.zhipin.com/"
+            target="_blank"
+            rel="nofollow"
+          >
             <span>Boss直聘</span>
             <p>专业的计算机人才招聘平台</p>
           </a>
-          <a className={styles.job} href="" target="_blank" rel="follow">
+          <a
+            className={styles.job}
+            href="https://www.lagou.com/"
+            target="_blank"
+            rel="nofollow"
+          >
             <span>拉勾网</span>
             <p>一家专为互联网从业者提供工作机会的招聘网站</p>
           </a>
-          <a className={styles.job} href="" target="_blank" rel="follow">
+          <a
+            className={styles.job}
+            href="https://www.nowcoder.com/"
+            target="_blank"
+            rel="nofollow"
+          >
             <span>牛客网</span>
             <p>集笔面试系统、题库、社群交流于一体</p>
           </a>
-          <a className={styles.job} href="" target="_blank" rel="follow">
+          <a
+            className={styles.job}
+            href="https://leetcode-cn.com/https://leetcode-cn.com/"
+            target="_blank"
+            rel="nofollow"
+          >
             <span>LeetCode 力扣</span>
             <p>全球极客挚爱的技术成长平台官方</p>
           </a>
