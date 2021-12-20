@@ -30,6 +30,7 @@ export default (props: UIComponentProps) => {
       >
         <div className={styles.image} style={{ backgroundColor: color }}>
           <img
+            title="点击预览"
             onClick={(evt) => {
               setVisible(true);
               setImages([{ src: imgUrl }]);

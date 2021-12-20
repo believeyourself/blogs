@@ -5,6 +5,7 @@ import blogs from '../../../../data/blogs';
 import SiteHeader from '@/components/siteHeader';
 import NavLink from '@/components/navLink';
 import RowAd from '@/components/rowAd';
+import Share from 'social-share-react';
 
 marked.setOptions({
   // marked 设置
