@@ -1,3 +1,9 @@
+/*
+ * @Date: 2021-12-21 11:05:17
+ * @LastEditors: lzj
+ * @LastEditTime: 2021-12-21 13:33:31
+ * @FilePath: \qianduan.shop\src\pages\blogs\detail\detail.tsx
+ */
 import styles from './detail.less';
 import marked from 'marked';
 import { Divider, Tag } from 'antd';
@@ -5,7 +11,6 @@ import blogs from '../../../../data/blogs';
 import SiteHeader from '@/components/siteHeader';
 import NavLink from '@/components/navLink';
 import RowAd from '@/components/rowAd';
-import Share from 'social-share-react';
 
 marked.setOptions({
   // marked 设置
@@ -77,6 +82,7 @@ function BlogDetail(props: any) {
           dangerouslySetInnerHTML={{ __html: marked(content.default) }}
         />
         <div>{tags}</div>
+        <Divider />
         <Divider />
         <RowAd />
       </div>
