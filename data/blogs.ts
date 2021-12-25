@@ -1,10 +1,17 @@
 export default [
   {
+    id: 33,
+    title: 'Doris Stream Load 导入数据',
+    description:
+      '批量从 Kineses 中获取数据，选用 Stream Load 的导入方式向 Doris导入数据。',
+    tags: ['doris', 'aws', 'EC2'],
+    date: '2021-12-17',
+  },
+  {
     id: 32,
     title: 'Doris 启动 BE 报错：file descriptors limit is too small',
-    description:
-      '错误提示：file descriptors limit is too small',
-    tags: ['doris', 'be',"file descriptors limit"],
+    description: '错误提示：file descriptors limit is too small',
+    tags: ['doris', 'be', 'file descriptors limit'],
     date: '2021-12-17',
   },
   {
@@ -12,7 +19,7 @@ export default [
     title: 'Doris be运行一段时间后异常断开连接',
     description:
       '错误提示：terminate called after throwing an instance of "std::bad_alloc"',
-    tags: ['doris', 'be',"OOM"],
+    tags: ['doris', 'be', 'OOM'],
     date: '2021-12-16',
   },
   {

@@ -36,6 +36,16 @@ export default function More() {
         </NavLink>
       );
     });
+  } else if (id === 'video') {
+    categoryList = list.map((item: any) => {
+      item.description =
+        '由于网盘易被封禁，请关注右侧公众号(qianduan_lzj)后台回复教程名称获取资源。';
+      return (
+        <Col key={item.title} lg={12} md={12} sm={24} xs={24}>
+          <Card className={styles.category_list_item} {...item} />
+        </Col>
+      );
+    });
   } else {
     categoryList = list.map((item: any) => {
       return (

@@ -18,7 +18,7 @@ export default function Resources() {
   records.forEach((item) => {
     let categoryList: any[] = [];
     const list: any[] = item.list?.slice(0, 6) || [];
-    if (item.category === 'PDF') {
+    if (item.id === 'PDF') {
       categoryList = list.map((pdf: any) => {
         return (
           <NavLink
@@ -30,6 +30,16 @@ export default function Resources() {
           >
             {pdf.title}
           </NavLink>
+        );
+      });
+    } else if (item.id === 'video') {
+      categoryList = list.map((item: any) => {
+        item.description =
+          '由于网盘易被封禁，请关注右侧公众号(qianduan_lzj)后台回复教程名称获取资源。';
+        return (
+          <Col key={item.title} lg={12} md={12} sm={24} xs={24}>
+            <Card className={styles.category_list_item} {...item} />
+          </Col>
         );
       });
     } else {
@@ -69,7 +79,7 @@ export default function Resources() {
         <Alert
           closable
           type="warning"
-          message="推荐 12 个好用的 React 的开源项目！ - 2021-12-14日更新"
+          message="视频教程请到微信公众号回复教程名称获取！2021-12-24"
         />
         {resources}
       </Space>
