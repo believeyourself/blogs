@@ -5,7 +5,7 @@ export default [
     description:
       '批量从 Kineses 中获取数据，选用 Stream Load 的导入方式向 Doris导入数据。',
     tags: ['doris', 'aws', 'EC2'],
-    date: '2021-12-17',
+    date: '2021-12-24',
   },
   {
     id: 32,

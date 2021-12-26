@@ -73,7 +73,7 @@ export default function Blogs() {
       <SiteHeader
         title="首页 - React,Node,JavaScript,SEO"
         keywords="React，redux，react-router，JavaScript，js，SEO，css，node，前端开发，前端学习，前端博客，ant-design，dva"
-        description="致力于React前端开发和Node开发相关领域技术研究，深入分析技术基础原理，教程资源，开源项目，开发工具分享，包括但不限于JavaScript,css,React,node,webpack,umi,ant-design,dav"
+        description="致力于React前端开发和Node开发相关领域技术研究，深入分析技术基础原理，免费教程资源，免费开源项目，实用开发工具分享，包括但不限于JavaScript,css,React,node,webpack,umi,ant-design,dva"
       />
       <div className={styles.content}>
         <Title title="常用网址" more="/sites" description={'更多网址 >>'} />
