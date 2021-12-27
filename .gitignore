@@ -1,0 +1,45 @@
+# IDE
+.history
+.vscode
+
+# front dependencies
+/front/node_modules
+/front/npm-debug.log*
+/front/yarn-error.log
+/front/yarn.lock
+/front/package-lock.json
+
+# front production
+/front/dist
+
+# front misc
+/front/.DS_Store
+
+# umi
+/front/src/.umi
+/front/src/.umi-production
+/front/src/.umi-test
+/front/.env.local
+
+# server
+
+/server/logs/
+/server/npm-debug.log
+/server/node_modules/
+/server/coverage/
+/server/.idea/
+/server/run/
+/server/logs/
+/server/.DS_Store
+/server/*.swp
+/server/*.lock
+/server/*.js
+/server/!.autod.conf.js
+
+/server/app/**/*.js
+/server/test/**/*.js
+/server/config/**/*.js
+/server/app/**/*.map
+/server/test/**/*.map
+/server/config/**/*.map
+
