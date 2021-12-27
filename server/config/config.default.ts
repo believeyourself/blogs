@@ -1,4 +1,5 @@
 import { EggAppConfig, EggAppInfo, PowerPartial } from 'egg';
+import * as path from "path";
 
 export default (appInfo: EggAppInfo) => {
   const config = {} as PowerPartial<EggAppConfig>;
@@ -13,6 +14,11 @@ export default (appInfo: EggAppInfo) => {
   // add your special config in here
   const bizConfig = {
     sourceUrl: `https://github.com/eggjs/examples/tree/master/${appInfo.name}`,
+  };
+
+  console.log(appInfo.baseDir)
+  config.static = {
+    dir: path.join(appInfo.baseDir, '../front/dist'),
   };
 
   // the return config will combines to EggAppConfig
