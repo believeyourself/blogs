@@ -1,10 +1,11 @@
 import { Controller,Context } from 'egg';
+import * as path from "path";
 
 export default class HomeController extends Controller {
   serverRender:any;
   constructor(ctx:Context) {
     super(ctx);
-    this.serverRender = require('../../../front/dist/umi.server.js');
+    this.serverRender = require(path.join(ctx.app.baseDir, '../front/dist/umi.server'));
   }
   async index() {
     const { ctx } = this;

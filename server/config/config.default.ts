@@ -15,8 +15,6 @@ export default (appInfo: EggAppInfo) => {
   const bizConfig = {
     sourceUrl: `https://github.com/eggjs/examples/tree/master/${appInfo.name}`,
   };
-
-  console.log(appInfo.baseDir)
   config.static = {
     dir: path.join(appInfo.baseDir, '../front/dist'),
   };
