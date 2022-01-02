@@ -1,9 +1,9 @@
 export default [
   {
     id: 34,
-    title: 'egg 项目初始换配置 TS',
+    title: 'Doris be 日志大量警告：/brpc/src/brpc/socket.cpp:1196] Fail to wait EPOLLOUT of fd=187: Connection timed out',
     description:
-      '批量从 Kineses 中获取数据，选用 Stream Load 的导入方式向 Doris导入数据。',
+      '采用 stream load 方式导入数据，一段时间后大量警告日志：/brpc/src/brpc/socket.cpp:1196] Fail to wait EPOLLOUT of fd=187: Connection timed out',
     tags: ['doris', 'aws', 'EC2'],
     date: '2021-12-24',
   },
@@ -103,7 +103,7 @@ export default [
     id: 21,
     title: 'React 实现 PDF 预览',
     description: '使用 embed 标签 和 react-pdf 组件实现PDF预览',
-    tags: ['mysql', 'Emoji', 'node'],
+    tags: ['React', 'PDF 预览'],
     date: '2021-11-20',
   },
   {

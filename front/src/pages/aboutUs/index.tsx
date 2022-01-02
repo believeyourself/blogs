@@ -3,7 +3,6 @@ import styles from './index.less';
 import titleImg from '@/assets/images/aboutUs.jpg';
 import SiteHeader from '@/components/siteHeader';
 import { Button, message } from 'antd';
-import SideAd from '@/components/sideAd';
 
 export default class AboutUs extends React.Component {
   message: React.RefObject<HTMLTextAreaElement>;
