@@ -1,11 +1,19 @@
 export default [
   {
+    id: 35,
+    title: ' umi SSR 打包配置优化',
+    description:
+      '我这里有 SEO 的需求，所以需要做 SSR ,本文主要记录 umi ssr(服务端渲染)配置如何优化，仅记录本人实践过程中所用到的配置优化，仅供参考。',
+    tags: ['umi', 'ssr'],
+    date: '2022-01-03',
+  },
+  {
     id: 34,
     title: 'Doris be 日志大量警告：/brpc/src/brpc/socket.cpp:1196] Fail to wait EPOLLOUT of fd=187: Connection timed out',
     description:
       '采用 stream load 方式导入数据，一段时间后大量警告日志：/brpc/src/brpc/socket.cpp:1196] Fail to wait EPOLLOUT of fd=187: Connection timed out',
     tags: ['doris', 'aws', 'EC2'],
-    date: '2021-12-24',
+    date: '2021-12-28',
   },
   {
     id: 33,
