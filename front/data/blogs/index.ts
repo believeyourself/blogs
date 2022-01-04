@@ -1,7 +1,15 @@
 export default [
   {
+    id: 36,
+    title: 'Doris 用户操作语句速览',
+    description:
+      'Doris 常用 SQL 语句快速浏览，记录常用SQL，方便阅读查询。',
+    tags: ['Doris', '操作手册'],
+    date: '2022-01-05',
+  },
+  {
     id: 35,
-    title: ' umi SSR 打包配置优化',
+    title: 'umi SSR 打包配置优化',
     description:
       '我这里有 SEO 的需求，所以需要做 SSR ,本文主要记录 umi ssr(服务端渲染)配置如何优化，仅记录本人实践过程中所用到的配置优化，仅供参考。',
     tags: ['umi', 'ssr'],
