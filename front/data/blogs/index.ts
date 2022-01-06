@@ -1,5 +1,21 @@
 export default [
   {
+    id: 38,
+    title: '升级 egg-socket.io 到 4.4.0 ',
+    description:
+      '阿里这个框架已经很久没更新了，连插件模块都没有人维护。本来想着用 egg-socket.io 的 2.1.1 版本就行了，但是用起来发现很多的 api 都用不了了，于是有了升级的想法，重写配置。',
+    tags: ['node', 'egg','socket.io',"版本升级"],
+    date: '2022-01-06',
+  },
+  {
+    id: 37,
+    title: 'nodejs PM2 延时退出',
+    description:
+      '在日常开发过程中，我们经常会用到 pm2 来起到服务，甚至会用 watch 来实现热更新。这种模式并不适合用在生产环境中，因为 pm2 零延时重启，会导致正在处理的请求直接被销毁，如果数据库没加事务，可能会导致数据库的数据不完整，我们可以利用--kill-timeout 参数延时退出，保证正在处理的请求正常结束',
+    tags: ['node', 'pm2','优雅退出'],
+    date: '2022-01-06',
+  },
+  {
     id: 36,
     title: 'Doris 用户操作语句速览',
     description:
