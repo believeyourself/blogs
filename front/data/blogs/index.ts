@@ -1,5 +1,13 @@
 export default [
   {
+    id: 39,
+    title: 'React 中 useEffect 和 useLayoutEffect 作用和区别',
+    description:
+      '日常开发中的大部分情况下，使用 useEffect 就可以帮我们处理组件的副作用，但是如果想要同步调用一些副作用，比如对 DOM 的操作，就需要使用 useLayoutEffect，useLayoutEffect 中的副作用会在 DOM 更新之后同步执行,useLayoutEffect 与原来 class 组件原来的 componentDidMount & componentDidUpdate 一样，会在 react 完成 DOM 更新后马上同步调用的代码，会阻塞页面渲染。',
+    tags: ['react', 'useEffect','useLayoutEffect'],
+    date: '2022-01-13',
+  },
+  {
     id: 38,
     title: '升级 egg-socket.io 到 4.4.0 ',
     description:
