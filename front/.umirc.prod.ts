@@ -17,6 +17,7 @@ export default defineConfig({
   mpa:{},
   exportStatic: {},
   outputPath:"../docs",
+  publicPath:"blogs/",
   externals: {
     react: 'window.React',
     'react-dom': 'window.ReactDOM',
