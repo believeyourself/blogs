@@ -16,7 +16,7 @@ export default defineConfig({
   },
   mpa:{},
   exportStatic: {},
-  publicPath:"public/dist/",
+  outputPath:"../docs",
   externals: {
     react: 'window.React',
     'react-dom': 'window.ReactDOM',
