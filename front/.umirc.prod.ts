@@ -14,9 +14,9 @@ export default defineConfig({
   analytics: {
     baidu: '926fb44514b1d81a809cb5380bf10511',
   },
-  // publicPath:"public/",
-  ssr: {},
-  dynamicImport: {},
+  mpa:{},
+  exportStatic: {},
+  publicPath:"public/dist/",
   externals: {
     react: 'window.React',
     'react-dom': 'window.ReactDOM',

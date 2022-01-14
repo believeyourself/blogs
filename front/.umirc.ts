@@ -2,9 +2,9 @@ import { defineConfig } from 'umi';
 import routes from './config/route';
 export default defineConfig({
   favicon: 'favicon.ico',
-  nodeModulesTransform: {
-    type: 'none',
-  },
+  // nodeModulesTransform: {
+  //   type: 'none',
+  // },
   dva: {},
   routes,
   fastRefresh: {},
