@@ -12,12 +12,12 @@ export default defineConfig({
     'process.env.SITE_DOMAIN': 'https://qianduan.shop',
   },
   analytics: {
-    baidu: '926fb44514b1d81a809cb5380bf10511',
+    // baidu: '926fb44514b1d81a809cb5380bf10511',
   },
   mpa:{},
   exportStatic: {},
   outputPath:"../docs",
-  publicPath:"blogs/",
+  publicPath:"/blogs/",
   externals: {
     react: 'window.React',
     'react-dom': 'window.ReactDOM',
