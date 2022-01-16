@@ -1,5 +1,13 @@
 export default [
   {
+    id: 40,
+    title: 'egg mysql 查询 Date 类型数据时区不对，时间减了 8 个小时',
+    description:
+      '日志表里存储了写入时间，时间存的是 Date 类型的数据，直接 select 出来的数据比存储的实际数据要少 8 个小时，数据库格式：2018-03-12 14:46:31, 通过egg-mysql查询出来的格式：2018-03-12T06:46:31.000Z, 自动加上了时区而且还是错误的时区。',
+    tags: ['node', 'egg','mysql'],
+    date: '2022-01-13',
+  },
+  {
     id: 39,
     title: 'React 中 useEffect 和 useLayoutEffect 作用和区别',
     description:
