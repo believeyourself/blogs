@@ -14,7 +14,6 @@ export default defineConfig({
   analytics: {
     // baidu: '926fb44514b1d81a809cb5380bf10511',
   },
-  mpa:{},
   exportStatic: {},
   outputPath:"../docs",
   publicPath:"/blogs/",
