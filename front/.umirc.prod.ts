@@ -15,6 +15,8 @@ export default defineConfig({
     // baidu: '926fb44514b1d81a809cb5380bf10511',
   },
   exportStatic: {},
+  
+  dynamicImport: {},
   outputPath:"../docs",
   publicPath:"/blogs/",
   externals: {
