@@ -14,7 +14,6 @@ import logo from '@/assets/images/logo.png';
 import { BackTop } from 'antd';
 import ScrollFixed from '@/components/scrollFixed';
 import Footer from '@/components/footer';
-import { Helmet } from 'umi';
 import ErrorBoundary from '@/components/ErrorBoundary';
 
 class App extends React.Component {
@@ -23,7 +22,7 @@ class App extends React.Component {
       <ErrorBoundary>
         <header className={styles.header}>
           <img alt="前端网" className={styles.title} src={logo} />
-          <div className={styles.slogan}></div>
+          {/* <div className={styles.slogan}></div> */}
         </header>
         <ScrollFixed>
           <nav className={styles.nav}>
