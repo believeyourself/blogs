@@ -22,12 +22,12 @@ class App extends React.Component {
     return (
       <ErrorBoundary>
         <header className={styles.header}>
-          <img alt="前端网" className={styles.title} src={logo} />
-          <div className={styles.slogan}></div>
+          <img alt="farmerLZJ" className={styles.title} src={logo} />
+          {/* <div className={styles.slogan}></div> */}
         </header>
         <ScrollFixed>
           <nav className={styles.nav}>
-            <NavLink
+            {/* <NavLink
               activeClassName={styles.active}
               exact={true}
               to={'/'}
@@ -48,7 +48,7 @@ class App extends React.Component {
               className={styles.item}
             >
               教程
-            </NavLink>
+            </NavLink> */}
             <NavLink
               activeClassName={styles.active}
               to={'/blogs'}
@@ -56,7 +56,7 @@ class App extends React.Component {
             >
               博客
             </NavLink>
-            <NavLink
+            {/* <NavLink
               activeClassName={styles.active}
               to={'/softwares'}
               className={styles.item}
@@ -69,7 +69,7 @@ class App extends React.Component {
               className={styles.item}
             >
               关于
-            </NavLink>
+            </NavLink> */ }
           </nav>
         </ScrollFixed>
         <div className={styles.content}>
