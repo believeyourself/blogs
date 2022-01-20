@@ -1,8 +1,8 @@
 /*
  * @Date: 2021-09-22 08:59:01
  * @LastEditors: lzj
- * @LastEditTime: 2021-12-14 09:14:24
- * @FilePath: \qianduan.shop\.umirc.prod.ts
+ * @LastEditTime: 2022-01-20 14:27:32
+ * @FilePath: \qianduan.shop\front\.umirc.prod.ts
  */
 import { defineConfig } from 'umi';
 
@@ -18,7 +18,7 @@ export default defineConfig({
   
   dynamicImport: {},
   outputPath:"../docs",
-  publicPath:"/blogs/",
+  // publicPath:"/blogs/",
   externals: {
     react: 'window.React',
     'react-dom': 'window.ReactDOM',

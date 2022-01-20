@@ -1,3 +1,9 @@
+/*
+ * @Date: 2022-01-20 14:27:07
+ * @LastEditors: lzj
+ * @LastEditTime: 2022-01-20 14:35:19
+ * @FilePath: \qianduan.shop\front\config\route.ts
+ */
 const route: any = [
   {
     name: '404',
@@ -8,11 +14,6 @@ const route: any = [
     name: '在线工具',
     path: '/tools/:type?',
     component: './tools',
-  },
-  {
-    name: 'PDF预览',
-    path: '/ebooks/:path',
-    component: './resources/previewPdf',
   },
   {
     path: '/',
