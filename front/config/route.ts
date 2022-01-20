@@ -1,7 +1,7 @@
 /*
  * @Date: 2022-01-20 14:27:07
  * @LastEditors: lzj
- * @LastEditTime: 2022-01-20 14:35:19
+ * @LastEditTime: 2022-01-20 15:06:38
  * @FilePath: \qianduan.shop\front\config\route.ts
  */
 const route: any = [
@@ -30,7 +30,7 @@ const route: any = [
         component: '@/pages/blogs/detail/detail',
       },
       {
-        redirect: '/404',
+        redirect: '/blogs',
       },
     ],
   },
