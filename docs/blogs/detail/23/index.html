@@ -1,0 +1,100 @@
+<!DOCTYPE html><html><head><title data-react-helmet="true">husky7 add hook命令不起作用问题 - 前端网</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="baidu-site-verification" content="code-TlaecuFEx5">
+    <meta name="sogou_site_verification" content="wMb3kHjFi6">
+    <meta name="shenma-site-verification" content="19dfe33fcd6f20294164ba6738d0e102_1634534936">
+    <meta name="360-site-verification" content="e943e2d7714355d2d1af8f36b12c41f9">
+    <meta name="baidu_union_verify" content="6f7381d4136832e99f86da0d67739a46">
+    <meta name="bytedance-verification-code" content="d+FL9L0/4KxPwFbqXgmT">
+
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2087076429727327"
+    crossOrigin="anonymous"></script> -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="/umi.css">
+    <link rel="stylesheet" href="/layouts.chunk.css">
+    <link rel="stylesheet" href="/p__blogs__detail__detail.chunk.css">
+    <script>
+      window.routerBase = "/";
+    </script>
+    <script>
+      //! umi version: 3.5.18
+    </script>
+    <title>文章详情</title>
+  <meta data-react-helmet="true" name="description" content="前端网,git,hook,husky-v7,node,npm,add,配置husky7时，husky add hook不起作用，没有正常添加hook"><meta data-react-helmet="true" name="keywords" content="前端网,git,hook,husky-v7,node,npm,add">
+</head>
+
+  <body>
+    <div id="root"><header class="header___2_57M"><img alt="farmerLZJ" class="title___MhkPP" src="/static/logo.68ff92ec.png"/></header><div style="width:100%;position:relative;top:0;z-index:999"><nav class="nav___3wfA1"><a href="https://izejun.com/blogs" class="item___AqKVH active___1THnk">博客</a></nav></div><div class="content___2QN8t"><div class="content___1G4Bw"><header><a href="https://izejun.com/" class="back___26SyS undefined"> <!-- -->首页</a> <!-- -->/<a href="https://izejun.com/blogs" class="back___26SyS undefined"> <!-- -->博客</a></header><article><h1>husky7 add hook命令不起作用问题</h1>
+
+<h2>背景</h2>
+
+<p>开发环境：git 2.20.1.windows.1 + node v14.15.1 + npm v6.14.8 + win10 + husky v7.0.4 </p>
+
+<p>项目需要配置git hook，在commit之前执行代码校验ESLint，规范commit提交日志格式。我们使用husky来配置git hook.</p>
+
+<h2>解决办法</h2>
+
+<p>升级 npm 到v7版本或更高。</p>
+
+<h2>过程</h2>
+
+<p>参考 husky 文档执行命令：&lt;a href=&quot;https://github.com/typicode/husky&quot; rel=&quot;nofollow&quot;&gt;husky github&lt;/a&gt;</p>
+
+<p><code>
+  npm install husky -D 
+  npm set-script prepare &quot;husky install&quot;
+</code></p>
+
+<p>到这一步，npm set-script命令不存在，所以我们手动执行。</p>
+
+<p><code>
+  npx husky install
+  npx husky add .husky/commit-msg &#39;npx --no-install commitlint --edit &quot;$1&quot;&#39;
+</code></p>
+
+<p>husky add 操作不起作用，提示如下：</p>
+
+<p><code></code>`
+Usage:
+  husky install <a href="default: .husky">dir</a>
+  husky uninstall
+  husky set|add &lt;file&gt; [cmd]</p>
+
+<p><code></code>`</p>
+
+<p>然后去github issue去找有解决办法没有，有人遇到相同的问题：
+&lt;a href=&quot;https://github.com/typicode/husky/issues/1010&quot; rel=&quot;nofollow&quot;&gt;Can&#39;t add a hook&lt;/a&gt;</p>
+
+<p>有人提到使用以下命令:</p>
+
+<p><code></code>`
+node node<em>modules/.bin/husky install ...
+node node</em>modules/.bin/husky add ...</p>
+
+<p><code></code>`</p>
+
+<p>但是我这里还是不行，还是有报错：</p>
+
+<p><code></code>`
+C:\Users\user\projects\project\node_modules.bin\husky:2
+basedir=$(dirname &quot;$(echo &quot;$0&quot; | sed -e &#39;s,\,/,g&#39;)&quot;)
+          ^^^^^^^
+SyntaxError: missing ) after argument list</p>
+
+<p><code></code>`</p>
+
+<p>最后还是升级 npm 到最新的 v8 才搞定</p></article><div><span class="ant-tag ant-tag-geekblue">#<span>git</span></span><span class="ant-tag ant-tag-volcano">#<span>hook</span></span><span class="ant-tag ant-tag-error">#<span>husky-v7</span></span><span class="ant-tag ant-tag-success">#<span>node</span></span><span class="ant-tag ant-tag-pink">#<span>npm</span></span><span class="ant-tag ant-tag-red">#<span>add</span></span></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><ins class=" adsbygoogle" style="display:block;text-align:center;width:100%;height:90px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="9331479126" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div><div class="container___8WoUM"><p class="title___3k8xL">Online Tools</p><div class="tool_tags___1ccK5"><span class="ant-tag ant-tag-blue tool_tag___1JT6M">JSON Formater</span><span class="ant-tag ant-tag-cyan tool_tag___1JT6M">MD5</span><span class="ant-tag ant-tag-error tool_tag___1JT6M">timestamps</span><span class="ant-tag ant-tag-green tool_tag___1JT6M">Cron Expresstion</span></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div style="text-align:center;height:300px"><ins class=" adsbygoogle" style="display:inline-block;width:250px;height:300px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="7022357395" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div style="text-align:center;height:300px"><ins class=" adsbygoogle" style="display:inline-block;width:250px;height:300px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="7022357395" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div></div></div><footer class="footer___3wR6c">©2021 farmerlzj 提供技术支持 | 联系我们：farmerlzj@163.com |<!-- --> <a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank">蜀ICP备2021025378号-1</a></footer><div class="ant-back-top"></div></div>
+	<script>
+  window.g_useSSR = true;
+  window.g_initialProps = {};
+	</script>
+
+    <script src="https://cloud.qianduan.shop/react.min.js"></script>
+    <script src="https://cloud.qianduan.shop/react-dom.min.js"></script>
+    <script src="/umi.js"></script>
+    <script src="/layouts.js"></script>
+    <script src="/p__blogs__detail__detail.js"></script>
+  
+
+</body></html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html><html><head><title data-react-helmet="true">React 团队开源新的性能分析工具 - Scheduling Profiler ! - 前端网</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="baidu-site-verification" content="code-TlaecuFEx5">
+    <meta name="sogou_site_verification" content="wMb3kHjFi6">
+    <meta name="shenma-site-verification" content="19dfe33fcd6f20294164ba6738d0e102_1634534936">
+    <meta name="360-site-verification" content="e943e2d7714355d2d1af8f36b12c41f9">
+    <meta name="baidu_union_verify" content="6f7381d4136832e99f86da0d67739a46">
+    <meta name="bytedance-verification-code" content="d+FL9L0/4KxPwFbqXgmT">
+
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2087076429727327"
+    crossOrigin="anonymous"></script> -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="/umi.css">
+    <link rel="stylesheet" href="/layouts.chunk.css">
+    <link rel="stylesheet" href="/p__blogs__detail__detail.chunk.css">
+    <script>
+      window.routerBase = "/";
+    </script>
+    <script>
+      //! umi version: 3.5.18
+    </script>
+    <title>文章详情</title>
+  <meta data-react-helmet="true" name="description" content="前端网,react,性能分析,最近，React 团队开源了一款新的性能分析工具 —— Scheduling Profiler"><meta data-react-helmet="true" name="keywords" content="前端网,react,性能分析">
+</head>
+
+  <body>
+    <div id="root"><header class="header___2_57M"><img alt="farmerLZJ" class="title___MhkPP" src="/static/logo.68ff92ec.png"/></header><div style="width:100%;position:relative;top:0;z-index:999"><nav class="nav___3wfA1"><a href="https://izejun.com/blogs" class="item___AqKVH active___1THnk">博客</a></nav></div><div class="content___2QN8t"><div class="content___1G4Bw"><header><a href="https://izejun.com/" class="back___26SyS undefined"> <!-- -->首页</a> <!-- -->/<a href="https://izejun.com/blogs" class="back___26SyS undefined"> <!-- -->博客</a></header><article><h1>React 团队开源新的性能分析工具 - Scheduling Profiler !</h1>
+
+<p>最近，React 团队开源了一款新的性能分析工具 —— Scheduling Profiler</p>
+
+<p><img alt="avatar" src="/static/images/schedulingProfiler.jpg"/></p>
+
+<p>React 之前的 Profiler 主要是分析渲染时组件的性能。它并不能告诉我们 React 正在做什么（实际的协作调度位）。随着 React Scheduler 的逐渐强大，它已经不能满足我们的分析需求了，新的 Profiler 可以显示组件何时安排状态更新以及 React 何时处理它们。它还可以展示 React 如何对其工作的内容进行分类和优先级调度。</p>
+
+<p>比如，下面是一个仅使用旧（同步）ReactDOM.renderAPI 的简单程序。分析器显示这个应用程序安排和渲染的所有工作都以同步优先级完成：</p>
+
+<p>它使用新的 createRoot API 以默认优先级呈现，然后同步更新以响应一个 输入 事件来管理一个 受控组件:</p>
+
+<p>这是显示空闲应用程序（没有运行 JavaScript）的配置文件的一部分。在这种情况下，React 会为 offscreen（当前未显示）的组件做一些预渲染工作。</p>
+
+<p><strong>offscreen 是 React 18还未发布的新 API</strong></p>
+
+<h2>transitions 是如何工作的</h2>
+
+<p>startTransition 是 React 18 新增加的一个 API，它可以让你区分 非紧急 的状态更新。所有在 startTransition 回调中的更新都会被认为是 非紧急处理，如果出现更紧急的更新（比如用户又输入了新的值），则上面的更新都会被中断，直到没有其他紧急操作之后才会去继续执行更新。</p>
+
+<p>下面是一个使用 startTransition API 的示例：React 会先渲染一个小的更新，向用户显示一些视觉反馈（ 比如 Loading 状态）</p>
+
+<p><img alt="avatar" src="/static/images/1.jpg"/></p>
+
+<h2>Suspense 如何影响渲染性能？</h2>
+
+<p>React 团队预计在 React 18.0 之后的某个时候会发布对通过 Suspense 获取数据的全面支持，但你现在可以使用 Suspense 来处理延迟加载 React 组件之类的事情。新的分析器显示组件在渲染期间暂停的时间以及这如何影响整体渲染性能。</p>
+
+<p>比如下面的例子，它使用 React.lazy 加载组建. 当这个组件正在加载时，React 会显示一个占位符。一旦组件完成加载，React 会重试渲染并提交最终的 UI。</p>
+
+<p><img alt="avatar" src="/static/images/3.jpg"/></p>
+
+<h2>还有什么可能导致渲染延迟？</h2>
+
+<p>Suspense 可能导致渲染延迟，因为 React 等待数据加载，但 React 也可能因为等待大量 JavaScript 运行卡住。</p>
+
+<p>React 分析工具以前只专注于分析 React（或 React 组件）正在做什么，但浏览器运行的任何 JavaScript 都会影响性能。新的分析器也显示了非 React JavaScript，因此很容易看到它何时延迟了 React 的渲染。</p>
+
+<p><img alt="avatar" src="/static/images/2.jpg"/></p>
+
+<h2>提升性能的提示</h2>
+
+<p>旧版的分析器只是专注于做一些分析，但是新版的工具可以给出我们一些优化建议：</p>
+
+<p><img alt="avatar" src="/static/images/5.jpg"/></p>
+
+<p>另外新的分析器还会对事件处理程序中安排长时间的同步 React 更新进行警告：</p>
+
+<p><img alt="avatar" src="/static/images/4.jpg"/></p></article><div><span class="ant-tag ant-tag-geekblue">#<span>react</span></span><span class="ant-tag ant-tag-volcano">#<span>性能分析</span></span></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><ins class=" adsbygoogle" style="display:block;text-align:center;width:100%;height:90px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="9331479126" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div><div class="container___8WoUM"><p class="title___3k8xL">Online Tools</p><div class="tool_tags___1ccK5"><span class="ant-tag ant-tag-blue tool_tag___1JT6M">JSON Formater</span><span class="ant-tag ant-tag-cyan tool_tag___1JT6M">MD5</span><span class="ant-tag ant-tag-error tool_tag___1JT6M">timestamps</span><span class="ant-tag ant-tag-green tool_tag___1JT6M">Cron Expresstion</span></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div style="text-align:center;height:300px"><ins class=" adsbygoogle" style="display:inline-block;width:250px;height:300px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="7022357395" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div style="text-align:center;height:300px"><ins class=" adsbygoogle" style="display:inline-block;width:250px;height:300px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="7022357395" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div></div></div><footer class="footer___3wR6c">©2021 farmerlzj 提供技术支持 | 联系我们：farmerlzj@163.com |<!-- --> <a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank">蜀ICP备2021025378号-1</a></footer><div class="ant-back-top"></div></div>
+	<script>
+  window.g_useSSR = true;
+  window.g_initialProps = {};
+	</script>
+
+    <script src="https://cloud.qianduan.shop/react.min.js"></script>
+    <script src="https://cloud.qianduan.shop/react-dom.min.js"></script>
+    <script src="/umi.js"></script>
+    <script src="/layouts.js"></script>
+    <script src="/p__blogs__detail__detail.js"></script>
+  
+
+</body></html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html><html><head><title data-react-helmet="true">使用MDX在md文件中解析React组件 - 前端网</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="baidu-site-verification" content="code-TlaecuFEx5">
+    <meta name="sogou_site_verification" content="wMb3kHjFi6">
+    <meta name="shenma-site-verification" content="19dfe33fcd6f20294164ba6738d0e102_1634534936">
+    <meta name="360-site-verification" content="e943e2d7714355d2d1af8f36b12c41f9">
+    <meta name="baidu_union_verify" content="6f7381d4136832e99f86da0d67739a46">
+    <meta name="bytedance-verification-code" content="d+FL9L0/4KxPwFbqXgmT">
+
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2087076429727327"
+    crossOrigin="anonymous"></script> -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="/umi.css">
+    <link rel="stylesheet" href="/layouts.chunk.css">
+    <link rel="stylesheet" href="/p__blogs__detail__detail.chunk.css">
+    <script>
+      window.routerBase = "/";
+    </script>
+    <script>
+      //! umi version: 3.5.18
+    </script>
+    <title>文章详情</title>
+  <meta data-react-helmet="true" name="description" content="前端网,react,markdown,JSX,MDX,使用 MDX 实现 md 与 React JSX结合来丰富我们的展现形式"><meta data-react-helmet="true" name="keywords" content="前端网,react,markdown,JSX,MDX">
+</head>
+
+  <body>
+    <div id="root"><header class="header___2_57M"><img alt="farmerLZJ" class="title___MhkPP" src="/static/logo.68ff92ec.png"/></header><div style="width:100%;position:relative;top:0;z-index:999"><nav class="nav___3wfA1"><a href="https://izejun.com/blogs" class="item___AqKVH active___1THnk">博客</a></nav></div><div class="content___2QN8t"><div class="content___1G4Bw"><header><a href="https://izejun.com/" class="back___26SyS undefined"> <!-- -->首页</a> <!-- -->/<a href="https://izejun.com/blogs" class="back___26SyS undefined"> <!-- -->博客</a></header><article><p>&lt;!--
+ <em> @Date: 2021-12-02 17:41:43
+ </em> @LastEditors: lzj
+ <em> @LastEditTime: 2021-12-02 18:05:49
+ </em> @FilePath: \qianduan.shop\data\blogs\25.md
+--&gt;</p>
+
+<h1>使用MDX在md文件中解析React组件</h1>
+
+<h2>背景</h2>
+
+<p>之前我们处理过&lt;a href=&quot;https://qianduan.shop/blogs/detail/2&quot;&gt; md 文件处理成 html 展示&lt;/a&gt;,使用 markdown 语法写文章，但是在此基础上做样式调整很麻烦，展现形式也不够丰富，所以我们想让 md 与 React JSX结合来丰富我们的展现形式。</p>
+
+<p>这里我们将介绍如何使用 MDX 来实现我们的需求，MDX会将常规的 Markdown 和 JSX编译为Javascript，.md 后缀的文件名需要改成 .mdx 后缀。</p>
+
+<h2>在 React JSX 中使用 MDX</h2>
+
+<p>① 直接引用 @mdx-js/react 解析</p>
+
+<p><code></code><code>
+  import {MDXProvider} from &#39;@mdx-js/react&#39;
+  import Post from &#39;./post.mdx&#39;
+  // ^-- Assumes an integration is used to compile MDX to JS, such as
+  // </code>@mdx-js/esbuild<code>, </code>@mdx-js/loader<code>, </code>@mdx-js/node-loader<code>, or
+  // </code>@mdx-js/rollup<code>, and that it is configured with
+  // </code>options.providerImportSource: &#39;@mdx-js/react&#39;`.</p>
+
+<p>  const components = {
+    em: props =&gt; &lt;i {...props} /&gt;
+  }</p>
+
+<p>  &lt;MDXProvider components={components}&gt;
+    &lt;Post /&gt;
+  &lt;/MDXProvider&gt;
+<code></code>`</p>
+
+<p>② 使用 webpack 或者 create-react-app(CRA), Next.js，下载配置 @mdx-js/loader 即可，loader 配置方法此处不详细介绍，请自行百度或Google。</p>
+
+<h2>在 Node 中使用 MDX，SSR 服务端渲染是会用到</h2>
+
+<p>安装 @mdx-js/node-loader@next, 此依赖包仅适用于 ESM（ES Module），需要 Node 12+ 才能使用它，并且必须使用import 而不是required。</p>
+
+<p><code></code>`
+import {renderToStaticMarkup} from &#39;react-dom/server.js&#39;
+import React from &#39;react&#39;
+import Content from &#39;./example.mdx&#39;</p>
+
+<p>console.log(renderToStaticMarkup(React.createElement(Content)))</p>
+
+<p><code></code>`</p>
+
+<h2>最后</h2>
+
+<p>本文只介绍了React中 MDX 的使用，MDX 还可以在更多的地方使用：esbuild,rollup,Preact,Vue 3,Emotion等。</p>
+
+<p>更多关于MDX的 用法及介绍参考链接：&lt;a target=&quot;_blank&quot; href=&quot;https://mdxjs.com/docs/getting-started/#quick-start&quot; rel=&quot;nofollow&quot;&gt; MDX官网 &lt;/a&gt;</p></article><div><span class="ant-tag ant-tag-geekblue">#<span>react</span></span><span class="ant-tag ant-tag-volcano">#<span>markdown</span></span><span class="ant-tag ant-tag-error">#<span>JSX</span></span><span class="ant-tag ant-tag-success">#<span>MDX</span></span></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><ins class=" adsbygoogle" style="display:block;text-align:center;width:100%;height:90px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="9331479126" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div><div class="container___8WoUM"><p class="title___3k8xL">Online Tools</p><div class="tool_tags___1ccK5"><span class="ant-tag ant-tag-blue tool_tag___1JT6M">JSON Formater</span><span class="ant-tag ant-tag-cyan tool_tag___1JT6M">MD5</span><span class="ant-tag ant-tag-error tool_tag___1JT6M">timestamps</span><span class="ant-tag ant-tag-green tool_tag___1JT6M">Cron Expresstion</span></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div style="text-align:center;height:300px"><ins class=" adsbygoogle" style="display:inline-block;width:250px;height:300px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="7022357395" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div style="text-align:center;height:300px"><ins class=" adsbygoogle" style="display:inline-block;width:250px;height:300px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="7022357395" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div></div></div><footer class="footer___3wR6c">©2021 farmerlzj 提供技术支持 | 联系我们：farmerlzj@163.com |<!-- --> <a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank">蜀ICP备2021025378号-1</a></footer><div class="ant-back-top"></div></div>
+	<script>
+  window.g_useSSR = true;
+  window.g_initialProps = {};
+	</script>
+
+    <script src="https://cloud.qianduan.shop/react.min.js"></script>
+    <script src="https://cloud.qianduan.shop/react-dom.min.js"></script>
+    <script src="/umi.js"></script>
+    <script src="/layouts.js"></script>
+    <script src="/p__blogs__detail__detail.js"></script>
+  
+
+</body></html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html><html><head><title data-react-helmet="true">原型与原型链、继承 - 前端网</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="baidu-site-verification" content="code-TlaecuFEx5">
+    <meta name="sogou_site_verification" content="wMb3kHjFi6">
+    <meta name="shenma-site-verification" content="19dfe33fcd6f20294164ba6738d0e102_1634534936">
+    <meta name="360-site-verification" content="e943e2d7714355d2d1af8f36b12c41f9">
+    <meta name="baidu_union_verify" content="6f7381d4136832e99f86da0d67739a46">
+    <meta name="bytedance-verification-code" content="d+FL9L0/4KxPwFbqXgmT">
+
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2087076429727327"
+    crossOrigin="anonymous"></script> -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="/umi.css">
+    <link rel="stylesheet" href="/layouts.chunk.css">
+    <link rel="stylesheet" href="/p__blogs__detail__detail.chunk.css">
+    <script>
+      window.routerBase = "/";
+    </script>
+    <script>
+      //! umi version: 3.5.18
+    </script>
+    <title>文章详情</title>
+  <meta data-react-helmet="true" name="description" content="前端网,js,原型与原型链、继承简单实现"><meta data-react-helmet="true" name="keywords" content="前端网,js">
+</head>
+
+  <body>
+    <div id="root"><header class="header___2_57M"><img alt="farmerLZJ" class="title___MhkPP" src="/static/logo.68ff92ec.png"/></header><div style="width:100%;position:relative;top:0;z-index:999"><nav class="nav___3wfA1"><a href="https://izejun.com/blogs" class="item___AqKVH active___1THnk">博客</a></nav></div><div class="content___2QN8t"><div class="content___1G4Bw"><header><a href="https://izejun.com/" class="back___26SyS undefined"> <!-- -->首页</a> <!-- -->/<a href="https://izejun.com/blogs" class="back___26SyS undefined"> <!-- -->博客</a></header><article><h1>原型与原型链、继承</h1>
+
+<h2>原型：</h2>
+
+<p>每个function函数都有一个prototype属性指向一个对象，这个对象就是原型对象，每个构造函数创造出来的实例对象都会继承这个原型对象，并且包含<strong>proto</strong>属性指向原型对象。</p>
+
+<h2>原型链：</h2>
+
+<p>每个对象都会包含一个原型对象，原型对象也是对象，所以也会包含一个原型，因此形成的链式关联就是原型链。</p>
+
+<p>instanceof原理
+instanceof 主要的实现原理就是只要右边变量的prototype 在左边变量的原型链上即可</p>
+
+<p><code></code>`
+function instanceOf(left,right){
+    let rightPrototype = right.prototype;
+    let leftPrototype = left.<strong>proto</strong>;
+    while(leftPrototype){
+        if(leftPrototype === rightPrototype){
+            return true;      <br/>        }
+        leftPrototype = leftPrototype.<strong>proto</strong>;
+    }</p>
+
+<pre><code>return false;</code></pre>
+
+<p>}
+<code></code>`</p>
+
+<h2>继承：</h2>
+
+<h3>1.原型链继承</h3>
+
+<p><code>
+function A(){};
+function B(){};
+B.prototype = new A();//原型继承，原型上的属性所有实例共享，引用类型属性也共享
+B.prototype.constructor = B;
+</code></p>
+
+<h3>2.借用构造函数（经典继承）</h3>
+
+<p><code>
+function A(){};
+function B(){
+    A.call(this);//借用构造函数继承,不继承A的原型
+};
+</code></p>
+
+<h3>3.组合继承（原型链继承+借用构造函数继承）</h3>
+
+<p><code>
+function A(){};
+function B(){
+    A.call(this);//借用构造函数继承,不继承原型，第一次调用A的构造函数
+};
+B.prototype = new A();//原型继承，，第二次调用A的构造函数，A函数的非原型属性保留两份
+B.prototype.constructor = B; //修正B原型的构造函数
+</code></p>
+
+<h3>4.原型式继承(Object.create的es5实现方式),将传入的对象作为创建的对象的原型。</h3>
+
+<p><code>
+function createObj(o){
+    function A(){}
+    A.prototype = o;
+    return new A();
+}
+</code></p>
+
+<h3>5.寄生继承</h3>
+
+<p><code>
+function createObj (o) {
+    let clone = Object.create(o);
+    clone.sayName = function () {
+        console.log(&#39;hi&#39;);
+    }
+    return clone;
+}
+</code></p>
+
+<h3>6.组合寄生继承</h3>
+
+<p><code></code>`
+function A () {}
+function B () {
+    A.call(this);
+}
+B.prototype = createObj(A.prototype);
+B.prototype.constructor = B;</p>
+
+<p><code></code>`</p></article><div><span class="ant-tag ant-tag-geekblue">#<span>js</span></span></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><ins class=" adsbygoogle" style="display:block;text-align:center;width:100%;height:90px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="9331479126" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div><div class="container___8WoUM"><p class="title___3k8xL">Online Tools</p><div class="tool_tags___1ccK5"><span class="ant-tag ant-tag-blue tool_tag___1JT6M">JSON Formater</span><span class="ant-tag ant-tag-cyan tool_tag___1JT6M">MD5</span><span class="ant-tag ant-tag-error tool_tag___1JT6M">timestamps</span><span class="ant-tag ant-tag-green tool_tag___1JT6M">Cron Expresstion</span></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div style="text-align:center;height:300px"><ins class=" adsbygoogle" style="display:inline-block;width:250px;height:300px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="7022357395" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div style="text-align:center;height:300px"><ins class=" adsbygoogle" style="display:inline-block;width:250px;height:300px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="7022357395" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div></div></div><footer class="footer___3wR6c">©2021 farmerlzj 提供技术支持 | 联系我们：farmerlzj@163.com |<!-- --> <a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank">蜀ICP备2021025378号-1</a></footer><div class="ant-back-top"></div></div>
+	<script>
+  window.g_useSSR = true;
+  window.g_initialProps = {};
+	</script>
+
+    <script src="https://cloud.qianduan.shop/react.min.js"></script>
+    <script src="https://cloud.qianduan.shop/react-dom.min.js"></script>
+    <script src="/umi.js"></script>
+    <script src="/layouts.js"></script>
+    <script src="/p__blogs__detail__detail.js"></script>
+  
+
+</body></html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html><html><head><title data-react-helmet="true">React 实现 PDF 预览 - 前端网</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="baidu-site-verification" content="code-TlaecuFEx5">
+    <meta name="sogou_site_verification" content="wMb3kHjFi6">
+    <meta name="shenma-site-verification" content="19dfe33fcd6f20294164ba6738d0e102_1634534936">
+    <meta name="360-site-verification" content="e943e2d7714355d2d1af8f36b12c41f9">
+    <meta name="baidu_union_verify" content="6f7381d4136832e99f86da0d67739a46">
+    <meta name="bytedance-verification-code" content="d+FL9L0/4KxPwFbqXgmT">
+
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2087076429727327"
+    crossOrigin="anonymous"></script> -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="/umi.css">
+    <link rel="stylesheet" href="/layouts.chunk.css">
+    <link rel="stylesheet" href="/p__blogs__detail__detail.chunk.css">
+    <script>
+      window.routerBase = "/";
+    </script>
+    <script>
+      //! umi version: 3.5.18
+    </script>
+    <title>文章详情</title>
+  <meta data-react-helmet="true" name="description" content="前端网,React,PDF 预览,使用 embed 标签 和 react-pdf 组件实现PDF预览"><meta data-react-helmet="true" name="keywords" content="前端网,React,PDF 预览">
+</head>
+
+  <body>
+    <div id="root"><header class="header___2_57M"><img alt="farmerLZJ" class="title___MhkPP" src="/static/logo.68ff92ec.png"/></header><div style="width:100%;position:relative;top:0;z-index:999"><nav class="nav___3wfA1"><a href="https://izejun.com/blogs" class="item___AqKVH active___1THnk">博客</a></nav></div><div class="content___2QN8t"><div class="content___1G4Bw"><header><a href="https://izejun.com/" class="back___26SyS undefined"> <!-- -->首页</a> <!-- -->/<a href="https://izejun.com/blogs" class="back___26SyS undefined"> <!-- -->博客</a></header><article><h1>React 实现 PDF 预览</h1>
+
+<h2>1.embed标签实现PDF预览</h2>
+
+<p>这种方式虽然简单但是<strong>不兼容移动端</strong>，实现如下：</p>
+
+<p><code></code>`</p>
+
+<p>&lt;embed
+    src=&quot;path/to/pdf&quot;
+    type=&quot;application/pdf&quot;
+    style={{ width: &#39;100vw&#39;, height: &#39;100vh&#39; }}</p>
+
+<blockquote><p>&lt;/embed&gt;</p></blockquote>
+
+<p><code></code>`</p>
+
+<h2>2.react-pdf组件</h2>
+
+<p>这种方式<strong>兼容PC和移动</strong>，但是移动端显示不好查看，样式调整比较麻烦。</p>
+
+<p>分页只能自己实现，组件本身不提供分页。</p>
+
+<p>注:如果您使用 Browserify 或打包工具，则必须自行确保将该pdf.worker.js文件pdfjs-dist/build复制到项目的输出文件夹中。</p>
+
+<p>实现如下，示例代码中的pdf.worker.min.js使用的是CDN资源，生产环境可能出现加载不到导致预览失败的情况，所以最好下载到本地，从本地引用：</p>
+
+<p><code></code>`
+import { Document, Page, pdfjs } from &#39;react-pdf&#39;;</p>
+
+<p>pdfjs.GlobalWorkerOptions.workerSrc = <code>//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js</code>;</p>
+
+<p>export default ()=&gt;{ <br/>    const [numPages, setNumPages] = useState(0);
+    const [pageNumber, setPageNumber] = useState(1);</p>
+
+<pre><code>const onDocumentLoadSuccess = ({ numPages }:any) =&gt; {
+  setNumPages(numPages);
+}
+return &lt;Document
+    className=&quot;className&quot;
+    file=&quot;path/to/pdf&quot;
+    loading={&lt;div className={styles.loading}&gt;&lt;Spin size=&quot;large&quot; /&gt;&lt;/div&gt;}
+    onLoadSuccess={onDocumentLoadSuccess}
+&gt;
+    &lt;Page pageNumber={pageNumber} /&gt;
+&lt;/Document&gt;
+{&quot;自定义pagination分页，通过setPageNumber实现翻页&quot;}</code></pre>
+
+<p>}</p>
+
+<p><code></code>`</p>
+
+<p>更详细的用法附上github地址：&lt;a href=&quot;https://github.com/wojtekmaj/react-pdf&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot;&gt; react-pdf &lt;/a&gt;</p></article><div><span class="ant-tag ant-tag-geekblue">#<span>React</span></span><span class="ant-tag ant-tag-volcano">#<span>PDF 预览</span></span></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><ins class=" adsbygoogle" style="display:block;text-align:center;width:100%;height:90px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="9331479126" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div><div class="container___8WoUM"><p class="title___3k8xL">Online Tools</p><div class="tool_tags___1ccK5"><span class="ant-tag ant-tag-blue tool_tag___1JT6M">JSON Formater</span><span class="ant-tag ant-tag-cyan tool_tag___1JT6M">MD5</span><span class="ant-tag ant-tag-error tool_tag___1JT6M">timestamps</span><span class="ant-tag ant-tag-green tool_tag___1JT6M">Cron Expresstion</span></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div style="text-align:center;height:300px"><ins class=" adsbygoogle" style="display:inline-block;width:250px;height:300px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="7022357395" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div style="text-align:center;height:300px"><ins class=" adsbygoogle" style="display:inline-block;width:250px;height:300px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="7022357395" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div></div></div><footer class="footer___3wR6c">©2021 farmerlzj 提供技术支持 | 联系我们：farmerlzj@163.com |<!-- --> <a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank">蜀ICP备2021025378号-1</a></footer><div class="ant-back-top"></div></div>
+	<script>
+  window.g_useSSR = true;
+  window.g_initialProps = {};
+	</script>
+
+    <script src="https://cloud.qianduan.shop/react.min.js"></script>
+    <script src="https://cloud.qianduan.shop/react-dom.min.js"></script>
+    <script src="/umi.js"></script>
+    <script src="/layouts.js"></script>
+    <script src="/p__blogs__detail__detail.js"></script>
+  
+
+</body></html>

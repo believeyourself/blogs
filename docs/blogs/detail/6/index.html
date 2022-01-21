@@ -1,0 +1,108 @@
+<!DOCTYPE html><html><head><title data-react-helmet="true">移动端适配方案 - 前端网</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="baidu-site-verification" content="code-TlaecuFEx5">
+    <meta name="sogou_site_verification" content="wMb3kHjFi6">
+    <meta name="shenma-site-verification" content="19dfe33fcd6f20294164ba6738d0e102_1634534936">
+    <meta name="360-site-verification" content="e943e2d7714355d2d1af8f36b12c41f9">
+    <meta name="baidu_union_verify" content="6f7381d4136832e99f86da0d67739a46">
+    <meta name="bytedance-verification-code" content="d+FL9L0/4KxPwFbqXgmT">
+
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2087076429727327"
+    crossOrigin="anonymous"></script> -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="/umi.css">
+    <link rel="stylesheet" href="/layouts.chunk.css">
+    <link rel="stylesheet" href="/p__blogs__detail__detail.chunk.css">
+    <script>
+      window.routerBase = "/";
+    </script>
+    <script>
+      //! umi version: 3.5.18
+    </script>
+    <title>文章详情</title>
+  <meta data-react-helmet="true" name="description" content="前端网,移动适配,布局,常用的移动端适配方案,包括：媒体查询，rem布局，vw&amp;vh"><meta data-react-helmet="true" name="keywords" content="前端网,移动适配,布局">
+</head>
+
+  <body>
+    <div id="root"><header class="header___2_57M"><img alt="farmerLZJ" class="title___MhkPP" src="/static/logo.68ff92ec.png"/></header><div style="width:100%;position:relative;top:0;z-index:999"><nav class="nav___3wfA1"><a href="https://izejun.com/blogs" class="item___AqKVH active___1THnk">博客</a></nav></div><div class="content___2QN8t"><div class="content___1G4Bw"><header><a href="https://izejun.com/" class="back___26SyS undefined"> <!-- -->首页</a> <!-- -->/<a href="https://izejun.com/blogs" class="back___26SyS undefined"> <!-- -->博客</a></header><article><h1>移动端适配方案</h1>
+
+<p>  在阅读之前，我们希望您对一下基本概念有一些了解,例如硬件概念：屏幕尺寸，屏幕分辨率，设备像素，像素密度;系统概念：显示分辨率，设备独立像素，逻辑分辨率；浏览器中的概念：设备像素比，视口。如对这些基础概念没有了解的,可先阅读：<a href="https://juejin.cn/post/6959047144065990663">移动端适配基础概念</a>  </p>
+
+<h2>1.媒体查询,响应式布局</h2>
+
+<p>  css提供了@media媒体查询设置不同的样式,根据不同平布设不同的样式，从而达到不同屏幕适配的目的。  </p>
+
+<h3>不同屏幕加载不同的样式文件</h3>
+
+<p><code>
+&lt;link media=&quot;(max-width: 600px)&quot; href=&quot;./path/mobile.css&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;link media=&quot;(min-width: 980px)&quot; href=&quot;./path/pc.css&quot;  rel=&quot;stylesheet&quot;/&gt;
+</code>  </p>
+
+<h3>CSS 样式表中的媒体查询</h3>
+
+<p><code>
+@media screen and (max-width:1024px){
+  div{
+    font-size: 64px;
+  }
+}
+@media screen and (max-width: 400px){
+  div{
+    font-size: 58px;
+  }
+}
+</code>  </p>
+
+<p>媒体查询语法规则及更多实例参考：https://www.runoob.com/cssref/css3-pr-mediaquery.html  </p>
+
+<h2>2.动态rem</h2>
+
+<p>rem是css中的一个相对长度单位，它的大小有根元素（html）字体大小决定。  </p>
+
+<p>针对不同的屏幕，我们可以动态的修改根元素的字体大小，页面内元素的大小也会跟着同比例改变，以此达到适配效果。  </p>
+
+<p>实际开发中我们可以利用工具帮助我们将px转换为rem,例如<a href="https://www.npmjs.com/package/postcss-px2rem">postcss-px2rem</a>,这样我们就可以直接按照设计稿写px即可。</p>
+
+<p>当然，布局使用rem问题已经解决，那么文字字号如何实现适配？也是用rem吗？答案是NO!,<strong>文字字号不建议使用rem</strong>.
+比如：我们在 iPhone3G 和 iPhone4 的 Retina 屏下面，希望看到的文本字号是相同的。也就是说，我们不希望文本在 Retina 屏幕下变小，另外，我们希望在大屏手机上看到更多文本，以及，现在绝大多数的字体文件都自带一些点阵尺寸，通常是 16px 和  24px，所以我们不希望出现 13px 和 15px 这样的奇葩尺寸。如此一来，就决定了在制作 H5 的页面中，rem 并不适合用到段落文本。</p>
+
+<p><strong>总结</strong>
+1.meta 标签设置 viewport 宽度为屏幕宽度；
+2.针对不同屏幕修改根元素（html）的 font-size 大小，一般设置为屏幕宽度的十分之一（引入 lib-flexible 库或者自己写相应逻辑）；
+3.开发环境配置 postcss-px2rem 或者类似插件；
+4.根据设计稿写样式，元素宽高直接取设计稿宽高即可，单位为 px，插件会将其转换为 rem；
+5.段落文本也按照设计稿写，单位为px，不需要转换为 rem；</p>
+
+<h2>3.视口单位：vw、vh、vmin、vmax</h2>
+
+<p>视口单位有：vw、vh、vmin和vmax。vw 单位表示根元素宽度的百分比，1vw 等于视口宽度的1%。</p>
+
+<h3>vw 适配方案的流程：</h3>
+
+<p>1.meta 标签设置 viewport 宽度为屏幕宽度；
+2.开发环境配置 postcss-px-to-viewport 或者类似插件；
+3.根据设计稿写样式，元素宽高直接取设计稿宽高即可，单位为 px，插件会将其转换为 vw；
+4.段落文本也按照设计稿写，单位为px，不需要转换为 vw；</p>
+
+<h2>4.固定视口宽度，页面整体缩放</h2>
+
+<p><code>
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, user-scalable=no&quot; /&gt;
+</code></p>
+
+<p>这种方案，其实相当于将页面整体缩放。其本质上是对页面进行线性缩放来适应不同大小的屏幕。这种方案对于一定尺寸范围内的设备是可以的。这种方案简单方便，但如果想开发出跨越平板和手机的界面则不太合适。因为手机和平板屏幕尺寸差异太大，会导致缩放太大、界面元素显得不太和谐。这种方案适用于一些简单的活动页，或者对页面适配要求不高的页面。</p></article><div><span class="ant-tag ant-tag-geekblue">#<span>移动适配</span></span><span class="ant-tag ant-tag-volcano">#<span>布局</span></span></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><ins class=" adsbygoogle" style="display:block;text-align:center;width:100%;height:90px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="9331479126" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div><div class="container___8WoUM"><p class="title___3k8xL">Online Tools</p><div class="tool_tags___1ccK5"><span class="ant-tag ant-tag-blue tool_tag___1JT6M">JSON Formater</span><span class="ant-tag ant-tag-cyan tool_tag___1JT6M">MD5</span><span class="ant-tag ant-tag-error tool_tag___1JT6M">timestamps</span><span class="ant-tag ant-tag-green tool_tag___1JT6M">Cron Expresstion</span></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div style="text-align:center;height:300px"><ins class=" adsbygoogle" style="display:inline-block;width:250px;height:300px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="7022357395" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div style="text-align:center;height:300px"><ins class=" adsbygoogle" style="display:inline-block;width:250px;height:300px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="7022357395" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div></div></div><footer class="footer___3wR6c">©2021 farmerlzj 提供技术支持 | 联系我们：farmerlzj@163.com |<!-- --> <a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank">蜀ICP备2021025378号-1</a></footer><div class="ant-back-top"></div></div>
+	<script>
+  window.g_useSSR = true;
+  window.g_initialProps = {};
+	</script>
+
+    <script src="https://cloud.qianduan.shop/react.min.js"></script>
+    <script src="https://cloud.qianduan.shop/react-dom.min.js"></script>
+    <script src="/umi.js"></script>
+    <script src="/layouts.js"></script>
+    <script src="/p__blogs__detail__detail.js"></script>
+  
+
+</body></html>

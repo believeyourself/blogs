@@ -1,11 +1,11 @@
 /*
  * @Date: 2021-09-22 08:59:01
  * @LastEditors: lzj
- * @LastEditTime: 2022-01-20 14:27:32
+ * @LastEditTime: 2022-01-21 15:40:35
  * @FilePath: \qianduan.shop\front\.umirc.prod.ts
  */
 import { defineConfig } from 'umi';
-
+import blogs from "./data/blogs";
 export default defineConfig({
   define: {
     'process.env.REACT_APP_ENV': 'production',
@@ -14,8 +14,16 @@ export default defineConfig({
   analytics: {
     // baidu: '926fb44514b1d81a809cb5380bf10511',
   },
-  exportStatic: {},
-  
+  exportStatic: {
+    extraRoutePaths: async () => {
+     const routes = blogs.map(blog=>{
+       return `/blogs/detail/${blog.id}`;
+     })
+    return Promise.resolve(routes);
+  },
+  },
+
+  ssr:{},
   dynamicImport: {},
   outputPath:"../docs",
   // publicPath:"/blogs/",

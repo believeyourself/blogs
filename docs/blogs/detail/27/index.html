@@ -1,0 +1,165 @@
+<!DOCTYPE html><html><head><title data-react-helmet="true">React 父组件如何调用子组件方法 - 前端网</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="baidu-site-verification" content="code-TlaecuFEx5">
+    <meta name="sogou_site_verification" content="wMb3kHjFi6">
+    <meta name="shenma-site-verification" content="19dfe33fcd6f20294164ba6738d0e102_1634534936">
+    <meta name="360-site-verification" content="e943e2d7714355d2d1af8f36b12c41f9">
+    <meta name="baidu_union_verify" content="6f7381d4136832e99f86da0d67739a46">
+    <meta name="bytedance-verification-code" content="d+FL9L0/4KxPwFbqXgmT">
+
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2087076429727327"
+    crossOrigin="anonymous"></script> -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="/umi.css">
+    <link rel="stylesheet" href="/layouts.chunk.css">
+    <link rel="stylesheet" href="/p__blogs__detail__detail.chunk.css">
+    <script>
+      window.routerBase = "/";
+    </script>
+    <script>
+      //! umi version: 3.5.18
+    </script>
+    <title>文章详情</title>
+  <meta data-react-helmet="true" name="description" content="前端网,react,refs,介绍父组件通过 Refs 引用子组件，在不同情况下的用法。"><meta data-react-helmet="true" name="keywords" content="前端网,react,refs">
+</head>
+
+  <body>
+    <div id="root"><header class="header___2_57M"><img alt="farmerLZJ" class="title___MhkPP" src="/static/logo.68ff92ec.png"/></header><div style="width:100%;position:relative;top:0;z-index:999"><nav class="nav___3wfA1"><a href="https://izejun.com/blogs" class="item___AqKVH active___1THnk">博客</a></nav></div><div class="content___2QN8t"><div class="content___1G4Bw"><header><a href="https://izejun.com/" class="back___26SyS undefined"> <!-- -->首页</a> <!-- -->/<a href="https://izejun.com/blogs" class="back___26SyS undefined"> <!-- -->博客</a></header><article><p>&lt;!--
+ <em> @Date: 2021-12-07 19:18:18
+ </em> @LastEditors: lzj
+ <em> @LastEditTime: 2021-12-09 19:21:39
+ </em> @FilePath: \qianduan.shop\data\blogs\27.md
+--&gt;</p>
+
+<h1>React 父组件如何调用子组件方法</h1>
+
+<h2>子组件是类组件，使用 Refs</h2>
+
+<p>使用 React.createRef() 创建 Refs, Refs 可以通过 ref 属性附加到元素节点，我们就可以通过 ref.current 访问被附加的元素节点。</p>
+
+<p>例如：</p>
+
+<p><code>
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.myRef = React.createRef();
+  }
+  render() {
+    return &lt;input ref={this.myRef} /&gt;;
+  }
+}
+</code></p>
+
+<p>在上面的例子中，我们可以通过 myRef.current 访问到 input 节点，从而可以调用input上诸如 focus 等方法。</p>
+
+<p>不同的元素类型会导致 ref 的值不同：
+① 当 ref 附加的元素是 HTML 元素时，ref.current 指向的是底层的DOM元素。
+② 当 ref 附加的元素是 class 组件时，ref.current 指向 class 组件实例。</p>
+
+<p><strong>注：默认情况下，不能在函数组上使用 ref 属性, 因为他们没有实例。</strong>但结合 forwardRef 方法我们就可以在函数组件上使用 ref，后面会介绍。</p>
+
+<h2>子组件是函数组件，使用 Refs 转发</h2>
+
+<h3>① 使用 forwardRef 转发 Refs 到 DOM 组件，就是将 父组件的 ref 向下传递给子组件。</h3>
+
+<p>例如：</p>
+
+<p><code></code>`
+function Farther = ()= {
+ const ref = useRef(null);</p>
+
+<p> return &lt;ChildB ref={ref} /&gt;
+};</p>
+
+<p>const ChildB = React.forwardRef(ChildA);</p>
+
+<p>function ChildA = (pops,ref) =&gt; {
+  return &lt;input ref={ref} /&gt;
+};</p>
+
+<p><code></code>`</p>
+
+<p>上面的例子中，父组件 Father 就能通过 ref.current 访问子组件 ChildA 中的 input 元素。</p>
+
+<p><strong>注：ChildA 子组件的第二个参数只在使用 React.createRef 定义时存在，常规的函数组件和 class 组件都是不接受 ref 参数的，而且 Props 中也不存在 ref 。转发的 ref 也只能附加的 HTML 元素 或 class 组件实例</strong></p>
+
+<h3>② forwardRef 结合 useImperativeHandle 使用，自定义暴露给父组件的实例值。</h3>
+
+<p>useImperativeHandle 可以让你在使用 ref 时自定义暴露给父组件的实例值。</p>
+
+<p>例如：</p>
+
+<p><code></code>`
+function Farther = ()= {
+ const ref = useRef(null);</p>
+
+<p> return &lt;ChildB ref={ref} /&gt;
+};</p>
+
+<p>const ChildB = React.forwardRef(ChildA);</p>
+
+<p>function ChildA = (pops,ref) =&gt; {
+  useImperativeHandle(ref,()=({
+    name: &quot;ChildA&quot;
+    log: log,
+  }));
+  const log = ()=&gt;{
+    console.log(&quot;子组件内部log&quot;)
+  }
+  return &lt;input /&gt;
+};</p>
+
+<p><code></code>`</p>
+
+<p>上面的例子中，父组件 Father 拿到的 ref.current 的值就是对象 {name:&quot;ChildA&quot;,log:log}, 父组件也能通过 ref.current.log 调用子组件的 log 方法。</p>
+
+<h3>③ 在高阶组件(HOC)中转发 Refs</h3>
+
+<p>高阶组件是参数为组件，返回值为新组件的函数。</p>
+
+<p>虽然高阶组件的约定是将所有 props 传递给被包装组件，但这对于 refs 并不适用。那是因为 ref 实际上并不是一个 prop - 就像 key 一样，它是由 React 专门处理的。如果将 ref 添加到 HOC 的返回组件中，则 ref 引用指向容器组件，而不是被包装组件。</p>
+
+<p>我们可以在 HOC 中使用自定义的 prop 属性接收 ref 并传递给 子组件.</p>
+
+<p>例如：</p>
+
+<p><code></code>`
+function logProps(Component) {
+  class LogProps extends React.Component {
+    componentDidUpdate(prevProps) {
+      console.log(&#39;old props:&#39;, prevProps);
+      console.log(&#39;new props:&#39;, this.props);
+    }</p>
+
+<pre><code>render() {
+  const {forwardedRef, ...rest} = this.props;
+
+  // 将自定义的 prop 属性 “forwardedRef” 定义为 ref
+  return &lt;Component ref={forwardedRef} {...rest} /&gt;;
+}</code></pre>
+
+<p>  }</p>
+
+<p>  // 注意 React.forwardRef 回调的第二个参数 “ref”。
+  // 我们可以将其作为常规 prop 属性传递给 LogProps，例如 “forwardedRef”
+  // 然后它就可以被挂载到被 LogProps 包裹的子组件上。
+  return React.forwardRef((props, ref) =&gt; {
+    return &lt;LogProps {...props} forwardedRef={ref} /&gt;;
+  });
+}
+<code></code>`</p></article><div><span class="ant-tag ant-tag-geekblue">#<span>react</span></span><span class="ant-tag ant-tag-volcano">#<span>refs</span></span></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><ins class=" adsbygoogle" style="display:block;text-align:center;width:100%;height:90px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="9331479126" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div><div class="container___8WoUM"><p class="title___3k8xL">Online Tools</p><div class="tool_tags___1ccK5"><span class="ant-tag ant-tag-blue tool_tag___1JT6M">JSON Formater</span><span class="ant-tag ant-tag-cyan tool_tag___1JT6M">MD5</span><span class="ant-tag ant-tag-error tool_tag___1JT6M">timestamps</span><span class="ant-tag ant-tag-green tool_tag___1JT6M">Cron Expresstion</span></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div style="text-align:center;height:300px"><ins class=" adsbygoogle" style="display:inline-block;width:250px;height:300px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="7022357395" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div style="text-align:center;height:300px"><ins class=" adsbygoogle" style="display:inline-block;width:250px;height:300px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="7022357395" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div></div></div><footer class="footer___3wR6c">©2021 farmerlzj 提供技术支持 | 联系我们：farmerlzj@163.com |<!-- --> <a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank">蜀ICP备2021025378号-1</a></footer><div class="ant-back-top"></div></div>
+	<script>
+  window.g_useSSR = true;
+  window.g_initialProps = {};
+	</script>
+
+    <script src="https://cloud.qianduan.shop/react.min.js"></script>
+    <script src="https://cloud.qianduan.shop/react-dom.min.js"></script>
+    <script src="/umi.js"></script>
+    <script src="/layouts.js"></script>
+    <script src="/p__blogs__detail__detail.js"></script>
+  
+
+</body></html>

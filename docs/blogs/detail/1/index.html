@@ -1,0 +1,143 @@
+<!DOCTYPE html><html><head><title data-react-helmet="true">登录状态之cookies、session、token - 前端网</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="baidu-site-verification" content="code-TlaecuFEx5">
+    <meta name="sogou_site_verification" content="wMb3kHjFi6">
+    <meta name="shenma-site-verification" content="19dfe33fcd6f20294164ba6738d0e102_1634534936">
+    <meta name="360-site-verification" content="e943e2d7714355d2d1af8f36b12c41f9">
+    <meta name="baidu_union_verify" content="6f7381d4136832e99f86da0d67739a46">
+    <meta name="bytedance-verification-code" content="d+FL9L0/4KxPwFbqXgmT">
+
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2087076429727327"
+    crossOrigin="anonymous"></script> -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="/umi.css">
+    <link rel="stylesheet" href="/layouts.chunk.css">
+    <link rel="stylesheet" href="/p__blogs__detail__detail.chunk.css">
+    <script>
+      window.routerBase = "/";
+    </script>
+    <script>
+      //! umi version: 3.5.18
+    </script>
+    <title>文章详情</title>
+  <meta data-react-helmet="true" name="description" content="前端网,登录状态,cookies,session,token,登录状态之cookies、session、token"><meta data-react-helmet="true" name="keywords" content="前端网,登录状态,cookies,session,token">
+</head>
+
+  <body>
+    <div id="root"><header class="header___2_57M"><img alt="farmerLZJ" class="title___MhkPP" src="/static/logo.68ff92ec.png"/></header><div style="width:100%;position:relative;top:0;z-index:999"><nav class="nav___3wfA1"><a href="https://izejun.com/blogs" class="item___AqKVH active___1THnk">博客</a></nav></div><div class="content___2QN8t"><div class="content___1G4Bw"><header><a href="https://izejun.com/" class="back___26SyS undefined"> <!-- -->首页</a> <!-- -->/<a href="https://izejun.com/blogs" class="back___26SyS undefined"> <!-- -->博客</a></header><article><h1>登录状态之cookies、session、token</h1>
+
+<h2>背景</h2>
+
+<p>我们都知道 http 是无状态的，这也就意味着请求方和响应方之间无法维护状态，都是一次性的，他不知道请求前都发生过什么。但在有的应用场景下我们需要维护状态，比如各种后台管理系统都需要登录才能进行各种操作，这时我们就需要维护用户的登录状态。</p>
+
+<p>常见的登录方案有：</p>
+
+<p>1.cookies+session</p>
+
+<p>2.json web token(JWT)</p>
+
+<h2>cookie 以及 session</h2>
+
+<p>cookie 是前端存储的一种，但相比于 localStorage 等其他方式，借助 HTTP 头、浏览器能力，cookie 可以做到前端无感知。</p>
+
+<p>一般过程是这样的：</p>
+
+<ul><li>在提供标记的接口，通过 HTTP 返回头的 Set-Cookie 字段，直接「种」到浏览器上。</li><li>浏览器发起请求时，会自动把 cookie 通过 HTTP 请求头的 Cookie 字段，带给接口。</li><li>服务器以及 Cookie 中的 SessionId 字段查询当前请求所属用户的用户 session 数据。</li></ul>
+
+<h3>cookie 配置</h3>
+
+<ul><li><strong>Domain / Path</strong>
+Domain 属性指定浏览器发出 HTTP 请求时，哪些域名要附带这个 Cookie。如果没有指定该属性，浏览器会默认将其设为当前 URL 的一级域名，比如 http://www.example.com 会设为 http://example.com，而且以后如果访问http://example.com的任何子域名，HTTP 请求也会带上这个 Cookie。如果服务器在 Set-Cookie 字段指定的域名，不属于当前域名，浏览器会拒绝这个 Cookie。
+Path 属性指定浏览器发出 HTTP 请求时，哪些路径要附带这个 Cookie。只要浏览器发现，Path 属性是 HTTP 请求路径的开头一部分，就会在头信息里面带上这个 Cookie。比如，PATH 属性是/，那么请求/docs 路径也会包含该 Cookie。当然，前提是域名必须一致。</li><li><strong>Expires / Max-Age</strong>
+Expires 属性指定一个具体的到期时间，到了指定时间以后，浏览器就不再保留这个 Cookie。它的值是 UTC 格式。如果不设置该属性，或者设为 null，Cookie 只在当前会话（session）有效，浏览器窗口一旦关闭，当前 Session 结束，该 Cookie 就会被删除。另外，浏览器根据本地时间，决定 Cookie 是否过期，由于本地时间是不精确的，所以没有办法保证 Cookie 一定会在服务器指定的时间过期。
+Max-Age 属性指定从现在开始 Cookie 存在的秒数，比如 60 <em> 60 </em> 24 * 365（即一年）。过了这个时间以后，浏览器就不再保留这个 Cookie。
+如果同时指定了 Expires 和 Max-Age，那么 Max-Age 的值将优先生效。
+如果 Set-Cookie 字段没有指定 Expires 或 Max-Age 属性，那么这个 Cookie 就是 Session Cookie，即它只在本次对话存在，一旦用户关闭浏览器，浏览器就不会再保留这个 Cookie。</li><li><strong>Secure / HttpOnly</strong>
+Secure 属性指定浏览器只有在加密协议 HTTPS 下，才能将这个 Cookie 发送到服务器。另一方面，如果当前协议是 HTTP，浏览器会自动忽略服务器发来的 Secure 属性。该属性只是一个开关，不需要指定值。如果通信是 HTTPS 协议，该开关自动打开。
+HttpOnly 属性指定该 Cookie 无法通过 JavaScript 脚本拿到，主要是 Document.cookie 属性、XMLHttpRequest 对象和 Request API 都拿不到该属性。这样就防止了该 Cookie 被脚本读到，只有浏览器发出 HTTP 请求时，才会带上该 Cookie。</li></ul>
+
+<h3>服务端 session</h3>
+
+<p>session 本意是指客户端与服务器的会话状态，由于凭证存储到了服务端，后来也把这些存在服务端的信息称为 session。
+现在服务器自己维护登录状态，仅发给客户端一个 key，然后在自己维护一个 key-value 表，如果请求中有 key，并且在表中可以找到对应的 value，则视为合法。</p>
+
+<h3>问题</h3>
+
+<h4>1.集群服务器 session 同步</h4>
+
+<p>可以将 session 抽离出来统一管理，如使用 Redis 等服务。</p>
+
+<h4>2.无法避免 CSRF 攻击</h4>
+
+<p>由于 SessionId 存放在 Cookie 中，所以无法避免 [CSRF]: https://www.cnblogs.com/imgss/p/csrf.html 攻击。</p>
+
+<h4>3.跨域请求的 cookie</h4>
+
+<p><a href="https://www.cnblogs.com/imgss/p/cors.html">https://www.cnblogs.com/imgss/p/cors.html</a></p>
+
+<h4>4.cookie 共享</h4>
+
+<p>同一域名下的 cookie 共享。</p>
+
+<h2>jWT</h2>
+
+<p>使用 JWT 维护登陆态，服务器不再需要维护状态表，他仅给客户端发送一个加密的数据 token，每次请求都带上这个加密的数据，再解密验证是否合法即可。由于是加密的数据，即使用户可以修改，命中几率也很小。</p>
+
+<h3>node 中 JWT 的简单应用</h3>
+
+<p>第一步，在你的/login 路由中使用 jsonwebtoken 中间件用于生成 token：</p>
+
+<p><code>
+const jwt = require(&#39;jsonwebtoken&#39;)
+let token = jwt.sign({
+  name: user name
+  }, config.secret, {
+  expiresIn: &#39;24h&#39;
+})
+res.cookie(&#39;token&#39;, token)
+</code></p>
+
+<p>复制代码具体使用方法请查看 jsonwebtoken 的 Github
+第二步，在 Node 的入口文件 app.js 中注册 express-jwt 中间件用于验证 token：</p>
+
+<p><code>
+const expressJwt = require(&#39;express-jwt&#39;)
+app.use(expressJwt({
+  secret: config.secret,
+  getToken: (req) =&gt; {
+    return req.cookies.token || null
+  }
+}).unless({
+  path: [
+  &#39;/login&#39;
+  ]
+}))
+</code></p>
+
+<p>复制代码如果 getToken 返回 null，中间件会抛出 UnauthorizedError 异常：</p>
+
+<p><code>
+app.use(function (err, req, res, next) {
+//当 token 验证失败时会抛出如下错误
+if (err.name === &#39;UnauthorizedError&#39;) {
+      res.status(401).json({
+      status: &#39;fail&#39;,
+      message: &#39;身份校验过期，请重新登陆&#39;
+    });
+  }
+});
+</code></p></article><div><span class="ant-tag ant-tag-geekblue">#<span>登录状态</span></span><span class="ant-tag ant-tag-volcano">#<span>cookies</span></span><span class="ant-tag ant-tag-error">#<span>session</span></span><span class="ant-tag ant-tag-success">#<span>token</span></span></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><ins class=" adsbygoogle" style="display:block;text-align:center;width:100%;height:90px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="9331479126" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div><div class="container___8WoUM"><p class="title___3k8xL">Online Tools</p><div class="tool_tags___1ccK5"><span class="ant-tag ant-tag-blue tool_tag___1JT6M">JSON Formater</span><span class="ant-tag ant-tag-cyan tool_tag___1JT6M">MD5</span><span class="ant-tag ant-tag-error tool_tag___1JT6M">timestamps</span><span class="ant-tag ant-tag-green tool_tag___1JT6M">Cron Expresstion</span></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div style="text-align:center;height:300px"><ins class=" adsbygoogle" style="display:inline-block;width:250px;height:300px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="7022357395" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div style="text-align:center;height:300px"><ins class=" adsbygoogle" style="display:inline-block;width:250px;height:300px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="7022357395" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div></div></div><footer class="footer___3wR6c">©2021 farmerlzj 提供技术支持 | 联系我们：farmerlzj@163.com |<!-- --> <a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank">蜀ICP备2021025378号-1</a></footer><div class="ant-back-top"></div></div>
+	<script>
+  window.g_useSSR = true;
+  window.g_initialProps = {};
+	</script>
+
+    <script src="https://cloud.qianduan.shop/react.min.js"></script>
+    <script src="https://cloud.qianduan.shop/react-dom.min.js"></script>
+    <script src="/umi.js"></script>
+    <script src="/layouts.js"></script>
+    <script src="/p__blogs__detail__detail.js"></script>
+  
+
+</body></html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html><html><head><title data-react-helmet="true">umi实践问题汇总--持续更新 - 前端网</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="baidu-site-verification" content="code-TlaecuFEx5">
+    <meta name="sogou_site_verification" content="wMb3kHjFi6">
+    <meta name="shenma-site-verification" content="19dfe33fcd6f20294164ba6738d0e102_1634534936">
+    <meta name="360-site-verification" content="e943e2d7714355d2d1af8f36b12c41f9">
+    <meta name="baidu_union_verify" content="6f7381d4136832e99f86da0d67739a46">
+    <meta name="bytedance-verification-code" content="d+FL9L0/4KxPwFbqXgmT">
+
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2087076429727327"
+    crossOrigin="anonymous"></script> -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="/umi.css">
+    <link rel="stylesheet" href="/layouts.chunk.css">
+    <link rel="stylesheet" href="/p__blogs__detail__detail.chunk.css">
+    <script>
+      window.routerBase = "/";
+    </script>
+    <script>
+      //! umi version: 3.5.18
+    </script>
+    <title>文章详情</title>
+  <meta data-react-helmet="true" name="description" content="前端网,react,umi,脚手架,在使用umi的过程中所遇到问题的记录汇总"><meta data-react-helmet="true" name="keywords" content="前端网,react,umi,脚手架">
+</head>
+
+  <body>
+    <div id="root"><header class="header___2_57M"><img alt="farmerLZJ" class="title___MhkPP" src="/static/logo.68ff92ec.png"/></header><div style="width:100%;position:relative;top:0;z-index:999"><nav class="nav___3wfA1"><a href="https://izejun.com/blogs" class="item___AqKVH active___1THnk">博客</a></nav></div><div class="content___2QN8t"><div class="content___1G4Bw"><header><a href="https://izejun.com/" class="back___26SyS undefined"> <!-- -->首页</a> <!-- -->/<a href="https://izejun.com/blogs" class="back___26SyS undefined"> <!-- -->博客</a></header><article><h1>umi实践问题集锦</h1>
+
+<p>开发环境：
+umi: 3.5.18
+node: v14.15.1
+系统： windows</p>
+
+<p>本文主要记录在项目实践过程中的一些特定场景问题，仅供参考：</p>
+
+<h2>1.webpackChain自定义loader报错：this.getOptions is not a function</h2>
+
+<p><strong>场景：</strong>
+    添加loader解析makdown文件转换为html展示，使用webpackChain增加remark-loader,html-loader报错。
+<code></code>`
+export default {
+    ...
+    chainWebpack(config){
+        config.module
+        .rule(&#39;compile-md&#39;)
+        .test(/.md$/)
+            .use(&quot;html-loader&quot;)
+            .loader(&quot;html-loader&quot;)
+            .end()
+            .use(&quot;markdown-loader&quot;)
+    }
+    ...
+}</p>
+
+<p><code>
+**解决：**
+    关闭webpack5编辑即可，修改umi配置config.js 或 .umirc.js：
+</code>
+export default {
+    ...
+    webpack5:false,
+    ...
+}
+<code></code>`</p>
+
+<h2>2.SSR(服务端渲染)下不支持mfsu、@umijs/preset-ui(区块)</h2>
+
+<h2>3.SSR(服务端渲染)在第一次请求后，点击导航菜单，路由发生切换跳转新的页面并未向服务器发起请求获取新的页面，而是本地做的页面重新渲染。</h2>
+
+<p><strong>解决：</strong>
+将NavLink组件替换为a标签</p>
+
+<h2>4.SSR(服务端渲染)请求服务器Css和js文件，返回的是html内容。</h2>
+
+<p><strong>解决：</strong>
+如果配置了hash:true,关闭打包文件的hash功能即可,因为umi.server.js里面对js和css的引用地址没有加hash，比如你打包出来的文件名是umi.adsjsnd.css,但是umi.server.js对css的引用文件名是umi.css,所以访问不到对应的资源，返回的都是html。修改配置config.js或.umirc.js：
+<code>
+export default {
+    ...
+    hash:false
+    ...
+}
+</code>
+ 如果没配置hash:true,参考这个issues:https://github.com/umijs/umi/issues/4808</p>
+
+<p> ## 5.开启mfsu:{}报错：1. Can&#39;t read property &#39;ModuleFederationPlugin&#39; of undefined.
+ <strong>解决：</strong>
+ 请确认 mfsu:{} 被添加到 config.ts 而不是 config.dev.ts 或者 config.prod.ts。</p></article><div><span class="ant-tag ant-tag-geekblue">#<span>react</span></span><span class="ant-tag ant-tag-volcano">#<span>umi</span></span><span class="ant-tag ant-tag-error">#<span>脚手架</span></span></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><ins class=" adsbygoogle" style="display:block;text-align:center;width:100%;height:90px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="9331479126" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div><div class="container___8WoUM"><p class="title___3k8xL">Online Tools</p><div class="tool_tags___1ccK5"><span class="ant-tag ant-tag-blue tool_tag___1JT6M">JSON Formater</span><span class="ant-tag ant-tag-cyan tool_tag___1JT6M">MD5</span><span class="ant-tag ant-tag-error tool_tag___1JT6M">timestamps</span><span class="ant-tag ant-tag-green tool_tag___1JT6M">Cron Expresstion</span></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div style="text-align:center;height:300px"><ins class=" adsbygoogle" style="display:inline-block;width:250px;height:300px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="7022357395" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div style="text-align:center;height:300px"><ins class=" adsbygoogle" style="display:inline-block;width:250px;height:300px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="7022357395" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div></div></div><footer class="footer___3wR6c">©2021 farmerlzj 提供技术支持 | 联系我们：farmerlzj@163.com |<!-- --> <a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank">蜀ICP备2021025378号-1</a></footer><div class="ant-back-top"></div></div>
+	<script>
+  window.g_useSSR = true;
+  window.g_initialProps = {};
+	</script>
+
+    <script src="https://cloud.qianduan.shop/react.min.js"></script>
+    <script src="https://cloud.qianduan.shop/react-dom.min.js"></script>
+    <script src="/umi.js"></script>
+    <script src="/layouts.js"></script>
+    <script src="/p__blogs__detail__detail.js"></script>
+  
+
+</body></html>

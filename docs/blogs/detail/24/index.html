@@ -1,0 +1,110 @@
+<!DOCTYPE html><html><head><title data-react-helmet="true">http强缓存和协商缓存 - 前端网</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="baidu-site-verification" content="code-TlaecuFEx5">
+    <meta name="sogou_site_verification" content="wMb3kHjFi6">
+    <meta name="shenma-site-verification" content="19dfe33fcd6f20294164ba6738d0e102_1634534936">
+    <meta name="360-site-verification" content="e943e2d7714355d2d1af8f36b12c41f9">
+    <meta name="baidu_union_verify" content="6f7381d4136832e99f86da0d67739a46">
+    <meta name="bytedance-verification-code" content="d+FL9L0/4KxPwFbqXgmT">
+
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2087076429727327"
+    crossOrigin="anonymous"></script> -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="/umi.css">
+    <link rel="stylesheet" href="/layouts.chunk.css">
+    <link rel="stylesheet" href="/p__blogs__detail__detail.chunk.css">
+    <script>
+      window.routerBase = "/";
+    </script>
+    <script>
+      //! umi version: 3.5.18
+    </script>
+    <title>文章详情</title>
+  <meta data-react-helmet="true" name="description" content="前端网,http缓存,强缓存,协商缓存,重温http缓存的基本原理及浏览器缓存流程。"><meta data-react-helmet="true" name="keywords" content="前端网,http缓存,强缓存,协商缓存">
+</head>
+
+  <body>
+    <div id="root"><header class="header___2_57M"><img alt="farmerLZJ" class="title___MhkPP" src="/static/logo.68ff92ec.png"/></header><div style="width:100%;position:relative;top:0;z-index:999"><nav class="nav___3wfA1"><a href="https://izejun.com/blogs" class="item___AqKVH active___1THnk">博客</a></nav></div><div class="content___2QN8t"><div class="content___1G4Bw"><header><a href="https://izejun.com/" class="back___26SyS undefined"> <!-- -->首页</a> <!-- -->/<a href="https://izejun.com/blogs" class="back___26SyS undefined"> <!-- -->博客</a></header><article><p>&lt;!--
+ <em> @Date: 2021-11-29 15:58:14
+ </em> @LastEditors: lzj
+ <em> @LastEditTime: 2021-12-02 17:47:07
+ </em> @FilePath: \qianduan.shop\data\blogs\24.md
+--&gt;</p>
+
+<h1>http强缓存和协商缓存</h1>
+
+<p>合理使用http缓存是前端性能优化的手段之一，是作为前端开发需要掌握的重要知识点。它可以加快我们获取资源的速度，减少网络传输，提升用户体验。</p>
+
+<p>http缓存流程图如下：</p>
+
+<p><img alt="http缓存流程" src="/static/images/24_1.webp"/> </p>
+
+<h2>http强缓存</h2>
+
+<p>浏览器直接读取本地缓存而不去请求服务器，我们在 Chrome 浏览器控制台Network面板中看到的 http Status 为 200 , Size 显示为 Disk Cache 或 Memory Cache 即表示当前资源走的是本地缓存，没有向服务器发送请求。</p>
+
+<p>在Chrome中强缓存又分为 Disk Cache 和 Memory Cache,由浏览器控制存放位置,至于具体规则目前没有统一的说法。</p>
+
+<h3>http如何判断是否走强缓存呢？</h3>
+
+<p>强缓存由 Expires、Cache-Control 和 Pragma 3个 Header 属性共同来控制。</p>
+
+<p><strong>① Expires</strong>
+http/1.0 的产物，指定缓存过期的事件，是服务器具体的时间点，但是他有个缺点，受本地时间影响，修改了本地时间可能会造成缓存失效。</p>
+
+<p>Expires 现阶段主要用在一些不兼容 http/1.1的环境，如果在 Cache-Control 响应头设置了 max-age 或者 s-max-age 指令，那么 Expires 头会被忽略。</p>
+
+<p><strong>② Cache-Control</strong></p>
+
+<p>Cache-Control 是 http/1.1 中的重要缓存规则可以使用多种指令：</p>
+
+<p><img alt="http Cache-Control指令" src="/static/images/24_2.webp"/> </p>
+
+<p><strong>③ Pragma</strong></p>
+
+<p>Pragma 是 HTTP/1.0 中定义的一个header属性， 只有一个 no-cache 属性值，效果和 Cache-Control 中的 no-cache 一致，不使用强缓存，但是 HTTP 的响应头没有明确定义这个属性，所以它不能拿来完全替代 HTTP/1.1 中定义的 Cache-control 头。通常定义 Pragma 以向后兼容基于HTTP/1.0的客户端。。</p>
+
+<h2>http协商缓存</h2>
+
+<p>协商缓存就是强制缓存失效后，浏览器携带缓存标识向服务器发起请求，由服务器根据缓存标识决定是否使用浏览器缓存的过程。</p>
+
+<p>协商缓存通过设置 Last-Modified 和 ETag 两种请求头来实现。</p>
+
+<p><strong>① ETag 和 If-None-Match</strong></p>
+
+<p>ETag 是服务器响应请求时，返回由服务器生成的当前资源文件的唯一标识，只要资源有变化，ETag 就会重新生成，首次请求资源时有服务器返回。</p>
+
+<p>在下一次请求资源时会将上一次返回的 ETag 放到请求头的 If-None-Match 里，服务器对比 If-None-Match 里传来的 ETag 值与服务器的是否一致，以此判断是否资资源被修改过，如果修改了则返回新的资源文件和新的 ETag，若未修改则继续判断Last-Modified。</p>
+
+<p><strong>② Last-Modified 和 If-Modified-Since</strong> </p>
+
+<p>在首次访问资源时，服务器返回资源 和 Last-Modified，Last-Modified 的值是这个资源在服务器上的最后修改时间，浏览器接收后缓存文件和 Last-Modified。</p>
+
+<p>下次请求这个资源，浏览器检测到有 Last-Modified 这个 header ，于是添加If-Modified-Since这个 header 到请求头中，值就是Last-Modified中的值；
+服务器去判断 If-Modified-Since 中的值与服务器中这个资源的最后修改时间是否一致，如果一致则返回 304 告诉浏览器可以使用缓存资源，不一致则返回 Status 200 个新的资源。</p>
+
+<p><strong>③ ETag 和 Last-Modified对比</strong></p>
+
+<p>1️⃣ Last-Modified 的时间只能精确到秒，一秒内修改多次的话从时间体现不出来变化，，ETag 精确度更高，每次改变都会重新生成。如果是负载均衡的服务器，各个服务器生成的Last-Modified也有可能不一致。</p>
+
+<p>2️⃣ 在性能上，ETag 要逊于Last-Modified，毕竟 Last-Modified 只需要记录时间，而 ETag 需要服务器通过算法来计算出一个hash值。</p>
+
+<p>3️⃣ 服务器校验优先考虑 ETag。</p>
+
+<h2>参考资料</h2>
+
+<p>&lt;a href=&quot;https://developer.mozilla.org/zh-CN/docs/Web/HTTP&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt; MDN HTTP 教程 &lt;/a&gt;</p></article><div><span class="ant-tag ant-tag-geekblue">#<span>http缓存</span></span><span class="ant-tag ant-tag-volcano">#<span>强缓存</span></span><span class="ant-tag ant-tag-error">#<span>协商缓存</span></span></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><ins class=" adsbygoogle" style="display:block;text-align:center;width:100%;height:90px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="9331479126" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div><div class="container___8WoUM"><p class="title___3k8xL">Online Tools</p><div class="tool_tags___1ccK5"><span class="ant-tag ant-tag-blue tool_tag___1JT6M">JSON Formater</span><span class="ant-tag ant-tag-cyan tool_tag___1JT6M">MD5</span><span class="ant-tag ant-tag-error tool_tag___1JT6M">timestamps</span><span class="ant-tag ant-tag-green tool_tag___1JT6M">Cron Expresstion</span></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div style="text-align:center;height:300px"><ins class=" adsbygoogle" style="display:inline-block;width:250px;height:300px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="7022357395" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div style="text-align:center;height:300px"><ins class=" adsbygoogle" style="display:inline-block;width:250px;height:300px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="7022357395" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div></div></div><footer class="footer___3wR6c">©2021 farmerlzj 提供技术支持 | 联系我们：farmerlzj@163.com |<!-- --> <a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank">蜀ICP备2021025378号-1</a></footer><div class="ant-back-top"></div></div>
+	<script>
+  window.g_useSSR = true;
+  window.g_initialProps = {};
+	</script>
+
+    <script src="https://cloud.qianduan.shop/react.min.js"></script>
+    <script src="https://cloud.qianduan.shop/react-dom.min.js"></script>
+    <script src="/umi.js"></script>
+    <script src="/layouts.js"></script>
+    <script src="/p__blogs__detail__detail.js"></script>
+  
+
+</body></html>
