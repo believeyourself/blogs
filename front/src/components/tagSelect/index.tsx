@@ -112,9 +112,9 @@ const TagSelect: FC<TagSelectProps> & { Option: typeof TagSelectOption } = (
 
   const checkedAll = getAllTags().length === value?.length;
   const {
-    expandText = '展开',
-    collapseText = '收起',
-    selectAllText = '全部',
+    expandText = 'expand',
+    collapseText = 'pack up',
+    selectAllText = 'All',
   } = actionsText;
 
   const cls = classNames(styles.tagSelect, className, {

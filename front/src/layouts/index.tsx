@@ -53,7 +53,7 @@ class App extends React.Component {
               to={'/blogs'}
               className={styles.item}
             >
-              博客
+              Blog
             </NavLink>
             {/* <NavLink
               activeClassName={styles.active}

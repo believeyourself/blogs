@@ -14,8 +14,6 @@
       "/vendors.js",
       "/p__exception__404.p__tools.chunk.css",
       "/p__exception__404.p__tools.js",
-      "/p__blogs.p__tools.chunk.css",
-      "/p__blogs.p__tools.js",
       "/p__tools.chunk.css",
       "/p__tools.js"
     ],
@@ -26,8 +24,6 @@
     ],
     "p__blogs": [
       "/vendors.js",
-      "/p__blogs.p__tools.chunk.css",
-      "/p__blogs.p__tools.js",
       "/p__blogs.chunk.css",
       "/p__blogs.js"
     ],
@@ -38,8 +34,6 @@
     ]
   },
   "vendors.js": "/vendors.js",
-  "p__blogs.p__tools.css": "/p__blogs.p__tools.chunk.css",
-  "p__blogs.p__tools.js": "/p__blogs.p__tools.js",
   "p__exception__404.p__tools.css": "/p__exception__404.p__tools.chunk.css",
   "p__exception__404.p__tools.js": "/p__exception__404.p__tools.js",
   "layouts.css": "/layouts.chunk.css",

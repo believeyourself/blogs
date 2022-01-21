@@ -11,7 +11,7 @@ import blogs from '../../../data/blogs';
 import NavLink from '@/components/navLink';
 import TagSelect from '@/components/tagSelect';
 import SiteHeader from '@/components/siteHeader';
-import { Divider, Carousel } from 'antd';
+import { Divider } from 'antd';
 import { useState, useMemo } from 'react';
 
 export default function Blogs() {
@@ -26,59 +26,29 @@ export default function Blogs() {
   }, [tag]);
 
   const records = targetBlogs.map((item: any) => {
-    if (item.id) {
-      return (
-        <NavLink
-          to={`/blogs/detail/${item.id}`}
-          key={item.url || item.id}
-          className={styles.category_list_item}
-        >
-          <h4 className={styles.title}>{item.title}</h4>
-          <p className={styles.description}>{item.description}</p>
-          <p className={styles.tip}>
-            来源: 本站 {'           '}
-            时间: {item.date}
-          </p>
-        </NavLink>
-      );
-    } else {
-      return (
-        <a
-          href={item.url}
-          target="_blank"
-          key={item.url || item.id}
-          className={styles.category_list_item}
-          rel="nofollow"
-        >
-          <h4 className={styles.title}>{item.title}</h4>
-          <p className={styles.description}>{item.description}</p>
-          <p className={styles.tip}>
-            来源: {item.source} {'          '}
-            时间: 未知
-          </p>
-        </a>
-      );
-    }
+    return (
+      <NavLink
+        to={`/blogs/detail/${item.id}`}
+        key={item.url || item.id}
+        className={styles.category_list_item}
+      >
+        <h4 className={styles.title}>{item.title}</h4>
+        <p className={styles.description}>{item.description}</p>
+        <p className={styles.tip}>
+          from: FarmerLZJ {'           '}
+          Date: {item.date}
+        </p>
+      </NavLink>
+    );
   });
   return (
     <>
       <SiteHeader
-        title="博客随笔 - React,Node,JavaScript,SEO"
-        keywords="前端网，前端开发，前端学习，前端博客，React，JavaScript，SEO，css，node"
-        description="前端网，致力于前端开发领域技术研究，深入分析技术基础原理，包括但不限于JavaScript,css,React,vue,node,webpack,umi,antd"
+        title="blogs - React,Node,JavaScript,SEO"
+        keywords="React，JavaScript，SEO，css，node"
+        description="JavaScript,css,React,vue,node,webpack,umi,antd"
       />
       <div className={styles.content}>
-        <Carousel autoplay>
-          <NavLink className={styles.topic} to={'/topics/react'}>
-            React 专题
-          </NavLink>
-          <NavLink className={styles.topic} to={'/topics/node'}>
-            Node 专题
-          </NavLink>
-          <NavLink className={styles.topic} to={'/topics/vscode'}>
-            VS Code 插件
-          </NavLink>
-        </Carousel>
         <Divider />
         <TagSelect
           hideCheckAll={true}

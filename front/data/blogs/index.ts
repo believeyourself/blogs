@@ -292,9 +292,9 @@ export default [
   },
   {
     id: 1,
-    title: '登录状态之cookies、session、token',
-    description: '登录状态之cookies、session、token',
-    tags: ['登录状态', 'cookies', 'session', 'token'],
+    title: 'login status -- cookies、session、token',
+    description: "We all know that http is stateless, which means that the state cannot be maintained between the requester and the responder, it is all one-time, and he does not know what happened before the request. However, in some application scenarios, we need to maintain the status. For example, various background management systems need to log in to perform various operations. At this time, we need to maintain the user's login status.We all know that http is stateless, which means that the state cannot be maintained between the requester and the responder, it is all one-time, and he does not know what happened before the request. However, in some application scenarios, we need to maintain the status. For example, various background management systems need to log in to perform various operations. At this time, we need to maintain the user's login status.",
+    tags: ['login status', 'cookies', 'session', 'token'],
     date: '2021-09-13',
   }
 ];
