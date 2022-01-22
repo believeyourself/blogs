@@ -1,5 +1,13 @@
 export default [
   {
+    id: 41,
+    title: 'AWS EC2 安装 ModeJs，使用 nvm 管理 Node 版本',
+    description:
+      'AWS EC2 中管理 NodeJs 环境',
+    tags: ['node', 'AWS','EC2'],
+    date: '2022-01-22',
+  },
+  {
     id: 40,
     title: 'egg mysql 查询 Date 类型数据时区不对，时间减了 8 个小时',
     description:
