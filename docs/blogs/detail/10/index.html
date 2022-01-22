@@ -3,7 +3,7 @@
  * @LastEditors: lzj
  * @LastEditTime: 2022-01-21 16:41:33
  * @FilePath: \qianduan.shop\front\src\pages\document.ejs
---><!DOCTYPE html><html><head><title data-react-helmet="true">SEO系列之站内优化 - 前端网</title>
+--><!DOCTYPE html><html><head><title data-react-helmet="true">SEO series of onsite optimization - 前端网</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2087076429727327" crossorigin="anonymous"></script>
@@ -18,93 +18,100 @@
       //! umi version: 3.5.18
     </script>
     <title>文章详情</title>
-  <meta data-react-helmet="true" name="description" content="SEO,介绍在网站内容，排版、用户体验等方面优化SEO及注意事项"><meta data-react-helmet="true" name="keywords" content="SEO">
+  <meta data-react-helmet="true" name="description" content="SEO,Introducing SEO optimization and considerations in website content, typography, user experience, etc."><meta data-react-helmet="true" name="keywords" content="SEO">
 </head>
 
   <body>
-    <div id="root"><header class="header___2_57M"><img alt="farmerLZJ" class="title___MhkPP" src="/static/logo.68ff92ec.png"/></header><div style="width:100%;position:relative;top:0;z-index:999"><nav class="nav___3wfA1"><a href="https://izejun.com/blogs" class="item___AqKVH active___1THnk">Blog</a></nav></div><div class="content___2QN8t"><div class="content___1G4Bw"><article><h1>SEO系列之站内优化</h1>
+    <div id="root"><header class="header___2_57M"><img alt="farmerLZJ" class="title___MhkPP" src="/static/logo.68ff92ec.png"/></header><div style="width:100%;position:relative;top:0;z-index:999"><nav class="nav___3wfA1"><a href="https://izejun.com/blogs" class="item___AqKVH active___1THnk">Blog</a></nav></div><div class="content___2QN8t"><div class="content___1G4Bw"><article><p>&lt;!--
+ <em> @Date: 2021-12-27 14:41:11
+ </em> @LastEditors: lzj
+ <em> @LastEditTime: 2022-01-22 09:41:51
+ </em> @FilePath: \qianduan.shop\front\data\blogs\10.md
+--&gt;</p>
 
-<p>网站SEO优化主要分为三个方面：站内优化, 站外优化, 技术优化。本文着重介绍的是站内优化，SEO站内优化主要是指通过对网站内部的内容和结构作优化调整，使网站对搜索引擎友好，有利于网站的抓取、索引、收录和排名。</p>
+<h1>SEO Series - On-site Optimization</h1>
 
-<p>从网站内部开启我们的SEO优化旅程，本文介绍的站内优化主要包含<strong>网站内容</strong>，<strong>网站排版</strong>，<strong>用户体验</strong>三个方面。</p>
+<p>Website SEO optimization is divided into three main areas: onsite optimization, offsite optimization, and technical optimization. This article focuses on onsite optimization, SEO onsite optimization refers to the internal content and structure of the website for optimization and adjustment, so that the website is search engine friendly, conducive to crawling, indexing, inclusion and ranking.</p>
 
-<h2>1.网站内容</h2>
+<p>From the internal website to start our SEO journey, this article introduces onsite optimization mainly contains <strong>website content</strong>, <strong>website layout</strong>, <strong>user experience</strong> three aspects.</p>
 
-<h3><strong>网站配置</strong></h3>
+<h2>1.Website content</h2>
 
-<p>1️⃣ Robots.txt文件，告诉搜索引擎怎么抓取网站，防止无意义的抓取 </p>
+<h3><strong>Site Configuration</strong></h3>
 
-<p>2️⃣ 网站地图sitemap,确保可生成生成URL并提交给搜索引擎。</p>
+<p>1️⃣ Robots.txt file, tell search engines how to crawl the site, to prevent meaningless crawl </p>
 
-<h3><strong>标签配置</strong></h3>
+<p>2️⃣ Sitemap sitemap, to ensure that the URL can be generated and submitted to search engines.</p>
 
-<p>1️⃣ TDK标签：标题字数简短，控制在20字以内，针对移动端，可以着重写描述标签。 </p>
+<h3><strong>Label Configuration</strong></h3>
 
-<p>注：TDK是title,description,keywords</p>
+<p>1️⃣ TDK tag: the title word count is short, controlled within 20 words, for mobile, you can focus on writing the description tag.</p>
 
-<p>2️⃣ 图片标签的ALT属性：为站内的图片添加alt标识，尤其是以图片为主的网站尤为重要。 </p>
+<p>Note: TDK is title, description, keywords</p>
 
-<p>3️⃣ Nofollow标签：合理利用可以引导蜘蛛爬行与权重传递。</p>
+<p>2️⃣ Image tag ALT attribute: add alt logo for the pictures in the station, especially important for picture-based websites.</p>
 
-<p>nofollow有两种用法：
-1.用于meta元标签：
+<p>3️⃣ Nofollow tag: reasonable use can guide the spider crawl and weight transfer.</p>
+
+<p>Nofollow has two uses: 
+1.For meta tags：
 <code>
 &lt;meta name=&quot;robots&quot; content=&quot;nofollow&quot; /&gt;，
 </code></p>
 
-<p>告诉爬虫该页面上所有链接都无需追踪。</p>
+<p>Tell the crawler that all links on the page do not need to be tracked.。</p>
 
-<p>2.用于a标签：
+<p>2.For a tags：
 <code>
-&lt;a href=&quot;login.aspx&quot; rel=&quot;nofollow&quot;&gt;登录&lt;/a&gt;
+&lt;a href=&quot;login.aspx&quot; rel=&quot;nofollow&quot;&gt;Login&lt;/a&gt;
 </code>
-告诉爬虫该页面无需追踪。</p>
+Tell the crawler that the page does not need to be tracked.</p>
 
-<h3><strong>网站内容</strong></h3>
+<h3><strong>website content</strong></h3>
 
-<p>1️⃣ 打造原创内容，这没什么好说的，搜索引擎喜欢。 </p>
+<p>1️⃣ Create original content, there&#39;s nothing to say, search engines love it.</p>
 
-<p>2️⃣ 丰富内容类型，确保内容多元化，包括图片、短视屏、图标、文档类等。 </p>
+<p>2️⃣ Enrich the content type, ensure the content diversity, including pictures, short video screens, icons, documents, etc.</p>
 
-<p>3️⃣ 内容行文结构，针对站内SEO，合理利用“四处一词”，保证段落的逻辑结构。 </p>
+<p>3️⃣ content line structure, for the station SEO, the reasonable use of the &quot;word around&quot; to ensure the logical structure of the paragraph.</p>
 
-<p>“四处一词”是站内优化的一种策略，是指标题包含关键词，keywords包含关键词，内部锚文本包含关键词，内容页面第一次出现的关键词需要利用strong标签加粗。 作用是突出页面相关性，强调页面的核心关键词，让搜索引擎快速GET到页面的核心内容。</p>
+<p>The word &quot;around&quot; is a strategy for onsite optimization, is the indicator title contains keywords, keywords contain keywords, internal anchor text contains keywords, the content page for the first time the keywords need to use strong tag bold. The role is to highlight the relevance of the page, emphasizing the core keywords, so that search engines quickly GET to the core content of the page.</p>
 
-<p>4️⃣ 关键词分配，根据用户搜索目的，创建关键词，并确保与特点关键词的相关性，控制锚文本的数量。 </p>
+<p>4️⃣ keyword assignment, according to the user search purpose, create keywords, and to ensure the relevance of the keywords with features, control the number of anchor text. </p>
 
-<h2>2. 网站排版</h2>
+<h2>2. Website Layout</h2>
 
-<p>大部分人经常会忽视页面的设计排版，搜索引擎抓取页面内容和人阅读的顺序基本一致，从上到下，从左到右，所以设计排版要以用户体验为依据。</p>
+<p>Most people often ignore the design layout of the page, the search engine crawl page content and people read the same basic order, from top to bottom, from left to right, so the design layout to the user experience.</p>
 
-<p>1️⃣ 网站布局，导航、栏目、板块、产品、文章等按照用户需求来布局。</p>
+<p>1️⃣ Website layout, navigation, columns, panels, products, articles, etc. in accordance with user needs to layout.</p>
 
-<p>2️⃣ 合理的内链设置，何谓内链，就是网站链接自己的锚文本，这样可以增加网站内部结构的关联性，传递网站权重以及帮助用户和搜索引擎了解相关信息。</p>
+<p>2️⃣ Reasonable internal chain settings, what is the internal chain, is the website link to their own anchor text, which can increase the relevance of the internal structure of the site, transfer the weight of the site as well as help users and search engines to understand the relevant information.</p>
 
-<p>3️⃣ 站点的目录层级不易过深，过深的层级不利于抓取。</p>
+<p>3️⃣ The site directory level is not easy too deep, too deep level is not conducive to crawling.</p>
 
-<h2>3.用户体验</h2>
+<h2>3. User experience</h2>
 
-<p>1️⃣ 访问速度要快，访问速度尤其重要，相信你再访问一个站点时如果长时间打不开的话，你会毫不犹豫的选择关闭网页。</p>
+<p>1️⃣ Access speed should be fast, access speed is especially important, I believe you then visit a site if you can not open for a long time, you will not hesitate to choose to close the page.</p>
 
-<p>2️⃣ 移动端适配，移动流量主导的今天，站点适配移动端自然不可或缺。</p>
+<p>2️⃣ Mobile adaptation, mobile traffic dominated today, the site adaptation of mobile natural indispensable.</p>
 
-<p>3️⃣ 相关文章推荐，尽可能最大限度满足用户搜索需求。</p>
+<p>3️⃣ Related article recommendation, as far as possible to meet the user&#39;s search needs.</p>
 
-<p>4️⃣ 页面“颜值”，长得好看的东西自然招人喜欢。</p>
+<p>4️⃣ page &quot;value&quot;, good-looking things naturally attract people like.</p>
 
-<h2>注意事项</h2>
+<h2>Points to note</h2>
 
-<p>1️⃣ 尽量避免内容页中的关键词内部竞争。</p>
+<p>1️⃣ Try to avoid internal competition of keywords in the content page.</p>
 
-<p>2️⃣ 严禁采集内容，合理转载并附带原文版权链接。</p>
+<p>2️⃣ Collected content is strictly prohibited, reasonable reproduction and with the original copyright links.</p>
 
-<p>3️⃣ 避免使用内容农场，最好不要伪原创。</p>
+<p>3️⃣ Avoid the use of content farms, preferably not pseudo-original.</p>
 
-<p>4️⃣ 避免关键词密度过高，使用相关词替代。</p>
+<p>4️⃣ Avoid high keyword density, use related words instead.</p>
 
-<p>5️⃣ 不要在网站标题和图片ALT属性中堆砌关键词。</p>
+<p>5️⃣ Do not pile up keywords in the website title and image ALT attributes.</p>
 
-<p><strong>注：以上方法仍有诸多细节需要关注，上述内容仅供大家参考讨论。</strong></p></article><div><span class="ant-tag ant-tag-geekblue">#<span>SEO</span></span></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><ins class=" adsbygoogle" style="display:block;text-align:center;width:100%;height:90px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="9331479126" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div><div class="container___8WoUM"><p class="title___3k8xL">Online Tools</p><div class="tool_tags___1ccK5"><span class="ant-tag ant-tag-blue tool_tag___1JT6M">JSON Formater</span><span class="ant-tag ant-tag-cyan tool_tag___1JT6M">MD5</span><span class="ant-tag ant-tag-error tool_tag___1JT6M">timestamps</span><span class="ant-tag ant-tag-green tool_tag___1JT6M">Cron Expresstion</span></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div style="text-align:center;height:300px"><ins class=" adsbygoogle" style="display:inline-block;width:250px;height:300px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="7022357395" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div style="text-align:center;height:300px"><ins class=" adsbygoogle" style="display:inline-block;width:250px;height:300px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="7022357395" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div></div></div><footer class="footer___3wR6c">©2021 farmerlzj 提供技术支持 | 联系我们：farmerlzj@163.com |<!-- --> <a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank">蜀ICP备2021025378号-1</a></footer><div class="ant-back-top"></div></div>
+<p><strong>Note: The above methods still have many details that need attention, the above content is only for your reference and discussion. </strong></p></article><div><span class="ant-tag ant-tag-geekblue">#<span>SEO</span></span></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><ins class=" adsbygoogle" style="display:block;text-align:center;width:100%;height:90px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="9331479126" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div><div class="container___8WoUM"><p class="title___3k8xL">Online Tools</p><div class="tool_tags___1ccK5"><span class="ant-tag ant-tag-blue tool_tag___1JT6M">JSON Formater</span><span class="ant-tag ant-tag-cyan tool_tag___1JT6M">MD5</span><span class="ant-tag ant-tag-error tool_tag___1JT6M">timestamps</span><span class="ant-tag ant-tag-green tool_tag___1JT6M">Cron Expresstion</span></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div style="text-align:center;height:300px"><ins class=" adsbygoogle" style="display:inline-block;width:250px;height:300px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="7022357395" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div style="text-align:center;height:300px"><ins class=" adsbygoogle" style="display:inline-block;width:250px;height:300px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="7022357395" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div></div></div><footer class="footer___3wR6c">©2021 farmerlzj 提供技术支持 | 联系我们：farmerlzj@163.com |<!-- --> <a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank">蜀ICP备2021025378号-1</a></footer><div class="ant-back-top"></div></div>
 	<script>
   window.g_useSSR = true;
   window.g_initialProps = {};

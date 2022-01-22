@@ -4,14 +4,14 @@
  * @Author: lizejun
  * @Date: 2021-05-26 13:27:33
  * @LastEditors: lzj
- * @LastEditTime: 2021-12-09 17:53:52
+ * @LastEditTime: 2022-01-22 09:51:50
  */
 import styles from './index.less';
 import blogs from '../../../data/blogs';
 import NavLink from '@/components/navLink';
 import TagSelect from '@/components/tagSelect';
 import SiteHeader from '@/components/siteHeader';
-import { Divider } from 'antd';
+import { Divider,Space } from 'antd';
 import { useState, useMemo } from 'react';
 
 export default function Blogs() {
@@ -34,10 +34,10 @@ export default function Blogs() {
       >
         <h4 className={styles.title}>{item.title}</h4>
         <p className={styles.description}>{item.description}</p>
-        <p className={styles.tip}>
-          from: FarmerLZJ {'           '}
+        <Space className={styles.tip}>
+          From: FarmerLZJ {'           '}
           Date: {item.date}
-        </p>
+        </Space>
       </NavLink>
     );
   });
@@ -45,8 +45,8 @@ export default function Blogs() {
     <>
       <SiteHeader
         title="blogs - React,Node,JavaScript,SEO"
-        keywords="React，JavaScript，SEO，css，node"
-        description="JavaScript,css,React,vue,node,webpack,umi,antd"
+        keywords="React,JavaScript,SEO,css,node"
+        description="JavaScript, React, node, css exchange community for Developers"
       />
       <div className={styles.content}>
         <Divider />

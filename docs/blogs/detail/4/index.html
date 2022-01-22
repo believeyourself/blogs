@@ -3,7 +3,7 @@
  * @LastEditors: lzj
  * @LastEditTime: 2022-01-21 16:41:33
  * @FilePath: \qianduan.shop\front\src\pages\document.ejs
---><!DOCTYPE html><html><head><title data-react-helmet="true">React 团队开源新的性能分析工具 - Scheduling Profiler ! - 前端网</title>
+--><!DOCTYPE html><html><head><title data-react-helmet="true">React team open source new performance analysis tool - Scheduling Profiler ! - 前端网</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2087076429727327" crossorigin="anonymous"></script>
@@ -18,59 +18,120 @@
       //! umi version: 3.5.18
     </script>
     <title>文章详情</title>
-  <meta data-react-helmet="true" name="description" content="react,性能分析,最近，React 团队开源了一款新的性能分析工具 —— Scheduling Profiler"><meta data-react-helmet="true" name="keywords" content="react,性能分析">
+  <meta data-react-helmet="true" name="description" content="react,Performance Analysis,Recently, the React team has open sourced a new performance analysis tool —— Scheduling Profiler"><meta data-react-helmet="true" name="keywords" content="react,Performance Analysis">
 </head>
 
   <body>
-    <div id="root"><header class="header___2_57M"><img alt="farmerLZJ" class="title___MhkPP" src="/static/logo.68ff92ec.png"/></header><div style="width:100%;position:relative;top:0;z-index:999"><nav class="nav___3wfA1"><a href="https://izejun.com/blogs" class="item___AqKVH active___1THnk">Blog</a></nav></div><div class="content___2QN8t"><div class="content___1G4Bw"><article><h1>React 团队开源新的性能分析工具 - Scheduling Profiler !</h1>
+    <div id="root"><header class="header___2_57M"><img alt="farmerLZJ" class="title___MhkPP" src="/static/logo.68ff92ec.png"/></header><div style="width:100%;position:relative;top:0;z-index:999"><nav class="nav___3wfA1"><a href="https://izejun.com/blogs" class="item___AqKVH active___1THnk">Blog</a></nav></div><div class="content___2QN8t"><div class="content___1G4Bw"><article><h1>umi practice question set # React team open source a new performance analysis tool - Scheduling Profiler !</h1>
 
-<p>最近，React 团队开源了一款新的性能分析工具 —— Scheduling Profiler</p>
+<p>Recently, the React team open sourced a new performance analysis tool -- Scheduling Profiler</p>
 
-<p><img alt="avatar" src="/static/images/schedulingProfiler.jpg"/></p>
+<p>! <a href="/static/images/schedulingProfiler.jpg">avatar</a></p>
 
-<p>React 之前的 Profiler 主要是分析渲染时组件的性能。它并不能告诉我们 React 正在做什么（实际的协作调度位）。随着 React Scheduler 的逐渐强大，它已经不能满足我们的分析需求了，新的 Profiler 可以显示组件何时安排状态更新以及 React 何时处理它们。它还可以展示 React 如何对其工作的内容进行分类和优先级调度。</p>
+<p>React&#39;s previous Profiler mainly analyzed the performance of components while rendering. It didn&#39;t tell us what React was doing (the actual collaborative scheduling bit). As the React Scheduler has grown more powerful, it no longer meets our analysis needs, and the new Profiler can show when components schedule state updates and when React processes them. It can also show how React categorizes and prioritizes the content it works on.</p>
 
-<p>比如，下面是一个仅使用旧（同步）ReactDOM.renderAPI 的简单程序。分析器显示这个应用程序安排和渲染的所有工作都以同步优先级完成：</p>
+<p>For example, here is a simple application that uses only the old (synchronized) ReactDOM.renderAPI. The parser shows that all the work scheduled and rendered by this application is done with synchronous priority.</p>
 
-<p>它使用新的 createRoot API 以默认优先级呈现，然后同步更新以响应一个 输入 事件来管理一个 受控组件:</p>
+<p>It uses the new createRoot API to render at the default priority, and then synchronously updates to respond to an input event to manage a controlled component:</p>
 
-<p>这是显示空闲应用程序（没有运行 JavaScript）的配置文件的一部分。在这种情况下，React 会为 offscreen（当前未显示）的组件做一些预渲染工作。</p>
+<p>This is part of the profile that shows the idle application (no JavaScript running). In this case, React does some pre-rendering for the offscreen (not currently displayed) component.</p>
 
-<p><strong>offscreen 是 React 18还未发布的新 API</strong></p>
+<p><strong>offscreen is a new API not yet released for React 18</strong></p>
 
-<h2>transitions 是如何工作的</h2>
+<h2>How transitions work</h2>
 
-<p>startTransition 是 React 18 新增加的一个 API，它可以让你区分 非紧急 的状态更新。所有在 startTransition 回调中的更新都会被认为是 非紧急处理，如果出现更紧急的更新（比如用户又输入了新的值），则上面的更新都会被中断，直到没有其他紧急操作之后才会去继续执行更新。</p>
+<p>startTransition is a new API added to React 18 that allows you to distinguish between non-urgent state updates. All updates in the startTransition callback are considered non-urgent, and if there is a more urgent update (such as the user entering a new value), the above update is interrupted until there are no other urgent actions before continuing.</p>
 
-<p>下面是一个使用 startTransition API 的示例：React 会先渲染一个小的更新，向用户显示一些视觉反馈（ 比如 Loading 状态）</p>
+<p>Here&#39;s an example using the startTransition API: React renders a small update first, showing the user some visual feedback (e.g. Loading state)</p>
 
-<p><img alt="avatar" src="/static/images/1.jpg"/></p>
+<p>! <a href="/static/images/1.jpg">avatar</a></p>
 
-<h2>Suspense 如何影响渲染性能？</h2>
+<p>How does ## Suspense affect rendering performance?</p>
 
-<p>React 团队预计在 React 18.0 之后的某个时候会发布对通过 Suspense 获取数据的全面支持，但你现在可以使用 Suspense 来处理延迟加载 React 组件之类的事情。新的分析器显示组件在渲染期间暂停的时间以及这如何影响整体渲染性能。</p>
+<p>The React team expects to release full support for fetching data via Suspense sometime after React 18.0, but you can now use Suspense to handle things like delayed loading of React components. The new parser shows how long components are paused during rendering and how this affects overall rendering performance.</p>
 
-<p>比如下面的例子，它使用 React.lazy 加载组建. 当这个组件正在加载时，React 会显示一个占位符。一旦组件完成加载，React 会重试渲染并提交最终的 UI。</p>
+<p>For example, here&#39;s an example that uses React.lazy to load a component. While this component is loading, React displays a placeholder. Once the component finishes loading, React will retry rendering and commit the final UI.</p>
 
-<p><img alt="avatar" src="/static/images/3.jpg"/></p>
+<p>! <a href="/static/images/3.jpg">avatar</a></p>
 
-<h2>还有什么可能导致渲染延迟？</h2>
+<h2>What else might cause rendering delays?</h2>
 
-<p>Suspense 可能导致渲染延迟，因为 React 等待数据加载，但 React 也可能因为等待大量 JavaScript 运行卡住。</p>
+<p>Suspense can cause rendering delays as React waits for data to load, but React can also get stuck waiting for a lot of JavaScript to run.</p>
 
-<p>React 分析工具以前只专注于分析 React（或 React 组件）正在做什么，但浏览器运行的任何 JavaScript 都会影响性能。新的分析器也显示了非 React JavaScript，因此很容易看到它何时延迟了 React 的渲染。</p>
+<p>The React parser tool used to focus only on analyzing what React (or a React component) was doing, but any JavaScript the browser is running can affect performance. The new parser also shows non-React JavaScript, so it&#39;s easy to see when it&#39;s delaying the rendering of React.</p>
 
-<p><img alt="avatar" src="/static/images/2.jpg"/></p>
+<p>! <a href="/static/images/2.jpg">avatar</a></p>
 
-<h2>提升性能的提示</h2>
+<h2>Tips for improving performance</h2>
 
-<p>旧版的分析器只是专注于做一些分析，但是新版的工具可以给出我们一些优化建议：</p>
+<p>The old parser just focused on doing some analysis, but the new version of the tool can give us some optimization tips: !</p>
 
-<p><img alt="avatar" src="/static/images/5.jpg"/></p>
+<p>! <a href="/static/images/5.jpg">avatar</a></p>
 
-<p>另外新的分析器还会对事件处理程序中安排长时间的同步 React 更新进行警告：</p>
+<p>Also the new parser warns about scheduling long synchronous React updates in event handlers: !</p>
 
-<p><img alt="avatar" src="/static/images/4.jpg"/></p></article><div><span class="ant-tag ant-tag-geekblue">#<span>react</span></span><span class="ant-tag ant-tag-volcano">#<span>性能分析</span></span></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><ins class=" adsbygoogle" style="display:block;text-align:center;width:100%;height:90px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="9331479126" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div><div class="container___8WoUM"><p class="title___3k8xL">Online Tools</p><div class="tool_tags___1ccK5"><span class="ant-tag ant-tag-blue tool_tag___1JT6M">JSON Formater</span><span class="ant-tag ant-tag-cyan tool_tag___1JT6M">MD5</span><span class="ant-tag ant-tag-error tool_tag___1JT6M">timestamps</span><span class="ant-tag ant-tag-green tool_tag___1JT6M">Cron Expresstion</span></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div style="text-align:center;height:300px"><ins class=" adsbygoogle" style="display:inline-block;width:250px;height:300px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="7022357395" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div style="text-align:center;height:300px"><ins class=" adsbygoogle" style="display:inline-block;width:250px;height:300px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="7022357395" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div></div></div><footer class="footer___3wR6c">©2021 farmerlzj 提供技术支持 | 联系我们：farmerlzj@163.com |<!-- --> <a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank">蜀ICP备2021025378号-1</a></footer><div class="ant-back-top"></div></div>
+<p>! <a href="/static/images/4.jpg">avatar</a></p>
+
+<p>Development Environment.
+umi: 3.5.18
+node: v14.15.1
+System: windows</p>
+
+<p>This article mainly records some scenario-specific issues during the project practice, for reference only: ## 1.</p>
+
+<h2>1. webpackChain custom loader error: this.getOptions is not a function</h2>
+
+<p><strong> Scenario:</strong>
+    Add loader to parse makdown file to html display, use webpackChain to add remark-loader,html-loader to report error.
+<code></code>`
+export default {
+    ...
+    chainWebpack(config){
+        config.module
+        .rule(&#39;compile-md&#39;)
+        .test(/.md$/)
+            .use(&quot;html-loader&quot;)
+            .loader(&quot;html-loader&quot;)
+            .end()
+            .use(&quot;markdown-loader&quot;)
+    }
+    ...
+}</p>
+
+<p><code>
+**Solution:**
+    Just close the webpack5 editor and modify the umi configuration config.js or .umirc.js to.
+</code>
+export default {
+    ...
+    webpack5:false,
+    ...
+}
+<code></code>`</p>
+
+<h2>2. mfsu, @umijs/preset-ui(block) are not supported under SSR(server-side rendering)</h2>
+
+<h2>3. SSR (server-side rendering) after the first request, click on the navigation menu, the route switch occurs to jump to a new page did not launch a request to the server to get a new page, but a locally done page re-rendering.</h2>
+
+<p><strong>Solution:</strong>
+Replace the NavLink component with a tag</p>
+
+<h2>4. SSR (Server Side Rendering) requests server Css and js files and returns html content.</h2>
+
+<p><strong>Solution:</strong>
+If you configure hash:true, turn off the hash function of the packaged file, because umi.server.js does not add hash to the reference address of js and css, for example, your packaged file name is umi.adsjsnd.css, but the reference file name of umi.server.js to css is umi.css, Modify the configuration config.js or .umirc.js to
+<code>
+export default {
+    ...
+    hash:false
+    ...
+}
+</code>
+ If hash:true is not configured, refer to this issues:https://github.com/umijs/umi/issues/4808</p>
+
+<p> ## 5. Enable mfsu:{} error: 1. Can&#39;t read property &#39;ModuleFederationPlugin&#39; of undefined.
+ <strong>Solution:</strong>
+ Please make sure mfsu:{} is added to config.ts instead of config.dev.ts or config.prod.ts.</p></article><div><span class="ant-tag ant-tag-geekblue">#<span>react</span></span><span class="ant-tag ant-tag-volcano">#<span>Performance Analysis</span></span></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><ins class=" adsbygoogle" style="display:block;text-align:center;width:100%;height:90px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="9331479126" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div><div class="container___8WoUM"><p class="title___3k8xL">Online Tools</p><div class="tool_tags___1ccK5"><span class="ant-tag ant-tag-blue tool_tag___1JT6M">JSON Formater</span><span class="ant-tag ant-tag-cyan tool_tag___1JT6M">MD5</span><span class="ant-tag ant-tag-error tool_tag___1JT6M">timestamps</span><span class="ant-tag ant-tag-green tool_tag___1JT6M">Cron Expresstion</span></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div style="text-align:center;height:300px"><ins class=" adsbygoogle" style="display:inline-block;width:250px;height:300px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="7022357395" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div style="text-align:center;height:300px"><ins class=" adsbygoogle" style="display:inline-block;width:250px;height:300px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="7022357395" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div></div></div><footer class="footer___3wR6c">©2021 farmerlzj 提供技术支持 | 联系我们：farmerlzj@163.com |<!-- --> <a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank">蜀ICP备2021025378号-1</a></footer><div class="ant-back-top"></div></div>
 	<script>
   window.g_useSSR = true;
   window.g_initialProps = {};
