@@ -3,8 +3,8 @@
  * @version:
  * @Author: lizejun
  * @Date: 2021-06-15 10:38:48
- * @LastEditors: lizejun
- * @LastEditTime: 2021-06-15 10:54:56
+ * @LastEditors: lzj
+ * @LastEditTime: 2022-01-22 10:06:20
  */
 import React from 'react';
 import HotRank from '@/components/hotRank';
@@ -75,7 +75,6 @@ class App extends React.Component {
           {this.props.children}
           <HotRank />
         </div>
-        <Footer />
         <BackTop />
       </ErrorBoundary>
     );
