@@ -1,7 +1,7 @@
 /*
  * @Date: 2021-09-22 08:59:01
  * @LastEditors: lzj
- * @LastEditTime: 2022-01-21 15:40:35
+ * @LastEditTime: 2022-01-22 10:16:32
  * @FilePath: \qianduan.shop\front\.umirc.prod.ts
  */
 import { defineConfig } from 'umi';
@@ -18,7 +18,8 @@ export default defineConfig({
     extraRoutePaths: async () => {
      const routes = blogs.map(blog=>{
        return `/blogs/detail/${blog.id}`;
-     })
+     });
+    routes.push("/tools/jsonTree","/tools/timestamp",'/tools/md5','/tools/cron');
     return Promise.resolve(routes);
   },
   },

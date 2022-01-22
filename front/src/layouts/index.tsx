@@ -4,7 +4,7 @@
  * @Author: lizejun
  * @Date: 2021-06-15 10:38:48
  * @LastEditors: lzj
- * @LastEditTime: 2022-01-22 10:06:20
+ * @LastEditTime: 2022-01-22 10:19:11
  */
 import React from 'react';
 import HotRank from '@/components/hotRank';
@@ -73,7 +73,7 @@ class App extends React.Component {
         </ScrollFixed>
         <div className={styles.content}>
           {this.props.children}
-          <HotRank />
+          {/* <HotRank /> */}
         </div>
         <BackTop />
       </ErrorBoundary>

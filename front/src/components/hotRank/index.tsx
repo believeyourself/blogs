@@ -1,3 +1,9 @@
+/*
+ * @Date: 2022-01-20 14:27:07
+ * @LastEditors: lzj
+ * @LastEditTime: 2022-01-22 10:12:38
+ * @FilePath: \qianduan.shop\front\src\components\hotRank\index.tsx
+ */
 import style from './index.less';
 import { Divider, Tag } from 'antd';
 import SquareAd from '../squareAd';
@@ -9,7 +15,7 @@ function HotRank() {
       <p className={style.title}>Online Tools</p>
       <div className={style.tool_tags}>
         <Tag
-          onClick={() => (window.location.href = host + '/tools')}
+          onClick={() => (window.location.href = host + '/tools/jsonTree')}
           className={style.tool_tag}
           color="blue"
         >
