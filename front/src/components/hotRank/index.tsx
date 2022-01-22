@@ -1,7 +1,7 @@
 /*
  * @Date: 2022-01-20 14:27:07
  * @LastEditors: lzj
- * @LastEditTime: 2022-01-22 10:12:38
+ * @LastEditTime: 2022-01-22 10:31:39
  * @FilePath: \qianduan.shop\front\src\components\hotRank\index.tsx
  */
 import style from './index.less';
@@ -12,7 +12,7 @@ function HotRank() {
   const host = process.env.SITE_DOMAIN;
   return (
     <div className={style.container}>
-      <p className={style.title}>Online Tools</p>
+      {/* <p className={style.title}>Online Tools</p>
       <div className={style.tool_tags}>
         <Tag
           onClick={() => (window.location.href = host + '/tools/jsonTree')}
@@ -42,7 +42,7 @@ function HotRank() {
         >
           Cron Expresstion
         </Tag>
-      </div>
+      </div> */}
       <Divider />
       <SquareAd />
       <Divider />
