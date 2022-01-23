@@ -57,17 +57,17 @@ class App extends React.Component {
             </NavLink>
             <NavLink
               activeClassName={styles.active}
+              to={'/aboutUs'}
+              className={styles.item}
+            >
+              方案
+            </NavLink>
+            <NavLink
+              activeClassName={styles.active}
               to={'/softwares'}
               className={styles.item}
             >
               软件
-            </NavLink>
-            <NavLink
-              activeClassName={styles.active}
-              to={'/aboutUs'}
-              className={styles.item}
-            >
-              关于
             </NavLink>
           </nav>
         </ScrollFixed>
