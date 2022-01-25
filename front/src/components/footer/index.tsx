@@ -10,10 +10,11 @@ export default () => {
         </a>
       </p>
       <p>
-         联系我们：farmerlzj@163.com | {' '}
         <NavLink to="/aboutUs">
           关于我们
-        </NavLink>
+        </NavLink> | {' '}
+         联系我们：farmerlzj@163.com
+
       </p>
     </footer>
   );

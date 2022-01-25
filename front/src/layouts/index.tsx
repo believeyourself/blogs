@@ -57,7 +57,7 @@ class App extends React.Component {
             </NavLink>
             <NavLink
               activeClassName={styles.active}
-              to={'/aboutUs'}
+              to={'/solution'}
               className={styles.item}
             >
               方案

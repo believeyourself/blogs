@@ -66,12 +66,22 @@ const route: any = [
         component: '@/pages/blogs/detail/detail',
       },
       {
+        title: '方案',
+        path: '/solution',
+        component: '@/pages/solution',
+      },      
+      {
+        title: '方案详情',
+        path: '/solution/detail/:id',
+        component: '@/pages/solution/detail/detail',
+      },
+      {
         title: '软件分享',
         path: '/softwares',
         component: '@/pages/softwares',
       },
       {
-        title: '软件分享',
+        title: '软件详情',
         path: '/softwares/detail/:id',
         component: '@/pages/softwares/detail/detail',
       },
