@@ -1,7 +1,7 @@
 export default [
   {
     id: 41,
-    title: 'AWS EC2 安装 ModeJs，使用 nvm 管理 Node 版本',
+    title: 'AWS EC2 安装 NodeJs，使用 nvm 管理 NodeJs 版本',
     description:
       'AWS EC2 中管理 NodeJs 环境',
     tags: ['node', 'AWS','EC2'],
@@ -44,7 +44,7 @@ export default [
     title: 'Doris 用户操作语句速览',
     description:
       'Doris 常用 SQL 语句快速浏览，记录常用SQL，方便阅读查询。',
-    tags: ['Doris', '操作手册'],
+    tags: ['doris', '操作手册'],
     date: '2022-01-05',
   },
   {

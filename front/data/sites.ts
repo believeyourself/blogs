@@ -4,7 +4,7 @@
  * @Author: lizejun
  * @Date: 2021-05-26 13:33:28
  * @LastEditors: lzj
- * @LastEditTime: 2021-12-10 15:48:55
+ * @LastEditTime: 2022-02-08 19:04:19
  */
 export default [
   {
@@ -395,7 +395,7 @@ export default [
         title: '努努影院',
         description:
           '努努影院每天搜集互联网最新电影和电视剧，为广大用户免费提供无广告在线观看电影和电视剧服务，及时收录最新、最热、最全的电影大片,高清正版免费看。',
-        url: 'https://www.nunuyy.top/',
+        url: 'https://www.nunuyy1.top/',
       },
     ],
   },
