@@ -1,12 +1,17 @@
 /*
  * @Author: your name
  * @Date: 2021-11-15 14:51:57
- * @LastEditTime: 2021-12-14 09:01:02
+ * @LastEditTime: 2022-02-09 14:10:52
  * @LastEditors: lzj
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- * @FilePath: \qianduan.shop\data\topics\react\codes.ts
+ * @FilePath: \qianduan.shop\front\data\topics\react\codes.ts
  */
 export default [
+  {
+    title: 'concent',
+    description: '内置依赖收集，可预测、零入侵、渐进式、高性能的react开发框架。concent是一个专为react提供状态管理服务的框架，提炼现有各大框架的精华，以及社区公认的最佳实践，通过良好的模块设计，既保证react的最佳性能又允许用户非常灵活的解耦UI逻辑与业务逻辑的关系，从整体上提高代码的可读性、可维护性和可扩展性。',
+    url: 'https://concentjs.github.io/concent-doc',
+  },
   {
     title: 'slate',
     description: '用于构建富文本编辑器的完全可定制的框架。',
