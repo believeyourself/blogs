@@ -112,6 +112,26 @@ export default [
     category: '开源项目',
     list: [
       {
+        title: 'zx',
+        description: '2021年度流行项目是 zx，一个由谷歌推出的全新的工具，可用于以 JavaScript 或 TypeScript 编写简单的命令行脚本。基本上它可以让你在代码中嵌入任何 bash 表达式（ls, cat, git...等任何命令！），并 await 使用 JavaScript 模板字符串 的结果。',
+        url: 'https://github.com/google/zx',
+      },
+      {
+        title: 'tauri',
+        description: 'Tauri 是用于为所有主要桌面平台构建超小型快速二进制文件的框架。开发人员可以集成可编译为 HTML，JS 和 CSS 的任何前端框架，以构建其用户界面。该应用程序的后端是带有锈源的二进制文件，带有可与前端进行交互的 API。Tauri 应用程序中的用户界面目前 winit 在 macOS 和 Windows 上以及 gtk 在 Linux 上通过 Tauri-team 培养并维护的 WRY 作为窗口处理库加以利用，WRY 可以利用 macOS 上的 WebKit，Windows 和 Linux 上的 WebKitGTK。',
+        url: 'https://github.com/tauri-apps/tauri',
+      },
+      {
+        title: 'slidev',
+        description: 'NocoDB 是 Airtable 的开源替代方案，可以“一键”将 MySQL、PostgreSQL、SQL Server、SQLite 和 MariaDB 转换为智能电子表格，提供了丰富的电子表格界面，支持搜索、排序、过滤、隐藏列等功能。',
+        url: 'https://github.com/nocodb/nocodb',
+      },
+      {
+        title: 'nocodb',
+        description: '为开发者打造的演示文稿工具。Slidev (slide + dev, /slʌɪdɪv/) 是基于 Web 的幻灯片制作和演示工具。它旨在让开发者专注在 Markdown 中编写内容，同时拥有支持 HTML 和 Vue 组件的能力，并且能够呈现像素级完美的布局，还在你的演讲稿中内置了互动的演示样例。它使用了功能丰富的 markdown 文件来生成精美的幻灯片，具有即时重载的体验。它还拥有很多内置的集成功能，如实时编码、导出 PDF、演讲录制等。由于 Slidev 是由 web 驱动的，因此你可以使用它进行任何操作 —— 具有无限的可能性。',
+        url: 'https://github.com/slidevjs/slidev',
+      },
+      {
         title: 'slate',
         description: '用于构建富文本编辑器的完全可定制的框架。',
         url: 'https://github.com/ianstormtaylor/slate',

@@ -4,7 +4,7 @@
  * @Author: lizejun
  * @Date: 2021-05-26 13:27:33
  * @LastEditors: lzj
- * @LastEditTime: 2021-12-14 09:01:45
+ * @LastEditTime: 2022-02-09 10:12:22
  */
 import styles from './index.less';
 import records from '../../../data/resource';
@@ -79,7 +79,7 @@ export default function Resources() {
         <Alert
           closable
           type="warning"
-          message="视频教程请到微信公众号回复教程名称获取！2021-12-24"
+          message="前端开源项目更新！2022-02-09"
         />
         {resources}
       </Space>
