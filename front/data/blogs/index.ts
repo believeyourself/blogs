@@ -3,7 +3,7 @@ export default [
     id: 42,
     title: 'Typescript 类型声明工具函数一览',
     description:
-      'AWS EC2 中管理 NodeJs 环境',
+      '记录Typescript 类型声明工具函数及作用',
     tags: ['js', 'ts'],
     date: '2022-02-10',
   },
