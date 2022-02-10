@@ -1,5 +1,13 @@
 export default [
   {
+    id: 42,
+    title: 'Typescript 类型声明工具函数一览',
+    description:
+      'AWS EC2 中管理 NodeJs 环境',
+    tags: ['js', 'ts'],
+    date: '2022-02-10',
+  },
+  {
     id: 41,
     title: 'AWS EC2 安装 NodeJs，使用 nvm 管理 NodeJs 版本',
     description:
