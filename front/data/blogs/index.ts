@@ -1,5 +1,13 @@
 export default [
   {
+    id: 43,
+    title: 'antd Modal.configm 中使用 FormattedMessage 报错:Uncaught Error: [React Intl] Could not find required `intl` object. <IntlProvider> needs to exist in the component ancestry.',
+    description:
+      'antd 国际化实践，Modal.configm 中使用 FormattedMessage 报错:Uncaught Error: [React Intl] Could not find required `intl` object. <IntlProvider> needs to exist in the component ancestry.',
+    tags: ['react', 'antd','Modal',"FormattedMessage"],
+    date: '2022-02-21',
+  },
+  {
     id: 42,
     title: 'Typescript 类型声明工具函数一览',
     description:

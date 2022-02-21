@@ -64,6 +64,13 @@ class App extends React.Component {
             </NavLink>
             <NavLink
               activeClassName={styles.active}
+              to={'/money'}
+              className={styles.item}
+            >
+              变现
+            </NavLink>
+            <NavLink
+              activeClassName={styles.active}
               to={'/softwares'}
               className={styles.item}
             >

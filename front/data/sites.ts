@@ -75,6 +75,12 @@ export default [
     category: '笔试面试',
     sites: [
       {
+        title: '前端面试宝典',
+        description:
+          '本题库均来自海量真实校招面试题目大数据进行的整理，后续也会不断更新，可永久免费在线观看！',
+        url: 'https://www.nowcoder.com/tutorial/96/f5212664ab664984882b00635066ded2',
+      },
+      {
         title: '前端面试每日三问',
         description:
           '前端面试每日 3+1，以面试题来驱动学习，提倡每日学习与思考，每天进步一点！',
