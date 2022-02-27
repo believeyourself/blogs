@@ -76,6 +76,16 @@ const route: any = [
         component: '@/pages/solution/detail/detail',
       },
       {
+        title: '变现',
+        path: '/revenue',
+        component: '@/pages/revenue',
+      },      
+      {
+        title: '变现方案详情',
+        path: '/revenue/detail/:id',
+        component: '@/pages/revenue/detail/detail',
+      },
+      {
         title: '软件分享',
         path: '/softwares',
         component: '@/pages/softwares',

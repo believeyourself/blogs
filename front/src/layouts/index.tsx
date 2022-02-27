@@ -64,7 +64,7 @@ class App extends React.Component {
             </NavLink>
             <NavLink
               activeClassName={styles.active}
-              to={'/money'}
+              to={'/revenue'}
               className={styles.item}
             >
               变现
