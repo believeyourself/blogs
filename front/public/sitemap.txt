@@ -1,6 +1,8 @@
 https://qianduan.shop/topics/node
 https://qianduan.shop/topics/react
 https://qianduan.shop/topics/vscode
+https://qianduan.shop/blogs/detail/44
+https://qianduan.shop/blogs/detail/43
 https://qianduan.shop/blogs/detail/42
 https://qianduan.shop/blogs/detail/41
 https://qianduan.shop/blogs/detail/40
@@ -50,9 +52,11 @@ https://qianduan.shop/softwares/detail/4
 https://qianduan.shop/softwares/detail/5
 https://qianduan.shop/softwares/detail/1000
 https://qianduan.shop/softwares/detail/1001
-https://www.qianduan.shop/solution/detail/2
-https://www.qianduan.shop/solution/detail/1
-https://www.qianduan.shop/solution
+https://qianduan.shop/solution/detail/2
+https://qianduan.shop/solution/detail/1
+https://qianduan.shop/solution
+https://qianduan.shop/revenue/detail/1
+https://qianduan.shop/revenue
 https://qianduan.shop/softwares
 https://qianduan.shop/tools/md5
 https://qianduan.shop/tools/timestamp
