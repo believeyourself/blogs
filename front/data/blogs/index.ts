@@ -1,5 +1,13 @@
 export default [
   {
+    id: 44,
+    title: '前端优化，script异步加载，deffer 与 async 的作用与区别',
+    description:
+      '前端优化中有一项优化方式，就是延迟 javascript 的加载与执行，因为script 的加载解析会阻塞页面渲染，为了尽快让用户看到界面，我们通常会延迟或异步 javascript 的加载解析。其中常用的方式就有直接将 script 标签移动至 body 标签之后、使用 script 标签的 deffer 属性 以及 async 属性。',
+    tags: ['js',"script标签", 'defer','async'],
+    date: '2022-03-01',
+  },
+  {
     id: 43,
     title: 'antd Modal.configm 中使用 FormattedMessage 报错:Uncaught Error: [React Intl] Could not find required `intl` object. <IntlProvider> needs to exist in the component ancestry.',
     description:

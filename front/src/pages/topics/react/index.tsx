@@ -73,6 +73,9 @@ export default function Resources() {
             <a target="_blank" href="https://cn.mobx.js.org/" rel="nofollow">
               mobx 状态管理
             </a>
+            <a target="_blank" href="https://github.com/nanxiaobei/flooks" rel="nofollow">
+              flooks 状态管理
+            </a>
             <a
               target="_blank"
               href="https://react-guide.github.io/react-router-cn/" rel="nofollow"

@@ -267,7 +267,7 @@ export default function Blogs() {
               </a>
             </div>
           </AntdCard>
-          <AntdCard title="开源项目">
+          <AntdCard title="自建博客">
             <div className={styles.resource_item}>
               <a
                 href="https://strapi.io/documentation/developer-docs/latest/getting-started/introduction.html"
@@ -306,7 +306,7 @@ export default function Blogs() {
           </NavLink>
         </div>
         <Title
-          title="博客搭建"
+          title="开源项目"
           more="/resources/originCode"
           description={'更多项目 >>'}
         />
