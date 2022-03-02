@@ -21,6 +21,49 @@ export default {
   ],
   codes: [
     {
+      title: 'sharp',
+      description:
+        `高性能 Node.js 图像处理，调整 JPEG、PNG、WebP、AVIF 和 TIFF 图像大小的最快模块。使用 libvips 库。`,
+      url: 'https://github.com/lovell/sharp',
+    },
+    {
+      title: 'fastify',
+      description:
+        `Fastify，快速并且低开销的 web 框架，专为 Node.js 平台量身打造。`,
+      url: 'https://github.com/fastify/fastify',
+    },
+    {
+      title: 'nodemon',
+      description:
+        `Nodemon 是一款非常实用的工具，用来监控你 node.js 源代码的任何变化和自动重启你的服务器。`,
+      url: 'https://github.com/remy/nodemon',
+    },
+    {
+      title: 'hexo',
+      description:
+        `快速、简洁且高效的博客框架。`,
+      url: 'https://github.com/microsoft/playwright',
+    },
+    {
+      title: 'playwright',
+      description:
+        `Playwright 是由微软公司 2020 年初发布的新一代自动化测试工具，相较于目前最常用的 Selenium，它仅用一个 API 即可自动执行 Chromium、Firefox、WebKit 等主流浏览器自动化操作。作为针对 Python 语言纯自动化的工具，在回归测试中可更快的实现自动化。`,
+      url: 'https://github.com/microsoft/playwright',
+    },
+    {
+      title: 'nodebestpractices',
+      description:
+        `Node.js 最佳实践,这是对 Node.js 最佳实践中排名最高的内容的总结和分享`,
+      url: 'https://github.com/goldbergyoni/nodebestpractices',
+    },
+    {
+      title: 'puppeteer',
+      description:
+        `Puppeteer提供了一个高级 API 来通过 DevTools 协议控制 Chromium 或 Chrome。Puppeteer 默认以 headless 模式运行，但是可以通过修改配置文件运行“有头”模式。
+        可以在浏览器中手动执行的绝大多数操作都可以使用 Puppeteer 来完成！`,
+      url: 'https://github.com/puppeteer/puppeteer',
+    },
+    {
       title: '局域网聊天室',
       description:
         'koa + vue开发的局域网聊天室，支持群聊、文件传输、粘贴截图、文件列表、聊天记录（本地存储文本文件模拟数据库）等模块',

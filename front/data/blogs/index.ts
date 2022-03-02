@@ -1,5 +1,13 @@
 export default [
   {
+    id: 45,
+    title: '如何实现条形码和二维码扫码',
+    description:
+      '今天要分享的这个模块，在开发网页扫码的时候，可以解决大问题。',
+    tags: ['js',"条形码扫码", '二维码扫码'],
+    date: '2022-03-02',
+  },
+  {
     id: 44,
     title: '前端优化，script异步加载，deffer 与 async 的作用与区别',
     description:

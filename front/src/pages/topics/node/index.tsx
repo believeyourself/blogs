@@ -61,9 +61,9 @@ export default function Resources() {
       />
       <SideAd />
       <Space direction="vertical" className={styles.content}>
-        <AntCard title="NodeJs 相关文档">
+        <AntCard title="NodeJs 文档及框架">
           <div className={styles.doc}>
-            <a target="_blank" href="http://nodejs.cn/">
+            <a target="_blank" href="http://nodejs.cn/" title="Node文档">
               NodeJs
             </a>
             <a
@@ -83,6 +83,12 @@ export default function Resources() {
             </a>
             <a target="_blank" href="https://eggjs.org/zh-cn/intro/">
               egg
+            </a>
+            <a target="_blank" href="https://github.com/nestjs/nest">
+              nest
+            </a>
+            <a target="_blank" href="https://midwayjs.org/docs/intro">
+              midway
             </a>
             <a target="_blank" href="https://pinus.io/">
               pinus
