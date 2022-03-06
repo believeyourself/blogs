@@ -20,17 +20,46 @@
   height: 100px;
   color: #fff;
   background: #061524;
+  position: relative;
 
   .title {
+    position: absolute;
     width: 198px;
     text-align: center;
   }
 
-  .slogan {
-    width: 198px;
-    height: 100%;
-    margin-left: 20px;
-    background-image: url('../assets/images/slogan.png');
+  .search{
+    display: flex;
+    margin: 0 auto;
+    background-color: #fff;
+    min-width: 30%;
+    height: 50px;
+    color: #061524;
+
+    .engine{
+      flex: 1;
+      text-align: center;
+      height: 50px;
+      border: none;
+      outline: 0;
+    }
+    .input{
+      flex:4;
+      height: 50px;
+      border: none;
+      outline: 0;
+      text-indent: .4rem;
+    }
+    .btn{
+      flex:1;
+      height: 50px;
+      font-size: 18px;
+      font-weight:600;
+      color: #fff;
+      background-color: #d05b3c;
+      border-color: #d05b3c;
+      border-radius: 0;
+    }
   }
 }
 

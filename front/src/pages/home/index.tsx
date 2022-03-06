@@ -290,6 +290,13 @@ export default function Blogs() {
               >
                 docusaurus - 构建以内容为核心、Markdown 驱动的网站。
               </a>
+              <a
+                href="https://hexo.io/zh-cn/docs/index.html"
+                target="_blank"
+                rel="nofollow"
+              >
+                hexo - 静态博客生成器。
+              </a>
             </div>
           </AntdCard>
         </div>
