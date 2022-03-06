@@ -38,7 +38,7 @@ app.use(async (req, res) => {
       res.end();
     });
   } else {
-    res.send();
+    res.send(html);
   }
 });
 app.listen(8080);

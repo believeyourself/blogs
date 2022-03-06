@@ -34,9 +34,9 @@ type AppState = {
 class App extends React.Component<any,AppState> {
   constructor(props:any){
     super(props);
-    const default_entine = localStorage.getItem("default_engine");
+  
     this.state = {
-      engine: default_entine || "google",
+      engine: "google",
       search: ""
     }
     this.handleEngineChange = this.handleEngineChange.bind(this);
@@ -57,6 +57,13 @@ class App extends React.Component<any,AppState> {
 
   handleInput(evt: ChangeEvent<HTMLInputElement>){
     this.setState({search:evt.target.value})
+  }
+
+  componentDidMount(){
+    const default_engine = localStorage.getItem("default_engine");
+    if(default_engine){
+      this.setState({engine:default_engine});
+    }
   }
 
   render() {
