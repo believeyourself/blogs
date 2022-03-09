@@ -6,7 +6,7 @@
  * @LastEditors: lizejun
  * @LastEditTime: 2021-06-15 10:54:56
  */
-import React, { ChangeEvent } from 'react';
+import React, { ChangeEvent, SyntheticEvent } from 'react';
 import HotRank from '@/components/hotRank';
 import NavLink from '@/components/navLink';
 import styles from './index.less';
@@ -18,7 +18,7 @@ import ErrorBoundary from '@/components/ErrorBoundary';
 
 const EngineURL:Record<string,string> = {
   google:"https://www.google.com/search?q=",
-  bandu:"https://www.baidu.com/s?ie=UTF-8&wd=",
+  baidu:"https://www.baidu.com/s?ie=UTF-8&wd=",
   bing:"https://cn.bing.com/search?q=",
   github:"https://github.com/search?q=",
   csdn:"https://so.csdn.net/so/search?q=",
@@ -42,6 +42,7 @@ class App extends React.Component<any,AppState> {
     this.handleEngineChange = this.handleEngineChange.bind(this);
     this.handleSearch = this.handleSearch.bind(this);
     this.handleInput = this.handleInput.bind(this);
+    this.handleEnterKeyDown = this.handleEnterKeyDown.bind(this);
   }
 
   handleEngineChange(evt:ChangeEvent<HTMLSelectElement>){
@@ -52,6 +53,12 @@ class App extends React.Component<any,AppState> {
   handleSearch(){
     if(this.state.search){
       window.open(EngineURL[this.state.engine] + this.state.search);
+    }
+  }
+
+  handleEnterKeyDown<HTMLInputElement>(evt: KeyboardEvent & HTMLInputElement){
+    if(evt.which === 13){
+      this.handleSearch();
     }
   }
 
@@ -80,7 +87,7 @@ class App extends React.Component<any,AppState> {
               <option value="csdn">CSDN</option>
               <option value="jianshu">简书</option>
             </select>
-            <input value={this.state.search} onChange={this.handleInput} className={styles.input} placeholder='设置为浏览器默认首页使用更便捷' />
+            <input onKeyDown={this.handleEnterKeyDown} value={this.state.search} onChange={this.handleInput} className={styles.input} placeholder='设置为浏览器默认首页使用更便捷' />
             <Button onClick={this.handleSearch} type="ghost" className={styles.btn}>搜索</Button>
           </div>
         </header>
