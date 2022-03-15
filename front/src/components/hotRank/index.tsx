@@ -71,8 +71,6 @@ function HotRank() {
       <img alt="前端微信公众号" src="/static/images/weixin.jpg" />
       <Divider />
       <SquareAd />
-      <Divider />
-      <SquareAd />
     </div>
   );
 }

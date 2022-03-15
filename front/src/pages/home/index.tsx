@@ -130,7 +130,7 @@ export default function Blogs() {
             网站诊断分析
           </a>
         </div>
-        <Title title="学习平台" more="/sites" />
+        <Title title="学习平台" />
         <div className={styles.sites}>
           <a
             className={styles.job}
@@ -203,6 +203,90 @@ export default function Blogs() {
           >
             <span>极客学院</span>
             <p>中国专业的IT职业在线教育平台</p>
+          </a>
+        </div>
+        <Title title="零代码" />
+        <div className={styles.sites}>
+          <a
+            className={styles.job}
+            href="https://www.lingdaima.com/grid/"
+            target="_blank"
+            rel="nofollow"
+          >
+            <span>Grid 网格在线拖拽布局</span>
+            <p>只需简单拖拽即可完成复杂的Grid布局</p>
+          </a>
+          <a
+            className={styles.job}
+            href="https://www.lingdaima.com/table/"
+            target="_blank"
+            rel="nofollow"
+          >
+            <span>Table 布局 | Excel转HTML</span>
+            <p>Excel转HTML，自动优化代码</p>
+          </a>
+          <a
+            className={styles.job}
+            href="https://www.lingdaima.com/shadow/"
+            target="_blank"
+            rel="nofollow"
+          >
+            <span>在线生成CSS阴影效果</span>
+            <p>使用分层箱形阴影实现更平滑、更锐利</p>
+          </a>
+          <a
+            className={styles.job}
+            href="https://www.lingdaima.com/#e0e0e0"
+            target="_blank"
+            rel="nofollow"
+          >
+            <span>在线生成CSS新拟态风格效果</span>
+            <p>国外超过的新拟态风格，设计师福利</p>
+          </a>
+          <a
+            className={styles.job}
+            href="https://www.lingdaima.com/glass/"
+            target="_blank"
+            rel="nofollow"
+          >
+            <span>在线生成CSS玻璃形态效果</span>
+            <p>在线制作玻璃形态效果，实时预览</p>
+          </a>
+          <a
+            className={styles.job}
+            href="https://www.lingdaima.com/cssbutton/"
+            target="_blank"
+            rel="nofollow"
+          >
+            <span>CSS按钮在线设计</span>
+            <p>在线设计按钮样式，并实时预览效果</p>
+          </a>
+          <a
+            className={styles.job}
+            href="https://www.lingdaima.com/typeset/"
+            target="_blank"
+            rel="nofollow"
+          >
+            <span>CSS文本排版工具</span>
+            <p>可视化对文本排版，并生成CSS代码</p>
+          </a>
+          <a
+            className={styles.job}
+            href="https://www.lingdaima.com/cssbg/"
+            target="_blank"
+            rel="nofollow"
+          >
+            <span>CSS背景生成器</span>
+            <p>以像素为单位绘制任何CSS背景</p>
+          </a>
+          <a
+            className={styles.job}
+            href="https://www.lingdaima.com/svgwave/"
+            target="_blank"
+            rel="nofollow"
+          >
+            <span>SVG波浪背景生成器</span>
+            <p>快速制作波浪背景</p>
           </a>
         </div>
         <Title title="开箱即用" />

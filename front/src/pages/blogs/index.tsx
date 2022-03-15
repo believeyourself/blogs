@@ -92,6 +92,9 @@ export default function Blogs() {
           <TagSelect.Option value="css">CSS</TagSelect.Option>
           <TagSelect.Option value="node">NodeJs</TagSelect.Option>
           <TagSelect.Option value="js">JS</TagSelect.Option>
+          <TagSelect.Option value="git">git</TagSelect.Option>
+          <TagSelect.Option value="mobile">移动端</TagSelect.Option>
+          <TagSelect.Option value="chrome">谷歌插件</TagSelect.Option>
           <TagSelect.Option value="SEO">SEO</TagSelect.Option>
           <TagSelect.Option value="mysql">Mysql</TagSelect.Option>
           <TagSelect.Option value="aws">AWS</TagSelect.Option>

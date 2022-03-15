@@ -1,5 +1,13 @@
 export default [
   {
+    id: 48,
+    title: '什么是“变基”，理解 git rebase 命令，它与 git merge 的区别',
+    description:
+      'git rebase 命令的作用以及与 git merge 的区别',
+    tags: ['git',"git rebase", 'git merge'],
+    date: '2022-03-12',
+  },
+  {
     id: 47,
     title: 'React Hooks 中 useMemo 与 useCallback 的作用、区别以及应用场景',
     description:
