@@ -1,5 +1,13 @@
 export default [
   {
+    id: 49,
+    title: '跨端开发框架 Rax 中的路由跳转',
+    description:
+      '简单减少 Rax 中提供的各种路由跳转方式，以及推荐路由的跳转方式',
+    tags: ["mobile",'小程序',"Rax", '路由跳转',"Link","navigate"],
+    date: '2022-03-16',
+  },
+  {
     id: 48,
     title: '什么是“变基”，理解 git rebase 命令，它与 git merge 的区别',
     description:
