@@ -64,8 +64,8 @@ function BlogDetail(props: any) {
       <div className={styles.content}>
         <SiteHeader
           title={blog?.title || ''}
-          keywords={`前端网,${keywords}`}
-          description={`前端网,${keywords},${blog?.description}`}
+          keywords={`${keywords}`}
+          description={`${keywords},${blog?.description}`}
         />
         <header>
           <NavLink className={styles.back} to="/">

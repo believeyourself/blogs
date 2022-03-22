@@ -1,5 +1,13 @@
 export default [
   {
+    title: 'codetour',
+    description: 'CodeTour 允许记录和回放代码库的演练和思路。我们通过代码注释或者文档来解释某段代码或方法的功能及逻辑，这样相对简便，但是对阅读的人不够友好，CodeTour 允许我们为代码添加备注，并且将这些备注串联起来，动态地展示我们的思路以及代码逻辑。',
+  },
+  {
+    title: 'polacode',
+    description: 'vs code的一款代码截图美化插件，能够轻松创造出漂亮的代码截图。',
+  },
+  {
     title: 'Project Manager',
     description: '多个项目之间快速切换多个项目之间快速切换',
   },
