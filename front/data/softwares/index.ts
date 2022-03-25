@@ -1,6 +1,15 @@
 export default {
   pc: [
     {
+      id: 6,
+      title: 'OpenSumi',
+      img: '6.png',
+      description:
+        '一款帮助你快速搭建本地和云端 IDE 的框架,可以同时在 Web 和 Electron 环境下运行，OpenSumi 采用了一套前后端分离、通过一层抽象的通信层进行相互调用的项目结构。满足 IDE 在更多垂直场景的定制能力，同时实现 Web 与本地客户端共用底层。',
+      date: '2022-03-25',
+      tags: ['OpenSumi','IDE','WEB',"Electron"],
+    },
+    {
       id: 5,
       title: 'Apifox',
       img: '5.png',
