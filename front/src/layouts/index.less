@@ -26,7 +26,12 @@
     position: absolute;
     width: 198px;
     text-align: center;
+    
+    @media screen and (max-width: @mobile-width) {
+      display: none;
+    }
   }
+
 
   .search{
     display: flex;

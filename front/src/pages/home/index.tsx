@@ -73,8 +73,8 @@ export default function Blogs() {
   return (
     <>
       <SiteHeader
-        title="首页 - 前端开发聚合平台"
-        keywords="前端学习，前端开发工具，前端常用工具，前端开源项目，node学习，node开源项目,node工具。"
+        title="首页 - React前端开发聚合平台"
+        keywords="前端学习教程，前端开发，前端工具，前端开源项目,前端网址导航，node学习，node开发,node学习教程，node开源项目,node工具，node网址导航"
         description="前端学习和前端开发，node学习和node开发常用工具，学习网址，开源项目聚合平台，为 前端开发 和 node 开发者提供免费资源分享。"
       />
       <div className={styles.content}>
@@ -128,6 +128,45 @@ export default function Blogs() {
             rel="nofollow"
           >
             网站诊断分析
+          </a>
+        </div>
+        <Title title="跨端开发" />
+        <div className={styles.sites}>
+          <a
+            className={styles.job}
+            href="https://taro-docs.jd.com/taro/docs/"
+            target="_blank"
+            rel="nofollow"
+          >
+            <span>taro</span>
+            <p>开放式跨端跨框架解决方案，支持使用 React/Vue/Nerv 等框架来开发 微信 / 京东 / 百度 / 支付宝 / 字节跳动 / QQ / 飞书 小程序 / H5 / RN 等应用!</p>
+          </a>
+          <a
+            className={styles.job}
+            href="https://rax.js.org/docs/guide/about"
+            target="_blank"
+            rel="nofollow"
+          >
+            <span>rax</span>
+            <p>Rax 是阿里巴巴应用最广泛的跨端解决方案，支持开发者通过类 React DSL 编写 Web、小程序、Flutter 等不同容器的跨端应用。</p>
+          </a>
+          <a
+            className={styles.job}
+            href="https://www.electronjs.org/zh/docs/latest/"
+            target="_blank"
+            rel="nofollow"
+          >
+            <span>Electron</span>
+            <p>可以让你使用纯 JavaScript 调用丰富的原生 APIs 来创造桌面应用</p>
+          </a>
+          <a
+            className={styles.job}
+            href="https://reactnative.dev/"
+            target="_blank"
+            rel="nofollow"
+          >
+            <span>React Native</span>
+            <p>使用 JS 和 React 来构建原生 APP。</p>
           </a>
         </div>
         <Title title="学习平台" />

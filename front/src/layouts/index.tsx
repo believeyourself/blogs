@@ -77,7 +77,7 @@ class App extends React.Component<any,AppState> {
     return (
       <ErrorBoundary>
         <header className={styles.header}>
-          <img alt="前端网" className={styles.title} src={logo} />
+          <img alt="React前端网" className={styles.title} src={logo} />
           <div className={styles.search}>
             <select className={styles.engine} value={this.state.engine} onChange={this.handleEngineChange}>
               <option value="google">谷歌</option>
@@ -96,6 +96,9 @@ class App extends React.Component<any,AppState> {
             <NavLink
               activeClassName={styles.active}
               exact={true}
+              isActive={(match,{pathname})=>{
+                return pathname.startsWith("/topics");
+              }}
               to={'/'}
               className={styles.item}
             >
