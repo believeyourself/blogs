@@ -1,5 +1,13 @@
 export default [
   {
+    id: 50,
+    title: 'React 18 已发布，新特性一览',
+    description:
+      '2022-3-29，React 18发布，带来一些行的 API 特性，本文带你一览新特性',
+    tags: ["react",'react 18',"新特性"],
+    date: '2022-04-05',
+  },
+  {
     id: 49,
     title: '跨端开发框架 Rax 中的路由跳转',
     description:
