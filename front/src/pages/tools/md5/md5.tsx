@@ -36,17 +36,17 @@ export default () =>{
 
   return <div className={style.container}>
     <textarea ref={textarea}
-      placeholder="请把你需要加密的内容粘贴在这里"
+      placeholder="Input Here"
       className={style.left}></textarea>
     <div className={style.center}>
       <Select value={encryptType} onChange={(value)=>setEncryptType(value)} className={style.select}>
-        <Select.Option value="big_md5">MD5(大写)</Select.Option>
-        <Select.Option value="small_md5">MD5(小写)</Select.Option>
+        <Select.Option value="big_md5">MD5(Uppercase)</Select.Option>
+        <Select.Option value="small_md5">MD5(Lowercase)</Select.Option>
         <Select.Option value="base64_encode">BASE64</Select.Option>
       </Select>
       <Space>
-        <Button type="primary" onClick={encrypt}>加密</Button>
-        <Button type="primary" onClick={clear}>清空</Button>
+        <Button type="primary" onClick={encrypt}>Encryption</Button>
+        <Button type="primary" onClick={clear}>Clear</Button>
       </Space>
     </div>
     <div className={style.right}>

@@ -12,7 +12,7 @@ function HotRank() {
   const host = process.env.SITE_DOMAIN;
   return (
     <div className={style.container}>
-      {/* <p className={style.title}>Online Tools</p>
+      <p className={style.title}>Online Tools</p>
       <div className={style.tool_tags}>
         <Tag
           onClick={() => (window.location.href = host + '/tools/jsonTree')}
@@ -35,14 +35,14 @@ function HotRank() {
         >
           timestamps
         </Tag>
-        <Tag
+        {/* <Tag
           onClick={() => (window.location.href = host + '/tools/cron')}
           className={style.tool_tag}
           color="green"
         >
           Cron Expresstion
-        </Tag>
-      </div> */}
+        </Tag> */}
+      </div>
       <Divider />
       <SquareAd />
       <Divider />

@@ -75,6 +75,7 @@ class App extends React.Component {
           {this.props.children}
           <HotRank />
         </div>
+        <Footer />
         <BackTop />
       </ErrorBoundary>
     );

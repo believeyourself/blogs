@@ -39,7 +39,7 @@ export default () => {
         } catch (error: any) {
           console.log(error);
           setOpType(OpType.none);
-          setError(new Error('JSON格式错误'));
+          setError(new Error('JSON Format ERROR'));
         }
       }
       console.log(jsonObj)
@@ -60,7 +60,7 @@ export default () => {
         } catch (error: any) {
           console.log(error);
           setOpType(OpType.none);
-          setError(new Error('JSON格式错误'));
+          setError(new Error('JSON Format ERROR'));
         }
       }
       break;
@@ -71,16 +71,16 @@ export default () => {
       <div className={style.operation}>
         <Space>
           <Button onClick={compress} type="primary">
-            压缩
+            Compress
           </Button>
           <Button onClick={format} type="primary">
-            格式化
+            Format
           </Button>
         </Space>
       </div>
       <textarea
         autoFocus
-        placeholder="在此输入JSON字符串"
+        placeholder="Input Your JSON String"
         onChange={format}
         ref={inputJson}
         className={style.input_json}

@@ -24,21 +24,21 @@ export default () =>{
             setDate(dayjs(timeNumber));
             
           }else{
-            message.error("输入时间戳格式不正确");
+            message.error("Format Error");
           }
           
         }
-      } value={Math.floor(timestamp / timeType)} addonBefore="UNIX时间戳" addonAfter={
+      } value={Math.floor(timestamp / timeType)} addonBefore="UNIX timestamp" addonAfter={
         <Select value={timeType} onChange={
           (value) => {
             setTimeType(value);
           }
         }>
           <Select.Option value={1000}>
-            秒
+            s
           </Select.Option>
           <Select.Option value={1}>
-            毫秒
+            ms
           </Select.Option>
         </Select>
       } />
