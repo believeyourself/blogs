@@ -1,0 +1,80 @@
+<!--
+ * @Date: 2022-01-20 14:27:07
+ * @LastEditors: lzj
+ * @LastEditTime: 2022-01-21 16:41:33
+ * @FilePath: \qianduan.shop\front\src\pages\document.ejs
+--><!DOCTYPE html><html><head><title data-react-helmet="true">How to do node scheduled tasks - 前端网</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2087076429727327" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="/umi.css">
+    <link rel="stylesheet" href="/layouts.chunk.css">
+    <link rel="stylesheet" href="/p__blogs__detail__detail.chunk.css">
+    <script>
+      window.routerBase = "/";
+    </script>
+    <script>
+      //! umi version: 3.5.18
+    </script>
+    <title>文章详情</title>
+  <meta data-react-helmet="true" name="description" content="node,egg,scheduled tasks,node-schedule,Linux has crontab scheduled tasks, so how to implement scheduled tasks in Node?"><meta data-react-helmet="true" name="keywords" content="node,egg,scheduled tasks,node-schedule">
+</head>
+
+  <body>
+    <div id="root"><header class="header___2_57M"><img alt="farmerLZJ" class="title___MhkPP" src="/static/logo.68ff92ec.png"/></header><div style="width:100%;position:relative;top:0;z-index:999"><nav class="nav___3wfA1"><a href="https://izejun.com/blogs" class="item___AqKVH active___1THnk">Blog</a></nav></div><div class="content___2QN8t"><div class="content___1G4Bw"><article><h1>How to do node scheduled tasks</h1>
+
+<h2>Introduction</h2>
+
+<p>At present, we have encountered such a requirement that each user can customize the timing push. The time configuration of the timing task is configured by the user and can be modified at any time, instead of the traditional time set by the server to run the scheduled task.</p>
+
+<p>If it is a known timed task cycle period, then the Linux Crontab timed task can be implemented. There are also relatively mature solutions in node. The following is an introduction to the Node timing task scheme that I have learned about myself.</p>
+
+<h2>The schduler timing task provided by the egg framework</h2>
+
+<p>Egg is an enterprise-level application framework for Node under Alibaba. It provides a mechanism for developers to elegantly write scheduled tasks. For details, please refer to the official documentation: &lt;a href=&quot;https://www.eggjs.org/&quot;&gt;https://www.eggjs.org/&lt;/a&gt; , I will not elaborate on the specific usage here, just briefly talk about its configuration usage.</p>
+
+<p>1.Static timing tasks, that is, timing cycles, are fixed processing logic.</p>
+
+<p>2.Dynamically configure timed tasks, which is relatively flexible, and developers can control the cycle of timed tasks through configuration files.</p>
+
+<p>3.Manually triggering the scheduled task through code, we can determine whether to trigger the scheduled task according to some logic.</p>
+
+<p>From the above three points, the timing tasks provided by egg cannot meet the needs of users to configure the timing cycle by themselves, so we can only seek other solutions. Through querying the data, we found that the node-schedule library also provides the function of timing tasks.</p>
+
+<h2>node-schedule</h2>
+
+<p>After going through the documentation of &lt;a href=&quot;https://www.npmjs.com/package/node-schedule&quot;&gt;node-schudule&lt;/a&gt;, uses it as follows:</p>
+
+<p><code></code>`</p>
+
+<p>const schedule = require(&#39;node-schedule&#39;);</p>
+
+<p>const job = schedule.scheduleJob(&#39;42 <em> </em> <em> </em>&#39;, function(){
+  console.log(&#39;The answer to life, the universe, and everything!&#39;);
+});</p>
+
+<p><code></code>`</p>
+
+<p>Yes, he supports custom timing cycles, which can meet our needs and can be our choice, Nice!</p>
+
+<h2>At last</h2>
+
+<p>Finally, here is a summary of our own project timing task solutions, students who are not interested can skip it.</p>
+
+<p>Our backend uses the egg framework, so in the end our solution is to add a node-schdule timer to the agent process, and the user&#39;s timer will be executed in the synchronized agent process. At present, our number of users is not large. This is the only solution I can think of for the time being. The background may be deployed in a distributed manner after starting the volume. This will be a problem. If the volume is large, running a single process will also be a problem, and egg itself does not recommend doing too much in the agent process. business related stuff. Another important thing is that the agent is an auxiliary process. Some public work of the work is done in the agent. The agent will not exit and restart if an uncaught error occurs, so fault tolerance must be done and done well.</p>
+
+<p>If you have a better solution, please leave a message to tell us(&lt;a href=&quot;mailto:farmerlzj@163.com&quot;&gt;farmerlzj@163.com&lt;/a&gt;).</p></article><div><span class="ant-tag ant-tag-geekblue">#<span>node</span></span><span class="ant-tag ant-tag-volcano">#<span>egg</span></span><span class="ant-tag ant-tag-error">#<span>scheduled tasks</span></span><span class="ant-tag ant-tag-success">#<span>node-schedule</span></span></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><ins class=" adsbygoogle" style="display:block;text-align:center;width:100%;height:90px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="9331479126" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div><div class="container___8WoUM"><p class="title___3k8xL">Online Tools</p><div class="tool_tags___1ccK5"><span class="ant-tag ant-tag-blue tool_tag___1JT6M">JSON Formater</span><span class="ant-tag ant-tag-cyan tool_tag___1JT6M">MD5</span><span class="ant-tag ant-tag-error tool_tag___1JT6M">timestamps</span></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div style="text-align:center;height:300px"><ins class=" adsbygoogle" style="display:inline-block;width:250px;height:300px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="7022357395" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><div style="text-align:center;height:300px"><ins class=" adsbygoogle" style="display:inline-block;width:250px;height:300px" data-ad-client="ca-pub-2087076429727327" data-ad-slot="7022357395" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="false"></ins></div></div></div><footer class="footer___3wR6c">©2021 farmerlzj Provide Technical Support | CONTACT US：farmerlzj@163.com</footer><div class="ant-back-top"></div></div>
+	<script>
+  window.g_useSSR = true;
+  window.g_initialProps = {};
+	</script>
+
+    <script src="https://cloud.qianduan.shop/react.min.js"></script>
+    <script src="https://cloud.qianduan.shop/react-dom.min.js"></script>
+    <script src="/umi.js"></script>
+    <script src="/layouts.js"></script>
+    <script src="/p__blogs__detail__detail.js"></script>
+  
+
+</body></html>
