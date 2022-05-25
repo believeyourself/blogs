@@ -5,12 +5,10 @@ const route: any = [
     component: './exception/404',
   },
   {
-    name: '在线工具',
     path: '/tools/:type?',
     component: './tools',
   },
   {
-    name: 'PDF预览',
     path: '/ebooks/:path',
     component: './resources/previewPdf',
   },
@@ -20,83 +18,67 @@ const route: any = [
     routes: [
       {
         exact: true,
-        title: '首页',
         path: '/',
         component: '@/pages/home',
       },
       {
         path: '/sites',
-        title: '导航',
         component: '@/pages/sites',
       },
       {
-        title: '教程',
         exact: true,
         path: '/resources',
         component: '@/pages/resources',
       },
       {
-        title: '全部教程',
         path: '/resources/:id',
         component: '@/pages/resources/more',
       },
       {
-        title: '博客',
         path: '/blogs',
         component: '@/pages/blogs',
       },
       {
-        title: 'NodeJs专题',
         path: '/topics/node',
         component: '@/pages/topics/node',
       },
       {
-        title: 'React专题',
         path: '/topics/react',
         component: '@/pages/topics/react',
       },
       {
-        title: 'vscode插件',
         path: '/topics/vscode',
         component: '@/pages/topics/vscode',
       },
       {
-        title: '文章详情',
         path: '/blogs/detail/:id',
         component: '@/pages/blogs/detail/detail',
       },
       {
-        title: '方案',
         path: '/solution',
         component: '@/pages/solution',
       },      
       {
-        title: '方案详情',
         path: '/solution/detail/:id',
         component: '@/pages/solution/detail/detail',
       },
       {
-        title: '变现',
         path: '/revenue',
         component: '@/pages/revenue',
       },      
       {
-        title: '变现方案详情',
         path: '/revenue/detail/:id',
         component: '@/pages/revenue/detail/detail',
       },
       {
-        title: '软件分享',
         path: '/softwares',
         component: '@/pages/softwares',
       },
       {
-        title: '软件详情',
         path: '/softwares/detail/:id',
         component: '@/pages/softwares/detail/detail',
       },
       {
-        title: '关于我们',
         path: '/aboutUs',
         component: '@/pages/aboutUs',
       },

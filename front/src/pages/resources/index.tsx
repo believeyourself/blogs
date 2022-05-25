@@ -17,7 +17,7 @@ export default function Resources() {
   const resources: any[] = [];
   records.forEach((item) => {
     let categoryList: any[] = [];
-    const list: any[] = item.list?.slice(0, 6) || [];
+    const list: any[] = item.list?.slice(0, 12) || [];
     if (item.id === 'PDF') {
       categoryList = list.map((pdf: any) => {
         return (
@@ -32,7 +32,8 @@ export default function Resources() {
           </NavLink>
         );
       });
-    } else if (item.id === 'video') {
+    }
+     else if (item.id === 'video') {
       categoryList = list.map((item: any) => {
         item.description =
           '由于网盘易被封禁，请关注右侧公众号(qianduan_lzj)获取资源。';
@@ -42,7 +43,8 @@ export default function Resources() {
           </Col>
         );
       });
-    } else {
+    }
+    else {
       categoryList = list.map((item: any) => {
         return (
           <Col key={item.title} lg={12} md={12} sm={24} xs={24}>
@@ -79,7 +81,7 @@ export default function Resources() {
         <Alert
           closable
           type="warning"
-          message="前端开源项目更新！2022-02-09"
+          message="前端开源项目更新！2022-05-05"
         />
         {resources}
       </Space>

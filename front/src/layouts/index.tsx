@@ -77,7 +77,7 @@ class App extends React.Component<any,AppState> {
     return (
       <ErrorBoundary>
         <header className={styles.header}>
-          <img alt="React前端网" className={styles.title} src={logo} />
+          <img alt="React 前端导航" className={styles.title} src={logo} />
           <div className={styles.search}>
             <select className={styles.engine} value={this.state.engine} onChange={this.handleEngineChange}>
               <option value="google">谷歌</option>

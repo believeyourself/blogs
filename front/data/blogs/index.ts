@@ -1,10 +1,42 @@
 export default [
   {
+    id: 54,
+    title: 'rax 框架开发钉钉小程序实践问题',
+    description: '记录使用 rax 开发钉钉小程序遇到的问题及解决方案',
+    tags: ['rax', 'react', '小程序', '移动端'],
+    date: '2022-05-25',
+  },
+  {
+    id: 53,
+    title:
+      'React 前端代码规范，前端规约指引，分为【强制】、【推荐】、【参考】三个等级',
+    description: 'React 代码规范总结，助力开发提效，提升团队开发效率。',
+    tags: ['react', '代码规范'],
+    date: '2022-05-05',
+  },
+  {
+    id: 52,
+    title: 'Rax 移动端开发钉钉小程序 IOS 输入卡住，光标消失问题记录',
+    description:
+      '使用 Rax 框架开发企业内部钉钉小程序应用，实现表单输入时再正常不过的需求，这里我用到的是 fusion mobile 组件库及一些基础组件来构建我们的应用，在实现获取用户输入使用的是Input组件实现（文档地址：https://rax.js.org/docs/components/meet-input），这个Input组件支持单行和多行输入，可以应对大部分的应用场景。在安卓端是没有问题的，但是到了移动端会出现输入光标消失，输入文本获取不到，看上去像是卡住了一下，这肯定是不能接受的，这里记录探索解决 IOS 输入卡住问题的过程',
+    tags: ['Rax', 'mobile', 'IOS', '无法输入中文'],
+    date: '2022-04-24',
+  },
+  {
+    id: 51,
+    title:
+      '在浏览器及 Rax 中实现吸顶效果，position sticky 属性的应用及监听页面滚动(React)实现吸顶效果',
+    description:
+      '最近遇到了移动端小程序需要实现吸顶效果的需求，就是 tab 页抬头滑动到页面顶部时需要固定到页面的顶部不再滚动。这里介绍两种实现方式，当然这两种方式在浏览器同样适用，以下思路仅供参考，实际效果以实际操作为准',
+    tags: ['前端吸顶', 'rax', 'react', 'mobile'],
+    date: '2022-04-22',
+  },
+  {
     id: 50,
     title: 'React 18 已发布，新特性一览',
     description:
       '2022-3-29，React 18发布，带来一些行的 API 特性，本文带你一览新特性',
-    tags: ["react",'react 18',"新特性"],
+    tags: ['react', 'react 18', '新特性'],
     date: '2022-04-05',
   },
   {
@@ -12,23 +44,21 @@ export default [
     title: '跨端开发框架 Rax 中的路由跳转',
     description:
       '简单减少 Rax 中提供的各种路由跳转方式，以及推荐路由的跳转方式',
-    tags: ["mobile",'小程序',"Rax", '路由跳转',"Link","navigate"],
+    tags: ['mobile', '小程序', 'Rax', '路由跳转', 'Link', 'navigate'],
     date: '2022-03-16',
   },
   {
     id: 48,
     title: '什么是“变基”，理解 git rebase 命令，它与 git merge 的区别',
-    description:
-      'git rebase 命令的作用以及与 git merge 的区别',
-    tags: ['git',"git rebase", 'git merge'],
+    description: 'git rebase 命令的作用以及与 git merge 的区别',
+    tags: ['git', 'git rebase', 'git merge'],
     date: '2022-03-12',
   },
   {
     id: 47,
     title: 'React Hooks 中 useMemo 与 useCallback 的作用、区别以及应用场景',
-    description:
-      '简单介绍了 useMemo 和 useCallback 的使用，主要应用场景。',
-    tags: ['react',"useMemo", 'useCallback'],
+    description: '简单介绍了 useMemo 和 useCallback 的使用，主要应用场景。',
+    tags: ['react', 'useMemo', 'useCallback'],
     date: '2022-03-09',
   },
   {
@@ -36,15 +66,14 @@ export default [
     title: '浏览器打印，支持符合正常的小票，票据格式的打印库 Hiprint',
     description:
       '浏览器打印，按照正常的情况来说，我们鼠标点击右键，然后点击打印，就可以立马进行打印操作了,但是打印格式单一，不支持票据格式。模块 Hiprint，免费、简单、快速的 JS 打印插件，快速分页预览、打印、转pdf',
-    tags: ['js',"浏览器打印", '票据格式打印',"转PDF","Hiprint"],
+    tags: ['js', '浏览器打印', '票据格式打印', '转PDF', 'Hiprint'],
     date: '2022-03-03',
   },
   {
     id: 45,
     title: '如何实现条形码和二维码扫码',
-    description:
-      '今天要分享的这个模块，在开发网页扫码的时候，可以解决大问题。',
-    tags: ['js',"条形码扫码", '二维码扫码'],
+    description: '今天要分享的这个模块，在开发网页扫码的时候，可以解决大问题。',
+    tags: ['js', '条形码扫码', '二维码扫码'],
     date: '2022-03-02',
   },
   {
@@ -52,31 +81,30 @@ export default [
     title: '前端优化，script异步加载，deffer 与 async 的作用与区别',
     description:
       '前端优化中有一项优化方式，就是延迟 javascript 的加载与执行，因为script 的加载解析会阻塞页面渲染，为了尽快让用户看到界面，我们通常会延迟或异步 javascript 的加载解析。其中常用的方式就有直接将 script 标签移动至 body 标签之后、使用 script 标签的 deffer 属性 以及 async 属性。',
-    tags: ['js',"script标签", 'defer','async'],
+    tags: ['js', 'script标签', 'defer', 'async'],
     date: '2022-03-01',
   },
   {
     id: 43,
-    title: 'antd Modal.configm 中使用 FormattedMessage 报错:Uncaught Error: [React Intl] Could not find required `intl` object. <IntlProvider> needs to exist in the component ancestry.',
+    title:
+      'antd Modal.configm 中使用 FormattedMessage 报错:Uncaught Error: [React Intl] Could not find required `intl` object. <IntlProvider> needs to exist in the component ancestry.',
     description:
       'antd 国际化实践，Modal.configm 中使用 FormattedMessage 报错:Uncaught Error: [React Intl] Could not find required `intl` object. <IntlProvider> needs to exist in the component ancestry.',
-    tags: ['react', 'antd','Modal',"FormattedMessage"],
+    tags: ['react', 'antd', 'Modal', 'FormattedMessage'],
     date: '2022-02-21',
   },
   {
     id: 42,
     title: 'Typescript 类型声明工具函数一览',
-    description:
-      '记录Typescript 类型声明工具函数及作用',
+    description: '记录Typescript 类型声明工具函数及作用',
     tags: ['js', 'ts'],
     date: '2022-02-10',
   },
   {
     id: 41,
     title: 'AWS EC2 安装 NodeJs，使用 nvm 管理 NodeJs 版本',
-    description:
-      'AWS EC2 中管理 NodeJs 环境',
-    tags: ['node', 'AWS','EC2'],
+    description: 'AWS EC2 中管理 NodeJs 环境',
+    tags: ['node', 'AWS', 'EC2'],
     date: '2022-01-22',
   },
   {
@@ -84,7 +112,7 @@ export default [
     title: 'egg mysql 查询 Date 类型数据时区不对，时间减了 8 个小时',
     description:
       '日志表里存储了写入时间，时间存的是 Date 类型的数据，直接 select 出来的数据比存储的实际数据要少 8 个小时，数据库格式：2018-03-12 14:46:31, 通过egg-mysql查询出来的格式：2018-03-12T06:46:31.000Z, 自动加上了时区而且还是错误的时区。',
-    tags: ['node', 'egg','mysql'],
+    tags: ['node', 'egg', 'mysql'],
     date: '2022-01-13',
   },
   {
@@ -92,7 +120,7 @@ export default [
     title: 'React 中 useEffect 和 useLayoutEffect 作用和区别',
     description:
       '日常开发中的大部分情况下，使用 useEffect 就可以帮我们处理组件的副作用，但是如果想要同步调用一些副作用，比如对 DOM 的操作，就需要使用 useLayoutEffect，useLayoutEffect 中的副作用会在 DOM 更新之后同步执行,useLayoutEffect 与原来 class 组件原来的 componentDidMount & componentDidUpdate 一样，会在 react 完成 DOM 更新后马上同步调用的代码，会阻塞页面渲染。',
-    tags: ['react', 'useEffect','useLayoutEffect'],
+    tags: ['react', 'useEffect', 'useLayoutEffect'],
     date: '2022-01-13',
   },
   {
@@ -100,7 +128,7 @@ export default [
     title: '升级 egg-socket.io 到 4.4.0 ',
     description:
       '阿里这个框架已经很久没更新了，连插件模块都没有人维护。本来想着用 egg-socket.io 的 2.1.1 版本就行了，但是用起来发现很多的 api 都用不了了，于是有了升级的想法，重写配置。',
-    tags: ['node', 'egg','socket.io',"版本升级"],
+    tags: ['node', 'egg', 'socket.io', '版本升级'],
     date: '2022-01-06',
   },
   {
@@ -108,14 +136,13 @@ export default [
     title: 'nodejs PM2 延时退出',
     description:
       '在日常开发过程中，我们经常会用到 pm2 来起到服务，甚至会用 watch 来实现热更新。这种模式并不适合用在生产环境中，因为 pm2 零延时重启，会导致正在处理的请求直接被销毁，如果数据库没加事务，可能会导致数据库的数据不完整，我们可以利用--kill-timeout 参数延时退出，保证正在处理的请求正常结束',
-    tags: ['node', 'pm2','优雅退出'],
+    tags: ['node', 'pm2', '优雅退出'],
     date: '2022-01-06',
   },
   {
     id: 36,
     title: 'Doris 用户操作语句速览',
-    description:
-      'Doris 常用 SQL 语句快速浏览，记录常用SQL，方便阅读查询。',
+    description: 'Doris 常用 SQL 语句快速浏览，记录常用SQL，方便阅读查询。',
     tags: ['doris', '操作手册'],
     date: '2022-01-05',
   },
@@ -129,7 +156,8 @@ export default [
   },
   {
     id: 34,
-    title: 'Doris be 日志大量警告：/brpc/src/brpc/socket.cpp:1196] Fail to wait EPOLLOUT of fd=187: Connection timed out',
+    title:
+      'Doris be 日志大量警告：/brpc/src/brpc/socket.cpp:1196] Fail to wait EPOLLOUT of fd=187: Connection timed out',
     description:
       '采用 stream load 方式导入数据，一段时间后大量警告日志：/brpc/src/brpc/socket.cpp:1196] Fail to wait EPOLLOUT of fd=187: Connection timed out',
     tags: ['doris', 'aws', 'EC2'],

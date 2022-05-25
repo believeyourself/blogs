@@ -14,7 +14,7 @@ import Card from '@/components/card';
 import SiteHeader from '@/components/siteHeader';
 import { Card as AntdCard, Alert, Row, Col } from 'antd';
 
-const someBlogs = blogs.slice(0, 5);
+const someBlogs = blogs.slice(0, 10);
 const someProjects = resource[1].list.slice(0, 4);
 const blogRecords = someBlogs.map((item: any) => {
   if (item.id) {
@@ -73,9 +73,9 @@ export default function Blogs() {
   return (
     <>
       <SiteHeader
-        title="首页 - React前端开发聚合平台"
-        keywords="前端学习教程，前端开发，前端工具，前端开源项目,前端网址导航，node学习，node开发,node学习教程，node开源项目,node工具，node网址导航"
-        description="前端学习和前端开发，node学习和node开发常用工具，学习网址，开源项目聚合平台，为 前端开发 和 node 开发者提供免费资源分享。"
+        title="React前端开发聚合平台"
+        keywords="React前端学习教程，React前端开发，React前端工具，React前端开源项目,React前端网址导航，node学习，node开发,node学习教程，node开源项目,node工具，node网址导航"
+        description="React前端学习和React前端开发，node学习和node开发常用工具，学习网址，开源项目聚合平台，为 前端开发 和 node 开发者提供免费资源分享。"
       />
       <div className={styles.content}>
         <Title title="常用网址" more="/sites" description={'更多网址 >>'} />
@@ -130,7 +130,7 @@ export default function Blogs() {
             网站诊断分析
           </a>
         </div>
-        <Title title="跨端开发" />
+        <Title title="React跨端开发" />
         <div className={styles.sites}>
           <a
             className={styles.job}
@@ -478,7 +478,7 @@ export default function Blogs() {
           </a>
           <a
             className={styles.job}
-            href="https://leetcode-cn.com/https://leetcode-cn.com/"
+            href="https://leetcode-cn.com/"
             target="_blank"
             rel="nofollow"
           >

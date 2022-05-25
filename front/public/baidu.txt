@@ -1,6 +1,10 @@
 https://www.qianduan.shop/topics/node
 https://www.qianduan.shop/topics/react
 https://www.qianduan.shop/topics/vscode
+https://www.qianduan.shop/blogs/detail/54
+https://www.qianduan.shop/blogs/detail/53
+https://www.qianduan.shop/blogs/detail/52
+https://www.qianduan.shop/blogs/detail/51
 https://www.qianduan.shop/blogs/detail/50
 https://www.qianduan.shop/blogs/detail/49
 https://www.qianduan.shop/blogs/detail/48

@@ -38,39 +38,11 @@ function HotRank() {
         </Tag>
       </div>
       <Divider />
-      <Space>
-        <span className={style.qq_label}>Node交流群:</span>
-        <a
-          rel="nofollow"
-          target="_blank"
-          href="https://qm.qq.com/cgi-bin/qm/qr?k=AzXgep7P0kzB_-TIxBDDNFILZFxh4BdS&jump_from=webapi"
-        >
-          <img
-            src="//pub.idqqimg.com/wpa/images/group.png"
-            alt="Node交流群"
-            title="Node交流群"
-          />
-        </a>
-      </Space>
-      <Space>
-        <span className={style.qq_label}>前端交流群:</span>
-        <a
-          rel="nofollow"
-          target="_blank"
-          href="https://qm.qq.com/cgi-bin/qm/qr?k=R-am4ZcuufvTEuyilwZgihmk2Fp_lQsy&jump_from=webapi"
-        >
-          <img
-            src="//pub.idqqimg.com/wpa/images/group.png"
-            alt="前端技术交流"
-            title="前端技术交流"
-          />
-        </a>
-      </Space>
-      <Divider />
-      <p className={style.title}>微信公众号</p>
-      <img alt="前端微信公众号" src="/static/images/weixin.jpg" />
-      <Divider />
       <SquareAd />
+      <Divider />
+      <a href="https://s.qiniu.com/MJz2mi" target="_blank" style={{ display: "inline-block", width: "100%", textAlign: "center" }}>
+        <img alt="七牛云主机" src="https://cloud.qianduan.shop/qiniu/CPS%E6%8E%A8%E5%B9%BF%E7%B4%A0%E6%9D%90180x460.jpg" />
+      </a>
     </div>
   );
 }
