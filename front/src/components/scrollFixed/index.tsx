@@ -1,4 +1,5 @@
 import { CSSProperties, useEffect, useState } from 'react';
+import { isBrowser } from 'umi';
 
 export default function ScrollFixed(props: any) {
   const [needFixed, setNeedFixed] = useState(false);
@@ -10,14 +11,16 @@ export default function ScrollFixed(props: any) {
   };
 
   useEffect(() => {
-    window.onscroll = function () {
-      const scrollTop = document.documentElement.scrollTop;
-      if (scrollTop > 110 && !needFixed) {
-        setNeedFixed(true);
-      } else if(scrollTop <= 110) {
-        setNeedFixed(false);
-      }
-    };
+    if (isBrowser()) {
+      window.onscroll = function () {
+        const scrollTop = document.documentElement.scrollTop;
+        if (scrollTop > 110 && !needFixed) {
+          setNeedFixed(true);
+        } else if (scrollTop <= 110) {
+          setNeedFixed(false);
+        }
+      };
+    }
   }, []);
   return (
     <div className={props.className} style={styleObj}>

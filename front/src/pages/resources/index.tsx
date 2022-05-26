@@ -81,7 +81,7 @@ export default function Resources() {
         <Alert
           closable
           type="warning"
-          message="前端开源项目更新！2022-05-05"
+          message="前端开源项目更新！2022-05-26"
         />
         {resources}
       </Space>

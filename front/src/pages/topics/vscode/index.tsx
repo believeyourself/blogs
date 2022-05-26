@@ -8,18 +8,27 @@
  */
 import styles from './index.less';
 import SiteHeader from '@/components/siteHeader';
-import { Card as AntCard, Space, Alert } from 'antd';
+import { Card as AntCard, Space, Alert, Pagination } from 'antd';
 import source from '../../../../data/topics/vscode';
 import Card from '@/components/card';
 import NavLink from '@/components/navLink';
+import { isBrowser } from "umi";
 
-const components = source.map((item: any) => {
-  return (
-    <Card key={item.title} title={item.title} description={item.description} />
-  );
-});
+const pagesize = 20;
 
-export default function Resources() {
+export default function Resources(props: any) {
+  const { page } = props.location.query;
+  let currentPage = 1;
+  if (page) {
+    currentPage = Number(page);
+  }
+  const startIndex = (currentPage - 1) * pagesize;
+  const records = source.slice(startIndex, startIndex + pagesize);
+  const components = records.map((item: any) => {
+    return (
+      <Card key={item.title} title={item.title} description={item.description} />
+    );
+  });
   return (
     <>
       <SiteHeader
@@ -45,6 +54,13 @@ export default function Resources() {
         <AntCard>
           <div className={styles.doc}>{components}</div>
         </AntCard>
+        <div style={{ textAlign: 'center', marginBottom: "20px" }}>
+          <Pagination onChange={(page: number) => {
+            if (isBrowser()) {
+              window.open(window.location.origin + window.location.pathname + "?page=" + page, "_self");
+            }
+          }} defaultCurrent={currentPage} total={source.length} defaultPageSize={pagesize}></Pagination>
+        </div>
       </Space>
     </>
   );

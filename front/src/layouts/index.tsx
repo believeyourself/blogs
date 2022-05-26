@@ -15,6 +15,7 @@ import { BackTop,Button } from 'antd';
 import ScrollFixed from '@/components/scrollFixed';
 import Footer from '@/components/footer';
 import ErrorBoundary from '@/components/ErrorBoundary';
+import { isBrowser } from 'umi';
 
 const EngineURL:Record<string,string> = {
   google:"https://www.google.com/search?q=",
@@ -51,7 +52,7 @@ class App extends React.Component<any,AppState> {
   }
 
   handleSearch(){
-    if(this.state.search){
+    if(this.state.search && isBrowser()){
       window.open(EngineURL[this.state.engine] + this.state.search);
     }
   }

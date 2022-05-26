@@ -2,7 +2,32 @@ export default [
   {
     id: 'originCode',
     category: '开源项目',
-    list: [ 
+    list: [
+      {
+        title: 'Leaflet',
+        description: '对移动端友好的交互式地图 JavaScript 库。它久负盛名且简单易用，别看它小但包含了地图常用功能。Leaflet 极易上手，几行代码就能实现地图功能，且支持多种地图数据源。很多大厂都在用它，可放心在生产环境中使用',
+        url: 'https://github.com/Leaflet/Leaflet',
+      },
+      {
+        title: 'lexer',
+        description: '在线编程语言词法分析器。基于 DFA 算法实现支持多语言扩展，可用于代码编辑器的语法高亮等场景。同时项目的代码量少还有详细的源码讲解文档，适合对词法分析感兴趣的小伙伴学习。',
+        url: 'https://github.com/WGrape/lexer',
+      },
+      {
+        title: 'city-roads',
+        description: '自动生成任意城市的道路图。采用 OpenStreetMap 的免费数据实现城市道路可视化，还支持导出图片用这些图片做壁纸感觉很酷',
+        url: 'https://github.com/anvaka/city-roads',
+      },
+      {
+        title: 'towxml',
+        description: '可将 HTML 和 Markdown 转为微信小程序 WXML 的库。用于解决在微信小程序上 Markdown、HTML 不能直接渲染的问题',
+        url: 'https://github.com/sbfkcel/towxml',
+      },
+      {
+        title: 'React95',
+        description: '复古的 Win95 样式 React 组件。',
+        url: 'https://github.com/arturbien/React95',
+      },
       {
         title: 'sharedb',
         description: '基于 JSON 数据 OT 算法的实时数据库。简单来说就是实时协同数据框架，可用来实现当页面因用户操作发生数据变化时，实时把数据同步展示到其它用户页面上，其中 OT 算法就是解决此协同过程中问题的通用算法。常见的场景比如：多用户之间的状态同步、在线协作文档、离线后数据改动同步等',
