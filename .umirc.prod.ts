@@ -17,7 +17,9 @@ export default defineConfig({
   // },
   // publicPath:"public/",
   ssr: {},
-  dynamicImport: {},
+  dynamicImport: {
+    loading: '@/components/loading',
+  },
   externals: {
     react: 'window.React',
     'react-dom': 'window.ReactDOM',
