@@ -52,7 +52,7 @@ const reactBlogs = blogs.map((item: any) => {
 });
 
 export default function Resources() {
-  const { videos, codes } = source;
+  const { videos, codes, frames, mobiles } = source;
 
   return (
     <>
@@ -117,7 +117,7 @@ export default function Resources() {
             </a>
           </div>
         </AntCard>
-        <AntCard title="Redux 脚手架">
+        <AntCard title="React 脚手架">
           <div className={styles.doc}>
             <a
               target="_blank"
@@ -145,34 +145,24 @@ export default function Resources() {
         </AntCard>
         <AntCard title="React UI库">
           <div className={styles.doc}>
-            <a
-              target="_blank"
-              href="https://ant.design/docs/react/introduce-cn"
-              rel="nofollow"
-            >
-              ant-design
-            </a>
-            <a
-              target="_blank"
-              href="https://semi.design/zh-CN/start/introduction"
-              rel="nofollow"
-            >
-              semi-design
-            </a>
-            <a
-              target="_blank"
-              href="https://mui.com/zh/getting-started/installation/"
-              rel="nofollow"
-            >
-              Material-UI
-            </a>
-            <a
-              target="_blank"
-              href="https://react-bootstrap.github.io/getting-started/introduction"
-              rel="nofollow"
-            >
-              react-bootstrap
-            </a>
+            {frames.map((item) => {
+              return (
+                <a target="_blank" href={item.url} rel="nofollow">
+                  {item.name}
+                </a>
+              );
+            })}
+          </div>
+        </AntCard>
+        <AntCard title="React 跨端开发框架">
+          <div className={styles.doc}>
+            {mobiles.map((item) => {
+              return (
+                <a target="_blank" href={item.url} rel="nofollow">
+                  {item.name}
+                </a>
+              );
+            })}
           </div>
         </AntCard>
         <AntCard title="React 组件">

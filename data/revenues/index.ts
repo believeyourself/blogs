@@ -5,7 +5,7 @@ export default [
     description:
       '在 Youtube 找了几个方向试着去做，两个多月过去了没什么效果，人呀，为了碎银几两真的是操碎了心！',
     tags: ['Youtube', '油管', '自媒体'],
-    date: '2022-0607',
+    date: '2022-06-07',
   },
   {
     id: 3,

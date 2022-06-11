@@ -398,7 +398,7 @@ export default [
         title: '努努影院',
         description:
           '努努影院每天搜集互联网最新电影和电视剧，为广大用户免费提供无广告在线观看电影和电视剧服务，及时收录最新、最热、最全的电影大片,高清正版免费看。',
-        url: 'https://www.nnyy6.top/',
+        url: 'https://www.nunuyy1.org/',
       },
       {
         title: '樱花动漫',

@@ -15,7 +15,7 @@ import SiteHeader from '@/components/siteHeader';
 import { Card as AntdCard, Alert, Row, Col } from 'antd';
 
 const someBlogs = blogs.slice(0, 10);
-const someProjects = resource[1].list.slice(0, 4);
+const someProjects = resource[0].list.slice(0, 4);
 const blogRecords = someBlogs.map((item: any) => {
   if (item.id) {
     return (
@@ -363,6 +363,7 @@ export default function Blogs() {
           more="/resources/originCode"
           description={'更多项目 >>'}
         />
+        <Row gutter={[10, 10]}>{projectRecords}</Row>
         <Title title="零代码" />
         <div className={styles.sites}>
           <a
@@ -447,7 +448,6 @@ export default function Blogs() {
             <p>快速制作波浪背景</p>
           </a>
         </div>
-        <Row gutter={[10, 10]}>{projectRecords}</Row>
         <Title title="求职招聘" />
         <div
           style={{

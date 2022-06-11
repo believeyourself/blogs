@@ -1,9 +1,16 @@
 export default [
   {
+    title: 'TinyMCE',
+    description: '富文本文本编辑器',
+    category: '富文本',
+    image: '',
+    github: 'http://tinymce.ax-z.cn/',
+  },
+  {
     title: 'react-keepalive-router',
     description: '缓存页面组件',
     category: 'Router',
-    image: '/static/images/react-router-cache.gif',
+    image: '',
     github: 'https://github.com/GoodLuckAlien/react-keepalive-router#readme',
   },
   {
