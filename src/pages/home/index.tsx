@@ -74,7 +74,7 @@ export default function Blogs() {
     <>
       <SiteHeader
         title="React前端开发聚合平台"
-        keywords="React前端学习教程，React前端开发，React前端工具，React前端开源项目,React前端网址导航，node学习，node开发,node学习教程，node开源项目,node工具，node网址导航"
+        keywords="React,React前端学习教程，React前端开发，React前端工具，React前端开源项目，React前端网址导航，node,node学习教程，node开源项目,node工具，node网址导航"
         description="React前端学习和React前端开发，node学习和node开发常用工具，学习网址，开源项目聚合平台，为 前端开发 和 node 开发者提供免费资源分享。"
       />
       <div className={styles.content}>

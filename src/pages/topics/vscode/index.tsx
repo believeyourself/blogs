@@ -60,6 +60,7 @@ export default function Resources(props: any) {
         </AntCard>
         <div style={{ textAlign: 'center', marginBottom: '20px' }}>
           <Pagination
+            showSizeChanger={false}
             onChange={(page: number) => {
               if (isBrowser()) {
                 window.open(

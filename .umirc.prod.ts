@@ -16,9 +16,6 @@ export default defineConfig({
     // ga: 'G-HB1N0Q442R',
   },
   // publicPath:"public/",
-  // styleLoader: {
-  //   injectType : 'styleTag',
-  // },
   ignoreMomentLocale: true,
   title: false,
   ssr: {

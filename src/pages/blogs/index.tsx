@@ -11,11 +11,19 @@ import blogs from '../../../data/blogs';
 import NavLink from '@/components/navLink';
 import TagSelect from '@/components/tagSelect';
 import SiteHeader from '@/components/siteHeader';
-import { Divider, Carousel } from 'antd';
-import { useState, useMemo } from 'react';
+import { Divider, Carousel, Pagination } from 'antd';
+import { useMemo } from 'react';
+import { isBrowser } from 'umi';
 
-export default function Blogs() {
-  const [tag, setTag] = useState<string | null>(null);
+const pagesize = 10;
+
+export default function Blogs(props: any) {
+  const { page, tag } = props.location.query;
+  let currentPage = 1;
+  if (page) {
+    currentPage = Number(page);
+  }
+
   const targetBlogs: any[] = useMemo(() => {
     return blogs.filter((blog: any) => {
       if (!tag) {
@@ -24,8 +32,9 @@ export default function Blogs() {
       return Array.isArray(blog.tags) && blog.tags.includes(tag);
     });
   }, [tag]);
-
-  const records = targetBlogs.map((item: any) => {
+  const startIndex = (currentPage - 1) * pagesize;
+  const pageRecords = targetBlogs.slice(startIndex, startIndex + pagesize);
+  const records = pageRecords.map((item: any) => {
     if (item.id) {
       return (
         <NavLink
@@ -83,8 +92,15 @@ export default function Blogs() {
         <TagSelect
           hideCheckAll={true}
           multi={false}
+          value={[tag]}
           onChange={(values) => {
-            setTag(values[0]?.toString() || null);
+            if (isBrowser()) {
+              let url = window.location.origin + window.location.pathname;
+              if (values[0]) {
+                url += '?tag=' + values[0];
+              }
+              window.open(url, '_self');
+            }
           }}
           expandable
         >
@@ -102,6 +118,27 @@ export default function Blogs() {
         </TagSelect>
         <Divider />
         {records}
+        <div style={{ textAlign: 'center', marginBottom: '20px' }}>
+          <Pagination
+            showSizeChanger={false}
+            onChange={(page: number) => {
+              if (isBrowser()) {
+                let url =
+                  window.location.origin +
+                  window.location.pathname +
+                  '?page=' +
+                  page;
+                if (tag) {
+                  url += '&tag=' + tag;
+                }
+                window.open(url, '_self');
+              }
+            }}
+            defaultCurrent={currentPage}
+            total={targetBlogs.length}
+            defaultPageSize={pagesize}
+          ></Pagination>
+        </div>
       </div>
     </>
   );
