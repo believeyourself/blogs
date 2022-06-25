@@ -1,6 +1,22 @@
 export default {
   pc: [
     {
+      id: 7,
+      title: 'Apipost-API 文档、调试、Mock、测试一体化协作平台',
+      img: '7.svg',
+      description:
+        'Apipost 是一个支持模拟POST、GET、PUT等常见HTTP请求，支持团队协作，并可直接生成并导出接口文档的API 文档、调试、Mock、测试一体化协作平台。',
+      date: '2022-06-25',
+      tags: [
+        'Apipost',
+        'API 文档',
+        'API 调试',
+        'API Mock',
+        'API 测试',
+        '一体化协作平台',
+      ],
+    },
+    {
       id: 6,
       title: 'OpenSumi',
       img: '6.png',
