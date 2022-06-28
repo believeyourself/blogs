@@ -2,7 +2,7 @@ import { UnorderedListOutlined } from '@ant-design/icons';
 import { useState } from 'react';
 import { PhotoSlider } from 'react-photo-view';
 import { dataType } from 'react-photo-view/dist/types';
-import styles from './index.less';
+import './index.less';
 
 const colors = [
   '#fb8228',
@@ -26,9 +26,9 @@ export default (props: UIComponentProps) => {
         target="_blank"
         rel="nofollow"
         href={props.github}
-        className={styles.container}
+        className="ui_component"
       >
-        <div className={styles.image} style={{ backgroundColor: color }}>
+        <div className="image" style={{ backgroundColor: color }}>
           <img
             title="点击预览"
             onClick={(evt) => {
@@ -40,12 +40,12 @@ export default (props: UIComponentProps) => {
             src={imgUrl}
           />
         </div>
-        <h4 className={styles.title}>{props.title}</h4>
-        <p className={styles.description}>{props.description}</p>
-        <p className={styles.category}>
+        <h4 className="title">{props.title}</h4>
+        <p className="description">{props.description}</p>
+        <p className="category">
           <UnorderedListOutlined /> {props.category}
         </p>
-        <div className={styles.operation}>www.qianduan.shop</div>
+        <div className="operation">www.qianduan.shop</div>
       </a>
       <PhotoSlider
         images={images}

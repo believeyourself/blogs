@@ -1,15 +1,15 @@
 import ErrorBoundary from '../ErrorBoundary';
 import AdSense from 'react-adsense';
-import style from './style.less';
+import './style.less';
 
 export default () => {
   if (process.env.REACT_APP_ENV === 'development') {
-    return <div className={style.container}></div>;
+    return <div className="site_ad"></div>;
   }
 
   return (
     <ErrorBoundary ignore={true}>
-      <div className={style.container}>
+      <div className="site_ad">
         <AdSense.Google
           client="ca-pub-2087076429727327"
           slot="5545640106"

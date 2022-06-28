@@ -6,7 +6,7 @@
  * @LastEditors: Please set LastEditors
  * @LastEditTime: 2021-12-01 09:19:14
  */
-import styles from './index.less';
+import './index.less';
 import SiteHeader from '@/components/siteHeader';
 import { Card as AntCard, Space, Row, Col } from 'antd';
 import source from '../../../../data/topics/react';
@@ -29,10 +29,10 @@ const reactBlogs = blogs.map((item: any) => {
       <NavLink
         to={`/blogs/detail/${item.id}`}
         key={item.url || item.id}
-        className={styles.blog}
+        className="blog"
       >
-        <h4 className={styles.title}>{item.title}</h4>
-        <p className={styles.description}>{item.description}</p>
+        <h4 className="title">{item.title}</h4>
+        <p className="description">{item.description}</p>
       </NavLink>
     );
   } else {
@@ -41,11 +41,11 @@ const reactBlogs = blogs.map((item: any) => {
         href={item.url}
         target="_blank"
         key={item.url || item.id}
-        className={styles.blog}
+        className="blog"
         rel="nofollow"
       >
-        <h4 className={styles.title}>{item.title}</h4>
-        <p className={styles.description}>{item.description}</p>
+        <h4 className="title">{item.title}</h4>
+        <p className="description">{item.description}</p>
       </a>
     );
   }
@@ -61,9 +61,9 @@ export default function Resources() {
         keywords="React文档，React教程，React开源项目,React组件"
         description="React文档、教程、开源项目,组件，助力学习掌握React,提升React开发效率"
       />
-      <Space direction="vertical" className={styles.content}>
+      <Space direction="vertical" className="react_content">
         <AntCard title="React 基础文档">
-          <div className={styles.doc}>
+          <div className="doc">
             <a
               target="_blank"
               href="https://zh-hans.reactjs.org/"
@@ -94,7 +94,7 @@ export default function Resources() {
           </div>
         </AntCard>
         <AntCard title="Redux 中间件">
-          <div className={styles.doc}>
+          <div className="doc">
             <a
               target="_blank"
               href="https://redux-saga-in-chinese.js.org/"
@@ -118,7 +118,7 @@ export default function Resources() {
           </div>
         </AntCard>
         <AntCard title="React 脚手架">
-          <div className={styles.doc}>
+          <div className="doc">
             <a
               target="_blank"
               href="https://create-react-app.dev/docs/getting-started"
@@ -144,7 +144,7 @@ export default function Resources() {
           </div>
         </AntCard>
         <AntCard title="React UI库">
-          <div className={styles.doc}>
+          <div className="doc">
             {frames.map((item) => {
               return (
                 <a target="_blank" href={item.url} rel="nofollow">
@@ -155,7 +155,7 @@ export default function Resources() {
           </div>
         </AntCard>
         <AntCard title="React 跨端开发框架">
-          <div className={styles.doc}>
+          <div className="doc">
             {mobiles.map((item) => {
               return (
                 <a target="_blank" href={item.url} rel="nofollow">
@@ -166,7 +166,7 @@ export default function Resources() {
           </div>
         </AntCard>
         <AntCard title="React 组件">
-          <div className={styles.components}>
+          <div className="components">
             {reactComponents.map((item: any, index: number) => {
               return (
                 <UIComonent
@@ -183,7 +183,7 @@ export default function Resources() {
             {videos.map((item: any) => {
               return (
                 <Col key={item.title} lg={12} md={12} sm={24} xs={24}>
-                  <Card className={styles.category_list_item} {...item} />
+                  <Card className="category_list_item" {...item} />
                 </Col>
               );
             })}
@@ -194,7 +194,7 @@ export default function Resources() {
             {codes.map((item: any) => {
               return (
                 <Col key={item.title} lg={6} md={6} sm={12} xs={24}>
-                  <Card className={styles.category_list_item} {...item} />
+                  <Card className="category_list_item" {...item} />
                 </Col>
               );
             })}

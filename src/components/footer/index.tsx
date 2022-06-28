@@ -1,8 +1,8 @@
 import NavLink from '../navLink';
-import style from './index.less';
+import './index.less';
 export default () => {
   return (
-    <footer className={style.footer}>
+    <footer className="site_footer">
       <p>
         ©2021 farmerlzj 提供技术支持 |{' '}
         <a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank">

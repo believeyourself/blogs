@@ -6,7 +6,7 @@
  * @LastEditors: lzj
  * @LastEditTime: 2022-02-09 10:12:22
  */
-import styles from './index.less';
+import './index.less';
 import records from '../../../data/resource';
 import Card from '@/components/card';
 import SiteHeader from '@/components/siteHeader';
@@ -22,7 +22,7 @@ export default function Resources() {
       categoryList = list.map((pdf: any) => {
         return (
           <NavLink
-            className={styles.pdf}
+            className="pdf"
             key={pdf.title}
             target="_blank"
             // href={`https://cloud.qianduan.shop/${pdf.title}`}
@@ -38,7 +38,7 @@ export default function Resources() {
           '由于网盘易被封禁，请关注右侧公众号(qianduan_lzj)获取资源。';
         return (
           <Col key={item.title} lg={12} md={12} sm={24} xs={24}>
-            <Card className={styles.category_list_item} {...item} />
+            <Card className="category_list_item" {...item} />
           </Col>
         );
       });
@@ -46,7 +46,7 @@ export default function Resources() {
       categoryList = list.map((item: any) => {
         return (
           <Col key={item.title} lg={12} md={12} sm={24} xs={24}>
-            <Card className={styles.category_list_item} {...item} />
+            <Card className="category_list_item" {...item} />
           </Col>
         );
       });
@@ -58,7 +58,7 @@ export default function Resources() {
         key={item.id}
         title={item.category}
         extra={
-          <NavLink className={styles.download_url} to={`/resources/${item.id}`}>
+          <NavLink className="download_url" to={`/resources/${item.id}`}>
             查看更多
           </NavLink>
         }
@@ -75,7 +75,7 @@ export default function Resources() {
         keywords="前端网，视频教程，电子书，PDF，开源项目，源码分享"
         description="前端网，最新网上视频教程和开源项目分享，电子书在线预览，学习路线推荐"
       />
-      <Space direction="vertical" className={styles.content}>
+      <Space direction="vertical" className="resource_content">
         <Alert closable type="warning" message="前端开源项目更新！2022-05-26" />
         {resources}
       </Space>

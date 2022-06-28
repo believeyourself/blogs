@@ -1,8 +1,7 @@
-import style from './style.less';
+import './style.less';
 import data from '../../../data/softwares';
 import { Divider } from 'antd';
 import React from 'react';
-import SideAd from '@/components/sideAd';
 
 const softwares = data.pc.concat(data.mobile).sort((pre, next) => {
   return pre.date > next.date ? -1 : 1;
@@ -17,15 +16,15 @@ export default () => {
           onClick={() => {
             window.location.href = `${host}/softwares/detail/${software.id}`;
           }}
-          className={style.list_item}
+          className="list_item"
         >
           <div
-            className={style.img}
+            className="img"
             style={{
               backgroundImage: `url("/static/softwares/${software.img}")`,
             }}
           ></div>
-          <div className={style.list_item_content}>
+          <div className="list_item_content">
             <h2>{software.title}</h2>
             <p>{software.description}</p>
             <p>最近更新：{software.date}</p>
@@ -37,8 +36,8 @@ export default () => {
   });
 
   return (
-    <div className={style.container}>
-      <div className={style.content}>{records}</div>
+    <div className="software_container">
+      <div className="content">{records}</div>
     </div>
   );
 };

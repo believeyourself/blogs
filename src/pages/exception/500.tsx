@@ -1,5 +1,4 @@
-import { Link } from 'umi';
-import { Result, Button } from 'antd';
+import { Result } from 'antd';
 
 export default () => (
   <Result

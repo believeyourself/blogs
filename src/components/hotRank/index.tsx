@@ -1,21 +1,21 @@
-import style from './index.less';
-import { Divider, Space, Tag } from 'antd';
+import './index.less';
+import { Divider, Tag } from 'antd';
 import SquareAd from '../squareAd';
 import { isBrowser } from 'umi';
 
 function HotRank() {
   const host = process.env.SITE_DOMAIN;
   return (
-    <div className={style.container}>
-      <p className={style.title}>在线工具</p>
-      <div className={style.tool_tags}>
+    <div className="hot_rank">
+      <p className="title">在线工具</p>
+      <div className="tool_tags">
         <Tag
           onClick={() => {
             if (isBrowser()) {
               window.location.href = host + '/tools';
             }
           }}
-          className={style.tool_tag}
+          className="tool_tag"
           color="blue"
         >
           JSON格式化
@@ -26,7 +26,7 @@ function HotRank() {
               window.location.href = host + '/tools/md5';
             }
           }}
-          className={style.tool_tag}
+          className="tool_tag"
           color="cyan"
         >
           MD5
@@ -37,7 +37,7 @@ function HotRank() {
               window.location.href = host + '/tools/timestamp';
             }
           }}
-          className={style.tool_tag}
+          className="tool_tag"
           color="error"
         >
           时间戳转换
@@ -48,7 +48,7 @@ function HotRank() {
               window.location.href = host + '/tools/cron';
             }
           }}
-          className={style.tool_tag}
+          className="tool_tag"
           color="green"
         >
           Cron表达式生成

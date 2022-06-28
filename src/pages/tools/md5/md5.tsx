@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import { Button, Select, Space, Typography } from 'antd';
-import style from './style.less';
+import './style.less';
 import md5 from 'js-md5';
 
 export default () => {
@@ -34,17 +34,17 @@ export default () => {
   };
 
   return (
-    <div className={style.container}>
+    <div className="md5_container">
       <textarea
         ref={textarea}
         placeholder="请把你需要加密的内容粘贴在这里"
-        className={style.left}
+        className="left"
       ></textarea>
-      <div className={style.center}>
+      <div className="center">
         <Select
           value={encryptType}
           onChange={(value) => setEncryptType(value)}
-          className={style.select}
+          className="select"
         >
           <Select.Option value="big_md5">MD5(大写)</Select.Option>
           <Select.Option value="small_md5">MD5(小写)</Select.Option>
@@ -59,7 +59,7 @@ export default () => {
           </Button>
         </Space>
       </div>
-      <div className={style.right}>
+      <div className="right">
         {value && <Typography.Text copyable>{value}</Typography.Text>}
       </div>
     </div>

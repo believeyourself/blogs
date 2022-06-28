@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import { Button, Space } from 'antd';
 import { useState } from 'react';
 import JsonViewer from 'react-json-view';
-import style from './style.less';
+import './style.less';
 
 enum OpType {
   none,
@@ -74,8 +74,8 @@ export default () => {
     }
   }
   return (
-    <div className={style.container}>
-      <div className={style.operation}>
+    <div className="js_tree_container">
+      <div className="operation">
         <Space>
           <Button onClick={compress} type="primary">
             压缩
@@ -90,9 +90,9 @@ export default () => {
         placeholder="在此输入JSON字符串"
         onChange={format}
         ref={inputJson}
-        className={style.input_json}
+        className="input_json"
       ></textarea>
-      <div className={style.output_json}>{error ? error.message : content}</div>
+      <div className="output_json">{error ? error.message : content}</div>
     </div>
   );
 };

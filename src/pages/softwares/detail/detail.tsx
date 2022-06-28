@@ -1,4 +1,4 @@
-import styles from './detail.less';
+import './detail.less';
 import marked from 'marked';
 import softwares from '../../../../data/softwares';
 import SiteHeader from '@/components/siteHeader';
@@ -26,19 +26,19 @@ function BlogDetail(props: any) {
   const content = require(`../../../../data/softwares/${id}.md`);
   const keywords = software && software.tags?.join(',');
   return (
-    <div className={styles.content}>
+    <div className="software_detail_content">
       <SiteHeader
         title={software?.title || ''}
         keywords={`前端网,${keywords}`}
         description={`前端网,${keywords},${software?.description}`}
       />
       <header>
-        <a className={styles.back} href={host}>
+        <a className="back" href={host}>
           {' '}
           首页
         </a>{' '}
         /
-        <a className={styles.back} href={host + '/softwares'}>
+        <a className="back" href={host + '/softwares'}>
           {' '}
           软件
         </a>

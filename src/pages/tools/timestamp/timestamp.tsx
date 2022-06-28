@@ -1,7 +1,7 @@
 import { Input, Select, message, Divider } from 'antd';
 import { useState } from 'react';
 import dayjs, { Dayjs } from 'dayjs';
-import style from './style.less';
+import './style.less';
 import utc from 'dayjs/plugin/utc';
 import DatePicker from '@/components/DatePicker';
 
@@ -13,8 +13,8 @@ export default () => {
   const [timeType, setTimeType] = useState(1);
 
   return (
-    <div className={style.container}>
-      <div className={style.input}>
+    <div className="timestamp_container">
+      <div className="input">
         <Input
           onChange={(evt) => {
             const timeNumber = Number(evt.target.value);

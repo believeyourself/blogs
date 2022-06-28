@@ -4,7 +4,7 @@
  * @LastEditTime: 2021-12-21 13:33:31
  * @FilePath: \qianduan.shop\src\pages\blogs\detail\detail.tsx
  */
-import styles from './detail.less';
+import './detail.less';
 import marked from 'marked';
 import { Divider, Tag } from 'antd';
 import blogs from '../../../../data/blogs';
@@ -61,19 +61,19 @@ function BlogDetail(props: any) {
   const keywords = blog && blog.tags?.join(',');
   return (
     <>
-      <div className={styles.content}>
+      <div className="blog_detail_content">
         <SiteHeader
           title={blog?.title || ''}
           keywords={`${keywords}`}
           description={`${keywords},${blog?.description}`}
         />
         <header>
-          <NavLink className={styles.back} to="/">
+          <NavLink className="back" to="/">
             {' '}
             首页
           </NavLink>{' '}
           /
-          <NavLink className={styles.back} to="/blogs">
+          <NavLink className="back" to="/blogs">
             {' '}
             博客
           </NavLink>

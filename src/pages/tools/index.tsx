@@ -1,13 +1,12 @@
 import RowAd from '@/components/rowAd';
 import { Helmet, useParams } from 'umi';
 import { Divider, Tabs } from 'antd';
-import { useState } from 'react';
 import JsonTree from './jsonTree/jsonTree';
 import MD5 from './md5/md5';
 import Cron from './cron/cron';
 import Timestamp from './timestamp/timestamp';
 import logo from '../../assets/images/logo.png';
-import style from './style.less';
+import './style.less';
 import NavLink from '@/components/navLink';
 
 enum ToolType {
@@ -36,7 +35,7 @@ export default () => {
           "
         />
       </Helmet>
-      <header className={style.header}>
+      <header className="tool_header">
         <img
           onClick={() => (window.location.href = '/')}
           title="前端网"

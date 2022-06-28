@@ -6,7 +6,7 @@
  * @LastEditors: lizejun
  * @LastEditTime: 2021-06-15 10:55:30
  */
-import styles from './index.less';
+import './index.less';
 import SiteHeader from '@/components/siteHeader';
 import { Card as AntCard, Space, Row, Col } from 'antd';
 import SideAd from '@/components/sideAd';
@@ -27,10 +27,10 @@ const reactBlogs = blogs.map((item: any) => {
       <NavLink
         to={`/blogs/detail/${item.id}`}
         key={item.url || item.id}
-        className={styles.blog}
+        className="blog"
       >
-        <h4 className={styles.title}>{item.title}</h4>
-        <p className={styles.description}>{item.description}</p>
+        <h4 className="title">{item.title}</h4>
+        <p className="description">{item.description}</p>
       </NavLink>
     );
   } else {
@@ -39,11 +39,11 @@ const reactBlogs = blogs.map((item: any) => {
         href={item.url}
         target="_blank"
         key={item.url || item.id}
-        className={styles.blog}
+        className="blog"
         rel="nofollow"
       >
-        <h4 className={styles.title}>{item.title}</h4>
-        <p className={styles.description}>{item.description}</p>
+        <h4 className="title">{item.title}</h4>
+        <p className="description">{item.description}</p>
       </a>
     );
   }
@@ -60,9 +60,9 @@ export default function Resources() {
         description="NodeJs学习路线、文档、教程、开源项目，助力学习掌握NodeJs,提升NodeJs开发效率"
       />
       <SideAd />
-      <Space direction="vertical" className={styles.content}>
+      <Space direction="vertical" className="node_content">
         <AntCard title="NodeJs 文档及框架">
-          <div className={styles.doc}>
+          <div className="doc">
             <a target="_blank" href="http://nodejs.cn/" title="Node文档">
               NodeJs
             </a>
@@ -100,7 +100,7 @@ export default function Resources() {
             {videos.map((item: any) => {
               return (
                 <Col key={item.title} lg={12} md={12} sm={24} xs={24}>
-                  <Card className={styles.category_list_item} {...item} />
+                  <Card className="category_list_item" {...item} />
                 </Col>
               );
             })}
@@ -111,7 +111,7 @@ export default function Resources() {
             {codes.map((item: any) => {
               return (
                 <Col key={item.title} lg={12} md={12} sm={24} xs={24}>
-                  <Card className={styles.category_list_item} {...item} />
+                  <Card className="category_list_item" {...item} />
                 </Col>
               );
             })}

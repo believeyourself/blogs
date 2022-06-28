@@ -6,7 +6,7 @@
  * @LastEditors: lizejun
  * @LastEditTime: 2021-06-15 10:55:30
  */
-import styles from './index.less';
+import './index.less';
 import records from '../../../../data/resource';
 import Card from '@/components/card';
 import SiteHeader from '@/components/siteHeader';
@@ -26,7 +26,7 @@ export default function More() {
     categoryList = list.map((pdf: any) => {
       return (
         <NavLink
-          className={styles.pdf}
+          className="pdf"
           key={pdf.title}
           target="_blank"
           // href={`https://cloud.qianduan.shop/${pdf.title}`}
@@ -42,7 +42,7 @@ export default function More() {
         '由于网盘易被封禁，请关注右侧公众号(qianduan_lzj)获取资源。';
       return (
         <Col key={item.title} lg={12} md={12} sm={24} xs={24}>
-          <Card className={styles.category_list_item} {...item} />
+          <Card className="category_list_item" {...item} />
         </Col>
       );
     });
@@ -50,14 +50,14 @@ export default function More() {
     categoryList = list.map((item: any) => {
       return (
         <Col key={item.title} lg={12} md={12} sm={24} xs={24}>
-          <Card className={styles.category_list_item} {...item} />
+          <Card className="category_list_item" {...item} />
         </Col>
       );
     });
   }
 
   return (
-    <section className={styles.container}>
+    <section className="more_container">
       <SiteHeader
         title={resource.category}
         keywords="前端网，视频教程，电子书，PDF，开源项目，源码分享，React，Vue，Typescript，Egg，Node"
@@ -71,7 +71,7 @@ export default function More() {
             {resource.category}
           </h1>
         }
-        className={styles.content}
+        className="content"
       >
         <Row gutter={[10, 10]}>{categoryList}</Row>
       </AntCard>

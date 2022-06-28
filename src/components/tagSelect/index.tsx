@@ -4,7 +4,7 @@ import { Tag } from 'antd';
 import classNames from 'classnames';
 import type { FC } from 'react';
 import React from 'react';
-import styles from './index.less';
+import './index.less';
 
 const { CheckableTag } = Tag;
 
@@ -117,9 +117,9 @@ const TagSelect: FC<TagSelectProps> & { Option: typeof TagSelectOption } = (
     selectAllText = '全部',
   } = actionsText;
 
-  const cls = classNames(styles.tagSelect, className, {
-    [styles.hasExpandTag]: expandable,
-    [styles.expanded]: expand,
+  const cls = classNames('tagSelect', className, {
+    hasExpandTag: expandable,
+    expanded: expand,
   });
 
   return (
@@ -148,7 +148,7 @@ const TagSelect: FC<TagSelectProps> & { Option: typeof TagSelectOption } = (
         })}
       {expandable && (
         <a
-          className={styles.trigger}
+          className="trigger"
           onClick={() => {
             toggle();
           }}

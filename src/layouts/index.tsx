@@ -9,7 +9,7 @@
 import React, { ChangeEvent } from 'react';
 import HotRank from '@/components/hotRank';
 import NavLink from '@/components/navLink';
-import styles from './index.less';
+import './index.less';
 import logo from '@/assets/images/logo.png';
 import { BackTop, Button } from 'antd';
 import Footer from '@/components/footer';
@@ -76,11 +76,11 @@ class App extends React.Component<any, AppState> {
   render() {
     return (
       <ErrorBoundary>
-        <header className={styles.header}>
-          <img alt="React 前端导航" className={styles.title} src={logo} />
-          <div className={styles.search}>
+        <header className="layout_header">
+          <img alt="React 前端导航" className="title" src={logo} />
+          <div className="search">
             <select
-              className={styles.engine}
+              className="engine"
               value={this.state.engine}
               onChange={this.handleEngineChange}
             >
@@ -95,74 +95,46 @@ class App extends React.Component<any, AppState> {
               onKeyDown={this.handleEnterKeyDown}
               value={this.state.search}
               onChange={this.handleInput}
-              className={styles.input}
+              className="input"
               placeholder="设置为浏览器默认首页使用更便捷"
             />
-            <Button
-              onClick={this.handleSearch}
-              type="ghost"
-              className={styles.btn}
-            >
+            <Button onClick={this.handleSearch} type="ghost" className="btn">
               搜索
             </Button>
           </div>
         </header>
-        <nav className={styles.nav}>
+        <nav className="layout_nav">
           <NavLink
-            activeClassName={styles.active}
+            activeClassName="active"
             exact={true}
             isActive={(match, { pathname }) => {
               return pathname.startsWith('/topics');
             }}
             to={'/'}
-            className={styles.item}
+            className="item"
           >
             首页
           </NavLink>
-          <NavLink
-            activeClassName={styles.active}
-            to={'/sites'}
-            className={styles.item}
-          >
+          <NavLink activeClassName="active" to={'/sites'} className="item">
             网址
           </NavLink>
-          <NavLink
-            activeClassName={styles.active}
-            to={'/resources'}
-            className={styles.item}
-          >
+          <NavLink activeClassName="active" to={'/resources'} className="item">
             教程
           </NavLink>
-          <NavLink
-            activeClassName={styles.active}
-            to={'/blogs'}
-            className={styles.item}
-          >
+          <NavLink activeClassName="active" to={'/blogs'} className="item">
             博客
           </NavLink>
-          <NavLink
-            activeClassName={styles.active}
-            to={'/solution'}
-            className={styles.item}
-          >
+          <NavLink activeClassName="active" to={'/solution'} className="item">
             方案
           </NavLink>
-          <NavLink
-            activeClassName={styles.active}
-            to={'/revenue'}
-            className={styles.item}
-          >
+          <NavLink activeClassName="active" to={'/revenue'} className="item">
             变现
           </NavLink>
-          <NavLink
-            activeClassName={styles.active}
-            to={'/softwares'}
-            className={styles.item}
-          >
+          <NavLink activeClassName="active" to={'/softwares'} className="item">
             软件
           </NavLink>
         </nav>
-        <div className={styles.content}>
+        <div className="layout_content">
           {this.props.children}
           <HotRank />
         </div>

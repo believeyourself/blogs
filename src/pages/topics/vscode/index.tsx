@@ -6,7 +6,7 @@
  * @LastEditors: lizejun
  * @LastEditTime: 2021-06-15 10:55:30
  */
-import styles from './index.less';
+import './index.less';
 import SiteHeader from '@/components/siteHeader';
 import { Card as AntCard, Space, Alert, Pagination } from 'antd';
 import source from '../../../../data/topics/vscode';
@@ -40,7 +40,7 @@ export default function Resources(props: any) {
         keywords="前端，IDE,VS Code,插件"
         description="Visual Studio Code（简称“VS Code”）在前端开发的过程中必不可少，vscode作为代码编辑器，开源、免费、颜值高。更关键的是，丰富的插件，能够提高开发效率，你值得拥有。"
       />
-      <Space direction="vertical" className={styles.content}>
+      <Space direction="vertical" className="vscode_content">
         <Alert
           message={
             <p>
@@ -56,7 +56,7 @@ export default function Resources(props: any) {
           type="success"
         />
         <AntCard>
-          <div className={styles.doc}>{components}</div>
+          <div className="doc">{components}</div>
         </AntCard>
         <div style={{ textAlign: 'center', marginBottom: '20px' }}>
           <Pagination

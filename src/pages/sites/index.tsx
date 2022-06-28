@@ -7,7 +7,7 @@
  * @LastEditTime: 2021-05-27 13:14:11
  */
 import { useState } from 'react';
-import styles from './index.less';
+import './index.less';
 import records from '../../../data/sites';
 import Card from '@/components/card';
 import SiteHeader from '@/components/siteHeader';
@@ -31,9 +31,9 @@ export default function Sites() {
   const resources: any[] = [];
   records.forEach((item, index) => {
     navs.push(
-      <li key={item.id} className={styles.nav_item}>
+      <li key={item.id} className="nav_item">
         <a
-          className={index === active ? styles.active : ''}
+          className={index === active ? 'active' : ''}
           onClick={() => {
             setActive(index);
             scrollToAnchor(item.id);
@@ -46,7 +46,7 @@ export default function Sites() {
     const categoryList = item.sites.map((site: any) => {
       return (
         <Col
-          className={styles.category_list_item}
+          className="category_list_item"
           key={site.url}
           lg={8}
           md={8}
@@ -64,23 +64,23 @@ export default function Sites() {
         title={item.category}
         id={item.id}
       >
-        <Row gutter={[10, 10]} className={styles.category_list}>
+        <Row gutter={[10, 10]} className="category_list">
           {categoryList}
         </Row>
       </AntCard>,
     );
   });
   return (
-    <section className={styles.container}>
+    <section className="sites_container">
       <SiteHeader
         title="网址导航"
         keywords="前端网，笔试面试，技术社区，游戏开发，调试工具，构建工具，站长工具，团队组织，图片素材"
         description="前端网，热门工具整合，笔试面试，技术社区，游戏开发，调试工具，构建工具，站长工具，团队组织，图片素材"
       />
-      <div className={styles.nav}>
+      <div className="nav">
         <ul>{navs}</ul>
       </div>
-      <div className={styles.content}>
+      <div className="content">
         {resources}
         <RowAd />
       </div>
