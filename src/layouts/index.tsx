@@ -6,13 +6,12 @@
  * @LastEditors: lizejun
  * @LastEditTime: 2021-06-15 10:54:56
  */
-import React, { ChangeEvent, SyntheticEvent } from 'react';
+import React, { ChangeEvent } from 'react';
 import HotRank from '@/components/hotRank';
 import NavLink from '@/components/navLink';
 import styles from './index.less';
 import logo from '@/assets/images/logo.png';
 import { BackTop, Button } from 'antd';
-import ScrollFixed from '@/components/scrollFixed';
 import Footer from '@/components/footer';
 import ErrorBoundary from '@/components/ErrorBoundary';
 import { isBrowser } from 'umi';
@@ -108,63 +107,61 @@ class App extends React.Component<any, AppState> {
             </Button>
           </div>
         </header>
-        <ScrollFixed>
-          <nav className={styles.nav}>
-            <NavLink
-              activeClassName={styles.active}
-              exact={true}
-              isActive={(match, { pathname }) => {
-                return pathname.startsWith('/topics');
-              }}
-              to={'/'}
-              className={styles.item}
-            >
-              首页
-            </NavLink>
-            <NavLink
-              activeClassName={styles.active}
-              to={'/sites'}
-              className={styles.item}
-            >
-              网址
-            </NavLink>
-            <NavLink
-              activeClassName={styles.active}
-              to={'/resources'}
-              className={styles.item}
-            >
-              教程
-            </NavLink>
-            <NavLink
-              activeClassName={styles.active}
-              to={'/blogs'}
-              className={styles.item}
-            >
-              博客
-            </NavLink>
-            <NavLink
-              activeClassName={styles.active}
-              to={'/solution'}
-              className={styles.item}
-            >
-              方案
-            </NavLink>
-            <NavLink
-              activeClassName={styles.active}
-              to={'/revenue'}
-              className={styles.item}
-            >
-              变现
-            </NavLink>
-            <NavLink
-              activeClassName={styles.active}
-              to={'/softwares'}
-              className={styles.item}
-            >
-              软件
-            </NavLink>
-          </nav>
-        </ScrollFixed>
+        <nav className={styles.nav}>
+          <NavLink
+            activeClassName={styles.active}
+            exact={true}
+            isActive={(match, { pathname }) => {
+              return pathname.startsWith('/topics');
+            }}
+            to={'/'}
+            className={styles.item}
+          >
+            首页
+          </NavLink>
+          <NavLink
+            activeClassName={styles.active}
+            to={'/sites'}
+            className={styles.item}
+          >
+            网址
+          </NavLink>
+          <NavLink
+            activeClassName={styles.active}
+            to={'/resources'}
+            className={styles.item}
+          >
+            教程
+          </NavLink>
+          <NavLink
+            activeClassName={styles.active}
+            to={'/blogs'}
+            className={styles.item}
+          >
+            博客
+          </NavLink>
+          <NavLink
+            activeClassName={styles.active}
+            to={'/solution'}
+            className={styles.item}
+          >
+            方案
+          </NavLink>
+          <NavLink
+            activeClassName={styles.active}
+            to={'/revenue'}
+            className={styles.item}
+          >
+            变现
+          </NavLink>
+          <NavLink
+            activeClassName={styles.active}
+            to={'/softwares'}
+            className={styles.item}
+          >
+            软件
+          </NavLink>
+        </nav>
         <div className={styles.content}>
           {this.props.children}
           <HotRank />

@@ -11,10 +11,10 @@ export default defineConfig({
     'process.env.REACT_APP_ENV': 'production',
     'process.env.SITE_DOMAIN': 'https://qianduan.shop',
   },
-  analytics: {
-    baidu: '926fb44514b1d81a809cb5380bf10511',
-    // ga: 'G-HB1N0Q442R',
-  },
+  // analytics: {
+  // baidu: '926fb44514b1d81a809cb5380bf10511',
+  // ga: 'G-HB1N0Q442R',
+  // },
   // publicPath:"public/",
   ignoreMomentLocale: true,
   title: false,

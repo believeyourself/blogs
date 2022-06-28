@@ -6,6 +6,7 @@ export default defineConfig({
     type: 'none',
   },
   dva: {},
+  styleLoader: {},
   routes,
   fastRefresh: {},
   // webpack5这样添加会报错，this.getOptions is not function

@@ -1,17 +1,18 @@
 import { Spin } from 'antd';
 
-function Loading() {
+function Loading({ style = {} }: { style?: Record<string, string> }) {
   return (
     <div
       style={{
-        width: '100vw',
-        height: '100vh',
+        width: '100%',
+        height: '80vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+        ...style,
       }}
     >
-      <Spin size="large" tip="努力加载中，请稍后..." />
+      <Spin size="large" tip="正在努力加载中，请稍后..." />
     </div>
   );
 }
